@@ -1,0 +1,27 @@
+.blog_background{
+    background: url("../images/BLOG (1).png");
+    height: 488px;
+    width: 100%;
+    background-size: contain;
+    /* Set specific sizes for the background images */
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+
+}
+.rounded_blog{
+    border-top-left-radius: 1.25rem !important;
+    border-top-right-radius: 1.25rem !important;
+
+}
+.sub_heading_text{
+    color:##747474;
+
+}
+.content_text{
+    color:##707070;
+    line-height:23.44px!important;
+
+}
+.grey{
+    color:#898989!important;
+}
