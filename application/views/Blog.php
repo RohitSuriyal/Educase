@@ -1,155 +1,699 @@
 <?php $this->load->view('common/header'); ?>
 <div class="container-fluid blog_background d-flex flex-column align-items-center justify-content-center">
-    <h1 class="text-center roboto bold">Discover Latest Blogs on <span style="color:#001AFF">Schools, Education & Parenting</span></h1>
-    <p class="text-center roboto sub_heading_text">We are your one-stop solution for finding information-rich and inspirational blogs on schools, </p>
-    <p class="text-center roboto sub_heading_text ">admission, parenting, and education. Take a lead to become the next-gen smart parents</p>
+    <h1 style="font-size:50px" class="text-center aparajita_font ">Discover Latest Blogs on <span style="color:#001AFF">Schools, Education & Parenting</span></h1>
+    <p style="font-size:14px" class="text-center roboto sub_heading_text mb-0 w-100">We are your one-stop solution for finding information-rich and inspirational blogs on schools,admission, parenting, and </p>
+    <p style="font-size:14px" class="text-center roboto sub_heading_text mb-0 "> education. Take a lead to become the next-gen smart parents</p>
 
 </div>
 <div class="tabs">
-    <div class="tab active roboto bold " onclick="openTab(event, 'tab1')">All</div>
-    <div class="tab roboto bold" onclick="openTab(event, 'tab2')">Education</div>
-    <div class="tab roboto bold" onclick="openTab(event, 'tab3')">technology</div>
-    <div class="tab roboto bold" onclick="openTab(event, 'tab4')">School</div>
+    <div style="font-size:22px" class="tab active  bold aparajita_font" onclick="openTab(event, 'tab1')">All</div>
+    <div style="font-size:22px" class="tab  bold  aparajita_font" onclick="openTab(event, 'tab2')">Education</div>
+    <div style="font-size:22px" class="tab  bold  aparajita_font" onclick="openTab(event, 'tab3')">technology</div>
+    <div style="font-size:22px" class="tab  bold  aparajita_font" onclick="openTab(event, 'tab4')">School</div>
 </div>
 
-<div class="tab-content">
+<div class="tab-content tab_content px-5">
     <div id="tab1" class="tab-pane active">
 
+        <?php foreach (array_reverse($all) as $index => $row) : ?>
+            <?php if ($index == 0) : ?>
 
-        <div class="row d-flex flex-row" style="padding:19px 12px;">
-
-
-            <div class="col-md  col-md-5" style="height:auto">
-                <img style="height:100%!important;object-fit:cover;width:100%" src="https://images4.alphacoders.com/133/1332281.jpeg" class="img-fluid" alt="Responsive Image">
-            </div>
-            <div class="col-md-7 py-4  roboto content_text  " style="height:auto;background-color: white;">
-                Welcome To
-
-                Swiss Cottage School
-                Swiss Cottage, a progressive, co-educational Senior Secondary School in Salahpur, New Delhi, prides itself on a rich blend of academic excellence and holistic development. Affiliated to CBSE, the school is ensconced within an expansive, green landscape dotted with tall silver oaks, justifying its picturesque name. The classrooms are well-lit, spacious, and fully air-conditioned, with a student-teacher ratio of 1:25, ensuring a conducive learning environment. With fully-equipped, state-of-the-art laboratories dedicated to subjects including Physics, Chemistry, Biology, Social Science, Language, and Computers, students gain hands-on experience that deepens their understanding. The school further provides extensive sports facilities, with grounds for Cricket, Badminton, Hockey, Football, Lawn Tennis, and Volleyball, along with a futuristic Skating Ring and an all-weather heated swimming pool, thereby ensuring a well-rounded, enriching educational experience.
-            </div>
-        </div>
-        <div class="row d-flex flex-row" style="padding:19px 12px;">
-            <div class="col-md-7 py-4 order2  roboto content_text  " style=" height:auto;background-color: white;">
-                Welcome To
-
-                Swiss Cottage School
-                Swiss Cottage, a progressive, co-educational Senior Secondary School in Salahpur, New Delhi, prides itself on a rich blend of academic excellence and holistic development. Affiliated to CBSE, the school is ensconced within an expansive, green landscape dotted with tall silver oaks, justifying its picturesque name. The classrooms are well-lit, spacious, and fully air-conditioned, with a student-teacher ratio of 1:25, ensuring a conducive learning environment. With fully-equipped, state-of-the-art laboratories dedicated to subjects including Physics, Chemistry, Biology, Social Science, Language, and Computers, students gain hands-on experience that deepens their understanding. The school further provides extensive sports facilities, with grounds for Cricket, Badminton, Hockey, Football, Lawn Tennis, and Volleyball, along with a futuristic Skating Ring and an all-weather heated swimming pool, thereby ensuring a well-rounded, enriching educational experience.
-            </div>
-
-            <div class="col-md  col-md-5" style="height:auto">
-                <img style="height:100%!important;object-fit:cover;width:100%" src="https://images4.alphacoders.com/133/1332281.jpeg" class="img-fluid" alt="Responsive Image">
-            </div>
-
-        </div>
-        <div class="row mt-4">
-
-            <div class="col-md-6 ">
-
-                <img style="height:auto!important;object-fit:cover;width:100%" src="https://images4.alphacoders.com/133/1332281.jpeg" class="rounded_blog img-fluid" alt="Responsive Image">
-                <p class="roboto bold mt-5 grey">May 10, 2024</p>
-                <div class="content_text roboto">
-                    <h5 class="">Lorem ipsum dolor sit amet consectetur.</h5>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, voluptatem. Doloremque sint aliquam voluptate odio sit ab ad. Porro, voluptates veritatis? Officia vel aliquid omnis beatae modi repudiandae dicta dolore minus non nisi deserunt dignissimos optio dolorem sequi nobis, enim fugiat soluta! Quae voluptatem, veniam expedita ipsa recusandae sapiente ducimus.
-
-                </div>
+                <div class="row d-flex flex-row" data-aos="fade-right" style="padding:19px 12px;">
 
 
+                    <div class="col-md  col-md-5" style="height:auto">
+                        <img style="height:100%!important;object-fit:cover;width:100%" src="data:image/*;base64,<?php echo $row->image; ?>" class="img-fluid" alt="Responsive Image">
+                    </div>
+                    <div class="col-md-7 py-4 blog_div  roboto content_text" style="height:auto;background-color: white;">
+                        <span class="grey bold">
+                            <?php $date = strtotime($row->date);
+                            $formatted_date = date('jS, F Y', $date);
+                            echo $formatted_date; ?></span>
 
-            </div>
-            <div class="col-md-6 margin_top">
-                <img style="height:auto!important;object-fit:cover;width:100%" src="https://images4.alphacoders.com/133/1332281.jpeg" class="rounded_blog img_fluid" alt="Responsive Image">
-                <p class="roboto bold mt-5 grey">May 10, 2024</p>
-                <div>
-                    <h5>Lorem ipsum dolor sit amet consectetur.
+                        <h1><?php echo $row->heading ?></h1>
+                        <?php
+                        $allowed_tags = '<p><h1><h2>';
 
-                    </h5>
-                    <div class="content_text robto">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ipsa eveniet quisquam quos recusandae illum hic cupiditate vel saepe necessitatibus unde eos, alias iste quis commodi ullam est sunt ab doloremque veniam ducimus voluptate soluta sequi? Molestiae, quis provident id nihil eveniet quos, libero earum praesentium cupiditate eaque commodi asperiores doloremque dignissimos beatae soluta aliquam quo aliquid nulla, accusamus adipisci.
+                        $plainText = strip_tags($row->body, $allowed_tags);
+                        $text = $plainText;
+                        // Check if the body text is longer than 300 characters
+                        if (strlen($text) > 300) {
+                            $text = substr($text, 0, 1000);
+                            // Find the last space within the truncated text
+                            $last_space = strrpos($text, ' ');
+                            // Trim the text to the last space to avoid cutting off in the middle of a word
+                            $text = substr($text, 0, $last_space);
+                            // Add ellipsis
+                            $url = base_url('welcome/blog_page/') . $row->id;
+
+                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                            // Output the truncated body text with "Read more" link
+                            echo $text;
+                        } else {
+                            // If the body text is shorter than or equal to 300 characters, output it as is
+                            echo $text;
+                        }
+                        ?>
                     </div>
 
-
-
                 </div>
+            <?php endif; ?>
+            <?php if ($index == 1) : ?>
 
-            </div>
+                <div class="row d-flex flex-row" data-aos="fade-left" style="padding:19px 12px;">
+                    <div class="col-md-7 py-4 order2 blog_div roboto  roboto content_text  " style=" height:auto;background-color: white;">
+                        <span class="bold grey">
+                            <?php $date = strtotime($row->date);
+                            $formatted_date = date('jS, F Y', $date);
+                            echo $formatted_date; ?></span>
 
+                        <h1><?php echo $row->heading ?></h1>
+                        <?php
+                        $allowed_tags = '<p><h1><h2>';
 
-        </div>
-        <div class="row mt-4">
+                        $plainText = strip_tags($row->body, $allowed_tags);
+                        $text = $plainText;
+                        // Check if the body text is longer than 300 characters
+                        if (strlen($text) > 300) {
+                            $text = substr($text, 0, 1000);
+                            // Find the last space within the truncated text
+                            $last_space = strrpos($text, ' ');
+                            // Trim the text to the last space to avoid cutting off in the middle of a word
+                            $text = substr($text, 0, $last_space);
+                            // Add ellipsis
+                            $url = base_url('welcome/blog_page/') . $row->id;
 
-            <div class="col-md-6 ">
-
-                <img style="height:auto!important;object-fit:cover;width:100%" src="https://images4.alphacoders.com/133/1332281.jpeg" class="rounded_blog img-fluid" alt="Responsive Image">
-                <p class="roboto bold mt-5 grey">May 10, 2024</p>
-                <div class="content_text roboto">
-                    <h5 class="">Lorem ipsum dolor sit amet consectetur.</h5>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, voluptatem. Doloremque sint aliquam voluptate odio sit ab ad. Porro, voluptates veritatis? Officia vel aliquid omnis beatae modi repudiandae dicta dolore minus non nisi deserunt dignissimos optio dolorem sequi nobis, enim fugiat soluta! Quae voluptatem, veniam expedita ipsa recusandae sapiente ducimus.
-
-                </div>
-
-
-
-            </div>
-            <div class="col-md-6 margin_top">
-                <img style="height:auto!important;object-fit:cover;width:100%" src="https://images4.alphacoders.com/133/1332281.jpeg" class="rounded_blog img_fluid" alt="Responsive Image">
-                <p class="roboto bold mt-5 grey">May 10, 2024</p>
-                <div>
-                    <h5>Lorem ipsum dolor sit amet consectetur.
-
-                    </h5>
-                    <div class="content_text robto">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ipsa eveniet quisquam quos recusandae illum hic cupiditate vel saepe necessitatibus unde eos, alias iste quis commodi ullam est sunt ab doloremque veniam ducimus voluptate soluta sequi? Molestiae, quis provident id nihil eveniet quos, libero earum praesentium cupiditate eaque commodi asperiores doloremque dignissimos beatae soluta aliquam quo aliquid nulla, accusamus adipisci.
+                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                            // Output the truncated body text with "Read more" link
+                            echo $text;
+                        } else {
+                            // If the body text is shorter than or equal to 300 characters, output it as is
+                            echo $text;
+                        }
+                        ?>
                     </div>
 
-
-
-                </div>
-
-            </div>
-
-
-        </div>
-        <div class="row mt-4">
-
-            <div class="col-md-6 ">
-
-                <img style="height:auto!important;object-fit:cover;width:100%" src="https://images4.alphacoders.com/133/1332281.jpeg" class="rounded_blog img-fluid" alt="Responsive Image">
-                <p class="roboto bold mt-5 grey">May 10, 2024</p>
-                <div class="content_text roboto">
-                    <h5 class="">Lorem ipsum dolor sit amet consectetur.</h5>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, voluptatem. Doloremque sint aliquam voluptate odio sit ab ad. Porro, voluptates veritatis? Officia vel aliquid omnis beatae modi repudiandae dicta dolore minus non nisi deserunt dignissimos optio dolorem sequi nobis, enim fugiat soluta! Quae voluptatem, veniam expedita ipsa recusandae sapiente ducimus.
-
-                </div>
-
-
-
-            </div>
-            <div class="col-md-6 margin_top">
-                <img style="height:auto!important;object-fit:cover;width:100%" src="https://images4.alphacoders.com/133/1332281.jpeg" class="rounded_blog img_fluid" alt="Responsive Image">
-                <p class="roboto bold mt-5 grey">May 10, 2024</p>
-                <div>
-                    <h5>Lorem ipsum dolor sit amet consectetur.
-
-                    </h5>
-                    <div class="content_text robto">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ipsa eveniet quisquam quos recusandae illum hic cupiditate vel saepe necessitatibus unde eos, alias iste quis commodi ullam est sunt ab doloremque veniam ducimus voluptate soluta sequi? Molestiae, quis provident id nihil eveniet quos, libero earum praesentium cupiditate eaque commodi asperiores doloremque dignissimos beatae soluta aliquam quo aliquid nulla, accusamus adipisci.
+                    <div class="col-md  col-md-5" style="height:auto">
+                        <img style="height:100%!important;object-fit:cover;width:100%" src="data:image/*;base64,<?php echo $row->image; ?>" alt="Responsive Image">
                     </div>
 
+                </div>
+            <?php endif; ?>
+        <?php endforeach;
+        ?>
+        <?php
+        $i = 0; // Initialize $i
+        $j = 1; // Initialize $j
+        $data_reversed = array_reverse($all); // Reverse the $data array
+        foreach ($data_reversed as $index => $row) :
+            if ($index < 2) {
+                continue; // Skip first two elements
+            }
 
+            // Ensure that the next elements exist before accessing them
+            if (!isset($data_reversed[$index + $i]) || !isset($data_reversed[$index + $j])) {
+                break; // Exit the loop if next elements do not exist
+            }
 
+            // Define current and next row
+            $current = $data_reversed[$index + $j];
+            $nextRow = $data_reversed[$index + $i];
+        ?>
+
+            <div class="row mt-4" style="padding: 1rem;">
+                <div class="col-md-6 blog_div_mt" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img class="blog_image" style="height: 400px; object-fit: cover; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;" src="data:image/*;base64,<?php echo $current->image; ?>" alt="Responsive Image">
+                    <p class="roboto bold mt-5 grey">
+                        <?php
+                        $date = strtotime($current->date);
+                        $formatted_date = date('jS, F Y', $date);
+                        echo $formatted_date;
+                        ?>
+                    </p>
+                    <div class="content_text roboto blog_div">
+                        <h1 class="roboto bold" style="margin-top: 2%;"><?php echo $current->heading; ?></h1>
+                        <?php
+                        $allowed_tags = '<p><h1><h2>';
+                        $plainText = strip_tags($current->body, $allowed_tags);
+                        $text = $plainText;
+                        if (strlen($text) > 1000) {
+                            $text = substr($text, 0, 1000);
+                            $last_space = strrpos($text, ' ');
+                            $text = substr($text, 0, $last_space);
+                            $url = base_url('welcome/blog_page/') . $current->id;
+                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                        }
+                        echo $text;
+                        ?>
+                    </div>
                 </div>
 
+                <div class="col-md-6 blog_div_mt" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img class="blog_image" style="height: 400px; object-fit: cover; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;" src="data:image/*;base64,<?php echo $nextRow->image; ?>" alt="Responsive Image">
+                    <p class="roboto bold mt-5 grey">
+                        <?php
+                        $date = strtotime($nextRow->date);
+                        $formatted_date = date('jS, F Y', $date);
+                        echo $formatted_date;
+                        ?>
+                    </p>
+                    <div class="content_text roboto blog_div">
+                        <h1 class="roboto bold" style="margin-top: 2%;"><?php echo $nextRow->heading; ?></h1>
+                        <?php
+                        $allowed_tags = '<p><h1><h2>';
+                        $plainText = strip_tags($nextRow->body, $allowed_tags);
+                        $text = $plainText;
+                        if (strlen($text) > 1100) {
+                            $text = substr($text, 0, 1000);
+                            $last_space = strrpos($text, ' ');
+                            $text = substr($text, 0, $last_space);
+                            $url = base_url('welcome/blog_page/') . $nextRow->id;
+                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                        }
+                        echo $text;
+                        ?>
+                    </div>
+                </div>
             </div>
 
+        <?php
+            $i++;
+            $j++;
+        endforeach; // End foreach loop
+        ?>
 
-        </div>
+
+
 
 
     </div>
-    <div id="tab2" class="tab-pane">Content for Tab 2</div>
-    <div id="tab3" class="tab-pane">Content for Tab 3</div>
-    <div id="tab4" class="tab-pane">Content for Tab 4</div>
+    <div id="tab2" class="tab-pane">
+        
+    <?php foreach (array_reverse($education) as $index => $row) : ?>
+            <?php if ($index == 0) : ?>
+
+                <div class="row d-flex flex-row" data-aos="fade-right" style="padding:19px 12px;">
+
+
+                    <div class="col-md  col-md-5" style="height:auto">
+                        <img style="height:100%!important;object-fit:cover;width:100%" src="data:image/*;base64,<?php echo $row->image; ?>" class="img-fluid" alt="Responsive Image">
+                    </div>
+                    <div class="col-md-7 py-4 blog_div  roboto content_text" style="height:auto;background-color: white;">
+                        <span class="grey bold">
+                            <?php $date = strtotime($row->date);
+                            $formatted_date = date('jS, F Y', $date);
+                            echo $formatted_date; ?></span>
+
+                        <h1><?php echo $row->heading ?></h1>
+                        <?php
+                        $allowed_tags = '<p><h1><h2>';
+
+                        $plainText = strip_tags($row->body, $allowed_tags);
+                        $text = $plainText;
+                        // Check if the body text is longer than 300 characters
+                        if (strlen($text) > 300) {
+                            $text = substr($text, 0, 1000);
+                            // Find the last space within the truncated text
+                            $last_space = strrpos($text, ' ');
+                            // Trim the text to the last space to avoid cutting off in the middle of a word
+                            $text = substr($text, 0, $last_space);
+                            // Add ellipsis
+                            $url = base_url('welcome/blog_page/') . $row->id;
+
+                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                            // Output the truncated body text with "Read more" link
+                            echo $text;
+                        } else {
+                            // If the body text is shorter than or equal to 300 characters, output it as is
+                            echo $text;
+                        }
+                        ?>
+                    </div>
+
+                </div>
+            <?php endif; ?>
+            <?php if ($index == 1) : ?>
+
+                <div class="row d-flex flex-row" data-aos="fade-left" style="padding:19px 12px;">
+                    <div class="col-md-7 py-4 order2 blog_div roboto  roboto content_text  " style=" height:auto;background-color: white;">
+                        <span class="bold grey">
+                            <?php $date = strtotime($row->date);
+                            $formatted_date = date('jS, F Y', $date);
+                            echo $formatted_date; ?></span>
+
+                        <h1><?php echo $row->heading ?></h1>
+                        <?php
+                        $allowed_tags = '<p><h1><h2>';
+
+                        $plainText = strip_tags($row->body, $allowed_tags);
+                        $text = $plainText;
+                        // Check if the body text is longer than 300 characters
+                        if (strlen($text) > 300) {
+                            $text = substr($text, 0, 1000);
+                            // Find the last space within the truncated text
+                            $last_space = strrpos($text, ' ');
+                            // Trim the text to the last space to avoid cutting off in the middle of a word
+                            $text = substr($text, 0, $last_space);
+                            // Add ellipsis
+                            $url = base_url('welcome/blog_page/') . $row->id;
+
+                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                            // Output the truncated body text with "Read more" link
+                            echo $text;
+                        } else {
+                            // If the body text is shorter than or equal to 300 characters, output it as is
+                            echo $text;
+                        }
+                        ?>
+                    </div>
+
+                    <div class="col-md  col-md-5" style="height:auto">
+                        <img style="height:100%!important;object-fit:cover;width:100%" src="data:image/*;base64,<?php echo $row->image; ?>" alt="Responsive Image">
+                    </div>
+
+                </div>
+            <?php endif; ?>
+        <?php endforeach;
+        ?>
+        <?php
+        $i = 0; // Initialize $i
+        $j = 1; // Initialize $j
+        $data_reversed = array_reverse($education); // Reverse the $data array
+        foreach ($data_reversed as $index => $row) :
+            if ($index < 2) {
+                continue; // Skip first two elements
+            }
+
+            // Ensure that the next elements exist before accessing them
+            if (!isset($data_reversed[$index + $i]) || !isset($data_reversed[$index + $j])) {
+                break; // Exit the loop if next elements do not exist
+            }
+
+            // Define current and next row
+            $current = $data_reversed[$index + $j];
+            $nextRow = $data_reversed[$index + $i];
+        ?>
+
+            <div class="row mt-4" style="padding: 1rem;">
+                <div class="col-md-6" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img style="height: 400px; object-fit: cover; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;" src="data:image/*;base64,<?php echo $current->image; ?>" alt="Responsive Image">
+                    <p class="roboto bold mt-5 grey">
+                        <?php
+                        $date = strtotime($current->date);
+                        $formatted_date = date('jS, F Y', $date);
+                        echo $formatted_date;
+                        ?>
+                    </p>
+                    <div class="content_text roboto blog_div">
+                        <h1 class="roboto bold" style="margin-top: 2%;"><?php echo $current->heading; ?></h1>
+                        <?php
+                        $allowed_tags = '<p><h1><h2>';
+                        $plainText = strip_tags($current->body, $allowed_tags);
+                        $text = $plainText;
+                        if (strlen($text) > 1000) {
+                            $text = substr($text, 0, 1000);
+                            $last_space = strrpos($text, ' ');
+                            $text = substr($text, 0, $last_space);
+                            $url = base_url('welcome/blog_page/') . $current->id;
+                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                        }
+                        echo $text;
+                        ?>
+                    </div>
+                </div>
+
+                <div class="col-md-6" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img style="height: 400px; object-fit: cover; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;" src="data:image/*;base64,<?php echo $nextRow->image; ?>" alt="Responsive Image">
+                    <p class="roboto bold mt-5 grey">
+                        <?php
+                        $date = strtotime($nextRow->date);
+                        $formatted_date = date('jS, F Y', $date);
+                        echo $formatted_date;
+                        ?>
+                    </p>
+                    <div class="content_text roboto blog_div">
+                        <h1 class="roboto bold" style="margin-top: 2%;"><?php echo $nextRow->heading; ?></h1>
+                        <?php
+                        $allowed_tags = '<p><h1><h2>';
+                        $plainText = strip_tags($nextRow->body, $allowed_tags);
+                        $text = $plainText;
+                        if (strlen($text) > 1100) {
+                            $text = substr($text, 0, 1000);
+                            $last_space = strrpos($text, ' ');
+                            $text = substr($text, 0, $last_space);
+                            $url = base_url('welcome/blog_page/') . $nextRow->id;
+                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                        }
+                        echo $text;
+                        ?>
+                    </div>
+                </div>
+            </div>
+
+        <?php
+            $i++;
+            $j++;
+        endforeach; // End foreach loop
+        ?>
+    </div>
+    <div id="tab3" class="tab-pane">
+    <?php foreach (array_reverse($technology) as $index => $row) : ?>
+            <?php if ($index == 0) : ?>
+
+                <div class="row d-flex flex-row" data-aos="fade-right" style="padding:19px 12px;">
+
+
+                    <div class="col-md  col-md-5" style="height:auto">
+                        <img style="height:100%!important;object-fit:cover;width:100%" src="data:image/*;base64,<?php echo $row->image; ?>" class="img-fluid" alt="Responsive Image">
+                    </div>
+                    <div class="col-md-7 py-4 blog_div  roboto content_text" style="height:auto;background-color: white;">
+                        <span class="grey bold">
+                            <?php $date = strtotime($row->date);
+                            $formatted_date = date('jS, F Y', $date);
+                            echo $formatted_date; ?></span>
+
+                        <h1><?php echo $row->heading ?></h1>
+                        <?php
+                        $allowed_tags = '<p><h1><h2>';
+
+                        $plainText = strip_tags($row->body, $allowed_tags);
+                        $text = $plainText;
+                        // Check if the body text is longer than 300 characters
+                        if (strlen($text) > 300) {
+                            $text = substr($text, 0, 1000);
+                            // Find the last space within the truncated text
+                            $last_space = strrpos($text, ' ');
+                            // Trim the text to the last space to avoid cutting off in the middle of a word
+                            $text = substr($text, 0, $last_space);
+                            // Add ellipsis
+                            $url = base_url('welcome/blog_page/') . $row->id;
+
+                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                            // Output the truncated body text with "Read more" link
+                            echo $text;
+                        } else {
+                            // If the body text is shorter than or equal to 300 characters, output it as is
+                            echo $text;
+                        }
+                        ?>
+                    </div>
+
+                </div>
+            <?php endif; ?>
+            <?php if ($index == 1) : ?>
+
+                <div class="row d-flex flex-row" data-aos="fade-left" style="padding:19px 12px;">
+                    <div class="col-md-7 py-4 order2 blog_div roboto  roboto content_text  " style=" height:auto;background-color: white;">
+                        <span class="bold grey">
+                            <?php $date = strtotime($row->date);
+                            $formatted_date = date('jS, F Y', $date);
+                            echo $formatted_date; ?></span>
+
+                        <h1><?php echo $row->heading ?></h1>
+                        <?php
+                        $allowed_tags = '<p><h1><h2>';
+
+                        $plainText = strip_tags($row->body, $allowed_tags);
+                        $text = $plainText;
+                        // Check if the body text is longer than 300 characters
+                        if (strlen($text) > 300) {
+                            $text = substr($text, 0, 1000);
+                            // Find the last space within the truncated text
+                            $last_space = strrpos($text, ' ');
+                            // Trim the text to the last space to avoid cutting off in the middle of a word
+                            $text = substr($text, 0, $last_space);
+                            // Add ellipsis
+                            $url = base_url('welcome/blog_page/') . $row->id;
+
+                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                            // Output the truncated body text with "Read more" link
+                            echo $text;
+                        } else {
+                            // If the body text is shorter than or equal to 300 characters, output it as is
+                            echo $text;
+                        }
+                        ?>
+                    </div>
+
+                    <div class="col-md  col-md-5" style="height:auto">
+                        <img style="height:100%!important;object-fit:cover;width:100%" src="data:image/*;base64,<?php echo $row->image; ?>" alt="Responsive Image">
+                    </div>
+
+                </div>
+            <?php endif; ?>
+        <?php endforeach;
+        ?>
+        <?php
+        $i = 0; // Initialize $i
+        $j = 1; // Initialize $j
+        $data_reversed = array_reverse($technology); // Reverse the $data array
+        foreach ($data_reversed as $index => $row) :
+            if ($index < 2) {
+                continue; // Skip first two elements
+            }
+
+            // Ensure that the next elements exist before accessing them
+            if (!isset($data_reversed[$index + $i]) || !isset($data_reversed[$index + $j])) {
+                break; // Exit the loop if next elements do not exist
+            }
+
+            // Define current and next row
+            $current = $data_reversed[$index + $j];
+            $nextRow = $data_reversed[$index + $i];
+        ?>
+
+            <div class="row mt-4" style="padding: 1rem;">
+                <div class="col-md-6" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img style="height: 400px; object-fit: cover; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;" src="data:image/*;base64,<?php echo $current->image; ?>" alt="Responsive Image">
+                    <p class="roboto bold mt-5 grey">
+                        <?php
+                        $date = strtotime($current->date);
+                        $formatted_date = date('jS, F Y', $date);
+                        echo $formatted_date;
+                        ?>
+                    </p>
+                    <div class="content_text roboto blog_div">
+                        <h1 class="roboto bold" style="margin-top: 2%;"><?php echo $current->heading; ?></h1>
+                        <?php
+                        $allowed_tags = '<p><h1><h2>';
+                        $plainText = strip_tags($current->body, $allowed_tags);
+                        $text = $plainText;
+                        if (strlen($text) > 1000) {
+                            $text = substr($text, 0, 1000);
+                            $last_space = strrpos($text, ' ');
+                            $text = substr($text, 0, $last_space);
+                            $url = base_url('welcome/blog_page/') . $current->id;
+                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                        }
+                        echo $text;
+                        ?>
+                    </div>
+                </div>
+
+                <div class="col-md-6" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img style="height: 400px; object-fit: cover; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;" src="data:image/*;base64,<?php echo $nextRow->image; ?>" alt="Responsive Image">
+                    <p class="roboto bold mt-5 grey">
+                        <?php
+                        $date = strtotime($nextRow->date);
+                        $formatted_date = date('jS, F Y', $date);
+                        echo $formatted_date;
+                        ?>
+                    </p>
+                    <div class="content_text roboto blog_div">
+                        <h1 class="roboto bold" style="margin-top: 2%;"><?php echo $nextRow->heading; ?></h1>
+                        <?php
+                        $allowed_tags = '<p><h1><h2>';
+                        $plainText = strip_tags($nextRow->body, $allowed_tags);
+                        $text = $plainText;
+                        if (strlen($text) > 1100) {
+                            $text = substr($text, 0, 1000);
+                            $last_space = strrpos($text, ' ');
+                            $text = substr($text, 0, $last_space);
+                            $url = base_url('welcome/blog_page/') . $nextRow->id;
+                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                        }
+                        echo $text;
+                        ?>
+                    </div>
+                </div>
+            </div>
+
+        <?php
+            $i++;
+            $j++;
+        endforeach; // End foreach loop
+        ?>
+    </div>
+    <div id="tab4" class="tab-pane">
+    <?php foreach (array_reverse($school) as $index => $row) : ?>
+            <?php if ($index == 0) : ?>
+
+                <div class="row d-flex flex-row" data-aos="fade-right" style="padding:19px 12px;">
+
+
+                    <div class="col-md  col-md-5" style="height:auto">
+                        <img style="height:100%!important;object-fit:cover;width:100%" src="data:image/*;base64,<?php echo $row->image; ?>" class="img-fluid" alt="Responsive Image">
+                    </div>
+                    <div class="col-md-7 py-4 blog_div  roboto content_text" style="height:auto;background-color: white;">
+                        <span class="grey bold">
+                            <?php $date = strtotime($row->date);
+                            $formatted_date = date('jS, F Y', $date);
+                            echo $formatted_date; ?></span>
+
+                        <h1><?php echo $row->heading ?></h1>
+                        <?php
+                        $allowed_tags = '<p><h1><h2>';
+
+                        $plainText = strip_tags($row->body, $allowed_tags);
+                        $text = $plainText;
+                        // Check if the body text is longer than 300 characters
+                        if (strlen($text) > 300) {
+                            $text = substr($text, 0, 1000);
+                            // Find the last space within the truncated text
+                            $last_space = strrpos($text, ' ');
+                            // Trim the text to the last space to avoid cutting off in the middle of a word
+                            $text = substr($text, 0, $last_space);
+                            // Add ellipsis
+                            $url = base_url('welcome/blog_page/') . $row->id;
+
+                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                            // Output the truncated body text with "Read more" link
+                            echo $text;
+                        } else {
+                            // If the body text is shorter than or equal to 300 characters, output it as is
+                            echo $text;
+                        }
+                        ?>
+                    </div>
+
+                </div>
+            <?php endif; ?>
+            <?php if ($index == 1) : ?>
+
+                <div class="row d-flex flex-row" data-aos="fade-left" style="padding:19px 12px;">
+                    <div class="col-md-7 py-4 order2 blog_div roboto  roboto content_text  " style=" height:auto;background-color: white;">
+                        <span class="bold grey">
+                            <?php $date = strtotime($row->date);
+                            $formatted_date = date('jS, F Y', $date);
+                            echo $formatted_date; ?></span>
+
+                        <h1><?php echo $row->heading ?></h1>
+                        <?php
+                        $allowed_tags = '<p><h1><h2>';
+
+                        $plainText = strip_tags($row->body, $allowed_tags);
+                        $text = $plainText;
+                        // Check if the body text is longer than 300 characters
+                        if (strlen($text) > 300) {
+                            $text = substr($text, 0, 1000);
+                            // Find the last space within the truncated text
+                            $last_space = strrpos($text, ' ');
+                            // Trim the text to the last space to avoid cutting off in the middle of a word
+                            $text = substr($text, 0, $last_space);
+                            // Add ellipsis
+                            $url = base_url('welcome/blog_page/') . $row->id;
+
+                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                            // Output the truncated body text with "Read more" link
+                            echo $text;
+                        } else {
+                            // If the body text is shorter than or equal to 300 characters, output it as is
+                            echo $text;
+                        }
+                        ?>
+                    </div>
+
+                    <div class="col-md-5" style="height:auto">
+                        <img style="height:100%!important;object-fit:cover;width:100%" src="data:image/*;base64,<?php echo $row->image; ?>" alt="Responsive Image">
+                    </div>
+
+                </div>
+            <?php endif; ?>
+        <?php endforeach;
+        ?>
+        <?php
+        $i = 0; // Initialize $i
+        $j = 1; // Initialize $j
+        $data_reversed = array_reverse($school); // Reverse the $data array
+        foreach ($data_reversed as $index => $row) :
+            if ($index < 2) {
+                continue; // Skip first two elements
+            }
+
+            // Ensure that the next elements exist before accessing them
+            if (!isset($data_reversed[$index + $i]) || !isset($data_reversed[$index + $j])) {
+                break; // Exit the loop if next elements do not exist
+            }
+
+            // Define current and next row
+            $current = $data_reversed[$index + $j];
+            $nextRow = $data_reversed[$index + $i];
+        ?>
+
+            <div class="row mt-4 " style="padding: 1rem;">
+                <div class="col-md-6 blog_image" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <img style="height: 400px; object-fit: cover; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;" src="data:image/*;base64,<?php echo $nextRow->image; ?>" alt="Responsive Image">
+
+                    <p class="roboto bold mt-5 grey">
+                        <?php
+                        $date = strtotime($current->date);
+                        $formatted_date = date('jS, F Y', $date);
+                        echo $formatted_date;
+                        ?>
+                    </p>
+                    <div class="content_text roboto blog_div">
+                        <h1 class="roboto bold" style="margin-top: 2%;"><?php echo $current->heading; ?></h1>
+                        <?php
+                        $allowed_tags = '<p><h1><h2>';
+                        $plainText = strip_tags($current->body, $allowed_tags);
+                        $text = $plainText;
+                        if (strlen($text) > 1000) {
+                            $text = substr($text, 0, 1000);
+                            $last_space = strrpos($text, ' ');
+                            $text = substr($text, 0, $last_space);
+                            $url = base_url('welcome/blog_page/') . $current->id;
+                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                        }
+                        echo $text;
+                        ?>
+                    </div>
+                </div>
+
+                <div class="col-md-6 blog_image" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <img  style="height: 400px; object-fit: cover; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;" src="data:image/*;base64,<?php echo $nextRow->image; ?>" alt="Responsive Image">
+
+                    <p class="roboto bold mt-5 grey">
+                        <?php
+                        $date = strtotime($nextRow->date);
+                        $formatted_date = date('jS, F Y', $date);
+                        echo $formatted_date;
+                        ?>
+                    </p>
+                    <div class="content_text roboto blog_div">
+                        <h1 class="roboto bold" style="margin-top: 2%;"><?php echo $nextRow->heading; ?></h1>
+                        <?php
+                        $allowed_tags = '<p><h1><h2>';
+                        $plainText = strip_tags($nextRow->body, $allowed_tags);
+                        $text = $plainText;
+                        if (strlen($text) > 1100) {
+                            $text = substr($text, 0, 1000);
+                            $last_space = strrpos($text, ' ');
+                            $text = substr($text, 0, $last_space);
+                            $url = base_url('welcome/blog_page/') . $nextRow->id;
+                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                        }
+                        echo $text;
+                        ?>
+                    </div>
+                </div>
+            </div>
+
+        <?php
+            $i++;
+            $j++;
+        endforeach; // End foreach loop
+        ?>
+    </div>
 </div>
 
 

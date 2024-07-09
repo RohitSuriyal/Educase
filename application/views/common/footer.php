@@ -1,4 +1,8 @@
-</div>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 <script>
      function startAnimation() {

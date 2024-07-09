@@ -7,36 +7,73 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<!-- Bootstrap CSS -->
+	
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="<?php echo CSS_URL . "school.css" ?>" />
-	<link rel="stylesheet" href="<?php echo CSS_URL; ?>educase.css" />
+	<link rel="stylesheet" href="<?php echo base_url('assets/css/educase.css'); ?>" />
 	<script src="https://kit.fontawesome.com/8337c29774.js" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<script src="<?php echo base_url();?>assets/ckeditor/ckeditor.js"></script>
-	<script src="<?php echo base_url();?>assets/ckfinder/ckfinder.js"></script>
-	<script src="sweetalert2.min.js"></script>
-	<link rel="stylesheet" href="sweetalert2.min.css">
+	<script src="<?php echo base_url(); ?>assets/ckeditor/ckeditor.js"></script>
+	<script src="<?php echo base_url(); ?>assets/ckfinder/ckfinder.js"></script>
+	<!-- <script src="sweetalert2.min.js"></script>
+	<link rel="stylesheet" href="sweetalert2.min.css"> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+
+
+
+
+
+
+
+
 
 
 
 
 	<style>
+.blog_background {
+	background: url("<?php echo base_url("assets/images/BLOG (1).png") ?>");
+	height: 488px;
+	width: 100%;
+	background-size: contain;
+	/* Set specific sizes for the background images */
+	background-position: 6rem 10px;
+	background-repeat: no-repeat;
+}
+		.custom img {
+			width: 100% !important;
+			height: 100% !important;
+		}
+
 		.header_hub {
 			font-family: "Roboto", "Arial", sans-serif;
 		}
 
 		.image_background {
 
-			background-image: url("<?php echo base_url("assets/images/Rectangle 13.png") ?>"), url("<?php echo base_url("assets/images/Rectangle 11 (1).png") ?>"), url("<?php echo base_url("assets/images/Rectangle 12.png") ?>"), url("<?php echo base_url("assets/images/Rectangle 14 (1).png") ?>"), url("<?php echo base_url("assets/images/Rectangle 16.png") ?>"), url("<?php echo base_url("assets/images/Rectangle 15.png") ?>");
-			background-size: 132px 183px, 132px 183px;
+			background-image: url("<?php echo base_url("assets/images/Rectangle 13 (2).png") ?>"), url("<?php echo base_url("assets/images/Rectangle 11 (1) (1).png") ?>"), url("<?php echo base_url("assets/images/Rectangle 12 (1).png") ?>"), url("<?php echo base_url("assets/images/Rectangle 14 (1) (1).png") ?>"), url("<?php echo base_url("assets/images/Rectangle 16 (1).png") ?>"), url("<?php echo base_url("assets/images/Rectangle 15 (2).png") ?>");
+			background-size: 161px 225px, 161px 225px;
 			/* Set specific sizes for the background images */
-			background-position: -7px 20px, 179px 79px, 37px 245px, 90% 15%, 101% 5%, 96% 48%;
+			background-position: -7px 20px, 179px 79px, 37px 245px, 89% 30%, 101% 5%, 98% 72%;
 			/* Adjust the positions to ensure both images are visible */
 			background-repeat: no-repeat, no-repeat;
 			/* Prevents both images from repeating */
 
-			/* Temporary border to visualize the div */
+			opacity: 0.6;
+
+
+		}
+
+		.outer_img {
+
+			background-image: url("<?php echo base_url("assets/images/Rectangle 23.png") ?>"), url("<?php echo base_url("assets/images/Rectangle 16.png") ?>");
+			background-size: 161px 225px, 161px 225px;
+			/* Set specific sizes for the background images */
+			background-position: -1rem 25rem, 94rem 25rem;
+			/* Adjust the positions to ensure both images are visible */
+			background-repeat: no-repeat, no-repeat;
+
 
 
 
@@ -66,6 +103,8 @@
 				/* Adjust the positions to ensure both images are visible */
 				background-repeat: no-repeat, no-repeat;
 				/* Prevents both images from repeating */
+
+
 
 
 			}
@@ -136,7 +175,7 @@
 
 
 		.nav_font {
-			font-size: 4.5vw !important;
+			font-size: 3.2vw !important;
 		}
 
 
@@ -188,6 +227,9 @@
 
 		.tab.active {
 			color: black;
+			border-bottom: 2px solid #000;
+			/* Adjust the color and thickness as needed */
+
 		}
 
 		.tab.active::after {
@@ -215,12 +257,12 @@
 			border: 2px solid #001AFF;
 			color: #001AFF;
 			background-color: white;
-			margin:0rem 0rem;
-			padding:0rem 0rem;
+			margin: 0rem 0rem;
+			padding: 0rem 0rem;
 		}
-		.school_div_bg{
-			background-color: #F9F9FF
-			;
+
+		.school_div_bg {
+			background-color: #F9F9FF;
 		}
 
 		@keyframes underline {
@@ -235,8 +277,10 @@
 
 		@media only screen and (max-width:580px) {
 
+			/* //this is for the home page */
 			.input_font {
-				font-size: 1rem;
+				font-size: 0.9rem;
+				width: 90% !important;
 			}
 
 			.img_location {
@@ -265,6 +309,59 @@
 				/* Adjust the values to get the desired shadow effect */
 
 			}
+
+			.header_res {
+				padding: 2% 0% !important;
+				margin: 0% 0% !important;
+			}
+
+			.col_new_educase {
+				width: 30% !important;
+			}
+
+			.nav_font {
+				font-size: 4vw !important;
+			}
+
+			.menu_icon {
+				height: 20px;
+				width: 20px;
+				padding: 0px;
+			}
+
+			.top_school_heading h1 {
+				font-size: 34px !important;
+			}
+
+			.locality {
+				font-size: 30px !important;
+			}
+
+			.p_school {
+				text-align: left !important;
+			}
+
+			.second_school_div {
+				margin-top: 1.3rem !important;
+			}
+
+			.school_main_div {
+				margin: 0 6% !important;
+			}
+
+			/* this is for the blog page */
+			.blog_image {
+
+				height: auto !important;
+			}
+			.tab_content{
+				padding:0rem 1rem!Important;
+			}
+			.blog_div_mt{
+				
+			}
+			
+
 
 		}
 
@@ -334,9 +431,10 @@
 			}
 
 			.city_heading {
-				font-size: 5.5vw !important;
+				font-size: 5.5vw;
 
 			}
+
 
 			.city_headingp {
 				font-size: 4.5vw !important;
@@ -349,6 +447,18 @@
 			.margin_0 {
 				margin-right: 0px !important;
 				margin-left: 0px !important;
+			}
+
+			.blog_div h1 {
+				font-size: 21px !important;
+			}
+
+			.p_text {
+				font-size: 0.9rem !important;
+			}
+
+			.cities {
+				width: 64% !important;
 			}
 
 
@@ -482,8 +592,8 @@
 
 		.mid-text {
 			position: absolute;
-			top: 6%;
-			left: 38%;
+			top: 39px;
+			left: 24%;
 			transform: translate(-50%, -50%);
 			animation: shake 3s linear;
 			/* Apply animation */
@@ -527,7 +637,7 @@
 
 
 
-		
+
 
 		.dropdown-list {
 			display: none;
@@ -535,7 +645,7 @@
 			background-color: #ffffff;
 			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 			z-index: 1;
-			top:4rem;
+			top: 4rem;
 		}
 
 		.dropdown-list li {
@@ -547,17 +657,41 @@
 		.list_button {
 			cursor: pointer;
 		}
+
+		@keyframes slideInFromLeft {
+			0% {
+				opacity: 0;
+				transform: translateX(-100%);
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateX(0);
+			}
+		}
+
+		.col_new_educase {
+			font-weight: bold;
+
+			overflow: hidden;
+			/* Ensures the animation doesn't cause scrollbars */
+		}
+
+		.col_new_educase {
+
+			animation: slideInFromLeft 1s ease-out;
+		}
 	</style>
 	<title>Hello, world!</title>
 </head>
 
 <body>
-	<div class="row sticky-header d-flex align-items-center justify-content-between" style="margin-top: 26px; padding: 4px 22px; margin:0px 0px">
+	<div class="row sticky-header header_res d-flex align-items-center justify-content-between" style="margin-top: 26px; padding: 4px 22px; margin:0px 0px">
 		<div id="sidebar-toggle" class="col-auto menubar col_new_menu" style="display: none;">
-			<img height="24px" width="22px" src="<?php echo base_url("assets/images/menu (1).png") ?>" onclick="startAnimation()">
+			<img height="24px" width="22px" class="menu_icon" src="<?php echo base_url("assets/images/menu (1).png") ?>" onclick="startAnimation()">
 		</div>
-		<div class="col-4 col-md-3 col_new_educase header_hub nav_font" style="font-weight: bold; font-size: 40px;">
-			EDU<span style="color:#001AFF">EASE</span>
+		<div style="padding:0px 0px!important" class="col-4 col-md-3 col_new_educase header_hub nav_font" style="font-weight: bold; font-size:10px;">
+			FINDMY<span style="color:#001AFF">SCHOOL</span>
 		</div>
 		<div class="col-12 col-md-6 hide_topbar">
 			<ul class="d-flex justify-content-evenly align-items-center list-unstyled gap-4" style="margin-bottom:0rem!important;">
@@ -569,24 +703,22 @@
 		<div class="col-8 col-md-3 d-flex col_new" style="padding: 0px;">
 			<div class="d-flex align-items-center w-100">
 				<img class="img_location" height="22px" width="22px" src="<?php echo base_url("assets/images/Frame 4.png") ?>">
-				<input class="form-control input_font px-3" list="" placeholder="Enter your location" style="border:1px sold red; padding:0px; margin:0px;" onmouseover="this.style.boxShadow='none'">
+				<input class="form-control input_font px-3" list="" placeholder="Enter your location" style="border:1px sold red; padding:0px; margin:0px;width:80%" onmouseover="this.style.boxShadow='none'">
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid outer_img" style="margin: 0px 0px;padding:0px 2rem;position:relative;">
-
-
-		<div class="sidebar-overlay"></div>
-		<div class="sidebar">
-			<div class="mid-text">
-				<p class="roboto bold text-white" style="font-size:1.5rem">Edu<span class=" text-primary">ease</span></p>
-			</div>
-			<button class="close-btn bg-primary bold" id="sidebar-close-btn">×</button>
-
-			<ul class="mt-2">
-				<li class="roboto py-1"><a class="py-2" href="#">Home</a></li>
-				<li class="roboto py-1"><a class="py-2" href="#">Blog</a></li>
-				<li class="roboto py-1"><a class="py-2" href="#">School</a></li>
-
-			</ul>
+	<div class="sidebar-overlay"></div>
+	<div class="sidebar">
+		<div class="mid-text">
+			<p class="roboto bold text-white" style="font-size:1.5rem">Edu<span class=" text-primary">ease</span></p>
 		</div>
+		<button class="close-btn bg-primary bold" id="sidebar-close-btn">×</button>
+
+		<ul class="mt-2">
+			<li class="roboto py-1"><a class="py-2" href="<?php echo base_url("home") ?>">Home</a></li>
+			<li class="roboto py-1"><a class="py-2" href="<?php echo base_url("blog") ?>">Blog</a></li>
+			<li class="roboto py-1"><a class="py-2" href="<?php echo base_url("school") ?>">School</a></li>
+
+		</ul>
+	</div>
+	<div class="container-fluid " data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300" style="margin: 0px 0px;padding:0px 0;position:relative;overflow:hidden">

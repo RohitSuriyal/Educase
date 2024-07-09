@@ -1,30 +1,60 @@
 <?php $this->load->view("common/header")  ?>
 <div class="container-fluid " style="padding:0px 0px;margin:0px 0px">
-    <img height="100%" width="100%" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/734e81d8-ee56-406d-a6ad-65a68916da85/dgmoq0q-1b62c95c-62f3-4368-846d-90bde1931734.jpg/v1/fill/w_894,h_894,q_70,strp/dragon_ball_goku_wallpaper__by_vnedit_dgmoq0q-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzczNGU4MWQ4LWVlNTYtNDA2ZC1hNmFkLTY1YTY4OTE2ZGE4NVwvZGdtb3EwcS0xYjYyYzk1Yy02MmYzLTQzNjgtODQ2ZC05MGJkZTE5MzE3MzQuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.MwlI35PHuNBXbpDweVwUJofj0mYQpMiZjJ9oIXam4tQ">
-    </img>
+    <img height="100%" width="100
+    %" id="dynamic" style="height:25rem!important;object-fit:cover;width:100%" src="data:image/*;base64,<?php echo $output[0]->image; ?>" />
+
 
 
 </div>
-<div class="row border  border border-primary">
-    <div class="col-10 border border-priamry">
-        <h1>Lbklhslklskg</h1>
-        vlsdvkhsdvkhsdvhsdkvjhskdvhjksdvjksdvsdvsdv
+
+<div class="row  mt-5 mb-5 flex justify-content-center" style="padding:0 4%">
+    <div class="col-md-8 me-5 px-5 blog_div" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" style="box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 2px 0 2px rgba(0, 0, 0, 0.1), 2px 0 2px rgba(0, 0, 0, 0.1);" style="background-color:#F9F9FF
+
+">
+
+        <div class=" my-3 grey"><?php $date = strtotime($output[0]->date);
+                                $formatted_date = date('jS, F Y', $date);
+                                echo $formatted_date; ?>
+        </div>
+        <h1><?php echo $output[0]->heading ?></h1>
+        <?php echo $output[0]->body ?>
+
+
 
     </div>
-    <div class="col-2 border border-primary">
-        <h1>Feature Blog</h1>
+    <div class="col-md-3" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        <h2 class="mb-3 px-0">Feature <span style="color:#001AFF">Blog</span></h2>
 
-        <div class="row">
-            <div class="col-12">
-                <img width="100%" heigt="100%" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/734e81d8-ee56-406d-a6ad-65a68916da85/dgmoq0q-1b62c95c-62f3-4368-846d-90bde1931734.jpg/v1/fill/w_894,h_894,q_70,strp/dragon_ball_goku_wallpaper__by_vnedit_dgmoq0q-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzczNGU4MWQ4LWVlNTYtNDA2ZC1hNmFkLTY1YTY4OTE2ZGE4NVwvZGdtb3EwcS0xYjYyYzk1Yy02MmYzLTQzNjgtODQ2ZC05MGJkZTE5MzE3MzQuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.MwlI35PHuNBXbpDweVwUJofj0mYQpMiZjJ9oIXam4tQ">
-                </img>
-                <span>23th july,2023</span>
-                <h5>This is the first title</h5>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae rem ad animi molestiae. Velit voluptate odit maiores tempore commodi! A cupiditate maxime laborum est culpa minus molestiae animi omnis! Iste vel sit tempore odit repellat neque maxime quibusdam perferendis veritatis.
+      
+        <?php foreach ($category as $c) : ?>
+            <div class="row blog_div single_blog mb-2">
+                <img class="px-0" style="border-top-left-radius:5%; border-top-right-radius:5%; object-fit:cover;" width="90%" height="200px!important" src="data:image/jpeg;base64, <?php echo $c->image; ?>" alt="Category Image">
+                <span class="px-0">23rd July, 2023</span>
+                <h6 class="px-0 bold"><?php echo $c->heading ?></h6>
+                <?php
+                $allowed_tags = '<p><h1><h2>';
+                $plainText = strip_tags($c->body, $allowed_tags);
+                $text = $plainText;
+                // Check if the body text is longer than 50 characters
+                if (strlen($text) > 200) {
+                    $text = substr($text, 0, 200);
+                    // Find the last space within the truncated text
+                    $last_space = strrpos($text, ' ');
+                    // Trim the text to the last space to avoid cutting off in the middle of a word
+                    $text = substr($text, 0, $last_space);
+                    // Add ellipsis
+                    $url = base_url('welcome/blog_page/') . $c->id;
 
+                    $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                    // Output the truncated body text with "Read more" link
+                    echo $text;
+                } else {
+                    echo $text;
+                }
+                ?>
             </div>
+        <?php endforeach; ?>
 
-        </div>
 
     </div>
 

@@ -1,27 +1,106 @@
-.blog_background{
-    background: url("../images/BLOG (1).png");
-    height: 488px;
-    width: 100%;
-    background-size: contain;
-    /* Set specific sizes for the background images */
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
+* {
+	outline: none !important;
+}
+//media query for the top bar
+
+
+.rounded_blog {
+	border-top-left-radius: 1.25rem !important;
+	border-top-right-radius: 1.25rem !important;
+}
+.sub_heading_text {
+	color: ##747474;
+}
+.content_text {
+	color: ##707070;
+	line-height: 23.44px !important;
+}
+.grey {
+	color: #898989 !important;
+}
+@font-face {
+	font-family: "Aparajita";
+	src: url("../aparaj.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Helvetica";
+	src: url("../helvetica.ttf") format("woff2"),
+		url("../helvetica.ttf") format("woff");
+	/* Add more formats if necessary */
+	font-weight: normal;
+	font-style: normal;
+}
+
+.aparajita_font {
+	font-family: "Aparajita", sans-serif;
+}
+.helvetica {
+	font-family: "Helvetica", Arial, sans-serif;
+}
+
+.blog_div h1 {
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	white-space: normal;
+	font-size: 30px !important;
+}
+.blog_div h2 {
+	font-size: 28px !important;
+	margin-bottom: 0px !important;
+}
+.blog_div img{
+	max-width:100%!important;
+	margin:5% 0px!important
+}
+
+.blog_div p {
+	margin-bottom: 0px !important;
+}
+.blog_div p strong{
+	font-size:1.2rem;
+}
+.blog_div li a{
+	text-decoration:none;
+}
+.custom_col_schol{
+	height:100%!important;
+}
+@media (min-width: 992px) {
+	.custom-col {
+		flex: 0 0 auto !important;
+		width: 22.666667% !important;
+	}
+}
+@media (min-width: 992px) {
+	.custom_col_schol {
+		flex: 0 0 auto !important;
+		width: 48% !important;
+		height:100%;
+	}
+}
+.pb_0 {
+	padding-bottom: 0;
+}
+.gal_tab {
+	flex: 0 0 auto!important;
+	width: 10.666667%!important;
+}
+.btn_pic.active{
+	background-color:#001AFF;
+	color:white;
+
 
 }
-.rounded_blog{
-    border-top-left-radius: 1.25rem !important;
-    border-top-right-radius: 1.25rem !important;
+.single_blog p{
+	padding:0px 0px!important;
+}
+.fee_text{
+	font-size:17px;
 
 }
-.sub_heading_text{
-    color:##747474;
 
-}
-.content_text{
-    color:##707070;
-    line-height:23.44px!important;
 
-}
-.grey{
-    color:#898989!important;
-}
+
+
