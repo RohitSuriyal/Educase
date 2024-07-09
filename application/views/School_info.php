@@ -28,14 +28,14 @@
 
 <div class="row">
     <div class="col-12 bold text-dark" style="margin:0 4%">
-        <h2 class="bold" style="margin-left:17px">
+        <h2 class="bold schoo_info_heading" style="margin-left:17px">
             School Information
         </h2>
     </div>
 
 
 </div>
-<div class="tabs" style="display:flex!important;gap:4rem!important;justify-content: flex-start!important;margin:0 4%">
+<div class="tabs tabs_school_info" style="display:flex!important;gap:4rem;justify-content: flex-start!important;margin:0 4%">
     <div class="tab active roboto bold " style="border-bottom:0px!important" onclick="openTab(event, 'tab1')">Overview</div>
     <div class="tab roboto bold" style="border-bottom:0px!important" onclick="openTab(event, 'tab2')">Admission</div>
     <div class="tab roboto bold" style="border-bottom:0px!important" onclick="openTab(event, 'tab3')">Facilities</div>
@@ -149,7 +149,7 @@
                 <div style="background-color:#F9F9FF" class="px-5 py-5 my-2  d-flex justify-content-center roboto bold">
                     video
                 </div>
-                <div class="d-flex  justify-content-end p-2" style="background-color:#F9F9FF">
+                <div class="d-flex select_total_div justify-content-end p-2" style="background-color:#F9F9FF">
                     <select id="select_total" class="px-4 py-1">
                         <option value="pre_nursery_total">Pre-Nursery</option>
                         <option value="Nursery_total" selected>Nursery</option>
@@ -311,7 +311,7 @@
             </div>
 
         </div>
-        <h2 class="text-center">Frequently Asked Question</h2>
+        <!-- <h2 class="text-center">Frequently Asked Question</h2>
         <div class="row position-relative mt-3" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);margin:0 2%">
 
             <li class="border list_button roboto p-3  list-unstyled d-flex justify-content-between position-relative roboto bold">
@@ -357,7 +357,7 @@
                 <li class="list-unstyled">Example</li>
                 <li class="list-unstyled">List</li>
             </ul>
-        </div>
+        </div> -->
 
     </div>
     <div id="tab2" class="tab-pane">
@@ -365,14 +365,14 @@
             <div class="col-md-7 py-4 school_div_bg ">
 
                 <div>
-                    <h2 class="roboto bold py-2 p-4" style="margin-left:3%">Fee Structure</h2>
+                    <h2 class="roboto bold py-2 p-4 top_heading" style="margin-left:3%">Fee Structure</h2>
                 </div>
 
-                <div class="row p-5 ">
+                <div class="row p-5 fee_div ">
                     <div class="col-md-6 ">
-                        <p style="font-size:24px" class="helvetica">Fee Structure for <span class="bold" id="class_name_fee">Nursery</span></p>
+                        <p style="font-size:24px" class="helvetica fee_heading_main">Fee Structure for <span class="bold fee_heading_main " id="class_name_fee">Nursery</span></p>
                     </div>
-                    <div class="col-md-6  ">
+                    <div class="col-md-6">
 
                         <select id="select_class" class="px-4 py-2">
                             <option value="Prenursery">Prenursery</option>
@@ -396,8 +396,8 @@
                     </div>
                     <div id="Prenursery" class="row mt-5 fee">
 
-                        <div class="col-md-4">
-                            <h5 class="mb-4">Type</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Type</h5>
                             <p class="prenur_feename helvetica fee_text"></p>
                             <p class="prenur_feename helvetica fee_text"></p>
                             <p class="prenur_feename helvetica fee_text"></p>
@@ -411,8 +411,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5 class="mb-4">Amount</h5>
+                        <div class="col-4 ">
+                            <h5 class="mb-4 fee_heading">Amount</h5>
                             <p class="prenur_amount helvetica fee_text"></p>
                             <p class="prenur_amount helvetica fee_text"></p>
                             <p class="prenur_amount helvetica fee_text"></p>
@@ -427,8 +427,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5 class="mb-4">Frequency</h5>
+                        <div class="col-4 ">
+                            <h5 class="mb-4 fee_heading">Frequency</h5>
                             <p class="prenur_frequency helvetica fee_text"></p>
                             <p class="prenur_frequency helvetica fee_text"></p>
                             <p class="prenur_frequency helvetica fee_text"></p>
@@ -444,8 +444,8 @@
                     </div>
                     <div id="Nursery" class="row mt-5 fee">
 
-                        <div class="col-md-4">
-                            <h5 class="mb-4">Type</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Type</h5>
                             <p class="nur_feename helvetica fee_text"></p>
                             <p class="nur_feename helvetica fee_text"></p>
                             <p class="nur_feename helvetica fee_text"></p>
@@ -459,8 +459,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5 class="mb-4">Amount</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Amount</h5>
                             <p class="nur_amount helvetica fee_text"></p>
                             <p class="nur_amount helvetica fee_text"></p>
                             <p class="nur_amount helvetica fee_text"></p>
@@ -475,8 +475,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5 class="mb-4">Frequency</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Frequency</h5>
                             <p class="nur_frequency helvetica fee_text"></p>
                             <p class="nur_frequency helvetica fee_text"></p>
                             <p class="nur_frequency helvetica fee_text"></p>
@@ -492,8 +492,8 @@
                     </div>
                     <div id="LKG" class="row mt-5 fee">
 
-                        <div class="col-md-4">
-                            <h5>Type</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Type</h5>
                             <p class="lkg_feename helvetica  fee_text"></p>
                             <p class="lkg_feename helvetica  fee_text"></p>
                             <p class="lkg_feename helvetica  fee_text"></p>
@@ -507,8 +507,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5>Amount</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Amount</h5>
                             <p class="lkg_amount helvetica fee_text"></p>
                             <p class="lkg_amount helvetica fee_text"></p>
                             <p class="lkg_amount helvetica fee_text"></p>
@@ -523,8 +523,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5>Frequency</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Frequency</h5>
                             <p class="lkg_frequency helvetica fee_text"></p>
                             <p class="lkg_frequency helvetica fee_text"></p>
                             <p class="lkg_frequency helvetica fee_text"></p>
@@ -543,8 +543,8 @@
 
 
 
-                        <div class="col-md-4">
-                            <h5>Type</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Type</h5>
                             <p class="ukg_feename helvetica fee_text"></p>
                             <p class="ukg_feename helvetica fee_text"></p>
                             <p class="ukg_feename helvetica fee_text"></p>
@@ -558,8 +558,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5>Amount</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Amount</h5>
                             <p class="ukg_amount helvetica fee_text"></p>
                             <p class="ukg_amount helvetica fee_text"></p>
                             <p class="ukg_amount helvetica fee_text"></p>
@@ -574,8 +574,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5>Frequency</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Frequency</h5>
                             <p class="ukg_frequency helvetica fee_text"></p>
                             <p class="ukg_frequency helvetica fee_text"></p>
                             <p class="ukg_frequency helvetica fee_text"></p>
@@ -595,8 +595,8 @@
 
 
 
-                        <div class="col-md-4">
-                            <h5>Type</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Type</h5>
                             <p class="grade1_feename helvetica fee_text"></p>
                             <p class="grade1_feename helvetica fee_text"></p>
                             <p class="grade1_feename helvetica fee_text"></p>
@@ -610,8 +610,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5>Amount</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Amount</h5>
                             <p class="grade1_amount helvetica fee_text"></p>
                             <p class="grade1_amount helvetica fee_text"></p>
                             <p class="grade1_amount helvetica fee_text"></p>
@@ -626,8 +626,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5>Frequency</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Frequency</h5>
                             <p class="grade1_frequency fee_text"></p>
                             <p class="grade1_frequency fee_text"></p>
                             <p class="grade1_frequency fee_text"></p>
@@ -643,8 +643,8 @@
                     </div>
                     <div id="II" class="row mt-5 fee">
 
-                        <div class="col-md-4">
-                            <h5>Type</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Type</h5>
                             <p class="grade2_feename fee_text"></p>
                             <p class="grade2_feename fee_text"></p>
                             <p class="grade2_feename fee_text"></p>
@@ -658,8 +658,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5>Amount</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Amount</h5>
                             <p class="grade2_amount fee_text"></p>
                             <p class="grade2_amount fee_text"></p>
                             <p class="grade2_amount fee_text"></p>
@@ -674,8 +674,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5>Frequency</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Frequency</h5>
                             <p class="grade2_frequency fee_text"></p>
                             <p class="grade2_frequency fee_text"></p>
                             <p class="grade2_frequency fee_text"></p>
@@ -691,8 +691,8 @@
                     </div>
                     <div id="III" class="row mt-5 fee">
 
-                        <div class="col-md-4">
-                            <h5>Type</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Type</h5>
                             <p class="grade3_feename fee_text"></p>
                             <p class="grade3_feename fee_text"></p>
                             <p class="grade3_feename fee_text"></p>
@@ -706,8 +706,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5>Amount</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Amount</h5>
                             <p class="grade3_amount fee_text"></p>
                             <p class="grade3_amount fee_text"></p>
                             <p class="grade3_amount fee_text"></p>
@@ -722,8 +722,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5>Frequency</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Frequency</h5>
                             <p class="grade3_frequency fee_text"></p>
                             <p class="grade3_frequency fee_text"></p>
                             <p class="grade3_frequency fee_text"></p>
@@ -739,8 +739,8 @@
                     </div>
                     <div id="IV" class="row mt-5 fee">
 
-                        <div class="col-md-4">
-                            <h5>Type</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Type</h5>
                             <p class="grade4_feename fee_text"></p>
                             <p class="grade4_feename fee_text"></p>
                             <p class="grade4_feename fee_text"></p>
@@ -754,8 +754,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5>Amount</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Amount</h5>
                             <p class="grade4_amount fee_text"></p>
                             <p class="grade4_amount fee_text"></p>
                             <p class="grade4_amount fee_text"></p>
@@ -770,8 +770,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5>Frequency</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Frequency</h5>
                             <p class="grade4_frequency fee_text"></p>
                             <p class="grade4_frequency fee_text"></p>
                             <p class="grade4_frequency fee_text"></p>
@@ -787,8 +787,8 @@
                     </div>
                     <div id="V" class="row mt-5 fee">
 
-                        <div class="col-md-4">
-                            <h5>Type</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Type</h5>
                             <p class="grade5_feename fee_text"></p>
                             <p class="grade5_feename fee_text"></p>
                             <p class="grade5_feename fee_text"></p>
@@ -802,8 +802,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5>Amount</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Amount</h5>
                             <p class="grade5_amount fee_text"></p>
                             <p class="grade5_amount fee_text"></p>
                             <p class="grade5_amount fee_text"></p>
@@ -818,8 +818,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5>Frequency</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Frequency</h5>
                             <p class="grade5_frequency fee_text"></p>
                             <p class="grade5_frequency fee_text"></p>
                             <p class="grade5_frequency fee_text"></p>
@@ -835,8 +835,8 @@
                     </div>
                     <div id="VI" class="row mt-5 fee">
 
-                        <div class="col-md-4">
-                            <h5>Type</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Type</h5>
                             <p class="grade6_feename fee_text"></p>
                             <p class="grade6_feename fee_text"></p>
                             <p class="grade6_feename fee_text"></p>
@@ -850,8 +850,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5>Amount</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Amount</h5>
                             <p class="grade6_amount fee_text"></p>
                             <p class="grade6_amount fee_text"></p>
                             <p class="grade6_amount fee_text"></p>
@@ -866,8 +866,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5>Frequency</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Frequency</h5>
                             <p class="grade6_frequency fee_text"></p>
                             <p class="grade6_frequency fee_text"></p>
                             <p class="grade6_frequency fee_text"></p>
@@ -883,8 +883,8 @@
                     </div>
                     <div id="VII" class="row mt-5 fee">
 
-                        <div class="col-md-4">
-                            <h5>Type</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Type</h5>
                             <p class="grade7_feename fee_text"></p>
                             <p class="grade7_feename fee_text"></p>
                             <p class="grade7_feename fee_text"></p>
@@ -898,8 +898,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5>Amount</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Amount</h5>
                             <p class="grade7_amount fee_text"></p>
                             <p class="grade7_amount fee_text"></p>
                             <p class="grade7_amount fee_text"></p>
@@ -914,8 +914,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5>Frequency</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Frequency</h5>
                             <p class="grade7_frequency fee_text"></p>
                             <p class="grade7_frequency fee_text"></p>
                             <p class="grade7_frequency fee_text"></p>
@@ -931,8 +931,8 @@
                     </div>
                     <div id="VIII" class="row mt-5 fee">
 
-                        <div class="col-md-4">
-                            <h5>Type</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Type</h5>
                             <p class="grade8_feename fee_text"></p>
                             <p class="grade8_feename fee_text"></p>
                             <p class="grade8_feename fee_text"></p>
@@ -946,8 +946,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5>Amount</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Amount</h5>
                             <p class="grade8_amount fee_text"></p>
                             <p class="grade8_amount fee_text"></p>
                             <p class="grade8_amount fee_text"></p>
@@ -962,8 +962,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5>Frequency</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Frequency</h5>
                             <p class="grade8_frequency fee_text"></p>
                             <p class="grade8_frequency fee_text"></p>
                             <p class="grade8_frequency fee_text"></p>
@@ -978,8 +978,8 @@
                     </div>
                     <div id="IX" class="row mt-5 fee">
 
-                        <div class="col-md-4">
-                            <h5>Type</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Type</h5>
                             <p class="grade9_feename fee_text"></p>
                             <p class="grade9_feename fee_text"></p>
                             <p class="grade9_feename fee_text"></p>
@@ -993,8 +993,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5>Amount</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Amount</h5>
                             <p class="grade9_amount fee_text"></p>
                             <p class="grade9_amount fee_text"></p>
                             <p class="grade9_amount fee_text"></p>
@@ -1009,8 +1009,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5>Frequency</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Frequency</h5>
                             <p class="grade9_frequency fee_text"></p>
                             <p class="grade9_frequency fee_text"></p>
                             <p class="grade9_frequency fee_text"></p>
@@ -1025,8 +1025,8 @@
                     </div>
                     <div id="X" class="row mt-5 fee">
 
-                        <div class="col-md-4">
-                            <h5>Type</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Type</h5>
                             <p class="grade10_feename fee_text"></p>
                             <p class="grade10_feename fee_text"></p>
                             <p class="grade10_feename fee_text"></p>
@@ -1040,8 +1040,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5>Amount</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Amount</h5>
                             <p class="grade10_amount fee_text"></p>
                             <p class="grade10_amount fee_text"></p>
                             <p class="grade10_amount fee_text"></p>
@@ -1056,8 +1056,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5>Frequency</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Frequency</h5>
                             <p class="grade10_frequency fee_text"></p>
                             <p class="grade10_frequency fee_text"></p>
                             <p class="grade10_frequency fee_text"></p>
@@ -1073,8 +1073,8 @@
                     </div>
                     <div id="XI" class="row mt-5 fee">
 
-                        <div class="col-md-4">
-                            <h5>Type</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Type</h5>
                             <p class="grade11_feename fee_text"></p>
                             <p class="grade11_feename fee_text"></p>
                             <p class="grade11_feename fee_text"></p>
@@ -1088,8 +1088,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5>Amount</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Amount</h5>
                             <p class="grade11_amount fee_text"></p>
                             <p class="grade11_amount fee_text"></p>
                             <p class="grade11_amount fee_text"></p>
@@ -1104,8 +1104,8 @@
 
 
                         </div>
-                        <div class="col-md-4">
-                            <h5>Frequency</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Frequency</h5>
                             <p class="grade11_frequency fee_text"></p>
                             <p class="grade11_frequency fee_text"></p>
                             <p class="grade11_frequency fee_text"></p>
@@ -1121,8 +1121,8 @@
                     </div>
                     <div id="XII" class="row mt-5 fee">
 
-                        <div class="col-md-4">
-                            <h5>Type</h5>
+                        <div class="col-4">
+                            <h5 class="mb-4 fee_heading">Type</h5>
                             <p class="grade12_feename fee_text"></p>
                             <p class="grade12_feename fee_text"></p>
                             <p class="grade12_feename fee_text"></p>
@@ -1137,7 +1137,7 @@
 
                         </div>
                         <div class="col-md-4">
-                            <h5>Amount</h5>
+                            <h5 class="mb-4 fee_heading">Amount</h5>
                             <p class="grade12_amount fee_text"></p>
                             <p class="grade12_amount fee_text"></p>
                             <p class="grade12_amount fee_text"></p>
@@ -1153,7 +1153,7 @@
 
                         </div>
                         <div class="col-md-4">
-                            <h5>Frequency</h5>
+                            <h5 class="mb-4 fee_heading">Frequency</h5>
                             <p class="grade12_frequency fee_text"></p>
                             <p class="grade12_frequency fee_text"></p>
                             <p class="grade12_frequency fee_text"></p>
@@ -1172,12 +1172,12 @@
 
 
             </div>
-            <div class="col-md-5" style="margin-top:-6px">
+            <div class="col-md-5 total_fee_div_ad" style="margin-top:-6px">
 
                 <div style="background-color:#F9F9FF" class="px-5 py-5 my-2  d-flex justify-content-center roboto bold">
                     Admission
                 </div>
-                <div class="d-flex justify-content-end px-2 py-2 " style="background-color:#F9F9FF">
+                <div class="d-flex justify-content-end px-2 py-2 select_total_div" style="background-color:#F9F9FF">
                     <select id="select_total_ad" class="px-4 py-2">
                         <option value="pre_nursery_total_ad">Pre-Nursery</option>
                         <option value="Nursery_total_ad" selected>Nursery</option>
@@ -1306,7 +1306,7 @@
 
 
                 </div>
-                <div class="d-flex justify-content-end px-2 py-2 mt-2" style="background-color:#F9F9FF">
+                <div class="d-flex  justify-content-end  px-2 py-2 mt-2 select_total_div" style="background-color:#F9F9FF">
                     <select id="select_total_ad_m" class="px-4 py-2">
                         <option value="pre_nursery_total_ad_m">Pre-Nursery</option>
                         <option value="Nursery_total_ad_m" selected>Nursery</option>
@@ -1451,7 +1451,7 @@
                 <div class="col-md-8">
                     <h4 class="bold">Admission Criteria & Eligibility</h4>
                 </div>
-                <div class="col-md-4 d-flex justify-content-center">
+                <div class="col-md-4 d-flex justify-content-center select_total_div">
                     <select id="select_class_eligibility" class="px-4 py-2">
                         <option value="prenursery">Pre_nursery</option>
                         <option value="Nursery" selected>Nursery</option>
@@ -2607,23 +2607,23 @@
     <div id="tab4" class="tab-pane p-4" style="background-color:#F9F9FF
 
 ">
-        <div class="row d-flex justify-content-center gap-2 mb-5">
-            <div class="col-md-2 gal_tab">
+        <div class="row d-flex justify-content-center image_tab_div gap-2 mb-5">
+            <div class="col-md-2 image_tab gal_tab">
                 <button data="pic1" class="btn btn_pic active px-4 w-100" style="box-shadow: none;border-radius:23px">All</button>
             </div>
-            <div class="col-md-2 gal_tab">
+            <div class="col-md-2 gal_tab image_tab">
                 <button data="pic2" class="btn btn_pic px-4 w-100" style="box-shadow: none;border-radius:23px">Infrastructure</button>
 
             </div>
-            <div class="col-md-2 gal_tab">
+            <div class="col-md-2 gal_tab image_tab">
                 <button data="pic3" class="btn  btn_pic px-4 w-100" style="box-shadow: none;border-radius:23px">Classroom</button>
 
             </div>
-            <div class="col-md-2 gal_tab">
+            <div class="col-md-2 gal_tab image_tab">
                 <button data="pic4" class="btn  btn_pic px-4 w-100" style="box-shadow: none;border-radius:23px">Library</button>
 
             </div>
-            <div class="col-md-2 gal_tab">
+            <div class="col-md-2 gal_tab image_tab">
                 <button data="pic5" class="btn  btn_pic px-4 w-100" style="box-shadow: none;border-radius:23px">Playground</button>
 
             </div>
@@ -2642,7 +2642,7 @@
                 <div class="row mt-5 justify-content-center">
                     <?php for ($j = $i; $j < $i + 4 && $j < $image_count; $j++) : ?>
                         <div class="col-md-3">
-                            <img src="data:image/jpeg;base64,<?php echo $data_images[$j]->image; ?>" class="img-fluid">
+                            <img  src="data:image/jpeg;base64,<?php echo $data_images[$j]->image; ?>" class="img-fluid">
                         </div>
                     <?php endfor; ?>
                 </div>
@@ -2903,9 +2903,13 @@
                         var frequency = data.frequency;
                         var amount = data.amount;
                         $('.prenur_feename').each(function(index, element) {
+                            if (amount[index] == 0) {
+                                $(this).text('NA');
+                            } else {
+                                $(this).text(`${amount[index]}`);
+                            }
 
-
-                            $(this).text(`${feename[index]}`);
+                           
                         });
                         $('.prenur_frequency').each(function(index, element) {
 
@@ -2964,9 +2968,13 @@
                             $(this).text(`${frequency[index]}`);
                         });
                         $('.ukg_amount').each(function(index, element) {
+                            if (amount[index] == 0) {
+                                $(this).text('NA');
+                            } else {
+                                $(this).text(`${amount[index]}`);
+                            }
 
-
-                            $(this).text(`${amount[index]}`);
+                           
                         });
 
                     }
@@ -2986,9 +2994,13 @@
                             $(this).text(`${frequency[index]}`);
                         });
                         $('.grade1_amount').each(function(index, element) {
+                            if (amount[index] == 0) {
+                                $(this).text('NA');
+                            } else {
+                                $(this).text(`${amount[index]}`);
+                            }
 
-
-                            $(this).text(`${amount[index]}`);
+                            
                         });
 
                     }
@@ -3008,7 +3020,11 @@
                         });
                         $('.grade2_amount').each(function(index, element) {
 
-                            $(this).text(`${amount[index]}`);
+                            if (amount[index] == 0) {
+                                $(this).text('NA');
+                            } else {
+                                $(this).text(`${amount[index]}`);
+                            }
                         });
 
                     }
@@ -3030,7 +3046,11 @@
                         $('.grade3_amount').each(function(index, element) {
 
 
-                            $(this).text(`${amount[index]}`);
+                            if (amount[index] == 0) {
+                                $(this).text('NA');
+                            } else {
+                                $(this).text(`${amount[index]}`);
+                            }
                         });
 
                     }
@@ -3052,7 +3072,11 @@
                         $('.grade4_amount').each(function(index, element) {
 
 
-                            $(this).text(`${amount[index]}`);
+                            if (amount[index] == 0) {
+                                $(this).text('NA');
+                            } else {
+                                $(this).text(`${amount[index]}`);
+                            }
                         });
 
                     }
@@ -3074,7 +3098,11 @@
                         $('.grade5_amount').each(function(index, element) {
 
 
-                            $(this).text(`${amount[index]}`);
+                            if (amount[index] == 0) {
+                                $(this).text('NA');
+                            } else {
+                                $(this).text(`${amount[index]}`);
+                            }
                         });
 
                     }
@@ -3096,7 +3124,11 @@
                         $('.grade6_amount').each(function(index, element) {
 
 
-                            $(this).text(`${amount[index]}`);
+                            if (amount[index] == 0) {
+                                $(this).text('NA');
+                            } else {
+                                $(this).text(`${amount[index]}`);
+                            }
                         });
 
                     }
@@ -3118,7 +3150,11 @@
                         $('.grade7_amount').each(function(index, element) {
 
 
-                            $(this).text(`${amount[index]}`);
+                            if (amount[index] == 0) {
+                                $(this).text('NA');
+                            } else {
+                                $(this).text(`${amount[index]}`);
+                            }
                         });
 
                     }
@@ -3141,7 +3177,11 @@
                         $('.grade8_amount').each(function(index, element) {
 
 
-                            $(this).text(`${amount[index]}`);
+                            if (amount[index] == 0) {
+                                $(this).text('NA');
+                            } else {
+                                $(this).text(`${amount[index]}`);
+                            }
                         });
 
                     }
@@ -3164,7 +3204,11 @@
                         $('.grade9_amount').each(function(index, element) {
 
 
-                            $(this).text(`${amount[index]}`);
+                            if (amount[index] == 0) {
+                                $(this).text('NA');
+                            } else {
+                                $(this).text(`${amount[index]}`);
+                            }
                         });
 
                     }
@@ -3186,7 +3230,11 @@
                         $('.grade10_amount').each(function(index, element) {
 
 
-                            $(this).text(`${amount[index]}`);
+                            if (amount[index] == 0) {
+                                $(this).text('NA');
+                            } else {
+                                $(this).text(`${amount[index]}`);
+                            }
                         });
 
                     }
@@ -3205,7 +3253,11 @@
                         });
                         $('.grade11_amount').each(function(index, element) {
 
-                            $(this).text(`${amount[index]}`);
+                            if (amount[index] == 0) {
+                                $(this).text('NA');
+                            } else {
+                                $(this).text(`${amount[index]}`);
+                            }
                         });
 
                     }
@@ -3226,8 +3278,11 @@
                         });
                         $('.grade12_amount').each(function(index, element) {
 
-
-                            $(this).text(`${amount[index]}`);
+                            if (amount[index] == 0) {
+                                $(this).text('NA');
+                            } else {
+                                $(this).text(`${amount[index]}`);
+                            }
                         });
 
                     }

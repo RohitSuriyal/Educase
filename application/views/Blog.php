@@ -1,6 +1,6 @@
 <?php $this->load->view('common/header'); ?>
 <div class="container-fluid blog_background d-flex flex-column align-items-center justify-content-center">
-    <h1 style="font-size:50px" class="text-center aparajita_font ">Discover Latest Blogs on <span style="color:#001AFF">Schools, Education & Parenting</span></h1>
+    <h1 style="font-size:50px" class="text-center aparajita_font blog_text ">Discover Latest Blogs on <span style="color:#001AFF">Schools, Education & Parenting</span></h1>
     <p style="font-size:14px" class="text-center roboto sub_heading_text mb-0 w-100">We are your one-stop solution for finding information-rich and inspirational blogs on schools,admission, parenting, and </p>
     <p style="font-size:14px" class="text-center roboto sub_heading_text mb-0 "> education. Take a lead to become the next-gen smart parents</p>
 

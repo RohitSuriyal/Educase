@@ -156,7 +156,7 @@
                 <div class="tab   helvetica" onclick="openTab(event, 'tab2')">Day School</div>
                 <div class="tab   helvetica" onclick="openTab(event, 'tab3')">Boarding School</div>
                 <div class="tab   helvetica" onclick="openTab(event, 'tab4')">Day Boarding School</div>
-                <div class="tab  bold helvetica" onclick="openTab(event, 'tab5')">Play School</div>
+                <div class="tab   helvetica" onclick="openTab(event, 'tab5')">Play School</div>
 
             </div>
             <div class="tab-content" style="width:100%;">
@@ -171,7 +171,7 @@
                                     <div class="col-md-7 px-3">
                                         <div>
                                             <h3 class="roboto mb-0 mt-2"><?php echo $row->name ?></h3>
-                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo IMG_URL . 'map-pin.png'; ?>" /></span><span style="margin-top:3px;font-size:15px"><?php echo $row->address ?></span></p>
+                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo IMG_URL . 'map-pin.png'; ?>" /></span><span style="margin-top:3px;font-size:15px"><?php echo $row->state ?></span></p>
                                         </div>
                                         <div class="row mt-5">
                                             <div class="col-md-4 roboto">
@@ -219,7 +219,7 @@
                                     <div class="col-md-7 px-3">
                                         <div>
                                             <h3 class="roboto mb- mt-2"><?php echo $row->name ?></h3>
-                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo IMG_URL . 'map-pin.png'; ?>" /></span><span style="margin-top:3px"><?php echo $row->address ?></span></p>
+                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo IMG_URL . 'map-pin.png'; ?>" /></span><span style="margin-top:3px"><?php echo $row->state ?></span></p>
                                         </div>
                                         <div class="row mt-5">
                                             <div class="col-md-4 roboto">
@@ -258,7 +258,7 @@
                                     <div class="col-md-7 px-3">
                                         <div>
                                             <h3 class="roboto mb- mt-2"><?php echo $row->name ?></h3>
-                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo IMG_URL . 'map-pin.png'; ?>" /></span><span style="margin-top:3px"><?php echo $row->address ?></span></p>
+                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo IMG_URL . 'map-pin.png'; ?>" /></span><span style="margin-top:3px"><?php echo $row->state ?></span></p>
                                         </div>
                                         <div class="row mt-5">
                                             <div class="col-md-4 roboto">
@@ -297,7 +297,7 @@
                                     <div class="col-md-7 px-3">
                                         <div>
                                             <h3 class="roboto mb- mt-2"><?php echo $row->name ?></h3>
-                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo IMG_URL . 'map-pin.png'; ?>" /></span><span style="margin-top:3px"><?php echo $row->address ?></span></p>
+                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo IMG_URL . 'map-pin.png'; ?>" /></span><span style="margin-top:3px"><?php echo $row->state ?></span></p>
                                         </div>
                                         <div class="row mt-5">
                                             <div class="col-md-4 roboto">
@@ -326,8 +326,8 @@
                     </div>
                 </div>
                 <div id="tab5" class="tab-pane">
-                <div id="school_div">
-                   
+                    <div id="school_div">
+
                         <?php if (!empty($play_school)) : ?>
                             <?php foreach ($play_school as $index => $row) : ?>
                                 <div class="row mt-4" style="box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.5);">
@@ -337,7 +337,7 @@
                                     <div class="col-md-7 px-3">
                                         <div>
                                             <h3 class="roboto mb- mt-2"><?php echo $row->name ?></h3>
-                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo IMG_URL . 'map-pin.png'; ?>" /></span><span style="margin-top:3px"><?php echo $row->address ?></span></p>
+                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo IMG_URL . 'map-pin.png'; ?>" /></span><span style="margin-top:3px"><?php echo $row->state ?></span></p>
                                         </div>
                                         <div class="row mt-5">
                                             <div class="col-md-4 roboto">
@@ -364,8 +364,8 @@
                             <?php endforeach ?>
                         <?php endif; ?>
                     </div>
-               
-            </div>
+
+                </div>
             </div>
 
 
@@ -430,7 +430,7 @@
         }
     }
     if (school != null) {
-        
+
         {
             school.forEach(function(id) {
                 $(`#${id}`).prop('checked', true);
@@ -438,8 +438,13 @@
         }
     }
     var data = <?php echo json_encode($this->session->userdata("class_data"))  ?>;
+    
 
     if (data != null) {
+        if(data.length===0){
+            $("#tab1").append(`<p class="bold" style="margin-top:10%;text-align:center">NO data available</p>`)
+        }
+        console.log(data);
         data.forEach(function(d) {
             $("#tab1").append(`
                     <div class="row mt-2" style="box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.5);">
@@ -453,7 +458,7 @@
                     <span>
                         <img height="20px" width="20px" src="<?php echo IMG_URL . 'map-pin.png'; ?>" />
                     </span>
-                    ${d.address}
+                    ${d.state}
                 </p>
                     </div>
                 <div class="row mt-5">
@@ -490,6 +495,10 @@
 
 
 
+
+
+
+
     //this is for the automattic show if input are checked
     $('.dropdown').each(function() {
         if ($(this).find('input[type="checkbox"]:checked').length > 0) {
@@ -515,7 +524,7 @@
         var school_type = [];
         let class_new = [];
         var board = [];
-        var ownership=[]
+        var ownership = []
         $(".class:checked").each(function() {
             class_new.push($(this).attr('id'));
         });
@@ -526,13 +535,13 @@
 
 
         })
-        console.log(board);
+
         $(".school_type:checked").each(function() {
             school_type.push($(this).val());
 
         })
-        
-        
+
+
         if (school_type.length === 0 && class_new.length === 0 && board.length === 0) {
             window.location.href = "<?php echo base_url('welcome/school'); ?>";
 
@@ -546,7 +555,7 @@
                     board: board,
                     class_new: class_new,
                     school: school_type,
-                   
+
 
                 },
                 dataType: "json",

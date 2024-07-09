@@ -7,8 +7,8 @@
 
 </div>
 
-<div class="row  mt-5 mb-5 flex justify-content-center" style="padding:0 4%">
-    <div class="col-md-8 me-5 px-5 blog_div" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" style="box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 2px 0 2px rgba(0, 0, 0, 0.1), 2px 0 2px rgba(0, 0, 0, 0.1);" style="background-color:#F9F9FF
+<div class="row upper_single_div  mt-5 mb-5 flex justify-content-center" style="padding:0 4%">
+    <div class="col-md-8 me-5 px-5 blog_div single_div" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" style="box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 2px 0 2px rgba(0, 0, 0, 0.1), 2px 0 2px rgba(0, 0, 0, 0.1);" style="background-color:#F9F9FF
 
 ">
 

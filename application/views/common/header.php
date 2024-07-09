@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<!-- Bootstrap CSS -->
-	
+
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="<?php echo CSS_URL . "school.css" ?>" />
@@ -32,15 +32,16 @@
 
 
 	<style>
-.blog_background {
-	background: url("<?php echo base_url("assets/images/BLOG (1).png") ?>");
-	height: 488px;
-	width: 100%;
-	background-size: contain;
-	/* Set specific sizes for the background images */
-	background-position: 6rem 10px;
-	background-repeat: no-repeat;
-}
+		.blog_background {
+			background: url("<?php echo base_url("assets/images/BLOG (1).png") ?>");
+			height: 488px;
+			width: 100%;
+			background-size: contain;
+			/* Set specific sizes for the background images */
+			background-position: 6rem 10px;
+			background-repeat: no-repeat;
+		}
+
 		.custom img {
 			width: 100% !important;
 			height: 100% !important;
@@ -354,13 +355,102 @@
 
 				height: auto !important;
 			}
-			.tab_content{
-				padding:0rem 1rem!Important;
+
+			.tab_content {
+				padding: 0rem 1rem !Important;
 			}
-			.blog_div_mt{
-				
+
+			.blog_text {
+				font-size: 32px !Important;
 			}
-			
+
+			.blog_background {
+				height: 328px !important;
+				background-position: 0rem 7px !important;
+			}
+
+			.tabs {
+				margin: 0 2rem;
+
+			}
+
+			.tabs_school_info {
+				gap: 0rem !important;
+			}
+
+			.tab {
+				padding: 3px 0px !Important;
+				margin: 8px;
+			}
+
+			.single_div {
+				margin: 0 2% !important
+			}
+
+			.upper_single_div {
+				padding: 0 11% !important;
+			}
+
+			.school_info img {
+				height: 300px !important;
+			}
+
+			.schoo_info_heading {
+				margin: 8% 0 !important;
+				text-align: center;
+			}
+
+			.select_total_div {
+				justify-content: start !important;
+			}
+
+			.image_tab_div {
+				flex-direction: column !important;
+			}
+
+			.image_tab {
+				width: 96.99% !important;
+				margin: 2% 0;
+			}
+
+			.gallery_pic {
+				margin-bottom: 2%;
+			}
+
+			.img-fluid {
+				margin-bottom: 3%;
+			}
+
+			.total_fee_div_ad {
+				padding: 0 0 !important;
+			}
+
+			.fee_div {
+				padding: 0.8rem !important;
+			}
+
+			.fee_text {
+				font-size: 12px !important;
+				text-align: center !important;
+			}
+
+			.fee_heading {
+				text-align: center;
+				font-size: 16px !Important;
+			}
+
+			.fee_heading_main {
+
+				font-size: 20px !important;
+
+			}
+
+			.top_heading {
+				margin-left: -4% !important;
+			}
+
+
+
 
 
 		}
@@ -593,7 +683,7 @@
 		.mid-text {
 			position: absolute;
 			top: 39px;
-			left: 24%;
+			left: 33%;
 			transform: translate(-50%, -50%);
 			animation: shake 3s linear;
 			/* Apply animation */
@@ -681,6 +771,9 @@
 
 			animation: slideInFromLeft 1s ease-out;
 		}
+		
+
+		
 	</style>
 	<title>Hello, world!</title>
 </head>
@@ -703,14 +796,15 @@
 		<div class="col-8 col-md-3 d-flex col_new" style="padding: 0px;">
 			<div class="d-flex align-items-center w-100">
 				<img class="img_location" height="22px" width="22px" src="<?php echo base_url("assets/images/Frame 4.png") ?>">
-				<input class="form-control input_font px-3" list="" placeholder="Enter your location" style="border:1px sold red; padding:0px; margin:0px;width:80%" onmouseover="this.style.boxShadow='none'">
+				<input class="form-control input_font px-3" list="" placeholder="Enter your location" style="border:1px sold red; position:relative; padding:0px; margin:0px;width:80%" oninput="checkInput(this)" onmouseover="this.style.boxShadow='none'">
+				
 			</div>
 		</div>
 	</div>
 	<div class="sidebar-overlay"></div>
 	<div class="sidebar">
 		<div class="mid-text">
-			<p class="roboto bold text-white" style="font-size:1.5rem">Edu<span class=" text-primary">ease</span></p>
+			<p class="roboto bold text-white" style="font-size:1rem">FINDMY<span class=" text-primary">SCHOOL</span></p>
 		</div>
 		<button class="close-btn bg-primary bold" id="sidebar-close-btn">×</button>
 

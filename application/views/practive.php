@@ -33,9 +33,9 @@ class YourController extends CI_Controller {
 
 
 //this is the view
-<!-- application/views/school_view.php -->
+// <!-- application/views/school_view.php -->
 
-<!-- Display initial school information -->
+// <!-- Display initial school information -->
 <div id="school-info">
    <h2>School Information</h2>
    <p>Name: <?php echo $initial_school_info['name']; ?></p>
