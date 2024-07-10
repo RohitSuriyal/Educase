@@ -2641,8 +2641,8 @@
             <?php for ($i = 0; $i < $image_count; $i += 4) : ?>
                 <div class="row mt-5 justify-content-center">
                     <?php for ($j = $i; $j < $i + 4 && $j < $image_count; $j++) : ?>
-                        <div class="col-md-3">
-                            <img  src="data:image/jpeg;base64,<?php echo $data_images[$j]->image; ?>" class="img-fluid">
+                        <div class="col-md-3 gal_image">
+                            <img class="" width="100%" height="100%" src="data:image/jpeg;base64,<?php echo $data_images[$j]->image; ?>" class="">
                         </div>
                     <?php endfor; ?>
                 </div>
@@ -2658,13 +2658,13 @@
             ?>
 
             <?php for ($i = 0; $i < $image_count; $i += 4) : ?>
-                <div class="row mt-5">
+                <div class="row mt-5 gal_image">
                     <?php for ($j = $i; $j < $i + 4 && $j < $image_count; $j++) : ?>
                         <?php if ($data_images[$j]->category === "Infrastructure") : ?>
                             <?php $category_exist = true ?>
 
                             <div class="col-md-3">
-                                <img src="data:image/jpeg;base64,<?php echo $data_images[$j]->image; ?>" class="img-fluid">
+                                <img width="100%" height="100%" src="data:image/jpeg;base64,<?php echo $data_images[$j]->image; ?>" class="">
                             </div>
                         <?php endif; ?>
                     <?php endfor; ?>
@@ -2685,13 +2685,13 @@
             ?>
 
             <?php for ($i = 0; $i < $image_count; $i += 4) : ?>
-                <div class="row mt-5">
+                <div class="row mt-5 gal_image">
                     <?php for ($j = $i; $j < $i + 4 && $j < $image_count; $j++) : ?>
                         <?php if ($data_images[$j]->category === "Classroom") : ?>
                             <?php $category_exist = true ?>
 
                             <div class="col-md-3">
-                                <img src="data:image/jpeg;base64,<?php echo $data_images[$j]->image; ?>" class="img-fluid">
+                                <img width="100%" height="100%" src="data:image/jpeg;base64,<?php echo $data_images[$j]->image; ?>" >
                             </div>
                         <?php endif; ?>
                     <?php endfor; ?>
@@ -2711,12 +2711,12 @@
             ?>
 
             <?php for ($i = 0; $i < $image_count; $i += 4) : ?>
-                <div class="row mt-5">
+                <div class="row mt-5 gal_image">
                     <?php for ($j = $i; $j < $i + 4 && $j < $image_count; $j++) : ?>
                         <?php if ($data_images[$j]->category === "Library") : ?>
                             <?php $category_exist = true ?>
                             <div class="col-md-3">
-                                <img src="data:image/jpeg;base64,<?php echo $data_images[$j]->image; ?>" class="img-fluid">
+                                <img width="100%" height="100%" src="data:image/jpeg;base64,<?php echo $data_images[$j]->image; ?>
                             </div>
                         <?php endif; ?>
                     <?php endfor; ?>
@@ -2736,12 +2736,12 @@
             ?>
 
             <?php for ($i = 0; $i < $image_count; $i += 4) : ?>
-                <div class="row mt-5 justify-content-center">
+                <div class="row mt-5 justify-content-center gal_image">
                     <?php for ($j = $i; $j < $i + 4 && $j < $image_count; $j++) : ?>
                         <?php if ($data_images[$j]->category === "Playground") : ?>
                             <?php $category_exist = true ?>
                             <div class="col-md-3">
-                                <img src="data:image/jpeg;base64,<?php echo $data_images[$j]->image; ?>" class="img-fluid">
+                                <img width="100%" height="100%" src="data:image/jpeg;base64,<?php echo $data_images[$j]->image; ?>" class="img-fluid">
                             </div>
                         <?php endif; ?>
                     <?php endfor; ?>
@@ -2909,7 +2909,7 @@
                                 $(this).text(`${amount[index]}`);
                             }
 
-                           
+
                         });
                         $('.prenur_frequency').each(function(index, element) {
 
@@ -2974,7 +2974,7 @@
                                 $(this).text(`${amount[index]}`);
                             }
 
-                           
+
                         });
 
                     }
@@ -3000,7 +3000,7 @@
                                 $(this).text(`${amount[index]}`);
                             }
 
-                            
+
                         });
 
                     }

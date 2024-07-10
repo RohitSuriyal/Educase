@@ -1,14 +1,13 @@
-
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+<script>
+    AOS.init();
+</script>
 
 <script>
-     function startAnimation() {
+    function startAnimation() {
         // Add the class 'animate' to the element to start the animation
         document.querySelector('.mid-text').classList.add('shake');
-        
+
         // After a short delay, remove the 'animate' class to stop the animation
         setTimeout(function() {
             document.querySelector('.mid-text').classList.remove('shake');
@@ -66,14 +65,8 @@
     document.addEventListener("DOMContentLoaded", function() {
         document.getElementsByClassName("tab")[0].click();
     });
-    function checkInput(input) {
-        var message = document.getElementById('noDataMessage');
-        if (input.value.trim() === '') {
-            message.style.display = 'none';
-        } else {
-            message.style.display = 'block';
-        }
-    }
+
+  
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

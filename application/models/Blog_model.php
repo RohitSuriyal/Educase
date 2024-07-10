@@ -40,13 +40,16 @@ class Blog_model  extends CI_Model
         }
     }
     public function getschooldata()
-    {
+    { 
+        
 
         $all = $this->db->get("schools")->result();
         $day_school_id =array();
         $boarding_school_id=array();
         $day_boarding_id=array();
         $play_school_id=array();
+       
+       
         foreach ($all as $d) {
 
 
@@ -72,20 +75,41 @@ class Blog_model  extends CI_Model
             }
             
         }
-        $this->db->where_in('id', $day_school_id);
-        $query = $this->db->get('schools');
-        $day_school=$query->result();
-        $this->db->where_in('id', $boarding_school_id);
-        $query = $this->db->get('schools');
-        $boarding_school=$query->result();
-        $this->db->where_in('id', $day_boarding_id);
-        $query = $this->db->get('schools');
-        $day_boarding_school=$query->result();
-        $this->db->where_in('id', $play_school_id);
-        $query = $this->db->get('schools');
+      
 
-        $play_school=$query->result();
 
+        if (!empty($day_school_id)) {
+            $this->db->where_in('id', $day_school_id);
+            $day_school_query = $this->db->get('schools');
+            $day_school = $day_school_query->result();
+        } else {
+            $day_school = [];
+        }
+        
+        if (!empty($boarding_school_id)) {
+            $this->db->where_in('id', $boarding_school_id);
+            $boarding_school_query = $this->db->get('schools');
+            $boarding_school = $boarding_school_query->result();
+        } else {
+            $boarding_school = [];
+        }
+        
+        if (!empty($day_boarding_id)) {
+            $this->db->where_in('id', $day_boarding_id);
+            $day_boarding_school_query = $this->db->get('schools');
+            $day_boarding_school = $day_boarding_school_query->result();
+        } else {
+            $day_boarding_school = [];
+        }
+        
+        if (!empty($play_school_id)) {
+            $this->db->where_in('id', $play_school_id);
+            $play_school_query = $this->db->get('schools');
+            $play_school = $play_school_query->result();
+        } else {
+            $play_school = [];
+        }
+      
 
         $data=array(
             "all"=>$all,
@@ -94,6 +118,7 @@ class Blog_model  extends CI_Model
             "day_boarding_school"=>$day_boarding_school,
             "play_school"=>$play_school
         );
+        
         return $data;
 
 
@@ -136,19 +161,37 @@ class Blog_model  extends CI_Model
             }
             
         }
-        $this->db->where_in('id', $day_school_id);
-        $query = $this->db->get('schools');
-        $day_school=$query->result();
-        $this->db->where_in('id', $boarding_school_id);
-        $query = $this->db->get('schools');
-        $boarding_school=$query->result();
-        $this->db->where_in('id', $day_boarding_id);
-        $query = $this->db->get('schools');
-        $day_boarding_school=$query->result();
-        $this->db->where_in('id', $play_school_id);
-        $query = $this->db->get('schools');
-
-        $play_school=$query->result();
+        if (!empty($day_school_id)) {
+            $this->db->where_in('id', $day_school_id);
+            $day_school_query = $this->db->get('schools');
+            $day_school = $day_school_query->result();
+        } else {
+            $day_school = [];
+        }
+        if (!empty($boarding_school_id)) {
+            $this->db->where_in('id', $boarding_school_id);
+            $boarding_school_query = $this->db->get('schools');
+            $boarding_school = $boarding_school_query->result();
+        } else {
+            $boarding_school = [];
+        }
+        
+        if (!empty($day_boarding_id)) {
+            $this->db->where_in('id', $day_boarding_id);
+            $day_boarding_school_query = $this->db->get('schools');
+            $day_boarding_school = $day_boarding_school_query->result();
+        } else {
+            $day_boarding_school = [];
+        }
+        
+        if (!empty($play_school_id)) {
+            $this->db->where_in('id', $play_school_id);
+            $play_school_query = $this->db->get('schools');
+            $play_school = $play_school_query->result();
+        } else {
+            $play_school = [];
+        }
+      
 
 
         $data=array(

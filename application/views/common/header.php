@@ -392,7 +392,7 @@
 			}
 
 			.school_info img {
-				height: 300px !important;
+				height: 186px !important;
 			}
 
 			.schoo_info_heading {
@@ -448,6 +448,56 @@
 			.top_heading {
 				margin-left: -4% !important;
 			}
+
+			.blog_div_mt {
+				margin-top: 23% !important;
+			}
+
+			.main_blog_div {
+				margin-top: -19% !important;
+			}
+
+			.outer_img {
+				background-image: url('http://localhost/educase/assets/images/Rectangle%2023.png'), url('./images/Rectangle%2016.png');
+				background-size: 132px 183px, 132px 183px;
+				background-position: -3rem 15rem, 51rem 20rem;
+				background-repeat: no-repeat, no-repeat;
+			}
+
+			.search-container {
+				position: relative;
+				width: 100%;
+				margin: 50px auto;
+				display: flex;
+				align-items: center;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				padding: 0px 10px;
+				box-sizing: border-box;
+			}
+
+			.single_blog_div {
+				padding: 1rem 1rem !important;
+			}
+
+			.single_blog {
+				margin-top: 10%;
+			}
+
+			.feature_heading {
+				margin: 6% 0%;
+
+			}
+
+			.tab-content {
+				padding: 9px;
+			}
+
+			.gal_image {
+				margin: 2% 0;
+			}
+
+
 
 
 
@@ -771,9 +821,35 @@
 
 			animation: slideInFromLeft 1s ease-out;
 		}
+
+		.input-wrapper {
+			position: relative;
+			width: 80%;
+			/* Adjust as needed */
+			margin-bottom: 10px;
+			/* Space between input and message */
+		}
+
+		.input-wrapper .no-data-msg {
+			display: none;
+			/* Initially hide the message */
+			position: absolute;
+			top: calc(100% + 5px);
+			/* Position below the input field */
+			left: 0;
+			width: 100%;
+			background-color: white;
+			border: 1px solid red;
+			padding: 5px;
+			box-sizing: border-box;
+		}
+
+		.input-wrapper input:hover {
+			box-shadow: none;
+			/* Remove box shadow on hover */
+		}
 		
 
-		
 	</style>
 	<title>Hello, world!</title>
 </head>
@@ -796,8 +872,10 @@
 		<div class="col-8 col-md-3 d-flex col_new" style="padding: 0px;">
 			<div class="d-flex align-items-center w-100">
 				<img class="img_location" height="22px" width="22px" src="<?php echo base_url("assets/images/Frame 4.png") ?>">
-				<input class="form-control input_font px-3" list="" placeholder="Enter your location" style="border:1px sold red; position:relative; padding:0px; margin:0px;width:80%" oninput="checkInput(this)" onmouseover="this.style.boxShadow='none'">
-				
+				<input id="input_search" class="form-control input_font px-3" list="" placeholder="Enter your location" style="border:1px sold red; position:relative; padding:0px; margin:0px;width:80%" onmouseover="this.style.boxShadow='none'">
+
+
+
 			</div>
 		</div>
 	</div>

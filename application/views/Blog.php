@@ -120,7 +120,7 @@
             $nextRow = $data_reversed[$index + $i];
         ?>
 
-            <div class="row mt-4" style="padding: 1rem;">
+            <div class="row mt-4 main_blog_div" style="padding: 1rem;">
                 <div class="col-md-6 blog_div_mt" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <img class="blog_image" style="height: 400px; object-fit: cover; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;" src="data:image/*;base64,<?php echo $current->image; ?>" alt="Responsive Image">
                     <p class="roboto bold mt-5 grey">
