@@ -21,7 +21,7 @@
             <p class=" top_font aparajita_font" style="font-size:77.76px;line-height: 75px">In Your City</p>
 
             <div class="search-container position-relative">
-                <span class="search-icon"><img src="<?php echo IMG_URL . 'search.png'; ?>"></img></span>
+                <span class="search-icon"><img src="<?php echo base_url("assets/images/search.png")?>"></img></span>
                 <input id="search" type="text" class="search-input" placeholder="Search...">
 
             </div>
