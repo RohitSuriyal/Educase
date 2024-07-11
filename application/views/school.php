@@ -101,7 +101,7 @@
 
                 <div class="dropdown-content" id="dropdownContent">
 
-                    <label><input name="class" id="Pre-Nursery" class="me-2 filter class" type="checkbox" value="Pre-Nursery"> Pre-Nursery</label>
+                    <label><input name="class" id="Prenursery" class="me-2 filter class" type="checkbox" value="Prenursery"> Pre-Nursery</label>
                     <label><input name="class" id="Nursery" class="me-2 filter class" type="checkbox" value="Nursery"> Nursery</label>
                     <label><input name="class" id="LKG" class="me-2 filter class" type="checkbox" value="LKG">LKG</label>
                     <label><input name="class" id="UKG" class="me-2 filter class" type="checkbox" value="UKG">UKG</label>
@@ -523,6 +523,7 @@
 
         var school_type = [];
         let class_new = [];
+        console.log(class_new)
         var board = [];
         var ownership = []
         $(".class:checked").each(function() {

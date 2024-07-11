@@ -51,6 +51,7 @@ class School_model  extends CI_Model
         $result = [];
         $school_id=[];
         if (!empty($class)) {
+            
             foreach ($class as $c) {
                 // Query to fetch ID of the class\\
                 $this->db->distinct();

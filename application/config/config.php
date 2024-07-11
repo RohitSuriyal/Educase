@@ -23,7 +23,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/educase/';
+// $config['base_url'] = 'http://localhost/educase/';
+$config['base_url'] = 'http://35.154.38.205';
+
 define('CSS_URL', $config['base_url'] . 'assets/css/');
 define('IMG_URL', $config['base_url'] . 'assets/images/');
 
