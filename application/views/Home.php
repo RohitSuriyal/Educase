@@ -289,7 +289,7 @@
                 </div>
                 <div class="col-md-6 p-4">
                     <h3 class="roboto pb_0 "><?php echo $current->name ?></h3>
-                    <p class="grey"><span> <img height="15px" width="15px" src="<?php echo IMG_URL . 'Frame 4.png'; ?>"></img></span><?php echo trim(preg_replace('/\s+/', ' ', $current->state)); ?></p>
+                    <p class="grey"><span> <img height="15px" width="15px" src="<?php echo base_url("assets/images/Frame 4.png")?>"></img></span><?php echo trim(preg_replace('/\s+/', ' ', $current->state)); ?></p>
                     <div class="row mt-5">
                         <div class="col-md-6">
                             <p class="grey roboto ">Class Offered</p>
@@ -337,7 +337,7 @@
                 </div>
                 <div class="col-md-6 p-4">
                     <h3 class="roboto pb_0 "><?php echo $nextRow->name ?></h3>
-                    <p class="grey"><span> <img height="15px" width="15px" src="<?php echo IMG_URL . 'Frame 4.png'; ?>"></img></span><?php echo $nextRow->state ?></p>
+                    <p class="grey"><span> <img height="15px" width="15px" src="<?php echo base_url("assets/images/Frame 4.png") ?>"></img></span><?php echo $nextRow->state ?></p>
                     <div class="row mt-5">
                         <div class="col-md-6">
                             <p class="grey roboto ">Class Offered</p>

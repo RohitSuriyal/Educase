@@ -171,7 +171,7 @@
                                     <div class="col-md-7 px-3">
                                         <div>
                                             <h3 class="roboto mb-0 mt-2"><?php echo $row->name ?></h3>
-                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo IMG_URL . 'map-pin.png'; ?>" /></span><span style="margin-top:3px;font-size:15px"><?php echo $row->state ?></span></p>
+                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo base_url("assets/images/map-pin.png");?>" /></span><span style="margin-top:3px;font-size:15px"><?php echo $row->state ?></span></p>
                                         </div>
                                         <div class="row mt-5">
                                             <div class="col-md-4 roboto">
@@ -219,7 +219,7 @@
                                     <div class="col-md-7 px-3">
                                         <div>
                                             <h3 class="roboto mb- mt-2"><?php echo $row->name ?></h3>
-                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo IMG_URL . 'map-pin.png'; ?>" /></span><span style="margin-top:3px"><?php echo $row->state ?></span></p>
+                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo base_url("assets/images/map-pin.png")?>" /></span><span style="margin-top:3px"><?php echo $row->state ?></span></p>
                                         </div>
                                         <div class="row mt-5">
                                             <div class="col-md-4 roboto">
@@ -258,7 +258,7 @@
                                     <div class="col-md-7 px-3">
                                         <div>
                                             <h3 class="roboto mb- mt-2"><?php echo $row->name ?></h3>
-                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo IMG_URL . 'map-pin.png'; ?>" /></span><span style="margin-top:3px"><?php echo $row->state ?></span></p>
+                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px"src="<?php echo base_url("assets/images/map-pin.png")?>" /></span><span style="margin-top:3px"><?php echo $row->state ?></span></p>
                                         </div>
                                         <div class="row mt-5">
                                             <div class="col-md-4 roboto">
@@ -297,7 +297,7 @@
                                     <div class="col-md-7 px-3">
                                         <div>
                                             <h3 class="roboto mb- mt-2"><?php echo $row->name ?></h3>
-                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo IMG_URL . 'map-pin.png'; ?>" /></span><span style="margin-top:3px"><?php echo $row->state ?></span></p>
+                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo base_url("assets/images/map-pin.png")?>" /></span><span style="margin-top:3px"><?php echo $row->state ?></span></p>
                                         </div>
                                         <div class="row mt-5">
                                             <div class="col-md-4 roboto">
@@ -337,7 +337,7 @@
                                     <div class="col-md-7 px-3">
                                         <div>
                                             <h3 class="roboto mb- mt-2"><?php echo $row->name ?></h3>
-                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo IMG_URL . 'map-pin.png'; ?>" /></span><span style="margin-top:3px"><?php echo $row->state ?></span></p>
+                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo base_url("assets/images/map-pin.png")?>" /></span><span style="margin-top:3px"><?php echo $row->state ?></span></p>
                                         </div>
                                         <div class="row mt-5">
                                             <div class="col-md-4 roboto">
@@ -456,7 +456,7 @@
                             <h1>${d.name}</h1>
                             <p class="roboto grey">
                     <span>
-                        <img height="20px" width="20px" src="<?php echo IMG_URL . 'map-pin.png'; ?>" />
+                        <img height="20px" width="20px" src="<?php echo base_url("assets/images/map-pin.png")?>" />
                     </span>
                     ${d.state}
                 </p>
