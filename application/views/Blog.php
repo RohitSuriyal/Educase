@@ -44,7 +44,7 @@
                             // Trim the text to the last space to avoid cutting off in the middle of a word
                             $text = substr($text, 0, $last_space);
                             // Add ellipsis
-                            $url = base_url('welcome/blog_page/') . $row->id;
+                            $url = base_url('blog/') . $row->id;
 
                             $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
                             // Output the truncated body text with "Read more" link
@@ -81,7 +81,8 @@
                             // Trim the text to the last space to avoid cutting off in the middle of a word
                             $text = substr($text, 0, $last_space);
                             // Add ellipsis
-                            $url = base_url('welcome/blog_page/') . $row->id;
+                            $url = base_url('blog/') . $row->id;
+                           
 
                             $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
                             // Output the truncated body text with "Read more" link
@@ -140,7 +141,7 @@
                             $text = substr($text, 0, 1000);
                             $last_space = strrpos($text, ' ');
                             $text = substr($text, 0, $last_space);
-                            $url = base_url('welcome/blog_page/') . $current->id;
+                            $url = base_url('blog/') . $current->id;
                             $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
                         }
                         echo $text;
@@ -167,7 +168,7 @@
                             $text = substr($text, 0, 1000);
                             $last_space = strrpos($text, ' ');
                             $text = substr($text, 0, $last_space);
-                            $url = base_url('welcome/blog_page/') . $nextRow->id;
+                            $url = base_url('blog/') . $nextRow->id;
                             $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
                         }
                         echo $text;

@@ -43,7 +43,7 @@
                     // Trim the text to the last space to avoid cutting off in the middle of a word
                     $text = substr($text, 0, $last_space);
                     // Add ellipsis
-                    $url = base_url('welcome/blog_page/') . $c->id;
+                    $url = base_url('blog/' . $c->id);
 
                     $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
                     // Output the truncated body text with "Read more" link

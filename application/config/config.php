@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 // $config['base_url'] = 'http://localhost/educase/';
-$config['base_url'] = 'http://35.154.38.205';
+$config['base_url'] = 'http://findmyschools.co.in/';
 
 define('CSS_URL', $config['base_url'] . 'assets/css/');
 define('IMG_URL', $config['base_url'] . 'assets/images/');

@@ -294,7 +294,7 @@
         </div>
         <div class="row my-5" style="background-color:#F9F9FF;margin:0 1%">
             <div class="col-md-3">
-                <img src="<?php echo IMG_URL . "Support operator helps to solve the problem.png" ?>"></img>
+                <img src="<?php echo base_url("assets/images/Support operator helps to solve the problem.png") ?>"></img>
 
             </div>
             <div class="col-md-6 d-flex flex-column justify-content-center">

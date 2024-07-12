@@ -851,7 +851,14 @@
 		
 
 	</style>
-	<title>Hello, world!</title>
+	 <!-- <link rel="icon" type="image/x-icon" href="https://static.wixstatic.com/media/020d2b_c5e7c2f906e14b06925835777f2d6b4f~mv2.png/v1/fill/w_451,h_146,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/PG-removebg-preview.png">
+    <style>
+        link[rel="icon"] {
+            width: 32px;
+            height: 32px;
+        }
+    </style> -->
+	
 </head>
 
 <body>
@@ -864,9 +871,9 @@
 		</div>
 		<div class="col-12 col-md-6 hide_topbar">
 			<ul class="d-flex justify-content-evenly align-items-center list-unstyled gap-4" style="margin-bottom:0rem!important;">
-				<li><a style="text-decoration:none;color:black" href="<?php echo base_url("welcome") ?>" class="header_hub pointer">Home</a></li>
-				<li><a style="text-decoration:none;color:black" href="<?php echo base_url("welcome/Blog") ?>" class="header_hub pointer">Blog</a></li>
-				<li><a style="text-decoration:none;color:black" href="<?php echo base_url("welcome/school") ?>" class="header_hub pointer">School</a></li>
+				<li><a style="text-decoration:none;color:black" href="<?php echo base_url("home") ?>" class="header_hub pointer">Home</a></li>
+				<li><a style="text-decoration:none;color:black" href="<?php echo base_url("blog") ?>" class="header_hub pointer">Blog</a></li>
+				<li><a style="text-decoration:none;color:black" href="<?php echo base_url("school") ?>" class="header_hub pointer">School</a></li>
 			</ul>
 		</div>
 		<div class="col-8 col-md-3 d-flex col_new" style="padding: 0px;">
