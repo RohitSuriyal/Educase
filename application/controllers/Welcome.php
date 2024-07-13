@@ -183,4 +183,21 @@ class Welcome extends CI_Controller
 		 }
 
 	}
+	public function cityinput(){
+
+		$city=$this->input->post("cityname");
+		$this->load->model("School_model");
+		$output=$this->School_model->getcities($city);
+		if($output){
+			echo json_encode($output);
+		}
+		else{
+			echo json_encode("error");
+		}
+
+
+
+
+
+	}
 }

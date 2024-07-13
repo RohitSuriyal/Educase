@@ -65,8 +65,42 @@
     document.addEventListener("DOMContentLoaded", function() {
         document.getElementsByClassName("tab")[0].click();
     });
+    document.getElementById('input_search').addEventListener('input', function() {
+        document.getElementById('absolute_text').style.display = this.value ? 'block' : 'none';
+    })
+    $("#input_search").on("input", function() {
+        $.ajax({
+            url: "<?php echo base_url("city") ?>",
+            type: "post",
+            dataType:"json",
+            data: {
+                cityname: $("#input_search").val(),
+            },
+            success: function(data) {
+                if (data =="error") {
+                    console.log("this is the error");
+                    $("#absolute_text").empty();
+                    $("#absolute_text").append("no result found");
+                    
 
-  
+                } else {
+                  
+                    $("#absolute_text").empty();
+                    data.forEach(city => {
+                      
+                        $("#absolute_text").append(`<li  id="${city.id}">${city.city}<li>`);
+                    });
+
+
+                }
+
+            }
+
+
+
+
+        })
+    })
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

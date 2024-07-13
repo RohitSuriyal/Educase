@@ -107,3 +107,30 @@ class YourController extends CI_Controller {
        renderUpdatedSchoolInfo();
    });
 </script>
+//for the data base transfer
+Step 1:-
+
+scp -i "C:\Users\svksi\Downloads\test.pem" "C:\Users\svksi\Downloads\educase.sql" ubuntu@15.207.248.151:/home/ubuntu
+scp "C:\Users\svksi\Downloads\educase.sql" ubuntu@3.110.88.29:/home/ubuntu
+
+Note:- fingerprint wale ko yes kr dena hai:-
+
+scp -i /path/to/your-key.pem /path/to/local/database.sql ubuntu@your-ec2-instance-ip:/home/ubuntu
+
+step :-2
+
+ssh -i /path/to/your-key.pem ubuntu@your-ec2-instance-ip
+
+Replace /path/to/your-key.pem with the path to your .pem key file, ubuntu with your instance's username, and your-ec2-instance-ip with your EC2 instance's public IP address or DNS name.
+
+in the aws terminal
+1)cd /home/ubuntu
+2)mysql -u root -p schooldata < educase.sql;
+3)mysql -u root -p
+4)SHOW DATABASES;
+5)than check the datbales in the databse in which you have added;
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'rsuriyal';
+do it for the root user only;
+
+

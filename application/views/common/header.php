@@ -497,6 +497,17 @@
 				margin: 2% 0;
 			}
 
+			.absolute_text {
+				position: absolute;
+				top: 102%;
+				left: 17px!important;
+				width: 89%!important;
+				background-color: white;
+				border: 1px solid #ccc;
+				z-index: 10;
+				padding: 5px;
+			}
+
 
 
 
@@ -848,17 +859,15 @@
 			box-shadow: none;
 			/* Remove box shadow on hover */
 		}
-		
-
 	</style>
-	 <!-- <link rel="icon" type="image/x-icon" href="https://static.wixstatic.com/media/020d2b_c5e7c2f906e14b06925835777f2d6b4f~mv2.png/v1/fill/w_451,h_146,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/PG-removebg-preview.png">
+	<!-- <link rel="icon" type="image/x-icon" href="https://static.wixstatic.com/media/020d2b_c5e7c2f906e14b06925835777f2d6b4f~mv2.png/v1/fill/w_451,h_146,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/PG-removebg-preview.png">
     <style>
         link[rel="icon"] {
             width: 32px;
             height: 32px;
         }
     </style> -->
-	
+
 </head>
 
 <body>
@@ -876,15 +885,33 @@
 				<li><a style="text-decoration:none;color:black" href="<?php echo base_url("school") ?>" class="header_hub pointer">School</a></li>
 			</ul>
 		</div>
+		<style>
+			.absolute_text {
+				position: absolute;
+				top: 100%;
+				/* Position below the input field */
+				left: 0;
+				width: 100%;
+				background-color: white;
+				/* Optional: for better visibility */
+				border: 1px solid #ccc;
+				/* Optional: for better visibility */
+				z-index: 10;
+				/* Ensure it appears above other elements */
+				padding: 5px;
+				/* Optional: for better appearance */
+			}
+		</style>
 		<div class="col-8 col-md-3 d-flex col_new" style="padding: 0px;">
-			<div class="d-flex align-items-center w-100">
+			<div class="d-flex align-items-center w-100 position-relative">
 				<img class="img_location" height="22px" width="22px" src="<?php echo base_url("assets/images/Frame 4.png") ?>">
-				<input id="input_search" class="form-control input_font px-3" list="" placeholder="Enter your location" style="border:1px sold red; position:relative; padding:0px; margin:0px;width:80%" onmouseover="this.style.boxShadow='none'">
-
-
-
+				<input id="input_search" class="form-control input_font px-3" list="" placeholder="Enter your location" style=" position:relative; padding:0px; margin:0px;width:80%" onmouseover="this.style.boxShadow='none'">
+				<div id="absolute_text" class="absolute_text" style="display: none;">
+					
+				</div>
 			</div>
 		</div>
+
 	</div>
 	<div class="sidebar-overlay"></div>
 	<div class="sidebar">

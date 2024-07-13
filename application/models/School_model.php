@@ -1,4 +1,7 @@
 <?php
+
+use Aws\ElastiCache\Exception\ElastiCacheException;
+
 class School_model  extends CI_Model
 {
 
@@ -228,5 +231,18 @@ class School_model  extends CI_Model
 
 
         return $results;
+    }
+    public function getcities($city){
+        $this->db->select('id, city');
+        $this->db->like('city', $city);
+        $query = $this->db->get('schools');
+        if($query){
+            return $query->result();
+        }
+        else {
+            return false;
+        }
+
+
     }
 }
