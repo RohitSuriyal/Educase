@@ -1,4 +1,6 @@
 .DS_Store
+application/config/config.php
+application/config/database.php
 
 application/cache/*
 !application/cache/index.html
@@ -21,7 +23,6 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 #-------------------------
 /nbproject/
 .idea/*
-
 ## Sublime Text cache files
 *.tmlanguage.cache
 *.tmPreferences.cache
