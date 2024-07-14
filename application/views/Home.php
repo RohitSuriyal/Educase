@@ -203,24 +203,24 @@
             <h1 class="text-center city_heading aparajita_font" style="margin-bottom:0">
                 Delhi/NCR
             </h1>
-            <p class="text-center city_headingp mb-0">500 Schools</p>
+            <p class="text-center city_headingp mb-0">NA</p>
         </div>
         <div class="col-md-2 cities p-2 custom-col ">
             <h1 class="text-center city_heading aparajita_font" style="margin-bottom:0">
                 Mumbai
             </h1>
-            <p class="text-center city_headingp mb-0">500 Schools</p>
+            <p class="text-center city_headingp mb-0">NA</p>
         </div>
         <div class="col-md-2 cities p-2 custom-col">
             <h1 class="text-center city_heading aparajita_font" style="margin-bottom:0">
                 Pune </h1>
-            <p class="text-center city_headingp mb-0">500 Schools</p>
+            <p class="text-center city_headingp mb-0">NA</p>
         </div>
         <div class="col-md-2 cities p-2 custom-col">
             <h1 class="text-center city_heading aparajita_font" style="margin-bottom:0">
                 Patna
             </h1>
-            <p class="text-center city_headingp mb-0">500 Schools</p>
+            <p class="text-center city_headingp mb-0">NA</p>
         </div>
 
 
