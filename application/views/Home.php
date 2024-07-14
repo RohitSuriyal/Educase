@@ -231,25 +231,25 @@
         <div class="col-md-2 cities p-2 custom-col">
             <h1 class="text-center city_heading aparajita_font" style="margin-bottom:0">
                 Gujarat </h1>
-            <p class="text-center city_headingp mb-0">500 Schools</p>
+            <p class="text-center city_headingp mb-0">NA</p>
         </div>
         <div class="col-md-2 cities p-2 custom-col aparajita_font">
             <h1 class="text-center city_heading" style="margin-bottom:0">
                 Nagpur
             </h1>
-            <p class="text-center city_headingp mb-0">500 Schools</p>
+            <p class="text-center city_headingp mb-0">NA</p>
         </div>
         <div class="col-md-2 cities p-2 custom-col ">
             <h1 class="text-center city_heading aparajita_font" style="margin-bottom:0">
                 Bangalore
             </h1>
-            <p class="text-center city_headingp mb-0">500 Schools</p>
+            <p class="text-center city_headingp mb-0">NA</p>
         </div>
         <div class="col-md-2 cities p-2 custom-col">
             <h1 class="text-center city_heading aparajita_font" style="margin-bottom:0">
                 Chandigarh
             </h1>
-            <p class="text-center city_headingp mb-0">500 Schools</p>
+            <p class="text-center city_headingp mb-0">NA</p>
         </div>
 
 
