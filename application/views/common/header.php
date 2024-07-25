@@ -10,7 +10,7 @@
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-	<link rel="stylesheet" href="<?php echo CSS_URL . "school.css" ?>" />
+	<link rel="stylesheet" href="<?php echo base_url("assets/css/school.css") ?>" />
 	<link rel="stylesheet" href="<?php echo base_url('assets/css/educase.css'); ?>" />
 	<script src="https://kit.fontawesome.com/8337c29774.js" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
