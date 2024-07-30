@@ -172,7 +172,7 @@
                 <div class="" style="background-color:#F9F9FF">
                     <div class="totla_fee px-3 py-2" id="Nursery_total">
                         <p class="helvetica bold">Total Cost for new admission</p>
-                        <p class="total_yearly_o bold helvetica" style="color:#001AFF;font-size:60.29px">₹2,51,000</p>
+                        <p class="total_yearly_o bold helvetica" style="color:#001AFF;font-size:60.29px">NA</p>
                         <p class="bold helvetica">for the first year</p>
 
 
@@ -180,7 +180,7 @@
                     </div>
                     <div class="totla_fee px-3 py-2" id="Nursery_total">
                         <p class="helvetica bold">Total Cost for new admission</p>
-                        <p class="total_yearly_o bold helvetica" style="color:#001AFF;font-size:60.29px">₹2,51,000</p>
+                        <p class="total_yearly_o bold helvetica" style="color:#001AFF;font-size:60.29px">NA</p>
                         <p class="bold helvetica">for the first year</p>
 
 
@@ -189,7 +189,7 @@
 
                     <div class="totla_fee px-3 py-2" id="UKG_total">
                         <p class="helvetica bold">Total Cost for new admission</p>
-                        <p class="total_yearly_o bold helvetica" style="color:#001AFF;font-size:60.29px">₹2,51,000</p>
+                        <p class="total_yearly_o bold helvetica" style="color:#001AFF;font-size:60.29px">NA</p>
                         <p class="bold helvetica">for the first year</p>
 
 
@@ -197,80 +197,80 @@
                     </div>
                     <div class="totla_fee px-3 py-2" id="I_total">
                         <p class="helvetica bold">Total Cost for new admission</p>
-                        <p class="total_yearly_o bold helvetica" style="color:#001AFF;font-size:60.29px">₹2,51,000</p>
+                        <p class="total_yearly_o bold helvetica" style="color:#001AFF;font-size:60.29px">NA</p>
                         <p class="bold helvetica">for the first year</p>
 
 
                     </div>
                     <div class="totla_fee px-3 py-2" id="II_total">
                         <p class="helvetica bold">Total Cost for new admission</p>
-                        <p class="total_yearly_o bold helvetica" style="color:#001AFF;font-size:60.29px">₹2,51,000</p>
+                        <p class="total_yearly_o bold helvetica" style="color:#001AFF;font-size:60.29px">NA</p>
                         <p class="bold helvetica">for the first year</p>
 
                     </div>
                     <div class="totla_fee px-2 py-2" id="III_total">
                         <p class="helvetica bold">Total Cost for new admission</p>
-                        <p class="total_yearly_o bold helvetica" style="color:#001AFF;font-size:60.29px">₹2,51,000</p>
+                        <p class="total_yearly_o bold helvetica" style="color:#001AFF;font-size:60.29px">NA</p>
                         <p class="bold helvetica">for the first year</p>
 
 
                     </div>
                     <div class="totla_fee px-3 py-2" id="IV_total">
                         <p class="helvetica bold">Total Cost for new admission</p>
-                        <p class="total_yearly_o bold helvetica" style="color:#001AFF;font-size:60.29px">₹2,51,000</p>
+                        <p class="total_yearly_o bold helvetica" style="color:#001AFF;font-size:60.29px">NA</p>
                         <p class="bold helvetica">for the first year</p>
 
                     </div>
                     <div class="totla_fee px-3 py-2" id="V_total">
                         <p class="helvetica bold">Total Cost for new admission</p>
-                        <p class="total_yearly_o bold helvetica" style="color:#001AFF;font-size:60.29px">₹2,51,000</p>
+                        <p class="total_yearly_o bold helvetica" style="color:#001AFF;font-size:60.29px">NA</p>
                         <p class="bold helvetica">for the first year</p>
 
 
                     </div>
                     <div class="totla_fee px-3 py-2" id="VI_total">
                         <p class="helvetica bold">Total Cost for new admission</p>
-                        <p class="total_yearly_o bold helvetica" style="color:#001AFF;font-size:60.29px">₹2,51,000</p>
+                        <p class="total_yearly_o bold helvetica" style="color:#001AFF;font-size:60.29px">NA</p>
                         <p class="bold helvetica">for the first year</p>
 
 
                     </div>
                     <div class="totla_fee px-3 py-2" id="VII_total">
                         <p class="helvetica bold">Total Cost for new admission</p>
-                        <p class="total_yearly_o bold helvetica" style="color:#001AFF;font-size:60.29px">₹2,51,000</p>
+                        <p class="total_yearly_o bold helvetica" style="color:#001AFF;font-size:60.29px">NA</p>
                         <p class="bold helvetica">for the first year</p>
 
                     </div>
                     <div class="totla_fee px-3 py-2" id="VIII_total">
                         <p class="helvetica bold">Total Cost for new admission</p>
-                        <p class="total_yearly_o bold helvetica" style="color:#001AFF;font-size:60.29px">₹2,51,000</p>
+                        <p class="total_yearly_o bold helvetica" style="color:#001AFF;font-size:60.29px">NA</p>
                         <p class="bold helvetica">for the first year</p>
 
                     </div>
                     <div class="totla_fee px-3 py-2" id="IX_total">
                         <p class="roboto bold">Total Cost for new admission</p>
-                        <p class="total_yearly_o bold" style="color:#001AFF;font-size:74.29px">₹2,51,000</p>
+                        <p class="total_yearly_o bold" style="color:#001AFF;font-size:74.29px">NA</p>
                         <p class="roboto bold">for the first year</p>
 
 
                     </div>
                     <div class="totla_fee px-3 py-2" id="X_total">
                         <p class="helvetica bold">Total Cost for new admission</p>
-                        <p class="total_yearly_o bold helvetica" style="color:#001AFF;font-size:60.29px">₹2,51,000</p>
+                        <p class="total_yearly_o bold helvetica" style="color:#001AFF;font-size:60.29px">NA</p>
                         <p class="bold helvetica">for the first year</p>
 
 
                     </div>
                     <div class="totla_fee px-3 py-2" id="XI_total">
                         <p class="roboto bold">Total Cost for new admission</p>
-                        <p class="total_yearly_o bold" style="color:#001AFF;font-size:74.29px">₹2,51,000</p>
+                        <p class="total_yearly_o bold" style="color:#001AFF;font-size:74.29px">NA</p>
                         <p class="roboto bold">for the first year</p>
 
 
                     </div>
                     <div class="totla_fee px-3 py-2" id="XII_total">
                         <p class="roboto bold">Total Cost for new admission</p>
-                        <p class="total_yearly_o bold" style="color:#001AFF;font-size:74.29px">₹2,51,000</p>
+                        <p class="total_yearly_o bold" style="color:#001AFF;font-size:74.29px">NA</p>
                         <p class="roboto bold">for the first year</p>
 
 
@@ -398,13 +398,13 @@
 
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Type</h5>
-                            <p class="prenur_feename helvetica fee_text"></p>
-                            <p class="prenur_feename helvetica fee_text"></p>
-                            <p class="prenur_feename helvetica fee_text"></p>
-                            <p class="prenur_feename helvetica fee_text"></p>
-                            <p class="prenur_feename helvetica fee_text"></p>
-                            <p class="prenur_feename helvetica fee_text"></p>
-                            <p class="prenur_feename helvetica fee_text"></p>
+                            <p class="prenur_feename helvetica fee_text">NA</p>
+                            <p class="prenur_feename helvetica fee_text">NA</p>
+                            <p class="prenur_feename helvetica fee_text">NA</p>
+                            <p class="prenur_feename helvetica fee_text">NA</p>
+                            <p class="prenur_feename helvetica fee_text">NA</p>
+                            <p class="prenur_feename helvetica fee_text">NA</p>
+                            <p class="prenur_feename helvetica fee_text">NA</p>
 
 
 
@@ -413,13 +413,13 @@
                         </div>
                         <div class="col-4 ">
                             <h5 class="mb-4 fee_heading">Amount</h5>
-                            <p class="prenur_amount helvetica fee_text"></p>
-                            <p class="prenur_amount helvetica fee_text"></p>
-                            <p class="prenur_amount helvetica fee_text"></p>
-                            <p class="prenur_amount helvetica fee_text"></p>
-                            <p class="prenur_amount helvetica fee_text"></p>
-                            <p class="prenur_amount helvetica fee_text"></p>
-                            <p class="prenur_amount helvetica fee_text"></p>
+                            <p class="prenur_amount helvetica fee_text">NA</p>
+                            <p class="prenur_amount helvetica fee_text">NA</p>
+                            <p class="prenur_amount helvetica fee_text">NA</p>
+                            <p class="prenur_amount helvetica fee_text">NA</p>
+                            <p class="prenur_amount helvetica fee_text">NA</p>
+                            <p class="prenur_amount helvetica fee_text">NA</p>
+                            <p class="prenur_amount helvetica fee_text">NA</p>
 
 
 
@@ -429,13 +429,13 @@
                         </div>
                         <div class="col-4 ">
                             <h5 class="mb-4 fee_heading">Frequency</h5>
-                            <p class="prenur_frequency helvetica fee_text"></p>
-                            <p class="prenur_frequency helvetica fee_text"></p>
-                            <p class="prenur_frequency helvetica fee_text"></p>
-                            <p class="prenur_frequency helvetica fee_text"></p>
-                            <p class="prenur_frequency helvetica fee_text"></p>
-                            <p class="prenur_frequency helvetica fee_text"></p>
-                            <p class="prenur_frequency helvetica fee_text"></p>
+                            <p class="prenur_frequency helvetica fee_text">NA</p>
+                            <p class="prenur_frequency helvetica fee_text">NA</p>
+                            <p class="prenur_frequency helvetica fee_text">NA</p>
+                            <p class="prenur_frequency helvetica fee_text">NA</p>
+                            <p class="prenur_frequency helvetica fee_text">NA</p>
+                            <p class="prenur_frequency helvetica fee_text">NA</p>
+                            <p class="prenur_frequency helvetica fee_text">NA</p>
 
 
 
@@ -446,13 +446,13 @@
 
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Type</h5>
-                            <p class="nur_feename helvetica fee_text"></p>
-                            <p class="nur_feename helvetica fee_text"></p>
-                            <p class="nur_feename helvetica fee_text"></p>
-                            <p class="nur_feename helvetica fee_text"></p>
-                            <p class="nur_feename helvetica fee_text"></p>
-                            <p class="nur_feename helvetica fee_text"></p>
-                            <p class="nur_feename helvetica fee_text"></p>
+                            <p class="nur_feename helvetica fee_text">NA</p>
+                            <p class="nur_feename helvetica fee_text">NA</p>
+                            <p class="nur_feename helvetica fee_text">NA</p>
+                            <p class="nur_feename helvetica fee_text">NA</p>
+                            <p class="nur_feename helvetica fee_text">NA</p>
+                            <p class="nur_feename helvetica fee_text">NA</p>
+                            <p class="nur_feename helvetica fee_text">NA</p>
 
 
 
@@ -461,13 +461,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Amount</h5>
-                            <p class="nur_amount helvetica fee_text"></p>
-                            <p class="nur_amount helvetica fee_text"></p>
-                            <p class="nur_amount helvetica fee_text"></p>
-                            <p class="nur_amount helvetica fee_text"></p>
-                            <p class="nur_amount helvetica fee_text"></p>
-                            <p class="nur_amount helvetica fee_text"></p>
-                            <p class="nur_amount helvetica fee_text"></p>
+                            <p class="nur_amount helvetica fee_text">NA</p>
+                            <p class="nur_amount helvetica fee_text">NA</p>
+                            <p class="nur_amount helvetica fee_text">NA</p>
+                            <p class="nur_amount helvetica fee_text">NA</p>
+                            <p class="nur_amount helvetica fee_text">NA</p>
+                            <p class="nur_amount helvetica fee_text">NA</p>
+                            <p class="nur_amount helvetica fee_text">NA</p>
 
 
 
@@ -477,13 +477,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Frequency</h5>
-                            <p class="nur_frequency helvetica fee_text"></p>
-                            <p class="nur_frequency helvetica fee_text"></p>
-                            <p class="nur_frequency helvetica fee_text"></p>
-                            <p class="nur_frequency helvetica fee_text"></p>
-                            <p class="nur_frequency helvetica fee_text"></p>
-                            <p class="nur_frequency helvetica fee_text"></p>
-                            <p class="nur_frequency helvetica fee_text"></p>
+                            <p class="nur_frequency helvetica fee_text">NA</p>
+                            <p class="nur_frequency helvetica fee_text">NA</p>
+                            <p class="nur_frequency helvetica fee_text">NA</p>
+                            <p class="nur_frequency helvetica fee_text">NA</p>
+                            <p class="nur_frequency helvetica fee_text">NA</p>
+                            <p class="nur_frequency helvetica fee_text">NA</p>
+                            <p class="nur_frequency helvetica fee_text">NA</p>
 
 
 
@@ -494,13 +494,13 @@
 
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Type</h5>
-                            <p class="lkg_feename helvetica  fee_text"></p>
-                            <p class="lkg_feename helvetica  fee_text"></p>
-                            <p class="lkg_feename helvetica  fee_text"></p>
-                            <p class="lkg_feename helvetica  fee_text"></p>
-                            <p class="lkg_feename helvetica  fee_text"></p>
-                            <p class="lkg_feename helvetica  fee_text"></p>
-                            <p class="lkg_feename helvetica  fee_text"></p>
+                            <p class="lkg_feename helvetica  fee_text" NA></p>
+                            <p class="lkg_feename helvetica  fee_text" NA></p>
+                            <p class="lkg_feename helvetica  fee_text" NA></p>
+                            <p class="lkg_feename helvetica  fee_text" NA></p>
+                            <p class="lkg_feename helvetica  fee_text" NA></p>
+                            <p class="lkg_feename helvetica  fee_text" NA></p>
+                            <p class="lkg_feename helvetica  fee_text" NA></p>
 
 
 
@@ -509,13 +509,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Amount</h5>
-                            <p class="lkg_amount helvetica fee_text"></p>
-                            <p class="lkg_amount helvetica fee_text"></p>
-                            <p class="lkg_amount helvetica fee_text"></p>
-                            <p class="lkg_amount helvetica fee_text"></p>
-                            <p class="lkg_amount helvetica fee_text"></p>
-                            <p class="lkg_amount helvetica fee_text"></p>
-                            <p class="lkg_amount helvetica fee_text"></p>
+                            <p class="lkg_amount helvetica fee_text">NA</p>
+                            <p class="lkg_amount helvetica fee_text">NA</p>
+                            <p class="lkg_amount helvetica fee_text">NA</p>
+                            <p class="lkg_amount helvetica fee_text">NA</p>
+                            <p class="lkg_amount helvetica fee_text">NA</p>
+                            <p class="lkg_amount helvetica fee_text">NA</p>
+                            <p class="lkg_amount helvetica fee_text">NA</p>
 
 
 
@@ -525,13 +525,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Frequency</h5>
-                            <p class="lkg_frequency helvetica fee_text"></p>
-                            <p class="lkg_frequency helvetica fee_text"></p>
-                            <p class="lkg_frequency helvetica fee_text"></p>
-                            <p class="lkg_frequency helvetica fee_text"></p>
-                            <p class="lkg_frequency helvetica fee_text"></p>
-                            <p class="lkg_frequency helvetica fee_text"></p>
-                            <p class="lkg_frequency helvetica fee_text"></p>
+                            <p class="lkg_frequency helvetica fee_text">NA</p>
+                            <p class="lkg_frequency helvetica fee_text">NA</p>
+                            <p class="lkg_frequency helvetica fee_text">NA</p>
+                            <p class="lkg_frequency helvetica fee_text">NA</p>
+                            <p class="lkg_frequency helvetica fee_text">NA</p>
+                            <p class="lkg_frequency helvetica fee_text">NA</p>
+                            <p class="lkg_frequency helvetica fee_text">NA</p>
 
 
 
@@ -545,13 +545,13 @@
 
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Type</h5>
-                            <p class="ukg_feename helvetica fee_text"></p>
-                            <p class="ukg_feename helvetica fee_text"></p>
-                            <p class="ukg_feename helvetica fee_text"></p>
-                            <p class="ukg_feename helvetica fee_text"></p>
-                            <p class="ukg_feename helvetica fee_text"></p>
-                            <p class="ukg_feename helvetica fee_text"></p>
-                            <p class="ukg_feename helvetica fee_text"></p>
+                            <p class="ukg_feename helvetica fee_text">NA</p>
+                            <p class="ukg_feename helvetica fee_text">NA</p>
+                            <p class="ukg_feename helvetica fee_text">NA</p>
+                            <p class="ukg_feename helvetica fee_text">NA</p>
+                            <p class="ukg_feename helvetica fee_text">NA</p>
+                            <p class="ukg_feename helvetica fee_text">NA</p>
+                            <p class="ukg_feename helvetica fee_text">NA</p>
 
 
 
@@ -560,13 +560,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Amount</h5>
-                            <p class="ukg_amount helvetica fee_text"></p>
-                            <p class="ukg_amount helvetica fee_text"></p>
-                            <p class="ukg_amount helvetica fee_text"></p>
-                            <p class="ukg_amount helvetica fee_text"></p>
-                            <p class="ukg_amount helvetica fee_text"></p>
-                            <p class="ukg_amount helvetica fee_text"></p>
-                            <p class="ukg_amount helvetica fee_text"></p>
+                            <p class="ukg_amount helvetica fee_text">NA</p>
+                            <p class="ukg_amount helvetica fee_text">NA</p>
+                            <p class="ukg_amount helvetica fee_text">NA</p>
+                            <p class="ukg_amount helvetica fee_text">NA</p>
+                            <p class="ukg_amount helvetica fee_text">NA</p>
+                            <p class="ukg_amount helvetica fee_text">NA</p>
+                            <p class="ukg_amount helvetica fee_text">NA</p>
 
 
 
@@ -576,13 +576,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Frequency</h5>
-                            <p class="ukg_frequency helvetica fee_text"></p>
-                            <p class="ukg_frequency helvetica fee_text"></p>
-                            <p class="ukg_frequency helvetica fee_text"></p>
-                            <p class="ukg_frequency helvetica fee_text"></p>
-                            <p class="ukg_frequency helvetica fee_text"></p>
-                            <p class="ukg_frequency helvetica fee_text"></p>
-                            <p class="ukg_frequency helvetica fee_text"></p>
+                            <p class="ukg_frequency helvetica fee_text">NA</p>
+                            <p class="ukg_frequency helvetica fee_text">NA</p>
+                            <p class="ukg_frequency helvetica fee_text">NA</p>
+                            <p class="ukg_frequency helvetica fee_text">NA</p>
+                            <p class="ukg_frequency helvetica fee_text">NA</p>
+                            <p class="ukg_frequency helvetica fee_text">NA</p>
+                            <p class="ukg_frequency helvetica fee_text">NA</p>
 
 
 
@@ -597,13 +597,13 @@
 
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Type</h5>
-                            <p class="grade1_feename helvetica fee_text"></p>
-                            <p class="grade1_feename helvetica fee_text"></p>
-                            <p class="grade1_feename helvetica fee_text"></p>
-                            <p class="grade1_feename helvetica fee_text"></p>
-                            <p class="grade1_feename helvetica fee_text"></p>
-                            <p class="grade1_feename helvetica fee_text"></p>
-                            <p class="grade1_feename helvetica fee_text"></p>
+                            <p class="grade1_feename helvetica fee_text">NA</p>
+                            <p class="grade1_feename helvetica fee_text">NA</p>
+                            <p class="grade1_feename helvetica fee_text">NA</p>
+                            <p class="grade1_feename helvetica fee_text">NA</p>
+                            <p class="grade1_feename helvetica fee_text">NA</p>
+                            <p class="grade1_feename helvetica fee_text">NA</p>
+                            <p class="grade1_feename helvetica fee_text">NA</p>
 
 
 
@@ -612,13 +612,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Amount</h5>
-                            <p class="grade1_amount helvetica fee_text"></p>
-                            <p class="grade1_amount helvetica fee_text"></p>
-                            <p class="grade1_amount helvetica fee_text"></p>
-                            <p class="grade1_amount helvetica fee_text"></p>
-                            <p class="grade1_amount helvetica fee_text"></p>
-                            <p class="grade1_amount helvetica fee_text"></p>
-                            <p class="grade1_amount helvetica fee_text"></p>
+                            <p class="grade1_amount helvetica fee_text">NA</p>
+                            <p class="grade1_amount helvetica fee_text">NA</p>
+                            <p class="grade1_amount helvetica fee_text">NA</p>
+                            <p class="grade1_amount helvetica fee_text">NA</p>
+                            <p class="grade1_amount helvetica fee_text">NA</p>
+                            <p class="grade1_amount helvetica fee_text">NA</p>
+                            <p class="grade1_amount helvetica fee_text">NA</p>
 
 
 
@@ -628,13 +628,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Frequency</h5>
-                            <p class="grade1_frequency fee_text"></p>
-                            <p class="grade1_frequency fee_text"></p>
-                            <p class="grade1_frequency fee_text"></p>
-                            <p class="grade1_frequency fee_text"></p>
-                            <p class="grade1_frequency fee_text"></p>
-                            <p class="grade1_frequency fee_text"></p>
-                            <p class="grade1_frequency fee_text"></p>
+                            <p class="grade1_frequency fee_text">NA</p>
+                            <p class="grade1_frequency fee_text">NA</p>
+                            <p class="grade1_frequency fee_text">NA</p>
+                            <p class="grade1_frequency fee_text">NA</p>
+                            <p class="grade1_frequency fee_text">NA</p>
+                            <p class="grade1_frequency fee_text">NA</p>
+                            <p class="grade1_frequency fee_text">NA</p>
 
 
 
@@ -645,13 +645,13 @@
 
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Type</h5>
-                            <p class="grade2_feename fee_text"></p>
-                            <p class="grade2_feename fee_text"></p>
-                            <p class="grade2_feename fee_text"></p>
-                            <p class="grade2_feename fee_text"></p>
-                            <p class="grade2_feename fee_text"></p>
-                            <p class="grade2_feename fee_text"></p>
-                            <p class="grade2_feename fee_text"></p>
+                            <p class="grade2_feename fee_text">NA</p>
+                            <p class="grade2_feename fee_text">NA</p>
+                            <p class="grade2_feename fee_text">NA</p>
+                            <p class="grade2_feename fee_text">NA</p>
+                            <p class="grade2_feename fee_text">NA</p>
+                            <p class="grade2_feename fee_text">NA</p>
+                            <p class="grade2_feename fee_text">NA</p>
 
 
 
@@ -660,13 +660,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Amount</h5>
-                            <p class="grade2_amount fee_text"></p>
-                            <p class="grade2_amount fee_text"></p>
-                            <p class="grade2_amount fee_text"></p>
-                            <p class="grade2_amount fee_text"></p>
-                            <p class="grade2_amount fee_text"></p>
-                            <p class="grade2_amount fee_text"></p>
-                            <p class="grade2_amount fee_text"></p>
+                            <p class="grade2_amount fee_text">NA</p>
+                            <p class="grade2_amount fee_text">NA</p>
+                            <p class="grade2_amount fee_text">NA</p>
+                            <p class="grade2_amount fee_text">NA</p>
+                            <p class="grade2_amount fee_text">NA</p>
+                            <p class="grade2_amount fee_text">NA</p>
+                            <p class="grade2_amount fee_text">NA</p>
 
 
 
@@ -676,13 +676,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Frequency</h5>
-                            <p class="grade2_frequency fee_text"></p>
-                            <p class="grade2_frequency fee_text"></p>
-                            <p class="grade2_frequency fee_text"></p>
-                            <p class="grade2_frequency fee_text"></p>
-                            <p class="grade2_frequency fee_text"></p>
-                            <p class="grade2_frequency fee_text"></p>
-                            <p class="grade2_frequency fee_text"></p>
+                            <p class="grade2_frequency fee_text">NA</p>
+                            <p class="grade2_frequency fee_text">NA</p>
+                            <p class="grade2_frequency fee_text">NA</p>
+                            <p class="grade2_frequency fee_text">NA</p>
+                            <p class="grade2_frequency fee_text">NA</p>
+                            <p class="grade2_frequency fee_text">NA</p>
+                            <p class="grade2_frequency fee_text">NA</p>
 
 
 
@@ -693,13 +693,13 @@
 
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Type</h5>
-                            <p class="grade3_feename fee_text"></p>
-                            <p class="grade3_feename fee_text"></p>
-                            <p class="grade3_feename fee_text"></p>
-                            <p class="grade3_feename fee_text"></p>
-                            <p class="grade3_feename fee_text"></p>
-                            <p class="grade3_feename fee_text"></p>
-                            <p class="grade3_feename fee_text"></p>
+                            <p class="grade3_feename fee_text">NA</p>
+                            <p class="grade3_feename fee_text">NA</p>
+                            <p class="grade3_feename fee_text">NA</p>
+                            <p class="grade3_feename fee_text">NA</p>
+                            <p class="grade3_feename fee_text">NA</p>
+                            <p class="grade3_feename fee_text">NA</p>
+                            <p class="grade3_feename fee_text">NA</p>
 
 
 
@@ -708,13 +708,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Amount</h5>
-                            <p class="grade3_amount fee_text"></p>
-                            <p class="grade3_amount fee_text"></p>
-                            <p class="grade3_amount fee_text"></p>
-                            <p class="grade3_amount fee_text"></p>
-                            <p class="grade3_amount fee_text"></p>
-                            <p class="grade3_amount fee_text"></p>
-                            <p class="grade3_amount fee_text"></p>
+                            <p class="grade3_amount fee_text">NA</p>
+                            <p class="grade3_amount fee_text">NA</p>
+                            <p class="grade3_amount fee_text">NA</p>
+                            <p class="grade3_amount fee_text">NA</p>
+                            <p class="grade3_amount fee_text">NA</p>
+                            <p class="grade3_amount fee_text">NA</p>
+                            <p class="grade3_amount fee_text">NA</p>
 
 
 
@@ -724,13 +724,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Frequency</h5>
-                            <p class="grade3_frequency fee_text"></p>
-                            <p class="grade3_frequency fee_text"></p>
-                            <p class="grade3_frequency fee_text"></p>
-                            <p class="grade3_frequency fee_text"></p>
-                            <p class="grade3_frequency fee_text"></p>
-                            <p class="grade3_frequency fee_text"></p>
-                            <p class="grade3_frequency fee_text"></p>
+                            <p class="grade3_frequency fee_text">NA</p>
+                            <p class="grade3_frequency fee_text">NA</p>
+                            <p class="grade3_frequency fee_text">NA</p>
+                            <p class="grade3_frequency fee_text">NA</p>
+                            <p class="grade3_frequency fee_text">NA</p>
+                            <p class="grade3_frequency fee_text">NA</p>
+                            <p class="grade3_frequency fee_text">NA</p>
 
 
 
@@ -741,13 +741,13 @@
 
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Type</h5>
-                            <p class="grade4_feename fee_text"></p>
-                            <p class="grade4_feename fee_text"></p>
-                            <p class="grade4_feename fee_text"></p>
-                            <p class="grade4_feename fee_text"></p>
-                            <p class="grade4_feename fee_text"></p>
-                            <p class="grade4_feename fee_text"></p>
-                            <p class="grade4_feename fee_text"></p>
+                            <p class="grade4_feename fee_text">NA</p>
+                            <p class="grade4_feename fee_text">NA</p>
+                            <p class="grade4_feename fee_text">NA</p>
+                            <p class="grade4_feename fee_text">NA</p>
+                            <p class="grade4_feename fee_text">NA</p>
+                            <p class="grade4_feename fee_text">NA</p>
+                            <p class="grade4_feename fee_text">NA</p>
 
 
 
@@ -756,13 +756,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Amount</h5>
-                            <p class="grade4_amount fee_text"></p>
-                            <p class="grade4_amount fee_text"></p>
-                            <p class="grade4_amount fee_text"></p>
-                            <p class="grade4_amount fee_text"></p>
-                            <p class="grade4_amount fee_text"></p>
-                            <p class="grade4_amount fee_text"></p>
-                            <p class="grade4_amount fee_text"></p>
+                            <p class="grade4_amount fee_text">NA</p>
+                            <p class="grade4_amount fee_text">NA</p>
+                            <p class="grade4_amount fee_text">NA</p>
+                            <p class="grade4_amount fee_text">NA</p>
+                            <p class="grade4_amount fee_text">NA</p>
+                            <p class="grade4_amount fee_text">NA</p>
+                            <p class="grade4_amount fee_text">NA</p>
 
 
 
@@ -772,13 +772,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Frequency</h5>
-                            <p class="grade4_frequency fee_text"></p>
-                            <p class="grade4_frequency fee_text"></p>
-                            <p class="grade4_frequency fee_text"></p>
-                            <p class="grade4_frequency fee_text"></p>
-                            <p class="grade4_frequency fee_text"></p>
-                            <p class="grade4_frequency fee_text"></p>
-                            <p class="grade4_frequency fee_text"></p>
+                            <p class="grade4_frequency fee_text">NA</p>
+                            <p class="grade4_frequency fee_text">NA</p>
+                            <p class="grade4_frequency fee_text">NA</p>
+                            <p class="grade4_frequency fee_text">NA</p>
+                            <p class="grade4_frequency fee_text">NA</p>
+                            <p class="grade4_frequency fee_text">NA</p>
+                            <p class="grade4_frequency fee_text">NA</p>
 
 
 
@@ -789,13 +789,13 @@
 
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Type</h5>
-                            <p class="grade5_feename fee_text"></p>
-                            <p class="grade5_feename fee_text"></p>
-                            <p class="grade5_feename fee_text"></p>
-                            <p class="grade5_feename fee_text"></p>
-                            <p class="grade5_feename fee_text"></p>
-                            <p class="grade5_feename fee_text"></p>
-                            <p class="grade5_feename fee_text"></p>
+                            <p class="grade5_feename fee_text">NA</p>
+                            <p class="grade5_feename fee_text">NA</p>
+                            <p class="grade5_feename fee_text">NA</p>
+                            <p class="grade5_feename fee_text">NA</p>
+                            <p class="grade5_feename fee_text">NA</p>
+                            <p class="grade5_feename fee_text">NA</p>
+                            <p class="grade5_feename fee_text">NA</p>
 
 
 
@@ -804,13 +804,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Amount</h5>
-                            <p class="grade5_amount fee_text"></p>
-                            <p class="grade5_amount fee_text"></p>
-                            <p class="grade5_amount fee_text"></p>
-                            <p class="grade5_amount fee_text"></p>
-                            <p class="grade5_amount fee_text"></p>
-                            <p class="grade5_amount fee_text"></p>
-                            <p class="grade5_amount fee_text"></p>
+                            <p class="grade5_amount fee_text">NA</p>
+                            <p class="grade5_amount fee_text">NA</p>
+                            <p class="grade5_amount fee_text">NA</p>
+                            <p class="grade5_amount fee_text">NA</p>
+                            <p class="grade5_amount fee_text">NA</p>
+                            <p class="grade5_amount fee_text">NA</p>
+                            <p class="grade5_amount fee_text">NA</p>
 
 
 
@@ -820,13 +820,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Frequency</h5>
-                            <p class="grade5_frequency fee_text"></p>
-                            <p class="grade5_frequency fee_text"></p>
-                            <p class="grade5_frequency fee_text"></p>
-                            <p class="grade5_frequency fee_text"></p>
-                            <p class="grade5_frequency fee_text"></p>
-                            <p class="grade5_frequency fee_text"></p>
-                            <p class="grade5_frequency fee_text"></p>
+                            <p class="grade5_frequency fee_text">NA</p>
+                            <p class="grade5_frequency fee_text">NA</p>
+                            <p class="grade5_frequency fee_text">NA</p>
+                            <p class="grade5_frequency fee_text">NA</p>
+                            <p class="grade5_frequency fee_text">NA</p>
+                            <p class="grade5_frequency fee_text">NA</p>
+                            <p class="grade5_frequency fee_text">NA</p>
 
 
 
@@ -837,13 +837,13 @@
 
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Type</h5>
-                            <p class="grade6_feename fee_text"></p>
-                            <p class="grade6_feename fee_text"></p>
-                            <p class="grade6_feename fee_text"></p>
-                            <p class="grade6_feename fee_text"></p>
-                            <p class="grade6_feename fee_text"></p>
-                            <p class="grade6_feename fee_text"></p>
-                            <p class="grade6_feename fee_text"></p>
+                            <p class="grade6_feename fee_text">NA</p>
+                            <p class="grade6_feename fee_text">NA</p>
+                            <p class="grade6_feename fee_text">NA</p>
+                            <p class="grade6_feename fee_text">NA</p>
+                            <p class="grade6_feename fee_text">NA</p>
+                            <p class="grade6_feename fee_text">NA</p>
+                            <p class="grade6_feename fee_text">NA</p>
 
 
 
@@ -852,13 +852,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Amount</h5>
-                            <p class="grade6_amount fee_text"></p>
-                            <p class="grade6_amount fee_text"></p>
-                            <p class="grade6_amount fee_text"></p>
-                            <p class="grade6_amount fee_text"></p>
-                            <p class="grade6_amount fee_text"></p>
-                            <p class="grade6_amount fee_text"></p>
-                            <p class="grade6_amount fee_text"></p>
+                            <p class="grade6_amount fee_text">NA</p>
+                            <p class="grade6_amount fee_text">NA</p>
+                            <p class="grade6_amount fee_text">NA</p>
+                            <p class="grade6_amount fee_text">NA</p>
+                            <p class="grade6_amount fee_text">NA</p>
+                            <p class="grade6_amount fee_text">NA</p>
+                            <p class="grade6_amount fee_text">NA</p>
 
 
 
@@ -868,13 +868,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Frequency</h5>
-                            <p class="grade6_frequency fee_text"></p>
-                            <p class="grade6_frequency fee_text"></p>
-                            <p class="grade6_frequency fee_text"></p>
-                            <p class="grade6_frequency fee_text"></p>
-                            <p class="grade6_frequency fee_text"></p>
-                            <p class="grade6_frequency fee_text"></p>
-                            <p class="grade6_frequency fee_text"></p>
+                            <p class="grade6_frequency fee_text">NA</p>
+                            <p class="grade6_frequency fee_text">NA</p>
+                            <p class="grade6_frequency fee_text">NA</p>
+                            <p class="grade6_frequency fee_text">NA</p>
+                            <p class="grade6_frequency fee_text">NA</p>
+                            <p class="grade6_frequency fee_text">NA</p>
+                            <p class="grade6_frequency fee_text">NA</p>
 
 
 
@@ -885,13 +885,13 @@
 
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Type</h5>
-                            <p class="grade7_feename fee_text"></p>
-                            <p class="grade7_feename fee_text"></p>
-                            <p class="grade7_feename fee_text"></p>
-                            <p class="grade7_feename fee_text"></p>
-                            <p class="grade7_feename fee_text"></p>
-                            <p class="grade7_feename fee_text"></p>
-                            <p class="grade7_feename fee_text"></p>
+                            <p class="grade7_feename fee_text">NA</p>
+                            <p class="grade7_feename fee_text">NA</p>
+                            <p class="grade7_feename fee_text">NA</p>
+                            <p class="grade7_feename fee_text">NA</p>
+                            <p class="grade7_feename fee_text">NA</p>
+                            <p class="grade7_feename fee_text">NA</p>
+                            <p class="grade7_feename fee_text">NA</p>
 
 
 
@@ -900,13 +900,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Amount</h5>
-                            <p class="grade7_amount fee_text"></p>
-                            <p class="grade7_amount fee_text"></p>
-                            <p class="grade7_amount fee_text"></p>
-                            <p class="grade7_amount fee_text"></p>
-                            <p class="grade7_amount fee_text"></p>
-                            <p class="grade7_amount fee_text"></p>
-                            <p class="grade7_amount fee_text"></p>
+                            <p class="grade7_amount fee_text">NA</p>
+                            <p class="grade7_amount fee_text">NA</p>
+                            <p class="grade7_amount fee_text">NA</p>
+                            <p class="grade7_amount fee_text">NA</p>
+                            <p class="grade7_amount fee_text">NA</p>
+                            <p class="grade7_amount fee_text">NA</p>
+                            <p class="grade7_amount fee_text">NA</p>
 
 
 
@@ -916,13 +916,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Frequency</h5>
-                            <p class="grade7_frequency fee_text"></p>
-                            <p class="grade7_frequency fee_text"></p>
-                            <p class="grade7_frequency fee_text"></p>
-                            <p class="grade7_frequency fee_text"></p>
-                            <p class="grade7_frequency fee_text"></p>
-                            <p class="grade7_frequency fee_text"></p>
-                            <p class="grade7_frequency fee_text"></p>
+                            <p class="grade7_frequency fee_text">NA</p>
+                            <p class="grade7_frequency fee_text">NA</p>
+                            <p class="grade7_frequency fee_text">NA</p>
+                            <p class="grade7_frequency fee_text">NA</p>
+                            <p class="grade7_frequency fee_text">NA</p>
+                            <p class="grade7_frequency fee_text">NA</p>
+                            <p class="grade7_frequency fee_text">NA</p>
 
 
 
@@ -933,13 +933,13 @@
 
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Type</h5>
-                            <p class="grade8_feename fee_text"></p>
-                            <p class="grade8_feename fee_text"></p>
-                            <p class="grade8_feename fee_text"></p>
-                            <p class="grade8_feename fee_text"></p>
-                            <p class="grade8_feename fee_text"></p>
-                            <p class="grade8_feename fee_text"></p>
-                            <p class="grade8_feename fee_text"></p>
+                            <p class="grade8_feename fee_text">NA</p>
+                            <p class="grade8_feename fee_text">NA</p>
+                            <p class="grade8_feename fee_text">NA</p>
+                            <p class="grade8_feename fee_text">NA</p>
+                            <p class="grade8_feename fee_text">NA</p>
+                            <p class="grade8_feename fee_text">NA</p>
+                            <p class="grade8_feename fee_text">NA</p>
 
 
 
@@ -948,13 +948,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Amount</h5>
-                            <p class="grade8_amount fee_text"></p>
-                            <p class="grade8_amount fee_text"></p>
-                            <p class="grade8_amount fee_text"></p>
-                            <p class="grade8_amount fee_text"></p>
-                            <p class="grade8_amount fee_text"></p>
-                            <p class="grade8_amount fee_text"></p>
-                            <p class="grade8_amount fee_text"></p>
+                            <p class="grade8_amount fee_text">NA</p>
+                            <p class="grade8_amount fee_text">NA</p>
+                            <p class="grade8_amount fee_text">NA</p>
+                            <p class="grade8_amount fee_text">NA</p>
+                            <p class="grade8_amount fee_text">NA</p>
+                            <p class="grade8_amount fee_text">NA</p>
+                            <p class="grade8_amount fee_text">NA</p>
 
 
 
@@ -964,13 +964,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Frequency</h5>
-                            <p class="grade8_frequency fee_text"></p>
-                            <p class="grade8_frequency fee_text"></p>
-                            <p class="grade8_frequency fee_text"></p>
-                            <p class="grade8_frequency fee_text"></p>
-                            <p class="grade8_frequency fee_text"></p>
-                            <p class="grade8_frequency fee_text"></p>
-                            <p class="grade8_frequency fee_text"></p>
+                            <p class="grade8_frequency fee_text">NA</p>
+                            <p class="grade8_frequency fee_text">NA</p>
+                            <p class="grade8_frequency fee_text">NA</p>
+                            <p class="grade8_frequency fee_text">NA</p>
+                            <p class="grade8_frequency fee_text">NA</p>
+                            <p class="grade8_frequency fee_text">NA</p>
+                            <p class="grade8_frequency fee_text">NA</p>
 
 
 
@@ -980,13 +980,13 @@
 
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Type</h5>
-                            <p class="grade9_feename fee_text"></p>
-                            <p class="grade9_feename fee_text"></p>
-                            <p class="grade9_feename fee_text"></p>
-                            <p class="grade9_feename fee_text"></p>
-                            <p class="grade9_feename fee_text"></p>
-                            <p class="grade9_feename fee_text"></p>
-                            <p class="grade9_feename fee_text"></p>
+                            <p class="grade9_feename fee_text">NA</p>
+                            <p class="grade9_feename fee_text">NA</p>
+                            <p class="grade9_feename fee_text">NA</p>
+                            <p class="grade9_feename fee_text">NA</p>
+                            <p class="grade9_feename fee_text">NA</p>
+                            <p class="grade9_feename fee_text">NA</p>
+                            <p class="grade9_feename fee_text">NA</p>
 
 
 
@@ -995,13 +995,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Amount</h5>
-                            <p class="grade9_amount fee_text"></p>
-                            <p class="grade9_amount fee_text"></p>
-                            <p class="grade9_amount fee_text"></p>
-                            <p class="grade9_amount fee_text"></p>
-                            <p class="grade9_amount fee_text"></p>
-                            <p class="grade9_amount fee_text"></p>
-                            <p class="grade9_amount fee_text"></p>
+                            <p class="grade9_amount fee_text">NA</p>
+                            <p class="grade9_amount fee_text">NA</p>
+                            <p class="grade9_amount fee_text">NA</p>
+                            <p class="grade9_amount fee_text">NA</p>
+                            <p class="grade9_amount fee_text">NA</p>
+                            <p class="grade9_amount fee_text">NA</p>
+                            <p class="grade9_amount fee_text">NA</p>
 
 
 
@@ -1011,13 +1011,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Frequency</h5>
-                            <p class="grade9_frequency fee_text"></p>
-                            <p class="grade9_frequency fee_text"></p>
-                            <p class="grade9_frequency fee_text"></p>
-                            <p class="grade9_frequency fee_text"></p>
-                            <p class="grade9_frequency fee_text"></p>
-                            <p class="grade9_frequency fee_text"></p>
-                            <p class="grade9_frequency fee_text"></p>
+                            <p class="grade9_frequency fee_text">NA</p>
+                            <p class="grade9_frequency fee_text">NA</p>
+                            <p class="grade9_frequency fee_text">NA</p>
+                            <p class="grade9_frequency fee_text">NA</p>
+                            <p class="grade9_frequency fee_text">NA</p>
+                            <p class="grade9_frequency fee_text">NA</p>
+                            <p class="grade9_frequency fee_text">NA</p>
 
 
 
@@ -1027,13 +1027,13 @@
 
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Type</h5>
-                            <p class="grade10_feename fee_text"></p>
-                            <p class="grade10_feename fee_text"></p>
-                            <p class="grade10_feename fee_text"></p>
-                            <p class="grade10_feename fee_text"></p>
-                            <p class="grade10_feename fee_text"></p>
-                            <p class="grade10_feename fee_text"></p>
-                            <p class="grade10_feename fee_text"></p>
+                            <p class="grade10_feename fee_text">NA</p>
+                            <p class="grade10_feename fee_text">NA</p>
+                            <p class="grade10_feename fee_text">NA</p>
+                            <p class="grade10_feename fee_text">NA</p>
+                            <p class="grade10_feename fee_text">NA</p>
+                            <p class="grade10_feename fee_text">NA</p>
+                            <p class="grade10_feename fee_text">NA</p>
 
 
 
@@ -1042,13 +1042,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Amount</h5>
-                            <p class="grade10_amount fee_text"></p>
-                            <p class="grade10_amount fee_text"></p>
-                            <p class="grade10_amount fee_text"></p>
-                            <p class="grade10_amount fee_text"></p>
-                            <p class="grade10_amount fee_text"></p>
-                            <p class="grade10_amount fee_text"></p>
-                            <p class="grade10_amount fee_text"></p>
+                            <p class="grade10_amount fee_text">NA</p>
+                            <p class="grade10_amount fee_text">NA</p>
+                            <p class="grade10_amount fee_text">NA</p>
+                            <p class="grade10_amount fee_text">NA</p>
+                            <p class="grade10_amount fee_text">NA</p>
+                            <p class="grade10_amount fee_text">NA</p>
+                            <p class="grade10_amount fee_text">NA</p>
 
 
 
@@ -1058,13 +1058,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Frequency</h5>
-                            <p class="grade10_frequency fee_text"></p>
-                            <p class="grade10_frequency fee_text"></p>
-                            <p class="grade10_frequency fee_text"></p>
-                            <p class="grade10_frequency fee_text"></p>
-                            <p class="grade10_frequency fee_text"></p>
-                            <p class="grade10_frequency fee_text"></p>
-                            <p class="grade10_frequency fee_text"></p>
+                            <p class="grade10_frequency fee_text">NA</p>
+                            <p class="grade10_frequency fee_text">NA</p>
+                            <p class="grade10_frequency fee_text">NA</p>
+                            <p class="grade10_frequency fee_text">NA</p>
+                            <p class="grade10_frequency fee_text">NA</p>
+                            <p class="grade10_frequency fee_text">NA</p>
+                            <p class="grade10_frequency fee_text">NA</p>
 
 
 
@@ -1075,13 +1075,13 @@
 
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Type</h5>
-                            <p class="grade11_feename fee_text"></p>
-                            <p class="grade11_feename fee_text"></p>
-                            <p class="grade11_feename fee_text"></p>
-                            <p class="grade11_feename fee_text"></p>
-                            <p class="grade11_feename fee_text"></p>
-                            <p class="grade11_feename fee_text"></p>
-                            <p class="grade11_feename fee_text"></p>
+                            <p class="grade11_feename fee_text">NA</p>
+                            <p class="grade11_feename fee_text">NA</p>
+                            <p class="grade11_feename fee_text">NA</p>
+                            <p class="grade11_feename fee_text">NA</p>
+                            <p class="grade11_feename fee_text">NA</p>
+                            <p class="grade11_feename fee_text">NA</p>
+                            <p class="grade11_feename fee_text">NA</p>
 
 
 
@@ -1090,13 +1090,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Amount</h5>
-                            <p class="grade11_amount fee_text"></p>
-                            <p class="grade11_amount fee_text"></p>
-                            <p class="grade11_amount fee_text"></p>
-                            <p class="grade11_amount fee_text"></p>
-                            <p class="grade11_amount fee_text"></p>
-                            <p class="grade11_amount fee_text"></p>
-                            <p class="grade11_amount fee_text"></p>
+                            <p class="grade11_amount fee_text">NA</p>
+                            <p class="grade11_amount fee_text">NA</p>
+                            <p class="grade11_amount fee_text">NA</p>
+                            <p class="grade11_amount fee_text">NA</p>
+                            <p class="grade11_amount fee_text">NA</p>
+                            <p class="grade11_amount fee_text">NA</p>
+                            <p class="grade11_amount fee_text">NA</p>
 
 
 
@@ -1106,13 +1106,13 @@
                         </div>
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Frequency</h5>
-                            <p class="grade11_frequency fee_text"></p>
-                            <p class="grade11_frequency fee_text"></p>
-                            <p class="grade11_frequency fee_text"></p>
-                            <p class="grade11_frequency fee_text"></p>
-                            <p class="grade11_frequency fee_text"></p>
-                            <p class="grade11_frequency fee_text"></p>
-                            <p class="grade11_frequency fee_text"></p>
+                            <p class="grade11_frequency fee_text">NA</p>
+                            <p class="grade11_frequency fee_text">NA</p>
+                            <p class="grade11_frequency fee_text">NA</p>
+                            <p class="grade11_frequency fee_text">NA</p>
+                            <p class="grade11_frequency fee_text">NA</p>
+                            <p class="grade11_frequency fee_text">NA</p>
+                            <p class="grade11_frequency fee_text">NA</p>
 
 
 
@@ -1123,13 +1123,13 @@
 
                         <div class="col-4">
                             <h5 class="mb-4 fee_heading">Type</h5>
-                            <p class="grade12_feename fee_text"></p>
-                            <p class="grade12_feename fee_text"></p>
-                            <p class="grade12_feename fee_text"></p>
-                            <p class="grade12_feename fee_text"></p>
-                            <p class="grade12_feename fee_text"></p>
-                            <p class="grade12_feename fee_text"></p>
-                            <p class="grade12_feename fee_text"></p>
+                            <p class="grade12_feename fee_text">NA</p>
+                            <p class="grade12_feename fee_text">NA</p>
+                            <p class="grade12_feename fee_text">NA</p>
+                            <p class="grade12_feename fee_text">NA</p>
+                            <p class="grade12_feename fee_text">NA</p>
+                            <p class="grade12_feename fee_text">NA</p>
+                            <p class="grade12_feename fee_text">NA</p>
 
 
 
@@ -1138,13 +1138,13 @@
                         </div>
                         <div class="col-md-4">
                             <h5 class="mb-4 fee_heading">Amount</h5>
-                            <p class="grade12_amount fee_text"></p>
-                            <p class="grade12_amount fee_text"></p>
-                            <p class="grade12_amount fee_text"></p>
-                            <p class="grade12_amount fee_text"></p>
-                            <p class="grade12_amount fee_text"></p>
-                            <p class="grade12_amount fee_text"></p>
-                            <p class="grade12_amount fee_text"></p>
+                            <p class="grade12_amount fee_text">NA</p>
+                            <p class="grade12_amount fee_text">NA</p>
+                            <p class="grade12_amount fee_text">NA</p>
+                            <p class="grade12_amount fee_text">NA</p>
+                            <p class="grade12_amount fee_text">NA</p>
+                            <p class="grade12_amount fee_text">NA</p>
+                            <p class="grade12_amount fee_text">NA</p>
 
 
 
@@ -1154,13 +1154,13 @@
                         </div>
                         <div class="col-md-4">
                             <h5 class="mb-4 fee_heading">Frequency</h5>
-                            <p class="grade12_frequency fee_text"></p>
-                            <p class="grade12_frequency fee_text"></p>
-                            <p class="grade12_frequency fee_text"></p>
-                            <p class="grade12_frequency fee_text"></p>
-                            <p class="grade12_frequency fee_text"></p>
-                            <p class="grade12_frequency fee_text"></p>
-                            <p class="grade12_frequency fee_text"></p>
+                            <p class="grade12_frequency fee_text">NA</p>
+                            <p class="grade12_frequency fee_text">NA</p>
+                            <p class="grade12_frequency fee_text">NA</p>
+                            <p class="grade12_frequency fee_text">NA</p>
+                            <p class="grade12_frequency fee_text">NA</p>
+                            <p class="grade12_frequency fee_text">NA</p>
+                            <p class="grade12_frequency fee_text">NA</p>
 
 
 
@@ -1201,7 +1201,7 @@
                     <div class="totla_fee_ad py-2 px-4" id="pre_nursery_total_ad">
 
                         <p class="roboto bold">Total Cost for new admission</p>
-                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:50.29px">₹2,51,000</p>
+                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:50.29px">NA</p>
                         <p class="roboto bold">for the first year</p>
 
 
@@ -1210,88 +1210,88 @@
                     <div class="totla_fee_ad py-2 px-4" id="Nursery_total_ad">
 
                         <p class="helvetica bold">Total Cost for new admission</p>
-                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">₹2,51,000</p>
-                        <p class="helvetica bold">for the first year</p>
+                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">NA</p>
+                        <p class="helvetica bold">for NAthe first year</p>
 
                     </div>
                     <div class="totla_fee_ad py-2 px-4" id="LKG_total_ad">
                         <p class="helvetica bold">Total Cost for new admission</p>
-                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">₹2,51,000</p>
-                        <p class="helvetica bold">for the first year</p>
+                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">NA</p>
+                        <p class="helvetica bold">for NAthe first year</p>
                     </div>
                     <div class="totla_fee_ad py-2 px-4" id="UKG_total_ad">
                         <p class="roboto bold">Total Cost for new admission</p>
-                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">₹2,51,000</p>
+                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">NA</p>
                         <p class="roboto bold helvetica">for the first year</p>
 
                     </div>
                     <div class="totla_fee_ad py-2 px-4" id="I_total_ad">
 
                         <p class="roboto bold helvetica">Total Cost for new admission</p>
-                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">₹2,51,000</p>
+                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">NA</p>
                         <p class="roboto bold helvetica">for the first year</p>
 
 
                     </div>
                     <div class="totla_fee_ad py-2 px-4" id="II_total_ad">
                         <p class="roboto bold helvetic">Total Cost for new admission</p>
-                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">₹2,51,000</p>
+                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">NA</p>
                         <p class="roboto bold helvetica">for the first year</p>
                     </div>
                     <div class="totla_fee_ad py-2 px-4" id="III_total_ad">
                         <p class="roboto bold helvetica">Total Cost for new admission</p>
-                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">₹2,51,000</p>
+                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">NA</p>
                         <p class="roboto bold helvetica">for the first year</p>
 
                     </div>
                     <div class="totla_fee_ad py-2 px-4" id="IV_total_ad">
                         <p class="roboto bold helvetica">Total Cost for new admission</p>
-                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">₹2,51,000</p>
+                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">NA</p>
                         <p class="roboto bold helvetica">for the first year</p>
 
                     </div>
                     <div class="totla_fee_ad py-2 px-4" id="V_total_ad">
                         <p class="roboto bold helvetica">Total Cost for new admission</p>
-                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">₹2,51,000</p>
+                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">NA</p>
                         <p class="roboto bold helvetica">for the first year</p>
 
 
                     </div>
                     <div class="totla_fee_ad py-2 px-4" id="VI_total_ad">
                         <p class="roboto bold helvetica">Total Cost for new admission</p>
-                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">₹2,51,000</p>
+                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">NA</p>
                         <p class="roboto bold helvetica">for the first year</p>
 
 
                     </div>
                     <div class="totla_fee_ad py-2 px-4" id="VII_total_ad">
                         <p class="roboto bold helvetica">Total Cost for new admission</p>
-                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">₹2,51,000</p>
+                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">NA</p>
                         <p class="roboto bold helvetica">for the first year</p>
                     </div>
                     <div class="totla_fee_ad py-2 px-4" id="VIII_total_ad">
                         <p class="roboto bold helvetica">Total Cost for new admission</p>
-                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">₹2,51,000</p>
+                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">NA</p>
                         <p class="roboto bold helvetica">for the first year</p>
 
                     </div>
                     <div class="totla_fee_ad py-2 px-4" id="IX_total_ad">
                         <p class="roboto bold helvetica">Total Cost for new admission</p>
-                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">₹2,51,000</p>
+                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">NA</p>
                         <p class="roboto bold helvetica">for the first year</p>
 
 
                     </div>
                     <div class="totla_fee_ad py-2 px-4" id="X_total_ad">
                         <p class="roboto bold helvetica">Total Cost for new admission</p>
-                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">₹2,51,000</p>
+                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">NA</p>
                         <p class="roboto bold helvetica">for the first year</p>
 
                     </div>
                     <div class="totla_fee_ad py-2 px-4" id="XI_total_ad">
 
                         <p class="roboto bold helvetica">Total Cost for new admission</p>
-                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">₹2,51,000</p>
+                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">NA</p>
                         <p class="roboto bold helvetica">for the first year</p>
 
 
@@ -1299,7 +1299,7 @@
                     <div class="totla_fee_ad py-2 px-4" id="XII_total_ad">
 
                         <p class="roboto bold helvetica">Total Cost for new admission</p>
-                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">₹2,51,000</p>
+                        <p class="total_yearly_y bold helvetica" style="color:#001AFF;font-size:60.29px">NA</p>
                         <p class="roboto bold helvetica">for the first year</p>
 
                     </div>
@@ -1329,105 +1329,110 @@
                 <div class="" style="background-color:#F9F9FF">
                     <div class="totla_fee_ad_m py-2 px-4" id="pre_nursery_total_ad_m">
 
-                        <p class="roboto bold">Total Cost for new admission</p>
-                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">₹2,51,000</p>
-                        <p class="roboto bold">for the first year</p>
+                        <p class="roboto bold">Monthly Cost</p>
+                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">NA</p>
 
 
 
                     </div>
                     <div class="totla_fee_ad_m py-2 px-4" id="Nursery_total_ad_m">
-                        <p class="roboto bold">Total Cost for new admission</p>
-                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">₹2,51,000</p>
-                        <p class="roboto bold">for the first year</p>
+                        <p class="roboto bold">Monthly Cost</p>
+                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">NA</p>
 
                     </div>
                     <div class="totla_fee_ad_m py-2 px-4" id="LKG_total_ad_m">
 
-                        <p class="roboto bold">Total Cost for new admission</p>
-                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">₹2,51,000</p>
-                        <p class="roboto bold">for the first year</p>
+                        <p class="roboto bold">Monthly Cost</p>
+
+                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">NA</p>
                     </div>
                     <div class="totla_fee_ad_m py-2 px-4" id="UKG_total_ad_m">
-                        <p class="roboto bold">Total Cost for new admission</p>
-                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">₹2,51,000</p>
-                        <p class="roboto bold">for the first year</p>
+                        <p class="roboto bold">Monthly Cost</p>
+
+                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">NA</p>
 
                     </div>
                     <div class="totla_fee_ad_m py-2 px-4" id="I_total_ad_m">
 
-                        <p class="roboto bold">Total Cost for new admission</p>
-                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">₹2,51,000</p>
-                        <p class="roboto bold">for the first year</p>
+                        <p class="roboto bold">Monthly Cost</p>
+                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">NA</p>
+
 
 
                     </div>
                     <div class="totla_fee_ad_m py-2 px-4" id="II_total_ad_m">
-                        <p class="roboto bold">Total Cost for new admission</p>
-                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">₹2,51,000</p>
-                        <p class="roboto bold">for the first year</p>
+                        <p class="roboto bold">Monthly Cost</p>
+
+                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">NA</p>
+
                     </div>
                     <div class="totla_fee_ad_m py-2 px-4" id="III_total_ad_m">
-                        <p class="roboto bold">Total Cost for new admission</p>
-                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">₹2,51,000</p>
-                        <p class="roboto bold">for the first year</p>
+                        <p class="roboto bold">Monthly Cost</p>
+
+                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">NA</p>
+
 
                     </div>
                     <div class="totla_fee_ad_m py-2 px-4" id="IV_total_ad_m">
-                        <p class="roboto bold">Total Cost for new admission</p>
-                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">₹2,51,000</p>
-                        <p class="roboto bold">for the first year</p>
+                        <p class="roboto bold">Monthly Cost</p>
+
+                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">NA</p>
+
 
                     </div>
                     <div class="totla_fee_ad_m py-2 px-4" id="V_total_ad_m">
-                        <p class="roboto bold">Total Cost for new admission</p>
-                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">₹2,51,000</p>
-                        <p class="roboto bold">for the first year</p>
+                        <p class="roboto bold">Monthly Cost</p>
+
+                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">NA</p>
+
 
 
                     </div>
                     <div class="totla_fee_ad_m py-2 px-4" id="VI_total_ad_m">
-                        <p class="roboto bold">Total Cost for new admission</p>
-                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">₹2,51,000</p>
-                        <p class="roboto bold">for the first year</p>
+                        <p class="roboto bold">Monthly Cost</p>
 
+                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">NA</p>
 
                     </div>
                     <div class="totla_fee_ad_m py-2 px-4" id="VII_total_ad_m">
-                        <p class="roboto bold">Total Cost for new admission</p>
-                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">₹2,51,000</p>
-                        <p class="roboto bold">for the first year</p>
+                        <p class="roboto bold">Monthly Cost</p>
+
+                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">NA</p>
+
                     </div>
                     <div class="totla_fee_ad_m py-2 px-4" id="VIII_total_ad_m">
-                        <p class="roboto bold">Total Cost for new admission</p>
-                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">₹2,51,000</p>
-                        <p class="roboto bold">for the first year</p>
+                        <p class="roboto bold">Monthly Cost</p>
+
+                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">NA</p>
+
 
                     </div>
                     <div class="totla_fee_ad_m py-2 px-4" id="IX_total_ad_m">
-                        <p class="roboto bold">Total Cost for new admission</p>
-                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">₹2,51,000</p>
-                        <p class="roboto bold">for the first year</p>
+                        <p class="roboto bold">Monthly Cost</p>
+
+                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">NA</p>
 
 
                     </div>
                     <div class="totla_fee_ad_m py-2 px-4" id="X_total_ad_m">
-                        <p class="roboto bold">Total Cost for new admission</p>
-                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">₹2,51,000</p>
-                        <p class="roboto bold">for the first year</p>
+                        <p class="roboto bold">Monthly Cost</p>
+
+                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">NA</p>
 
                     </div>
                     <div class="totla_fee_ad_m py-2 px-4" id="XI_total_ad_m">
-                        <p class="roboto bold">Total Cost for new admission</p>
-                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">₹2,51,000</p>
-                        <p class="roboto bold">for the first year</p>
+                        <p class="roboto bold">Monthly Cost</p>
+
+                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">NA</p>
+
 
 
                     </div>
                     <div class="totla_fee_ad_m py-2 px-4" id="XII_total_ad_m">
-                        <p class="roboto bold">Total Cost for new admission</p>
-                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">₹2,51,000</p>
-                        <p class="roboto bold">for the first year</p>
+                        <p class="roboto bold">Monthly Cost</p>
+
+                        <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">NA</p>
+                       
                     </div>
 
 
@@ -1479,18 +1484,18 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">Eligibility (Age Qualification)</p>
-                        <p class="eligible_age bold">2 Years to 3 Years as on </p>
+                        <p class="eligible_age bold">NA </p>
 
                     </div>
                     <div class="col-md-4">
 
                         <p class="helvetica" style="font-size:17px;color:#000000">Eligibility(Marks)</p>
-                        <p class="marks bold">31 March, 2023</p>
+                        <p class="marks bold">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">Total Seats</p>
-                        <p class="total_seats bold">2 Years to 3 Years as on </p>
+                        <p class="total_seats bold">NA </p>
 
                     </div>
 
@@ -1498,19 +1503,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">Written Test</p>
-                        <p class="written_test bold">2 Years to 3 Years as on </p>
+                        <p class="written_test bold">NA </p>
 
 
                     </div>
                     <div class="col-md-4">
 
                         <p class="helvetica" style="font-size:17px;color:#000000">Student Interaction</p>
-                        <p class="student_interaction bold">31 March, 2023</p>
+                        <p class="student_interaction bold">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">Parents Interaction</p>
-                        <p class="parents_interaction bold">2 Years to 3 Years as on </p>
+                        <p class="parents_interaction bold">NA </p>
 
                     </div>
 
@@ -1518,19 +1523,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">Form_availability</p>
-                        <p class="form_availability bold">Online</p>
+                        <p class="form_availability bold">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">
                             Form Payment
                         </p>
-                        <p class="form_payment bold">Offline</p>
+                        <p class="form_payment bold">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">School timing</p>
-                        <p class="school_timing bold">dvfvdfvdfv</p>
+                        <p class="school_timing bold">NA</p>
 
                     </div>
                 </div>
@@ -1542,18 +1547,18 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">Eligibility (Age Qualification)</p>
-                        <p class="eligible_age bold">2 Years to 3 Years as on </p>
+                        <p class="eligible_age bold">NA </p>
 
                     </div>
                     <div class="col-md-4">
 
                         <p class="helvetica" style="font-size:17px;color:#000000">Eligibility(Marks)</p>
-                        <p class="marks bold">31 March, 2023</p>
+                        <p class="marks bold">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">Total Seats</p>
-                        <p class="total_seats bold">2 Years to 3 Years as on </p>
+                        <p class="total_seats bold">NA </p>
 
                     </div>
 
@@ -1561,19 +1566,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">Written Test</p>
-                        <p class="written_test bold">2 Years to 3 Years as on </p>
+                        <p class="written_test bold">NA </p>
 
 
                     </div>
                     <div class="col-md-4">
 
                         <p class="helvetica" style="font-size:17px;color:#000000">Student Interaction</p>
-                        <p class="student_interaction bold">31 March, 2023</p>
+                        <p class="student_interaction bold">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">Parents Interaction</p>
-                        <p class="parents_interaction bold">2 Years to 3 Years as on </p>
+                        <p class="parents_interaction bold">NA </p>
 
                     </div>
 
@@ -1581,19 +1586,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">Form_availability</p>
-                        <p class="form_availability bold">Online</p>
+                        <p class="form_availability bold">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">
                             Form Payment
                         </p>
-                        <p class="form_payment bold">Offline</p>
+                        <p class="form_payment bold">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">School timing</p>
-                        <p class="school_timing bold">dvfvdfvdfv</p>
+                        <p class="school_timing bold">NA</p>
 
                     </div>
                 </div>
@@ -1604,18 +1609,18 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">Eligibility (Age Qualification)</p>
-                        <p class="eligible_age bold">2 Years to 3 Years as on </p>
+                        <p class="eligible_age bold">NA </p>
 
                     </div>
                     <div class="col-md-4">
 
                         <p class="helvetica" style="font-size:17px;color:#000000">Eligibility(Marks)</p>
-                        <p class="marks bold">31 March, 2023</p>
+                        <p class="marks bold">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">Total Seats</p>
-                        <p class="total_seats bold">2 Years to 3 Years as on </p>
+                        <p class="total_seats bold">NA </p>
 
                     </div>
 
@@ -1623,19 +1628,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">Written Test</p>
-                        <p class="written_test bold">2 Years to 3 Years as on </p>
+                        <p class="written_test bold">NA </p>
 
 
                     </div>
                     <div class="col-md-4">
 
                         <p class="helvetica" style="font-size:17px;color:#000000">Student Interaction</p>
-                        <p class="student_interaction bold">31 March, 2023</p>
+                        <p class="student_interaction bold">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">Parents Interaction</p>
-                        <p class="parents_interaction bold">2 Years to 3 Years as on </p>
+                        <p class="parents_interaction bold">NA </p>
 
                     </div>
 
@@ -1643,19 +1648,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">Form_availability</p>
-                        <p class="form_availability bold">Online</p>
+                        <p class="form_availability bold">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">
                             Form Payment
                         </p>
-                        <p class="form_payment bold">Offline</p>
+                        <p class="form_payment bold">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">School timing</p>
-                        <p class="school_timing bold">dvfvdfvdfv</p>
+                        <p class="school_timing bold">NA</p>
 
                     </div>
                 </div>
@@ -1666,18 +1671,18 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">Eligibility (Age Qualification)</p>
-                        <p class="eligible_age bold">2 Years to 3 Years as on </p>
+                        <p class="eligible_age bold">NA </p>
 
                     </div>
                     <div class="col-md-4">
 
                         <p class="helvetica" style="font-size:17px;color:#000000">Eligibility(Marks)</p>
-                        <p class="marks bold">31 March, 2023</p>
+                        <p class="marks bold">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">Total Seats</p>
-                        <p class="total_seats bold">2 Years to 3 Years as on </p>
+                        <p class="total_seats bold">NA </p>
 
                     </div>
 
@@ -1685,19 +1690,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">Written Test</p>
-                        <p class="written_test bold">2 Years to 3 Years as on </p>
+                        <p class="written_test bold">NA </p>
 
 
                     </div>
                     <div class="col-md-4">
 
                         <p class="helvetica" style="font-size:17px;color:#000000">Student Interaction</p>
-                        <p class="student_interaction bold">31 March, 2023</p>
+                        <p class="student_interaction bold">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">Parents Interaction</p>
-                        <p class="parents_interaction bold">2 Years to 3 Years as on </p>
+                        <p class="parents_interaction bold">NA </p>
 
                     </div>
 
@@ -1705,19 +1710,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">Form_availability</p>
-                        <p class="form_availability bold">Online</p>
+                        <p class="form_availability bold">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">
                             Form Payment
                         </p>
-                        <p class="form_payment bold">Offline</p>
+                        <p class="form_payment bold">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">School timing</p>
-                        <p class="school_timing bold">dvfvdfvdfv</p>
+                        <p class="school_timing bold">NA</p>
 
                     </div>
                 </div>
@@ -1729,18 +1734,18 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">Eligibility (Age Qualification)</p>
-                        <p class="eligible_age bold">2 Years to 3 Years as on </p>
+                        <p class="eligible_age bold">NA </p>
 
                     </div>
                     <div class="col-md-4">
 
                         <p class="helvetica" style="font-size:17px;color:#000000">Eligibility(Marks)</p>
-                        <p class="marks bold">31 March, 2023</p>
+                        <p class="marks bold">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">Total Seats</p>
-                        <p class="total_seats bold">2 Years to 3 Years as on </p>
+                        <p class="total_seats bold">NA </p>
 
                     </div>
 
@@ -1748,19 +1753,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">Written Test</p>
-                        <p class="written_test bold">2 Years to 3 Years as on </p>
+                        <p class="written_test bold">NA </p>
 
 
                     </div>
                     <div class="col-md-4">
 
                         <p class="helvetica" style="font-size:17px;color:#000000">Student Interaction</p>
-                        <p class="student_interaction bold">31 March, 2023</p>
+                        <p class="student_interaction bold">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">Parents Interaction</p>
-                        <p class="parents_interaction bold">2 Years to 3 Years as on </p>
+                        <p class="parents_interaction bold">NA </p>
 
                     </div>
 
@@ -1768,19 +1773,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">Form_availability</p>
-                        <p class="form_availability bold">Online</p>
+                        <p class="form_availability bold">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">
                             Form Payment
                         </p>
-                        <p class="form_payment bold">Offline</p>
+                        <p class="form_payment bold">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">School timing</p>
-                        <p class="school_timing bold">dvfvdfvdfv</p>
+                        <p class="school_timing bold">NA</p>
 
                     </div>
                 </div>
@@ -1792,18 +1797,18 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p class="helvetica" style="font-size:17px;color:#000000">Eligibility (Age Qualification)</p>
-                        <p class="eligible_age bold">2 Years to 3 Years as on </p>
+                        <p class="eligible_age bold">NA </p>
 
                     </div>
                     <div class="col-md-4">
 
                         <p>Eligibility(Marks)</p>
-                        <p class="marks">31 March, 2023</p>
+                        <p class="marks">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>Total Seats</p>
-                        <p class="total_seats">2 Years to 3 Years as on </p>
+                        <p class="total_seats">NA </p>
 
                     </div>
 
@@ -1811,19 +1816,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Written Test</p>
-                        <p class="written_test">2 Years to 3 Years as on </p>
+                        <p class="written_test">NA </p>
 
 
                     </div>
                     <div class="col-md-4">
 
                         <p>Student Interaction</p>
-                        <p class="student_interaction">31 March, 2023</p>
+                        <p class="student_interaction">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>Parents Interaction</p>
-                        <p class="parents_interaction">2 Years to 3 Years as on </p>
+                        <p class="parents_interaction">NA </p>
 
                     </div>
 
@@ -1831,19 +1836,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Form_availability</p>
-                        <p class="form_availability">Online</p>
+                        <p class="form_availability">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>
                             Form Payment
                         </p>
-                        <p class="form_payment">Offline</p>
+                        <p class="form_payment">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>School timing</p>
-                        <p class="school_timing">dvfvdfvdfv</p>
+                        <p class="school_timing">NA</p>
 
                     </div>
                 </div>
@@ -1855,18 +1860,18 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Eligibility (Age Qualification)</p>
-                        <p class="eligible_age">2 Years to 3 Years as on </p>
+                        <p class="eligible_age">NA </p>
 
                     </div>
                     <div class="col-md-4">
 
                         <p>Eligibility(Marks)</p>
-                        <p class="marks">31 March, 2023</p>
+                        <p class="marks">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>Total Seats</p>
-                        <p class="total_seats">2 Years to 3 Years as on </p>
+                        <p class="total_seats">NA </p>
 
                     </div>
 
@@ -1874,19 +1879,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Written Test</p>
-                        <p class="written_test">2 Years to 3 Years as on </p>
+                        <p class="written_test">NA </p>
 
 
                     </div>
                     <div class="col-md-4">
 
                         <p>Student Interaction</p>
-                        <p class="student_interaction">31 March, 2023</p>
+                        <p class="student_interaction">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>Parents Interaction</p>
-                        <p class="parents_interaction">2 Years to 3 Years as on </p>
+                        <p class="parents_interaction">NA </p>
 
                     </div>
 
@@ -1894,19 +1899,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Form_availability</p>
-                        <p class="form_availability">Online</p>
+                        <p class="form_availability">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>
                             Form Payment
                         </p>
-                        <p class="form_payment">Offline</p>
+                        <p class="form_payment">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>School timing</p>
-                        <p class="school_timing">dvfvdfvdfv</p>
+                        <p class="school_timing">NA</p>
 
                     </div>
                 </div>
@@ -1918,18 +1923,18 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Eligibility (Age Qualification)</p>
-                        <p class="eligible_age">2 Years to 3 Years as on </p>
+                        <p class="eligible_age">NA </p>
 
                     </div>
                     <div class="col-md-4">
 
                         <p>Eligibility(Marks)</p>
-                        <p class="marks">31 March, 2023</p>
+                        <p class="marks">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>Total Seats</p>
-                        <p class="total_seats">2 Years to 3 Years as on </p>
+                        <p class="total_seats">NA </p>
 
                     </div>
 
@@ -1937,19 +1942,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Written Test</p>
-                        <p class="written_test">2 Years to 3 Years as on </p>
+                        <p class="written_test">NA </p>
 
 
                     </div>
                     <div class="col-md-4">
 
                         <p>Student Interaction</p>
-                        <p class="student_interaction">31 March, 2023</p>
+                        <p class="student_interaction">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>Parents Interaction</p>
-                        <p class="parents_interaction">2 Years to 3 Years as on </p>
+                        <p class="parents_interaction">NA </p>
 
                     </div>
 
@@ -1957,19 +1962,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Form_availability</p>
-                        <p class="form_availability">Online</p>
+                        <p class="form_availability">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>
                             Form Payment
                         </p>
-                        <p class="form_payment">Offline</p>
+                        <p class="form_payment">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>School timing</p>
-                        <p class="school_timing">dvfvdfvdfv</p>
+                        <p class="school_timing">NA</p>
 
                     </div>
                 </div>
@@ -1980,18 +1985,18 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Eligibility (Age Qualification)</p>
-                        <p class="eligible_age">2 Years to 3 Years as on </p>
+                        <p class="eligible_age">NA </p>
 
                     </div>
                     <div class="col-md-4">
 
                         <p>Eligibility(Marks)</p>
-                        <p class="marks">31 March, 2023</p>
+                        <p class="marks">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>Total Seats</p>
-                        <p class="total_seats">2 Years to 3 Years as on </p>
+                        <p class="total_seats">NA </p>
 
                     </div>
 
@@ -1999,19 +2004,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Written Test</p>
-                        <p class="written_test">2 Years to 3 Years as on </p>
+                        <p class="written_test">NA </p>
 
 
                     </div>
                     <div class="col-md-4">
 
                         <p>Student Interaction</p>
-                        <p class="student_interaction">31 March, 2023</p>
+                        <p class="student_interaction">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>Parents Interaction</p>
-                        <p class="parents_interaction">2 Years to 3 Years as on </p>
+                        <p class="parents_interaction">NA </p>
 
                     </div>
 
@@ -2019,19 +2024,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Form_availability</p>
-                        <p class="form_availability">Online</p>
+                        <p class="form_availability">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>
                             Form Payment
                         </p>
-                        <p class="form_payment">Offline</p>
+                        <p class="form_payment">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>School timing</p>
-                        <p class="school_timing">dvfvdfvdfv</p>
+                        <p class="school_timing">NA</p>
 
                     </div>
                 </div>
@@ -2043,18 +2048,18 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Eligibility (Age Qualification)</p>
-                        <p class="eligible_age">2 Years to 3 Years as on </p>
+                        <p class="eligible_age">NA </p>
 
                     </div>
                     <div class="col-md-4">
 
                         <p>Eligibility(Marks)</p>
-                        <p class="marks">31 March, 2023</p>
+                        <p class="marks">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>Total Seats</p>
-                        <p class="total_seats">2 Years to 3 Years as on </p>
+                        <p class="total_seats">NA </p>
 
                     </div>
 
@@ -2062,19 +2067,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Written Test</p>
-                        <p class="written_test">2 Years to 3 Years as on </p>
+                        <p class="written_test">NA </p>
 
 
                     </div>
                     <div class="col-md-4">
 
                         <p>Student Interaction</p>
-                        <p class="student_interaction">31 March, 2023</p>
+                        <p class="student_interaction">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>Parents Interaction</p>
-                        <p class="parents_interaction">2 Years to 3 Years as on </p>
+                        <p class="parents_interaction">NA </p>
 
                     </div>
 
@@ -2082,19 +2087,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Form_availability</p>
-                        <p class="form_availability">Online</p>
+                        <p class="form_availability">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>
                             Form Payment
                         </p>
-                        <p class="form_payment">Offline</p>
+                        <p class="form_payment">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>School timing</p>
-                        <p class="school_timing">dvfvdfvdfv</p>
+                        <p class="school_timing">NA</p>
 
                     </div>
                 </div>
@@ -2106,18 +2111,18 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Eligibility (Age Qualification)</p>
-                        <p class="eligible_age">2 Years to 3 Years as on </p>
+                        <p class="eligible_age">NA </p>
 
                     </div>
                     <div class="col-md-4">
 
                         <p>Eligibility(Marks)</p>
-                        <p class="marks">31 March, 2023</p>
+                        <p class="marks">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>Total Seats</p>
-                        <p class="total_seats">2 Years to 3 Years as on </p>
+                        <p class="total_seats">NA </p>
 
                     </div>
 
@@ -2125,19 +2130,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Written Test</p>
-                        <p class="written_test">2 Years to 3 Years as on </p>
+                        <p class="written_test">NA </p>
 
 
                     </div>
                     <div class="col-md-4">
 
                         <p>Student Interaction</p>
-                        <p class="student_interaction">31 March, 2023</p>
+                        <p class="student_interaction">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>Parents Interaction</p>
-                        <p class="parents_interaction">2 Years to 3 Years as on </p>
+                        <p class="parents_interaction">NA </p>
 
                     </div>
 
@@ -2145,19 +2150,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Form_availability</p>
-                        <p class="form_availability">Online</p>
+                        <p class="form_availability">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>
                             Form Payment
                         </p>
-                        <p class="form_payment">Offline</p>
+                        <p class="form_payment">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>School timing</p>
-                        <p class="school_timing">dvfvdfvdfv</p>
+                        <p class="school_timing">NA</p>
 
                     </div>
                 </div>
@@ -2169,18 +2174,18 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Eligibility (Age Qualification)</p>
-                        <p class="eligible_age">2 Years to 3 Years as on </p>
+                        <p class="eligible_age">NA </p>
 
                     </div>
                     <div class="col-md-4">
 
                         <p>Eligibility(Marks)</p>
-                        <p class="marks">31 March, 2023</p>
+                        <p class="marks">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>Total Seats</p>
-                        <p class="total_seats">2 Years to 3 Years as on </p>
+                        <p class="total_seats">NA </p>
 
                     </div>
 
@@ -2188,19 +2193,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Written Test</p>
-                        <p class="written_test">2 Years to 3 Years as on </p>
+                        <p class="written_test">NA </p>
 
 
                     </div>
                     <div class="col-md-4">
 
                         <p>Student Interaction</p>
-                        <p class="student_interaction">31 March, 2023</p>
+                        <p class="student_interaction">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>Parents Interaction</p>
-                        <p class="parents_interaction">2 Years to 3 Years as on </p>
+                        <p class="parents_interaction">NA </p>
 
                     </div>
 
@@ -2208,19 +2213,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Form_availability</p>
-                        <p class="form_availability">Online</p>
+                        <p class="form_availability">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>
                             Form Payment
                         </p>
-                        <p class="form_payment">Offline</p>
+                        <p class="form_payment">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>School timing</p>
-                        <p class="school_timing">dvfvdfvdfv</p>
+                        <p class="school_timing">NA</p>
 
                     </div>
                 </div>
@@ -2232,18 +2237,18 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Eligibility (Age Qualification)</p>
-                        <p class="eligible_age">2 Years to 3 Years as on </p>
+                        <p class="eligible_age">NA </p>
 
                     </div>
                     <div class="col-md-4">
 
                         <p>Eligibility(Marks)</p>
-                        <p class="marks">31 March, 2023</p>
+                        <p class="marks">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>Total Seats</p>
-                        <p class="total_seats">2 Years to 3 Years as on </p>
+                        <p class="total_seats">NA </p>
 
                     </div>
 
@@ -2251,19 +2256,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Written Test</p>
-                        <p class="written_test">2 Years to 3 Years as on </p>
+                        <p class="written_test">NA </p>
 
 
                     </div>
                     <div class="col-md-4">
 
                         <p>Student Interaction</p>
-                        <p class="student_interaction">31 March, 2023</p>
+                        <p class="student_interaction">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>Parents Interaction</p>
-                        <p class="parents_interaction">2 Years to 3 Years as on </p>
+                        <p class="parents_interaction">NA </p>
 
                     </div>
 
@@ -2271,19 +2276,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Form_availability</p>
-                        <p class="form_availability">Online</p>
+                        <p class="form_availability">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>
                             Form Payment
                         </p>
-                        <p class="form_payment">Offline</p>
+                        <p class="form_payment">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>School timing</p>
-                        <p class="school_timing">dvfvdfvdfv</p>
+                        <p class="school_timing">NA</p>
 
                     </div>
                 </div>
@@ -2295,18 +2300,18 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Eligibility (Age Qualification)</p>
-                        <p class="eligible_age">2 Years to 3 Years as on </p>
+                        <p class="eligible_age">NA </p>
 
                     </div>
                     <div class="col-md-4">
 
                         <p>Eligibility(Marks)</p>
-                        <p class="marks">31 March, 2023</p>
+                        <p class="marks">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>Total Seats</p>
-                        <p class="total_seats">2 Years to 3 Years as on </p>
+                        <p class="total_seats">NA </p>
 
                     </div>
 
@@ -2314,19 +2319,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Written Test</p>
-                        <p class="written_test">2 Years to 3 Years as on </p>
+                        <p class="written_test">NA </p>
 
 
                     </div>
                     <div class="col-md-4">
 
                         <p>Student Interaction</p>
-                        <p class="student_interaction">31 March, 2023</p>
+                        <p class="student_interaction">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>Parents Interaction</p>
-                        <p class="parents_interaction">2 Years to 3 Years as on </p>
+                        <p class="parents_interaction">NA </p>
 
                     </div>
 
@@ -2334,19 +2339,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Form_availability</p>
-                        <p class="form_availability">Online</p>
+                        <p class="form_availability">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>
                             Form Payment
                         </p>
-                        <p class="form_payment">Offline</p>
+                        <p class="form_payment">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>School timing</p>
-                        <p class="school_timing">dvfvdfvdfv</p>
+                        <p class="school_timing">NA</p>
 
                     </div>
                 </div>
@@ -2358,18 +2363,18 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Eligibility (Age Qualification)</p>
-                        <p class="eligible_age">2 Years to 3 Years as on </p>
+                        <p class="eligible_age">NA </p>
 
                     </div>
                     <div class="col-md-4">
 
                         <p>Eligibility(Marks)</p>
-                        <p class="marks">31 March, 2023</p>
+                        <p class="marks">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>Total Seats</p>
-                        <p class="total_seats">2 Years to 3 Years as on </p>
+                        <p class="total_seats">NA </p>
 
                     </div>
 
@@ -2377,19 +2382,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Written Test</p>
-                        <p class="written_test">2 Years to 3 Years as on </p>
+                        <p class="written_test">NA </p>
 
 
                     </div>
                     <div class="col-md-4">
 
                         <p>Student Interaction</p>
-                        <p class="student_interaction">31 March, 2023</p>
+                        <p class="student_interaction">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>Parents Interaction</p>
-                        <p class="parents_interaction">2 Years to 3 Years as on </p>
+                        <p class="parents_interaction">NA </p>
 
                     </div>
 
@@ -2397,19 +2402,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Form_availability</p>
-                        <p class="form_availability">Online</p>
+                        <p class="form_availability">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>
                             Form Payment
                         </p>
-                        <p class="form_payment">Offline</p>
+                        <p class="form_payment">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>School timing</p>
-                        <p class="school_timing">dvfvdfvdfv</p>
+                        <p class="school_timing">NA</p>
 
                     </div>
                 </div>
@@ -2421,18 +2426,18 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Eligibility (Age Qualification)</p>
-                        <p class="eligible_age">2 Years to 3 Years as on </p>
+                        <p class="eligible_age">NA </p>
 
                     </div>
                     <div class="col-md-4">
 
                         <p>Eligibility(Marks)</p>
-                        <p class="marks">31 March, 2023</p>
+                        <p class="marks">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>Total Seats</p>
-                        <p class="total_seats">2 Years to 3 Years as on </p>
+                        <p class="total_seats">NA </p>
 
                     </div>
 
@@ -2440,19 +2445,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Written Test</p>
-                        <p class="written_test">2 Years to 3 Years as on </p>
+                        <p class="written_test">NA </p>
 
 
                     </div>
                     <div class="col-md-4">
 
                         <p>Student Interaction</p>
-                        <p class="student_interaction">31 March, 2023</p>
+                        <p class="student_interaction">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>Parents Interaction</p>
-                        <p class="parents_interaction">2 Years to 3 Years as on </p>
+                        <p class="parents_interaction">NA </p>
 
                     </div>
 
@@ -2460,19 +2465,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <p>Form_availability</p>
-                        <p class="form_availability">Online</p>
+                        <p class="form_availability">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>
                             Form Payment
                         </p>
-                        <p class="form_payment">Offline</p>
+                        <p class="form_payment">NA</p>
 
                     </div>
                     <div class="col-md-4">
                         <p>School timing</p>
-                        <p class="school_timing">dvfvdfvdfv</p>
+                        <p class="school_timing">NA</p>
 
                     </div>
                 </div>
@@ -2691,7 +2696,7 @@
                             <?php $category_exist = true ?>
 
                             <div class="col-md-3">
-                                <img width="100%" height="100%" src="data:image/jpeg;base64,<?php echo $data_images[$j]->image; ?>" >
+                                <img width="100%" height="100%" src="data:image/jpeg;base64,<?php echo $data_images[$j]->image; ?>">
                             </div>
                         <?php endif; ?>
                     <?php endfor; ?>
@@ -2723,41 +2728,41 @@
                 </div>
             <?php endfor; ?>
             <?php if (!$category_exist) : ?>
-                <div class="d-flex justify-content-center">
-                    No data available
-                </div>
-            <?php endif; ?>
-        </div>
-        <div id="pic5" class="photo">
-            <?php
-            $data_images = $data["images"];
-            $image_count = count($data_images);
-            $category_exist = false;
-            ?>
-
-            <?php for ($i = 0; $i < $image_count; $i += 4) : ?>
-                <div class="row mt-5 justify-content-center gal_image">
-                    <?php for ($j = $i; $j < $i + 4 && $j < $image_count; $j++) : ?>
-                        <?php if ($data_images[$j]->category === "Playground") : ?>
-                            <?php $category_exist = true ?>
-                            <div class="col-md-3">
-                                <img width="100%" height="100%" src="data:image/jpeg;base64,<?php echo $data_images[$j]->image; ?>" class="img-fluid">
+                <div class=" d-flex justify-content-center">
+                                No data available
                             </div>
                         <?php endif; ?>
+                </div>
+                <div id="pic5" class="photo">
+                    <?php
+                    $data_images = $data["images"];
+                    $image_count = count($data_images);
+                    $category_exist = false;
+                    ?>
+
+                    <?php for ($i = 0; $i < $image_count; $i += 4) : ?>
+                        <div class="row mt-5 justify-content-center gal_image">
+                            <?php for ($j = $i; $j < $i + 4 && $j < $image_count; $j++) : ?>
+                                <?php if ($data_images[$j]->category === "Playground") : ?>
+                                    <?php $category_exist = true ?>
+                                    <div class="col-md-3">
+                                        <img width="100%" height="100%" src="data:image/jpeg;base64,<?php echo $data_images[$j]->image; ?>" class="img-fluid">
+                                    </div>
+                                <?php endif; ?>
+                            <?php endfor; ?>
+                        </div>
                     <?php endfor; ?>
+                    <?php if (!$category_exist) : ?>
+                        <div class="d-flex justify-content-center">
+                            No data available
+                        </div>
+                    <?php endif; ?>
                 </div>
-            <?php endfor; ?>
-            <?php if (!$category_exist) : ?>
-                <div class="d-flex justify-content-center">
-                    No data available
-                </div>
-            <?php endif; ?>
         </div>
+
+
+
     </div>
-
-
-
-</div>
 </div>
 
 
@@ -2815,7 +2820,6 @@
 
 
 
-
     var id = <?php echo $data["basic_detail"][0]->id  ?>;
 
 
@@ -2846,25 +2850,46 @@
                 var frequency = data.frequency;
 
                 var amount = data.amount;
-                $('.nur_feename').each(function(index, element) {
 
 
-                    $(this).text(`${feename[index]}`);
-                });
-                $('.nur_frequency').each(function(index, element) {
-                    if (frequency[index] === "" || frequency[index] === null || frequency[index] === undefined) {
-                        $(this).text('NA');
-                    } else {
-                        $(this).text(`${frequency[index]}`);
-                    }
-                });
-                $('.nur_amount').each(function(index, element) {
-                    if (amount[index] == 0) {
-                        $(this).text('NA');
-                    } else {
-                        $(this).text(`${amount[index]}`);
-                    }
-                });
+                if (feename.length != 0 || frequency.length != 0 || amount.length != 0) {
+                    $('.nur_feename').each(function(index, element) {
+
+
+                        $(this).text(`${feename[index]}`);
+                    });
+                    $('.nur_frequency').each(function(index, element) {
+                        if (frequency[index] === "" || frequency[index] === null || frequency[index] === undefined) {
+                            $(this).text('NA');
+                        } else {
+                            $(this).text(`${frequency[index]}`);
+                        }
+                    });
+                    $('.nur_amount').each(function(index, element) {
+                        if (amount[index] == 0) {
+                            $(this).text('NA');
+                        } else {
+                            $(this).text(`${amount[index]}`);
+                        }
+                    });
+
+                } else {
+                    $('.nur_feename').each(function(index, element) {
+
+
+                        $(this).text(`NA`);
+                    });
+                    $('.nur_frequency').each(function(index, element) {
+                        $(this).text("NA");
+                    });
+                    $('.nur_amount').each(function(index, element) {
+                        $(this).text("NA");
+                    });
+
+
+
+                }
+
 
 
 
@@ -2902,80 +2927,152 @@
                         var feename = data.feename;
                         var frequency = data.frequency;
                         var amount = data.amount;
-                        $('.prenur_feename').each(function(index, element) {
-                            if (amount[index] == 0) {
-                                $(this).text('NA');
-                            } else {
-                                $(this).text(`${amount[index]}`);
-                            }
+
+                        if (feename.length != 0 || frequency.length != 0 || amount.length != 0) {
+                            $('.prenur_feename').each(function(index, element) {
+                                if (amount[index] == 0) {
+                                    $(this).text('NA');
+                                } else {
+                                    $(this).text(`${amount[index]}`);
+                                }
 
 
-                        });
-                        $('.prenur_frequency').each(function(index, element) {
+                            });
+                            $('.prenur_frequency').each(function(index, element) {
 
 
-                            $(this).text(`${frequency[index]}`);
-                        });
-                        $('.prenur_amount').each(function(index, element) {
-                            if (amount[index] == 0) {
-                                $(this).text('NA');
-                            } else {
-                                $(this).text(`${amount[index]}`);
-                            }
+                                $(this).text(`${frequency[index]}`);
+                            });
+                            $('.prenur_amount').each(function(index, element) {
+                                if (amount[index] == 0) {
+                                    $(this).text('NA');
+                                } else {
+                                    $(this).text(`${amount[index]}`);
+                                }
 
 
-                        });
+                            });
+
+
+                        } else {
+                            $('.prenur_feename').each(function(index, element) {
+                                $(this).text("NA");
+
+
+                            });
+                            $('.prenur_frequency').each(function(index, element) {
+
+
+                                $(this).text("NA");
+                            });
+                            $('.prenur_amount').each(function(index, element) {
+                                $(this).text("NA");
+
+
+                            });
+
+
+                        }
+
+
                     }
                     if (data.class = "LKG") {
+                        console.log(data);
                         var feename = data.feename;
                         var frequency = data.frequency;
 
                         var amount = data.amount;
-                        $('.lkg_feename').each(function(index, element) {
+                        if (feename.length != 0 || frequency.length != 0 || amount.length != 0) {
+                            $('.lkg_feename').each(function(index, element) {
 
 
-                            $(this).text(`${feename[index]}`);
-                        });
-                        $('.lkg_frequency').each(function(index, element) {
+                                $(this).text(`${feename[index]}`);
+                            });
+                            $('.lkg_frequency').each(function(index, element) {
 
 
-                            $(this).text(`${frequency[index]}`);
-                        });
-                        $('.lkg_amount').each(function(index, element) {
+                                $(this).text(`${frequency[index]}`);
+                            });
+                            $('.lkg_amount').each(function(index, element) {
 
 
-                            if (amount[index] == 0) {
-                                $(this).text('NA');
-                            } else {
-                                $(this).text(`${amount[index]}`);
-                            }
-                        });
+                                if (amount[index] == 0) {
+                                    $(this).text('NA');
+                                } else {
+                                    $(this).text(`${amount[index]}`);
+                                }
+                            });
+                        } else {
+                            $('.lkg_feename').each(function(index, element) {
+
+
+                                $(this).text("NA");
+                            });
+                            $('.lkg_frequency').each(function(index, element) {
+
+
+                                $(this).text("NA");
+                            });
+                            $('.lkg_amount').each(function(index, element) {
+
+                                $(this).text("NA");
+
+                            });
+
+                        }
+
+
 
                     }
                     if (data.class = "UKG") {
                         var feename = data.feename;
                         var frequency = data.frequency;
-
                         var amount = data.amount;
-                        $('.ukg_feename').each(function(index, element) {
+
+                        if (feename.length != 0 || frequency.length != 0 || amount.length != 0) {
+                            $('.ukg_feename').each(function(index, element) {
 
 
-                            $(this).text(`${feename[index]}`);
-                        });
-                        $('.ukg_frequency').each(function(index, element) {
+                                $(this).text(`${feename[index]}`);
+                            });
+                            $('.ukg_frequency').each(function(index, element) {
 
 
-                            $(this).text(`${frequency[index]}`);
-                        });
-                        $('.ukg_amount').each(function(index, element) {
-                            if (amount[index] == 0) {
-                                $(this).text('NA');
-                            } else {
-                                $(this).text(`${amount[index]}`);
-                            }
+                                $(this).text(`${frequency[index]}`);
+                            });
+                            $('.ukg_amount').each(function(index, element) {
+                                if (amount[index] == 0) {
+                                    $(this).text('NA');
+                                } else {
+                                    $(this).text(`${amount[index]}`);
+                                }
 
 
-                        });
+                            });
+
+
+                        } else {
+
+                            $('.ukg_feename').each(function(index, element) {
+
+
+                                $(this).text("NA");
+                            });
+                            $('.ukg_frequency').each(function(index, element) {
+
+
+                                $(this).text("NA");
+                            });
+                            $('.ukg_amount').each(function(index, element) {
+                                $(this).text("NA");
+
+
+                            });
+
+
+                        }
+
+
 
                     }
                     if (data.class = "I") {
@@ -2983,25 +3080,48 @@
                         var frequency = data.frequency;
 
                         var amount = data.amount;
-                        $('.grade1_feename').each(function(index, element) {
+                        if (feename.length != 0 || frequency.length != 0 || amount.length != 0) {
+                            $('.grade1_feename').each(function(index, element) {
 
 
-                            $(this).text(`${feename[index]}`);
-                        });
-                        $('.grade1_frequency').each(function(index, element) {
+                                $(this).text(`${feename[index]}`);
+                            });
+                            $('.grade1_frequency').each(function(index, element) {
 
 
-                            $(this).text(`${frequency[index]}`);
-                        });
-                        $('.grade1_amount').each(function(index, element) {
-                            if (amount[index] == 0) {
-                                $(this).text('NA');
-                            } else {
-                                $(this).text(`${amount[index]}`);
-                            }
+                                $(this).text(`${frequency[index]}`);
+                            });
+                            $('.grade1_amount').each(function(index, element) {
+                                if (amount[index] == 0) {
+                                    $(this).text('NA');
+                                } else {
+                                    $(this).text(`${amount[index]}`);
+                                }
 
 
-                        });
+                            });
+                        } else {
+                            $('.grade1_feename').each(function(index, element) {
+
+
+                                $(this).text("NA");
+                            });
+                            $('.grade1_frequency').each(function(index, element) {
+
+
+                                $(this).text("NA");
+                            });
+                            $('.grade1_amount').each(function(index, element) {
+                                $(this).text("NA");
+
+
+                            });
+
+
+
+                        }
+
+
 
                     }
                     if (data.class = "II") {
@@ -3009,23 +3129,43 @@
                         var frequency = data.frequency;
 
                         var amount = data.amount;
-                        $('.grade2_feename').each(function(index, element) {
+                        if (feename.length != 0 || frequency.length != 0 || amount.length != 0) {
+                            $('.grade2_feename').each(function(index, element) {
 
-                            $(this).text(`${feename[index]}`);
-                        });
-                        $('.grade2_frequency').each(function(index, element) {
+                                $(this).text(`${feename[index]}`);
+                            });
+                            $('.grade2_frequency').each(function(index, element) {
 
 
-                            $(this).text(`${frequency[index]}`);
-                        });
-                        $('.grade2_amount').each(function(index, element) {
+                                $(this).text(`${frequency[index]}`);
+                            });
+                            $('.grade2_amount').each(function(index, element) {
 
-                            if (amount[index] == 0) {
-                                $(this).text('NA');
-                            } else {
-                                $(this).text(`${amount[index]}`);
-                            }
-                        });
+                                if (amount[index] == 0) {
+                                    $(this).text('NA');
+                                } else {
+                                    $(this).text(`${amount[index]}`);
+                                }
+                            });
+                        } else {
+                            $('.grade2_feename').each(function(index, element) {
+
+                                $(this).text("NA");
+                            });
+                            $('.grade2_amount').each(function(index, element) {
+
+                                $(this).text("NA");
+                            });
+                            $('.grade2_frequency').each(function(index, element) {
+
+
+                                $(this).text(`NA`);
+                            });
+
+
+
+                        }
+
 
                     }
                     if (data.class = "III") {
@@ -3033,77 +3173,148 @@
                         var frequency = data.frequency;
 
                         var amount = data.amount;
-                        $('.grade3_feename').each(function(index, element) {
+
+                        if (feename.length != 0 || frequency.length != 0 || amount.length != 0) {
+                            $('.grade3_feename').each(function(index, element) {
 
 
-                            $(this).text(`${feename[index]}`);
-                        });
-                        $('.grade3_frequency').each(function(index, element) {
+                                $(this).text(`${feename[index]}`);
+                            });
+                            $('.grade3_frequency').each(function(index, element) {
 
 
-                            $(this).text(`${frequency[index]}`);
-                        });
-                        $('.grade3_amount').each(function(index, element) {
+                                $(this).text(`${frequency[index]}`);
+                            });
+                            $('.grade3_amount').each(function(index, element) {
 
 
-                            if (amount[index] == 0) {
-                                $(this).text('NA');
-                            } else {
-                                $(this).text(`${amount[index]}`);
-                            }
-                        });
+                                if (amount[index] == 0) {
+                                    $(this).text('NA');
+                                } else {
+                                    $(this).text(`${amount[index]}`);
+                                }
+                            });
+
+                        } else {
+                            $('.grade3_feename').each(function(index, element) {
+
+
+                                $(this).text(`NA`);
+                            });
+                            $('.grade3_frequency').each(function(index, element) {
+
+
+                                $(this).text(`NA`);
+                            });
+                            $('.grade3_amount').each(function(index, element) {
+                                $(this).text("NA");
+
+
+                            });
+
+
+
+                        }
 
                     }
                     if (data.class = "IV") {
                         var feename = data.feename;
                         var frequency = data.frequency;
-
                         var amount = data.amount;
-                        $('.grade4_feename').each(function(index, element) {
+
+                        if (feename.length != 0 || frequency.length != 0 || amount.length != 0) {
+                            $('.grade4_feename').each(function(index, element) {
 
 
-                            $(this).text(`${feename[index]}`);
-                        });
-                        $('.grade4_frequency').each(function(index, element) {
+                                $(this).text(`${feename[index]}`);
+                            });
+                            $('.grade4_frequency').each(function(index, element) {
 
 
-                            $(this).text(`${frequency[index]}`);
-                        });
-                        $('.grade4_amount').each(function(index, element) {
+                                $(this).text(`${frequency[index]}`);
+                            });
+                            $('.grade4_amount').each(function(index, element) {
 
 
-                            if (amount[index] == 0) {
-                                $(this).text('NA');
-                            } else {
-                                $(this).text(`${amount[index]}`);
-                            }
-                        });
+                                if (amount[index] == 0) {
+                                    $(this).text('NA');
+                                } else {
+                                    $(this).text(`${amount[index]}`);
+                                }
+                            });
+
+                        } else {
+                            $('.grade4_feename').each(function(index, element) {
+
+
+                                $(this).text(`NA`);
+                            });
+                            $('.grade4_frequency').each(function(index, element) {
+
+
+                                $(this).text(`NA`);
+                            });
+                            $('.grade4_amount').each(function(index, element) {
+
+                                $(this).text("NA");
+
+                            });
+
+
+
+
+                        }
+
+
 
                     }
                     if (data.class = "V") {
                         var feename = data.feename;
                         var frequency = data.frequency;
-
                         var amount = data.amount;
-                        $('.grade5_feename').each(function(index, element) {
+                        if (feename.length != 0 || frequency.length != 0 || amount.length != 0) {
+
+                            $('.grade5_feename').each(function(index, element) {
 
 
-                            $(this).text(`${feename[index]}`);
-                        });
-                        $('.grade5_frequency').each(function(index, element) {
+                                $(this).text(`${feename[index]}`);
+                            });
+                            $('.grade5_frequency').each(function(index, element) {
 
 
-                            $(this).text(`${frequency[index]}`);
-                        });
-                        $('.grade5_amount').each(function(index, element) {
+                                $(this).text(`${frequency[index]}`);
+                            });
+                            $('.grade5_amount').each(function(index, element) {
 
 
-                            if (amount[index] == 0) {
-                                $(this).text('NA');
-                            } else {
-                                $(this).text(`${amount[index]}`);
-                            }
-                        });
+                                if (amount[index] == 0) {
+                                    $(this).text('NA');
+                                } else {
+                                    $(this).text(`${amount[index]}`);
+                                }
+                            });
+                        } else {
+                            $('.grade5_feename').each(function(index, element) {
+
+
+                                $(this).text(`NA`);
+                            });
+                            $('.grade5_frequency').each(function(index, element) {
+
+
+                                $(this).text(`NA`);
+                            });
+                            $('.grade5_amount').each(function(index, element) {
+
+                                $(this).text("NA");
+
+                            });
+
+
+                        }
+
+
+
 
                     }
                     if (data.class = "VI") {
@@ -3111,25 +3322,50 @@
                         var frequency = data.frequency;
 
                         var amount = data.amount;
-                        $('.grade6_feename').each(function(index, element) {
+
+                        if (feename.length != 0 || frequency.length != 0 || amount.length != 0) {
+                            $('.grade6_feename').each(function(index, element) {
 
 
-                            $(this).text(`${feename[index]}`);
-                        });
-                        $('.grade6_frequency').each(function(index, element) {
+                                $(this).text(`${feename[index]}`);
+                            });
+                            $('.grade6_frequency').each(function(index, element) {
 
 
-                            $(this).text(`${frequency[index]}`);
-                        });
-                        $('.grade6_amount').each(function(index, element) {
+                                $(this).text(`${frequency[index]}`);
+                            });
+                            $('.grade6_amount').each(function(index, element) {
 
 
-                            if (amount[index] == 0) {
-                                $(this).text('NA');
-                            } else {
-                                $(this).text(`${amount[index]}`);
-                            }
-                        });
+                                if (amount[index] == 0) {
+                                    $(this).text('NA');
+                                } else {
+                                    $(this).text(`${amount[index]}`);
+                                }
+                            });
+
+
+                        } else {
+                            $('.grade6_feename').each(function(index, element) {
+
+
+                                $(this).text(`NA`);
+                            });
+                            $('.grade6_frequency').each(function(index, element) {
+
+
+                                $(this).text(`NA`);
+                            });
+                            $('.grade6_amount').each(function(index, element) {
+
+                                $(this).text("NA");
+
+                            });
+
+
+
+                        }
+
 
                     }
                     if (data.class = "VII") {
@@ -3137,25 +3373,48 @@
                         var frequency = data.frequency;
 
                         var amount = data.amount;
-                        $('.grade7_feename').each(function(index, element) {
+                        if (feename.length != 0 || frequency.length != 0 || amount.length != 0) {
+                            $('.grade7_feename').each(function(index, element) {
 
 
-                            $(this).text(`${feename[index]}`);
-                        });
-                        $('.grade7_frequency').each(function(index, element) {
+                                $(this).text(`${feename[index]}`);
+                            });
+                            $('.grade7_frequency').each(function(index, element) {
 
 
-                            $(this).text(`${frequency[index]}`);
-                        });
-                        $('.grade7_amount').each(function(index, element) {
+                                $(this).text(`${frequency[index]}`);
+                            });
+                            $('.grade7_amount').each(function(index, element) {
 
 
-                            if (amount[index] == 0) {
-                                $(this).text('NA');
-                            } else {
-                                $(this).text(`${amount[index]}`);
-                            }
-                        });
+                                if (amount[index] == 0) {
+                                    $(this).text('NA');
+                                } else {
+                                    $(this).text(`${amount[index]}`);
+                                }
+                            });
+                        } else {
+                            $('.grade7_feename').each(function(index, element) {
+
+
+                                $(this).text(`NA`);
+                            });
+                            $('.grade7_frequency').each(function(index, element) {
+
+
+                                $(this).text(`NA`);
+                            });
+                            $('.grade7_amount').each(function(index, element) {
+
+                                $(this).text("NA");
+
+                            });
+
+
+
+                        }
+
+
 
                     }
                     if (data.class = "VIII") {
@@ -3164,78 +3423,139 @@
                         var frequency = data.frequency;
 
                         var amount = data.amount;
-                        $('.grade8_feename').each(function(index, element) {
+                        if (feename.length != 0 || frequency.length != 0 || amount.length != 0) {
+                            $('.grade8_feename').each(function(index, element) {
 
 
-                            $(this).text(`${feename[index]}`);
-                        });
-                        $('.grade8_frequency').each(function(index, element) {
+                                $(this).text(`${feename[index]}`);
+                            });
+                            $('.grade8_frequency').each(function(index, element) {
 
 
-                            $(this).text(`${frequency[index]}`);
-                        });
-                        $('.grade8_amount').each(function(index, element) {
+                                $(this).text(`${frequency[index]}`);
+                            });
+                            $('.grade8_amount').each(function(index, element) {
 
 
-                            if (amount[index] == 0) {
-                                $(this).text('NA');
-                            } else {
-                                $(this).text(`${amount[index]}`);
-                            }
-                        });
+                                if (amount[index] == 0) {
+                                    $(this).text('NA');
+                                } else {
+                                    $(this).text(`${amount[index]}`);
+                                }
+                            });
+                        } else {
+                            $('.grade8_feename').each(function(index, element) {
+
+
+                                $(this).text(`NA`);
+                            });
+                            $('.grade8_frequency').each(function(index, element) {
+
+
+                                $(this).text(`NA`);
+                            });
+                            $('.grade8_amount').each(function(index, element) {
+
+
+                                $(this).text(`NA`);
+                            });
+
+
+
+
+                        }
+
+
 
                     }
                     if (data.class = "IX") {
 
                         var feename = data.feename;
                         var frequency = data.frequency;
-
                         var amount = data.amount;
-                        $('.grade9_feename').each(function(index, element) {
+                        if (feename.length != 0 || frequency.length != 0 || amount.length != 0) {
+                            $('.grade9_feename').each(function(index, element) {
 
 
-                            $(this).text(`${feename[index]}`);
-                        });
-                        $('.grade9_frequency').each(function(index, element) {
+                                $(this).text(`${feename[index]}`);
+                            });
+                            $('.grade9_frequency').each(function(index, element) {
 
 
-                            $(this).text(`${frequency[index]}`);
-                        });
-                        $('.grade9_amount').each(function(index, element) {
+                                $(this).text(`${frequency[index]}`);
+                            });
+                            $('.grade9_amount').each(function(index, element) {
 
 
-                            if (amount[index] == 0) {
-                                $(this).text('NA');
-                            } else {
-                                $(this).text(`${amount[index]}`);
-                            }
-                        });
+                                if (amount[index] == 0) {
+                                    $(this).text('NA');
+                                } else {
+                                    $(this).text(`${amount[index]}`);
+                                }
+                            });
+
+
+                        } else {
+                            $('.grade9_feename').each(function(index, element) {
+
+
+                                $(this).text(`NA`);
+                            });
+                            $('.grade9_frequency').each(function(index, element) {
+
+
+                                $(this).text(`NA`);
+                            });
+                            $('.grade9_amount').each(function(index, element) {
+                                $(this).text(`NA`);
+
+                            });
+
+
+
+                        }
+
+
+
 
                     }
                     if (data.class = "X") {
                         var feename = data.feename;
                         var frequency = data.frequency;
 
-                        var amount = data.amount;
-                        $('.grade10_feename').each(function(index, element) {
+                        if (feename.length != 0 || frequency.length != 0 || amount.length != 0) {
+                            $('.grade10_feename').each(function(index, element) {
 
 
-                            $(this).text(`${feename[index]}`);
-                        });
-                        $('.grade10_frequency').each(function(index, element) {
+                                $(this).text(`${feename[index]}`);
+                            });
+                            $('.grade10_frequency').each(function(index, element) {
 
 
-                            $(this).text(`${frequency[index]}`);
-                        });
-                        $('.grade10_amount').each(function(index, element) {
+                                $(this).text(`${frequency[index]}`);
+                            });
+                            $('.grade10_amount').each(function(index, element) {
 
 
-                            if (amount[index] == 0) {
-                                $(this).text('NA');
-                            } else {
-                                $(this).text(`${amount[index]}`);
-                            }
-                        });
+                                if (amount[index] == 0) {
+                                    $(this).text('NA');
+                                } else {
+                                    $(this).text(`${amount[index]}`);
+                                }
+                            });
+
+
+
+                        } else {
+                            $('.grade10_feename').each(function(index, element) {
+
+
+                                $(this).text(`NA`);
+                            });
+
+
+                        }
+
 
                     }
                     if (data.class = "XI") {
@@ -3243,47 +3563,92 @@
                         var frequency = data.frequency;
 
                         var amount = data.amount;
-                        $('.grade11_feename').each(function(index, element) {
+                        if (feename.length != 0 || frequency.length != 0 || amount.length != 0) {
+                            $('.grade11_feename').each(function(index, element) {
 
-                            $(this).text(`${feename[index]}`);
-                        });
-                        $('.grade11_frequency').each(function(index, element) {
+                                $(this).text(`${feename[index]}`);
+                            });
+                            $('.grade11_frequency').each(function(index, element) {
 
-                            $(this).text(`${frequency[index]}`);
-                        });
-                        $('.grade11_amount').each(function(index, element) {
+                                $(this).text(`${frequency[index]}`);
+                            });
+                            $('.grade11_amount').each(function(index, element) {
 
-                            if (amount[index] == 0) {
-                                $(this).text('NA');
-                            } else {
-                                $(this).text(`${amount[index]}`);
-                            }
-                        });
+                                if (amount[index] == 0) {
+                                    $(this).text('NA');
+                                } else {
+                                    $(this).text(`${amount[index]}`);
+                                }
+                            });
+                        } else {
+                            $('.grade11_feename').each(function(index, element) {
+
+                                $(this).text(`NA`);
+                            });
+                            $('.grade11_frequency').each(function(index, element) {
+
+                                $(this).text(`NA`);
+                            });
+                            $('.grade11_amount').each(function(index, element) {
+
+                                $(this).text(`NA`);
+
+                            });
+
+
+
+                        }
+
+
+
 
                     }
                     if (data.class = "XII") {
                         var feename = data.feename;
                         var frequency = data.frequency;
-
                         var amount = data.amount;
-                        $('.grade12_feename').each(function(index, element) {
+                        if (feename.length != 0 || frequency.length != 0 || amount.length != 0) {
+
+                            $('.grade12_feename').each(function(index, element) {
 
 
-                            $(this).text(`${feename[index]}`);
-                        });
-                        $('.grade12_frequency').each(function(index, element) {
+                                $(this).text(`${feename[index]}`);
+                            });
+                            $('.grade12_frequency').each(function(index, element) {
 
 
-                            $(this).text(`${frequency[index]}`);
-                        });
-                        $('.grade12_amount').each(function(index, element) {
+                                $(this).text(`${frequency[index]}`);
+                            });
+                            $('.grade12_amount').each(function(index, element) {
 
-                            if (amount[index] == 0) {
-                                $(this).text('NA');
-                            } else {
-                                $(this).text(`${amount[index]}`);
-                            }
-                        });
+                                if (amount[index] == 0) {
+                                    $(this).text('NA');
+                                } else {
+                                    $(this).text(`${amount[index]}`);
+                                }
+                            });
+
+                        } else {
+                            $('.grade12_feename').each(function(index, element) {
+
+
+                                $(this).text(`NA`);
+                            });
+                            $('.grade12_frequency').each(function(index, element) {
+
+
+                                $(this).text(`NA`);
+                            });
+                            $('.grade12_amount').each(function(index, element) {
+
+                                $(this).text(`NA`)
+                            });
+
+
+
+                        }
+
+
 
                     }
 
@@ -3445,35 +3810,94 @@
     var disabled_facility = data1[0].disable_friendly.split(",")
 
     class_facility_array.forEach(function(item, index) {
-        $(".class_facility").append(`<li style="" class="list-unstyled my-2"><span style="font-size:10px" class="tick-wrapper">&#10004;</span> ${item}</li>`);
+        if (item === "NA") {
+            $(".class_facility").append(`<li style="" class="list-unstyled my-2">${item}</li>`);
+        } else {
+            $(".class_facility").append(`<li style="" class="list-unstyled my-2"><span style="font-size:10px" class="tick-wrapper">&#10004;</span> ${item}</li>`);
+        }
 
     });
     boading_facility_array.forEach(function(item, index) {
-        $(".boarding_facility").append(`<li class="list-unstyled my-2"><span style="font-size:10px" class="tick-wrapper">&#10004;</span> ${item}</li>`);
+
+        if (item === "NA") {
+            $(".boarding_facility").append(`<li style="" class="list-unstyled my-2">${item}</li>`);
+        } else {
+            $(".boarding_facility").append(`<li style="" class="list-unstyled my-2"><span style="font-size:10px" class="tick-wrapper">&#10004;</span> ${item}</li>`);
+        }
+
     });
     infrastructure_facility_array.forEach(function(item, index) {
-        $(".infrastructure_facility").append(`<li  class="list-unstyled my-2"><span style="font-size:10px" class="tick-wrapper">&#10004;</span> ${item}</li>`);
+        if (item === "NA") {
+            $(".infrastructure_facility").append(`<li style="" class="list-unstyled my-2">${item}</li>`);
+        } else {
+            $(".infrastructure_facility").append(`<li style="" class="list-unstyled my-2"><span style="font-size:10px" class="tick-wrapper">&#10004;</span> ${item}</li>`);
+        }
 
     })
     safety_facility.forEach(function(item, index) {
-        $(".security_facility").append(`<li  class="list-unstyled my-2"><span style="font-size:10px" class="tick-wrapper">&#10004;</span> ${item}</li>`);
+        if (item === "NA") {
+            $(".security_facility").append(`<li style="" class="list-unstyled my-2">${item}</li>`);
+        } else {
+            $(".security_facility").append(`<li style="" class="list-unstyled my-2"><span style="font-size:10px" class="tick-wrapper">&#10004;</span> ${item}</li>`);
+        }
+
+
+
+
+
 
     });
 
     advanced_facility.forEach(function(item, index) {
-        $(".advanced_facilities").append(`<li  class="list-unstyled my-2"><span style="font-size:10px" class="tick-wrapper">&#10004;</span> ${item}</li>`);
+        if (item === "NA") {
+            $(".advanced_facilities").append(`<li style="" class="list-unstyled my-2">${item}</li>`);
+        } else {
+            $(".advanced_facilities").append(`<li style="" class="list-unstyled my-2"><span style="font-size:10px" class="tick-wrapper">&#10004;</span> ${item}</li>`);
+        }
+
+
+
+
 
     })
     extra_curricular_activity.forEach(function(item, index) {
-        $(".extra_facilities").append(`<li  class="list-unstyled my-2"><span style="font-size:10px" class="tick-wrapper">&#10004;</span> ${item}</li>`);
+        if (item === "NA") {
+            $(".extra_facilities").append(`<li style="" class="list-unstyled my-2">${item}</li>`);
+        } else {
+            $(".extra_facilities").append(`<li style="" class="list-unstyled my-2"><span style="font-size:10px" class="tick-wrapper">&#10004;</span> ${item}</li>`);
+        }
+
+
+
+
+
 
     });
     sports_facility.forEach(function(item, index) {
-        $(".sports_facility").append(`<li  class="list-unstyled my-2"><span style="font-size:10px" class="tick-wrapper">&#10004;</span> ${item}</li>`);
+        if (item === "NA") {
+            $(".sports_facility").append(`<li style="" class="list-unstyled my-2">${item}</li>`);
+        } else {
+            $(".sports_facility").append(`<li style="" class="list-unstyled my-2"><span style="font-size:10px" class="tick-wrapper">&#10004;</span> ${item}</li>`);
+        }
+
+
+
+
+
+
 
     });
     lab_facility.forEach(function(item, index) {
-        $(".lab_facility").append(`<li  class="list-unstyled my-2"><span style="font-size:10px" class="tick-wrapper">&#10004;</span> ${item}</li>`);
+
+        if (item === "NA") {
+            $(".lab_facility").append(`<li style="" class="list-unstyled my-2">${item}</li>`);
+        } else {
+            $(".lab_facility").append(`<li style="" class="list-unstyled my-2"><span style="font-size:10px" class="tick-wrapper">&#10004;</span> ${item}</li>`);
+        }
+
+
+
+
 
     });
     disabled_facility.forEach(function(item, index) {
