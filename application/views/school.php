@@ -171,7 +171,7 @@
                                     <div class="col-md-7 px-3">
                                         <div>
                                             <h3 class="roboto mb-0 mt-2"><?php echo $row->name ?></h3>
-                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo base_url("assets/images/map-pin.png");?>" /></span><span style="margin-top:3px;font-size:15px"><?php echo $row->state ?></span></p>
+                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo base_url("assets/images/map-pin.png"); ?>" /></span><span style="margin-top:3px;font-size:15px"><?php echo $row->state ?></span></p>
                                         </div>
                                         <div class="row mt-5">
                                             <div class="col-md-4 roboto">
@@ -183,8 +183,10 @@
                                                 <p class="bold roboto grey"><?php echo $row->board ?></p>
                                             </div>
                                             <div class="col-md-4">
-                                                <p class="roboto grey" style="font-size:14px">Student Facility Ratio</p>
-                                                <p class="bold roboto grey" style="color:#787878"><?php echo $row->student_faculty_ratio ?></p>
+                                                <p class="roboto grey" style="font-size:14px">Student Faculty Ratio</p>
+                                                <p class="bold roboto grey" style="color:#787878">
+                                                    <?php echo !empty($row->student_faculty_ratio) ? $row->student_faculty_ratio : 'NA'; ?>
+                                                </p>
                                             </div>
 
                                         </div>
@@ -219,7 +221,7 @@
                                     <div class="col-md-7 px-3">
                                         <div>
                                             <h3 class="roboto mb- mt-2"><?php echo $row->name ?></h3>
-                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo base_url("assets/images/map-pin.png")?>" /></span><span style="margin-top:3px"><?php echo $row->state ?></span></p>
+                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo base_url("assets/images/map-pin.png") ?>" /></span><span style="margin-top:3px"><?php echo $row->state ?></span></p>
                                         </div>
                                         <div class="row mt-5">
                                             <div class="col-md-4 roboto">
@@ -231,8 +233,10 @@
                                                 <p class="bold roboto grey"><?php echo $row->board ?></p>
                                             </div>
                                             <div class="col-md-4">
-                                                <p class="roboto grey" style="font-size:14px">Student Facility Ratio</p>
-                                                <p class="bold roboto grey" style="color:#787878"><?php echo $row->student_faculty_ratio ?></p>
+                                                <p class="roboto grey" style="font-size:14px">Student Faculty Ratio</p>
+                                                <p class="bold roboto grey" style="color:#787878">
+                                                    <?php echo !empty($row->student_faculty_ratio) ? $row->student_faculty_ratio : 'NA'; ?>
+                                                </p>
                                             </div>
 
                                         </div>
@@ -258,7 +262,7 @@
                                     <div class="col-md-7 px-3">
                                         <div>
                                             <h3 class="roboto mb- mt-2"><?php echo $row->name ?></h3>
-                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px"src="<?php echo base_url("assets/images/map-pin.png")?>" /></span><span style="margin-top:3px"><?php echo $row->state ?></span></p>
+                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo base_url("assets/images/map-pin.png") ?>" /></span><span style="margin-top:3px"><?php echo $row->state ?></span></p>
                                         </div>
                                         <div class="row mt-5">
                                             <div class="col-md-4 roboto">
@@ -270,8 +274,10 @@
                                                 <p class="bold roboto grey"><?php echo $row->board ?></p>
                                             </div>
                                             <div class="col-md-4">
-                                                <p class="roboto grey" style="font-size:14px">Student Facility Ratio</p>
-                                                <p class="bold roboto grey" style="color:#787878"><?php echo $row->student_faculty_ratio ?></p>
+                                                <p class="roboto grey" style="font-size:14px">Student Faculty Ratio</p>
+                                                <p class="bold roboto grey" style="color:#787878">
+                                                    <?php echo !empty($row->student_faculty_ratio) ? $row->student_faculty_ratio : 'NA'; ?>
+                                                </p>
                                             </div>
 
                                         </div>
@@ -297,7 +303,7 @@
                                     <div class="col-md-7 px-3">
                                         <div>
                                             <h3 class="roboto mb- mt-2"><?php echo $row->name ?></h3>
-                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo base_url("assets/images/map-pin.png")?>" /></span><span style="margin-top:3px"><?php echo $row->state ?></span></p>
+                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo base_url("assets/images/map-pin.png") ?>" /></span><span style="margin-top:3px"><?php echo $row->state ?></span></p>
                                         </div>
                                         <div class="row mt-5">
                                             <div class="col-md-4 roboto">
@@ -310,7 +316,9 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <p class="roboto grey" style="font-size:14px">Student Facility Ratio</p>
-                                                <p class="bold roboto grey" style="color:#787878"><?php echo $row->student_faculty_ratio ?></p>
+                                                <p class="bold roboto grey" style="color:#787878">
+                                                    <?php echo !empty($row->student_faculty_ratio) ? $row->student_faculty_ratio : 'NA'; ?>
+                                                </p>
                                             </div>
 
                                         </div>
@@ -337,7 +345,7 @@
                                     <div class="col-md-7 px-3">
                                         <div>
                                             <h3 class="roboto mb- mt-2"><?php echo $row->name ?></h3>
-                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo base_url("assets/images/map-pin.png")?>" /></span><span style="margin-top:3px"><?php echo $row->state ?></span></p>
+                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo base_url("assets/images/map-pin.png") ?>" /></span><span style="margin-top:3px"><?php echo $row->state ?></span></p>
                                         </div>
                                         <div class="row mt-5">
                                             <div class="col-md-4 roboto">
@@ -350,7 +358,9 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <p class="roboto grey" style="font-size:14px">Student Facility Ratio</p>
-                                                <p class="bold roboto grey" style="color:#787878"><?php echo $row->student_faculty_ratio ?></p>
+                                                <p class="bold roboto grey" style="color:#787878">
+                                                    <?php echo !empty($row->student_faculty_ratio) ? $row->student_faculty_ratio : 'NA'; ?>
+                                                </p>
                                             </div>
 
                                         </div>
@@ -438,10 +448,10 @@
         }
     }
     var data = <?php echo json_encode($this->session->userdata("class_data"))  ?>;
-    
+
 
     if (data != null) {
-        if(data.length===0){
+        if (data.length === 0) {
             $("#tab1").append(`<p class="bold" style="margin-top:10%;text-align:center">NO data available</p>`)
         }
         console.log(data);
@@ -456,7 +466,7 @@
                             <h1>${d.name}</h1>
                             <p class="roboto grey">
                     <span>
-                        <img height="20px" width="20px" src="<?php echo base_url("assets/images/map-pin.png")?>" />
+                        <img height="20px" width="20px" src="<?php echo base_url("assets/images/map-pin.png") ?>" />
                     </span>
                     ${d.state}
                 </p>
@@ -467,8 +477,10 @@
                     <p class="bold grey roboto" style="color:#787878">${d.class_offered}</p>
                 </div>
                 <div class="col-md-4">
-                    <p class="roboto grey">Student Facility Ratio</p>
-                    <p class="bold roboto grey" style="color:#787878">${d.student_faculty_ratio}</p>
+                    <p class="roboto grey">Student Faculty Ratio</p>
+                    <p class="bold roboto grey" style="color:#787878">
+                        ${d.student_faculty_ratio ? d.student_faculty_ratio : 'NA'}
+                    </p>
                 </div>
                 <div class="col-md-4">
                     <p class="roboto grey">Board</p>
