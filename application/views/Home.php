@@ -312,7 +312,7 @@
                     </div>
                     <div class="row mt-3">
                         <div class="col-md-6">
-                            <p class="">Student Facility Ratio</p>
+                            <p class="">Student Faculty Ratio</p>
                             <p class="grey bold">1:25</p>
 
                         </div>
@@ -360,7 +360,7 @@
                     </div>
                     <div class="row mt-3">
                         <div class="col-md-6">
-                            <p class="">Student Facility Ratio</p>
+                            <p class="">Student Faculty Ratio</p>
                             <p class="grey bold">1:25</p>
 
                         </div>
