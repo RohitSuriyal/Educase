@@ -77,22 +77,25 @@
                 cityname: $("#input_search").val(),
             },
             success: function(data) {
-                if (data =="error") {
-                    console.log("this is the error");
-                    $("#absolute_text").empty();
-                    $("#absolute_text").append("no result found");
+                $("#absolute_text").empty();
+                $("#absolute_text").append("no result found");
+                    
+                // if (data =="error") {
+                //     console.log("this is the error");
+                //     $("#absolute_text").empty();
+                //     $("#absolute_text").append("no result found");
                     
 
-                } else {
+                // } else {
                   
-                    $("#absolute_text").empty();
-                    data.forEach(city => {
+                //     $("#absolute_text").empty();
+                //     data.forEach(city => {
                       
-                        $("#absolute_text").append(`<li  id="${city.id}">${city.city}<li>`);
-                    });
+                //         $("#absolute_text").append(`<li  id="${city.id}">${city.city}<li>`);
+                //     });
 
 
-                }
+                // }
 
             }
 
