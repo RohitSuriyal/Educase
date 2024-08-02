@@ -500,8 +500,8 @@
 			.absolute_text {
 				position: absolute;
 				top: 102%;
-				left: 17px!important;
-				width: 89%!important;
+				left: 17px !important;
+				width: 89% !important;
 				background-color: white;
 				border: 1px solid #ccc;
 				z-index: 10;
@@ -889,17 +889,12 @@
 			.absolute_text {
 				position: absolute;
 				top: 100%;
-				/* Position below the input field */
-				left: 0;
-				width: 100%;
+				left: 1.4rem;
+				width: 80%;
 				background-color: white;
-				/* Optional: for better visibility */
 				border: 1px solid #ccc;
-				/* Optional: for better visibility */
 				z-index: 10;
-				/* Ensure it appears above other elements */
 				padding: 5px;
-				/* Optional: for better appearance */
 			}
 		</style>
 		<div class="col-8 col-md-3 d-flex col_new" style="padding: 0px;">
@@ -907,7 +902,7 @@
 				<img class="img_location" height="22px" width="22px" src="<?php echo base_url("assets/images/Frame 4.png") ?>">
 				<input id="input_search" class="form-control input_font px-3" list="" placeholder="Enter your location" style=" position:relative; padding:0px; margin:0px;width:80%" onmouseover="this.style.boxShadow='none'">
 				<div id="absolute_text" class="absolute_text" style="display: none;">
-					
+
 				</div>
 			</div>
 		</div>
