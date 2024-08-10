@@ -26,34 +26,39 @@
         <h2 class="mb-3 px-0 feature_heading">Feature <span style="color:#001AFF">Blog</span></h2>
 
       
-        <?php foreach ($category as $c) : ?>
-            <div class="row blog_div single_blog mb-2">
-                <img class="px-0" style="border-top-left-radius:5%; border-top-right-radius:5%; object-fit:cover;" width="90%" height="200px!important" src="data:image/jpeg;base64, <?php echo $c->image; ?>" alt="Category Image">
-                <span class="px-0">23rd July, 2023</span>
-                <h6 class="px-0 bold"><?php echo $c->heading ?></h6>
-                <?php
-                $allowed_tags = '<p><h1><h2>';
-                $plainText = strip_tags($c->body, $allowed_tags);
-                $text = $plainText;
-                // Check if the body text is longer than 50 characters
-                if (strlen($text) > 200) {
-                    $text = substr($text, 0, 200);
-                    // Find the last space within the truncated text
-                    $last_space = strrpos($text, ' ');
-                    // Trim the text to the last space to avoid cutting off in the middle of a word
-                    $text = substr($text, 0, $last_space);
-                    // Add ellipsis
-                    $url = base_url('blog/' . $c->id);
+        <?php 
+// Limit the number of items to 4 or fewer if there are less than 4
+$limited_category = array_slice($category, 0, 4);
 
-                    $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
-                    // Output the truncated body text with "Read more" link
-                    echo $text;
-                } else {
-                    echo $text;
-                }
-                ?>
-            </div>
-        <?php endforeach; ?>
+foreach ($limited_category as $c) : ?>
+    <div class="row blog_div single_blog mb-2">
+        <img class="px-0" style="border-top-left-radius:5%; border-top-right-radius:5%; object-fit:cover;" width="90%" height="200px!important" src="data:image/jpeg;base64, <?php echo $c->image; ?>" alt="Category Image">
+        <span class="px-0">23rd July, 2023</span>
+        <h6 class="px-0 bold"><?php echo $c->heading ?></h6>
+        <?php
+        $allowed_tags = '<p><h1><h2>';
+        $plainText = strip_tags($c->body, $allowed_tags);
+        $text = $plainText;
+        // Check if the body text is longer than 50 characters
+        if (strlen($text) > 200) {
+            $text = substr($text, 0, 200);
+            // Find the last space within the truncated text
+            $last_space = strrpos($text, ' ');
+            // Trim the text to the last space to avoid cutting off in the middle of a word
+            $text = substr($text, 0, $last_space);
+            // Add ellipsis
+            $url = base_url('blog/' . $c->id);
+
+            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+            // Output the truncated body text with "Read more" link
+            echo $text;
+        } else {
+            echo $text;
+        }
+        ?>
+    </div>
+<?php endforeach; ?>
+
 
 
     </div>
