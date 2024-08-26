@@ -287,7 +287,8 @@
         <div class="col-md-6 custom_col_schol second_school_div" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" style="padding:0px 0px!;margin:0px 0px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);border-radius:10px">
             <div class="row" style="padding:0px 0px!important;">
                 <div class="col-md-6" style="padding:0px 0px!Important;">
-                <img style="height:100%;object-fit:cover;width:100%" src="data:image/jpeg;base64,<?php echo $current->image ?>" class="img-fluid" alt="Responsive Image">
+                <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%"
+                src="<?php echo strpos($current->image, 'amazonaws') !== false ? $current->image : 'data:image/*;base64,' . $current->image; ?>" />
 
 
                 </div>
@@ -335,7 +336,8 @@
         <div class="col-md-6 custom_col_schol second_school_div" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" style="padding:0px 0px!;margin:0px 0px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);border-radius:10px">
             <div class="row" style="padding:0px 0px!important;">
                 <div class="col-md-6" style="padding:0px 0px!Important;">
-                <img style="height:100%;object-fit:cover;width:100%" src="data:image/jpeg;base64,<?php echo $nextRow->image ?>" class="img-fluid" alt="Responsive Image">
+                <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%"
+                src="<?php echo strpos($nextRow->image, 'amazonaws') !== false ? $nextRow->image : 'data:image/*;base64,' . $nextRow->image; ?>" />
 
 
                 </div>

@@ -166,7 +166,8 @@
                             <?php foreach ($all as $index => $row) : ?>
                                 <div class="row mt-4" style="box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.5);">
                                     <div class="col-md-5" style="padding:0px 0px">
-                                        <img height="258px" style="object-fit:cover" width="100%" src="data:image/*;base64,<?php echo $row->image; ?>">
+                                    <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%"
+                                    src="<?php echo strpos($row->image, 'amazonaws') !== false ? $row->image : 'data:image/*;base64,' . $row->image; ?>" />
                                     </div>
                                     <div class="col-md-7 px-3">
                                         <div>
@@ -216,7 +217,8 @@
                             <?php foreach ($day_school as $index => $row) : ?>
                                 <div class="row mt-4" style="box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.5);">
                                     <div class="col-md-5" style="padding:0px 0px">
-                                        <img height="258px" style="object-fit:cover" width="100%" src="data:image/*;base64,<?php echo $row->image; ?>">
+                                    <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%"
+                                    src="<?php echo strpos($row->image, 'amazonaws') !== false ? $row->image : 'data:image/*;base64,' . $row->image; ?>" />
                                     </div>
                                     <div class="col-md-7 px-3">
                                         <div>
@@ -257,7 +259,8 @@
                             <?php foreach ($boarding_school as $index => $row) : ?>
                                 <div class="row mt-4" style="box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.5);">
                                     <div class="col-md-5" style="padding:0px 0px">
-                                        <img height="258px" style="object-fit:cover" width="100%" src="data:image/*;base64,<?php echo $row->image; ?>">
+                                    <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%"
+                                    src="<?php echo strpos($row->image, 'amazonaws') !== false ? $row->image : 'data:image/*;base64,' . $row->image; ?>" />
                                     </div>
                                     <div class="col-md-7 px-3">
                                         <div>
@@ -298,7 +301,8 @@
                             <?php foreach ($day_boarding_school as $index => $row) : ?>
                                 <div class="row mt-4" style="box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.5);">
                                     <div class="col-md-5" style="padding:0px 0px">
-                                        <img height="258px" style="object-fit:cover" width="100%" src="data:image/*;base64,<?php echo $row->image; ?>">
+                                    <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%"
+                                    src="<?php echo strpos($row->image, 'amazonaws') !== false ? $row->image : 'data:image/*;base64,' . $row->image; ?>" />
                                     </div>
                                     <div class="col-md-7 px-3">
                                         <div>
@@ -340,7 +344,8 @@
                             <?php foreach ($play_school as $index => $row) : ?>
                                 <div class="row mt-4" style="box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.5);">
                                     <div class="col-md-5" style="padding:0px 0px">
-                                        <img height="258px" style="object-fit:cover" width="100%" src="data:image/*;base64,<?php echo $row->image; ?>">
+                                    <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%"
+                                    src="<?php echo strpos($row->image, 'amazonaws') !== false ? $row->image : 'data:image/*;base64,' . $row->image; ?>" />
                                     </div>
                                     <div class="col-md-7 px-3">
                                         <div>
