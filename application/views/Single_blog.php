@@ -1,7 +1,7 @@
 <?php $this->load->view("common/header")  ?>
 <div class="container-fluid " style="padding:0px 0px;margin:0px 0px">
     <img height="100%" width="100
-    %" id="dynamic" style="height:25rem!important;object-fit:cover;width:100%" src="data:image/*;base64,<?php echo $output[0]->image; ?>" />
+    %" id="dynamic" style="height:25rem!important;object-fit:cover;width:100%" src="<?php echo $output[0]->image; ?>" />
 
 
 
