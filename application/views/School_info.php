@@ -12,7 +12,15 @@
     }
 </style>
 <div class="school_info" style="margin:0 4%">
-    <img width="100%" height="439px" style="object-fit:cover" src="data:image/jpeg;base64,<?php echo $data['basic_detail'][0]->image; ?>">
+    <!-- <img width="100%" height="439px" style="object-fit:cover" src="data:image/jpeg;base64,<?php echo $data['basic_detail'][0]->image; ?>"> -->
+
+    <!-- <img width="100%" height="439px"  style="object-fit:cover"
+        src="<?php echo $data['basic_detail'][0]->image;  ?>" /> -->
+
+    <img width="100%" height="439px" style="object-fit:cover"
+        src="<?php echo strpos($data['basic_detail'][0]->image, 'amazonaws') !== false
+                    ? $data['basic_detail'][0]->image
+                    : $data['basic_detail'][0]->image; ?>" />
 
 
 </div>
@@ -1432,7 +1440,7 @@
                         <p class="roboto bold">Monthly Cost</p>
 
                         <p class="total_yearly_m bold" style="color:#001AFF;font-size:55.29px">NA</p>
-                       
+
                     </div>
 
 
