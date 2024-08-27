@@ -46,7 +46,7 @@
 
 
                 <div class="col-md g-0 col-md-5  " style="height:auto">
-                    <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%" src="data:image/*;base64,<?php echo $row->image; ?>" />
+                    <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%" src="<?php echo $row->image; ?>" />
 
 
                     <!-- <img style="height:100%!important;object-fit:cover;width:100%" src="https://images4.alphacoders.com/133/1332281.jpeg" class="img-fluid" alt="Responsive Image"> -->
@@ -120,7 +120,7 @@
                 </div>
 
                 <div class="col-md g-0 col-md-5  " style="height:auto">
-                    <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%" src="data:image/*;base64,<?php echo $row->image; ?>" />
+                    <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%" src="<?php echo $row->image; ?>" />
 
 
                     <!-- <img style="height:100%!important;object-fit:cover;width:100%" src="https://images4.alphacoders.com/133/1332281.jpeg" class="img-fluid" alt="Responsive Image"> -->
@@ -143,7 +143,7 @@
         }
     ?>
         <div class="col-md-3  roboto blog_div " data-aos="fade-up" data-aos-duration="3000" style="height:auto;background-color: white;">
-            <img class="px-2 py-3" id="dynamic" style="height:300px!important;object-fit:cover;border-top-left-radius: 33px; border-top-right-radius: 33px;width:100%" src="data:image/*;base64,<?php echo $row->image; ?>" />
+            <img class="px-2 py-3" id="dynamic" style="height:300px!important;object-fit:cover;border-top-left-radius: 33px; border-top-right-radius: 33px;width:100%" src="<?php echo $row->image; ?>" />
 
             <div class="px-3 py-3" style="line-height:23.44px;">
                 <span><?php $date = strtotime($row->date);
