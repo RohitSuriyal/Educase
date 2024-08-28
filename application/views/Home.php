@@ -284,7 +284,7 @@
             $nextRow = $data_reversed[$index + $i];
         ?>
     <div class="row flex justify-content-evenly mt-4 school_main_div " style="margin:0 1%">
-        <div class="col-md-6 custom_col_schol second_school_div" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" style="padding:0px 0px!;margin:0px 0px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);border-radius:10px">
+        <div class="col-md-6 custom_col_schol second_school_div" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" style="padding:0px 0px!;margin:0px 0px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);border-radius:10px">
             <div class="row" style="padding:0px 0px!important;">
                 <div class="col-md-6" style="padding:0px 0px!Important;">
                 <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%"
@@ -333,7 +333,7 @@
 
 
         </div>
-        <div class="col-md-6 custom_col_schol second_school_div" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" style="padding:0px 0px!;margin:0px 0px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);border-radius:10px">
+        <div class="col-md-6 custom_col_schol second_school_div" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" style="padding:0px 0px!;margin:0px 0px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);border-radius:10px">
             <div class="row" style="padding:0px 0px!important;">
                 <div class="col-md-6" style="padding:0px 0px!Important;">
                 <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%"

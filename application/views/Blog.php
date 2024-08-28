@@ -61,7 +61,7 @@
             <?php if ($index == 1) : ?>
 
                 <div class="row d-flex flex-row" data-aos="fade-left" style="padding:19px 12px;">
-                    <div class="col-md-7 py-4 order2 blog_div roboto  roboto content_text  " style=" height:auto;background-color: white;">
+                    <div class="col-md-7 py-4 order2 blog_div roboto  roboto content_text" style=" height:auto;background-color: white;">
                         <span class="bold grey">
                             <?php $date = strtotime($row->date);
                             $formatted_date = date('jS, F Y', $date);
@@ -122,7 +122,7 @@
         ?>
 
             <div class="row mt-4 main_blog_div" style="padding: 1rem;">
-                <div class="col-md-6 blog_div_mt" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="col-md-6 blog_div_mt" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <img class="blog_image" style="height: 400px; object-fit: cover; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;" src="<?php echo $current->image; ?>" alt="Responsive Image">
                     <p class="roboto bold mt-5 grey">
                         <?php
@@ -149,7 +149,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 blog_div_mt" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="col-md-6 blog_div_mt" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <img class="blog_image" style="height: 400px; object-fit: cover; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;" src="<?php echo $nextRow->image; ?>" alt="Responsive Image">
                     <p class="roboto bold mt-5 grey">
                         <?php
@@ -235,7 +235,7 @@
             <?php endif; ?>
             <?php if ($index == 1) : ?>
 
-                <div class="row d-flex flex-row" data-aos="fade-left" style="padding:19px 12px;">
+                <div class="row d-flex flex-row" data-aos="fade-up" style="padding:19px 12px;">
                     <div class="col-md-7 py-4 order2 blog_div roboto  roboto content_text  " style=" height:auto;background-color: white;">
                         <span class="bold grey">
                             <?php $date = strtotime($row->date);
