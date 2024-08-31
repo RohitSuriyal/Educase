@@ -67,11 +67,15 @@ class Welcome extends CI_Controller
 		$phone_no = $this->input->post("phone_no");
 		$school_name = $this->input->post("school_name");
 		$city = $this->input->post("city");
+		$parent=$this->input->post("parent");
+		$student=$this->input->post("student");
+		$date=$this->input->post("current_date");
+		$time=$this->input->post("current_time");
 
 
 		// Prepare data for Google Sheets
 		$formData = [
-			[$name, $email, $phone_no, $school_name, $city] // Add more fields as necessary
+			[$name, $email, $phone_no, $school_name, $city,$parent,$student,$date,$time] // Add more fields as necessary
 		];
 
 		$body = new \Google_Service_Sheets_ValueRange([

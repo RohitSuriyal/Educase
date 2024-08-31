@@ -8,7 +8,8 @@
 
 	<!-- Bootstrap CSS -->
 
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="<?php echo base_url("assets/css/school.css") ?>" />
 	<link rel="stylesheet" href="<?php echo base_url('assets/css/educase.css'); ?>" />
@@ -647,6 +648,20 @@
 			z-index: 1000;
 		}
 
+
+		.close-btn_form {
+			position: absolute;
+			top: -11px;
+			right: 1px;
+			background: none;
+			border: none;
+			font-size: 35px;
+			cursor: pointer;
+			color: #f44336;
+			font-weight: bold;
+			text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+		}
+
 		.close-btn {
 			padding: 0px 9px 2px 10px !important;
 			position: absolute;
@@ -659,6 +674,8 @@
 			cursor: pointer;
 			border-radius: 19%;
 		}
+
+
 
 		.sidebar ul {
 			list-style-type: none;
@@ -867,22 +884,253 @@
             height: 32px;
         }
     </style> -->
+	<style>
+		.tick-wrapper {
+			display: inline-block;
+			padding: 3px 4px;
+			border: 1px solid #4CAF50;
+			border-radius: 50%;
+			margin-right: 10px;
+			line-height: 1;
+			font-size: 16px;
+			color: #4CAF50;
+		}
+
+		body {
+			font-family: 'Roboto', sans-serif;
+			background-color: #f4f4f4;
+			margin: 0;
+			overflow-x: hidden;
+		}
+
+		.btn {
+			cursor: pointer;
+			padding: 10px 67px;
+			font-size: 16px;
+			font-weight: bold;
+			color: #fff;
+			background-color: #007bff;
+			border: none;
+			border-radius: 5px;
+			transition: background-color 0.3s ease;
+		}
+
+		.btn:hover {
+			background-color: #0056b3;
+		}
+
+		/* Overlay */
+		.overlay {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.7);
+			display: none;
+			justify-content: center;
+			align-items: center;
+			z-index: 1000;
+		}
+
+		/* Form container */
+
+		.form-container {
+			position: fixed;
+			/* Fix the form to the viewport */
+			top: 50%;
+			/* Center vertically in the visible screen */
+			left: 50%;
+			/* Center horizontally in the visible screen */
+			transform: translate(-50%, -50%);
+			/* Offset the position to truly center it */
+			width: 100%;
+			max-width: 40%;
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+			z-index: 1100;
+			animation: slideDown 0.5s ease-in-out;
+			/* Apply the slideDown animation */
+
+		}
+
+
+		/* Animation */
+		@keyframes slideDown {
+			from {
+				opacity: 0;
+
+			}
+
+			to {
+				opacity: 1;
+
+			}
+		}
+
+		/* Close button */
+
+		.form-group {
+			margin-bottom: 15px;
+		}
+
+		.form-group label {
+			font-weight: bold;
+			margin-bottom: 5px;
+			display: block;
+		}
+
+		.form-group input {
+			width: 100%;
+			padding: 5px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+
+		.form-group button {
+			width: 100%;
+			padding: 10px;
+			border: none;
+			background-color: #007bff;
+			color: #fff;
+			border-radius: 5px;
+			font-size: 16px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+
+		.form-group button:hover {
+			background-color: #0056b3;
+		}
+
+		@media (max-width: 768px) {
+			.form-container {
+				max-width: 90%;
+				padding: 15px;
+				/* Reduce padding on smaller devices */
+			}
+		}
+
+		/* Styles for very small devices */
+		@media (max-width: 480px) {
+			.form-container {
+				max-width: 95%;
+				padding: 10px;
+				/* Further reduce padding for very small devices */
+			}
+		}
+
+		@media (max-width: 600px) {
+			.form-container {
+				width: 90%;
+			}
+
+
+			.form-container {
+				position: fixed;
+				top: 51%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 100%;
+				max-width: 92%;
+				background-color: #fff;
+				padding: 20px;
+				border-radius: 10px;
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+				z-index: 1100;
+				animation: slideDown 0.5s ease-in-out;
+				max-height: 96vh;
+				overflow-y: auto;
+			}
+
+
+
+		}
+	</style>
 
 </head>
 
 <body>
-	<div class="row sticky-header header_res d-flex align-items-center justify-content-between" style="margin-top: 26px; padding: 4px 22px; margin:0px 0px">
-		<div id="sidebar-toggle" class="col-auto menubar col_new_menu" style="display: none;">
-			<img height="24px" width="22px" class="menu_icon" src="<?php echo base_url("assets/images/menu (1).png") ?>" onclick="startAnimation()">
+	<div class="overlay" id="overlay">
+		<div class="form-container">
+			<button class="close-btn_form" id="closeBtn">&times;</button>
+			<form id="formdetail" class="container">
+				<h1 class="poppins bold text-center my-3">Enquiry Details</h1>
+				<div class="row">
+					<div class="col-md-6 mb-3">
+						<label for="name">Name</label>
+						<input type="text" id="name" name="name" class="form-control" placeholder="Enter your name">
+					</div>
+					<div class="col-md-6 mb-3">
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" class="form-control" placeholder="Enter your email">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 mb-3">
+						<label for="school_name">School Name</label>
+						<input type="text" id="school_name" name="school_name" class="form-control"
+							placeholder="Enter school name">
+					</div>
+					<div class="col-md-6 mb-3">
+						<label for="class">Class</label>
+						<input type="text" id="class" name="class" class="form-control" placeholder="Enter class">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 mb-3">
+						<label for="parent_name">Parent's Name</label>
+						<input type="text" id="parent_name" name="parent" class="form-control"
+							placeholder="Enter parent's name">
+					</div>
+					<div class="col-md-6 mb-3">
+						<label for="student_name">Student's Name</label>
+						<input type="text" id="student_name" name="student" class="form-control"
+							placeholder="Enter student's name">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 mb-3">
+						<label for="city">City</label>
+						<input type="text" id="city" name="city" class="form-control" placeholder="Enter your city">
+					</div>
+					<div class="col-md-12 mb-3">
+						<label for="city">Phone</label>
+						<input type="text" id="city" name="phone_no" class="form-control" placeholder="Enter your city">
+					</div>
+				</div>
+				<input type="date" id="current_date" name="current_date" class="d-none">
+				<input type="text" id="current_time" name="current_time" class="d-none">
+				<div class="row">
+					<div class="col-md-12 d-flex justify-content-center">
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</div>
+				</div>
+			</form>
+
 		</div>
-		<div style="padding:0px 0px!important" class="col-4 col-md-3 col_new_educase header_hub nav_font" style="font-weight: bold; font-size:10px;">
+	</div>
+	<div class="row sticky-header header_res d-flex align-items-center justify-content-between"
+		style="margin-top: 26px; padding: 4px 22px; margin:0px 0px">
+		<div id="sidebar-toggle" class="col-auto menubar col_new_menu" style="display: none;">
+			<img height="24px" width="22px" class="menu_icon" src="<?php echo base_url("assets/images/menu (1).png") ?>"
+				onclick="startAnimation()">
+		</div>
+		<div style="padding:0px 0px!important" class="col-4 col-md-3 col_new_educase header_hub nav_font"
+			style="font-weight: bold; font-size:10px;">
 			FINDMY<span style="color:#001AFF">SCHOOL</span>
 		</div>
 		<div class="col-12 col-md-6 hide_topbar">
-			<ul class="d-flex justify-content-evenly align-items-center list-unstyled gap-4" style="margin-bottom:0rem!important;">
-				<li><a style="text-decoration:none;color:black" href="<?php echo base_url("home") ?>" class="header_hub pointer">Home</a></li>
-				<li><a style="text-decoration:none;color:black" href="<?php echo base_url("blog") ?>" class="header_hub pointer">Blog</a></li>
-				<li><a style="text-decoration:none;color:black" href="<?php echo base_url("school") ?>" class="header_hub pointer">School</a></li>
+			<ul class="d-flex justify-content-evenly align-items-center list-unstyled gap-4"
+				style="margin-bottom:0rem!important;">
+				<li><a style="text-decoration:none;color:black" href="<?php echo base_url("home") ?>"
+						class="header_hub pointer">Home</a></li>
+				<li><a style="text-decoration:none;color:black" href="<?php echo base_url("blog") ?>"
+						class="header_hub pointer">Blog</a></li>
+				<li><a style="text-decoration:none;color:black" href="<?php echo base_url("school") ?>"
+						class="header_hub pointer">School</a></li>
 			</ul>
 		</div>
 		<style>
@@ -899,8 +1147,11 @@
 		</style>
 		<div class="col-8 col-md-3 d-flex col_new" style="padding: 0px;">
 			<div class="d-flex align-items-center w-100 position-relative">
-				<img class="img_location" height="22px" width="22px" src="<?php echo base_url("assets/images/Frame 4.png") ?>">
-				<input id="input_search" class="form-control input_font px-3" list="" placeholder="Enter your location" style=" position:relative; padding:0px; margin:0px;width:80%" onmouseover="this.style.boxShadow='none'">
+				<img class="img_location" height="22px" width="22px"
+					src="<?php echo base_url("assets/images/Frame 4.png") ?>">
+				<input id="input_search" class="form-control input_font px-3" list="" placeholder="Enter your location"
+					style=" position:relative; padding:0px; margin:0px;width:80%"
+					onmouseover="this.style.boxShadow='none'">
 				<div id="absolute_text" class="absolute_text" style="display: none;">
 
 				</div>
@@ -922,4 +1173,5 @@
 
 		</ul>
 	</div>
-	<div class="container-fluid " data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300" style="margin: 0px 0px;padding:0px 0;position:relative;overflow:hidden">
+	<div class="container-fluid " data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300"
+		style="margin: 0px 0px;padding:0px 0;position:relative;overflow:hidden">
