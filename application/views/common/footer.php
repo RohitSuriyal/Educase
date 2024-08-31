@@ -72,25 +72,25 @@
         $.ajax({
             url: "<?php echo base_url("city") ?>",
             type: "post",
-            dataType:"json",
+            dataType: "json",
             data: {
                 cityname: $("#input_search").val(),
             },
             success: function(data) {
                 $("#absolute_text").empty();
                 $("#absolute_text").append("no result found");
-                    
+
                 // if (data =="error") {
                 //     console.log("this is the error");
                 //     $("#absolute_text").empty();
                 //     $("#absolute_text").append("no result found");
-                    
+
 
                 // } else {
-                  
+
                 //     $("#absolute_text").empty();
                 //     data.forEach(city => {
-                      
+
                 //         $("#absolute_text").append(`<li  id="${city.id}">${city.city}<li>`);
                 //     });
 
@@ -104,8 +104,8 @@
 
         })
     })
-//this is for the form
-document.getElementById('enquiryBtn').addEventListener('click', function() {
+    //this is for the form
+    document.getElementById('enquiryBtn').addEventListener('click', function() {
         document.getElementById('overlay').style.display = "flex";
     });
 
@@ -141,10 +141,12 @@ document.getElementById('enquiryBtn').addEventListener('click', function() {
                     title: 'Success!',
                     text: 'Your data has been submitted successfully.',
                     icon: 'success',
-                    confirmButtonText: 'OK'
+                    showConfirmButton: false, 
+                   
                 });
-                location.reload();
-
+                setTimeout(function() {
+                    location.reload();
+                }, 500);
             }
 
 
@@ -167,24 +169,21 @@ document.getElementById('enquiryBtn').addEventListener('click', function() {
 
     $('#current_date').val(new Date().toDateInputValue());
     window.onload = function() {
-    const now = new Date();
-    console.log(now); // Check the current date and time
-    let hours = now.getHours();
-    const minutes = String(now.getMinutes()).padStart(2, '0');
-    const ampm = hours >= 12 ? 'PM' : 'AM';
-    
-    // Convert hours from 24-hour format to 12-hour format
-    hours = hours % 12;
-    hours = hours ? hours : 12; // The hour '0' should be '12'
-    hours = String(hours).padStart(2, '0'); // Ensure hours are two digits
-    
-    console.log(`${hours}:${minutes} ${ampm}`); // Check the formatted time
-    
-    document.getElementById('current_time').value = `${hours}:${minutes} ${ampm}`;
-};
+        const now = new Date();
+        console.log(now); // Check the current date and time
+        let hours = now.getHours();
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const ampm = hours >= 12 ? 'PM' : 'AM';
 
+        // Convert hours from 24-hour format to 12-hour format
+        hours = hours % 12;
+        hours = hours ? hours : 12; // The hour '0' should be '12'
+        hours = String(hours).padStart(2, '0'); // Ensure hours are two digits
 
+        console.log(`${hours}:${minutes} ${ampm}`); // Check the formatted time
 
+        document.getElementById('current_time').value = `${hours}:${minutes} ${ampm}`;
+    };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

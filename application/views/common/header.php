@@ -1098,7 +1098,7 @@
 					</div>
 					<div class="col-md-12 mb-3">
 						<label for="city">Phone</label>
-						<input type="text" id="city" name="phone_no" class="form-control" placeholder="Enter your city">
+						<input type="text" id="city" name="phone_no" class="form-control" placeholder="Enter your phone_no">
 					</div>
 				</div>
 				<input type="date" id="current_date" name="current_date" class="d-none">
