@@ -15,7 +15,23 @@
                                 echo $formatted_date; ?>
         </div>
         <h1><?php echo $output[0]->heading ?></h1>
-        <?php echo $output[0]->body ?>
+      <?php  if (!empty($schoolname)) {
+    // Create a hyperlink for the school name
+    $hyperlink = '<a href="' . base_url('Welcome/School_details/' . $schoolid) . '">' . htmlspecialchars($schoolname) . '</a>';
+
+
+
+    // Replace occurrences of the school name in the body with the hyperlink
+    $bodyWithLink = str_replace(htmlspecialchars($schoolname), $hyperlink, $output[0]->body);
+
+    // Output the modified body
+    echo $bodyWithLink;
+} else {
+    // Fallback if school name is empty
+    echo $output[0]->body;
+}
+?>
+
 
 
 

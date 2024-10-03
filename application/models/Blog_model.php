@@ -248,4 +248,22 @@ class Blog_model  extends CI_Model
             return $data;
         }
     }
+    public function get_the_school_name($id){
+
+
+        $this->db->select('name');
+$this->db->from('schools');
+$this->db->where('id', $id);
+$query = $this->db->get()->result();
+$school_name=$query[0]->name;
+if($school_name){
+ return $school_name;
+}else{
+    return false;
+
+
+}
+
+
+    }
 }

@@ -160,11 +160,27 @@ class Welcome extends CI_Controller
 		$id = $school_id;
 		$this->load->model("Blog_model");
 		$output = $this->Blog_model->getspecificblog($id);
+		$id=$output["output"][0]->School;
+		if($id){
+
+			$schoolname=$this->Blog_model->get_the_school_name($id);
+			$output["schoolname"]=$schoolname;
+			$output["schoolid"]=$id;
+			$this->load->view("Single_blog", $output);
+		}
+		else{
+
+			$this->load->view("Single_blog", $output);
+
+		}
+
+		
+		
 
 
 
 
-		$this->load->view("Single_blog", $output);
+		
 	}
 	public function feedetail()
 	{
