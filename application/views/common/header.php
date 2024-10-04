@@ -7,12 +7,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	
 	<meta property="og:title" content="Findmyschool" />
-    <meta property="og:description" content="This is the best content website" />
+    <meta property="og:description" content="Findmyschool is your ultimate destination for discovering the best schools tailored to your needs. Whether you're a parent seeking quality education for your child or a student looking to compare schools, our platform provides comprehensive and reliable information. We offer detailed profiles on schools, including admission criteria, fee structures, campus facilities, extracurricular activities, and academic performance. Our easy-to-use search filters help you narrow down options based on location, curriculum, and other preferences.
+
+With a dedicated blog section, we keep you informed about the latest trends in education, from early learning tips to higher education guidance. Findmyschool is more than just a directory; it’s a community where you can share experiences, read reviews, and make informed decisions for your child's future.
+
+We strive to provide a seamless experience, connecting you with schools that meet your expectations. Join thousands of satisfied parents and students who have benefited from our platform. Find the perfect school today and give your child the educational foundation they deserve!" />
     <meta property="og:image" content="https://example.com/path-to-your-image.jpg" />
     <meta property="og:url" content="https://findmyschools.co.in" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Findmyschool" />
     <meta property="og:locale" content="en_US" />
+	
 
     
 	<!-- Bootstrap CSS -->
