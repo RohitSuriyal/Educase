@@ -6,17 +6,40 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	
-	<meta property="og:title" content="Best website to find your school" />
-    <meta property="og:description" content="Findmyschool is your ultimate destination for discovering the best schools tailored to your needs. Whether you're a parent seeking quality education for your child or a student looking to compare schools, our platform provides comprehensive and reliable information. We offer detailed profiles on schools, including admission criteria, fee structures, campus facilities, extracurricular activities, and academic performance. Our easy-to-use search filters help you narrow down options based on location, curriculum, and other preferences.
+	
+    
+	<title><?php echo isset($title) ? $title : 'Default Title'; ?></title>
 
-With a dedicated blog section, we keep you informed about the latest trends in education, from early learning tips to higher education guidance. Findmyschool is more than just a directory; it’s a community where you can share experiences, read reviews, and make informed decisions for your child's future.
+    <!-- Dynamic Meta Tags -->
+    <?php if (isset($meta_description)): ?>
+        <meta name="description" content="<?php echo $meta_description; ?>">
+    <?php endif; ?>
+    
+    <?php if (isset($meta_keywords)): ?>
+        <meta name="keywords" content="<?php echo $meta_keywords; ?>">
+    <?php endif; ?>
 
-We strive to provide a seamless experience, connecting you with schools that meet your expectations. Join thousands of satisfied parents and students who have benefited from our platform. Find the perfect school today and give your child the educational foundation they deserve!" />
-    <meta property="og:image" content="https://find-my-school-rohit.s3.amazonaws.com/2024040518183567.png" />
-    <meta property="og:url" content="https://findmyschools.co.in" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Findmyschool" />
-    <meta property="og:locale" content="en_US" />
+    <!-- Open Graph Tags -->
+    <?php if (isset($og_title)): ?>
+        <meta property="og:title" content="<?php echo $og_title; ?>">
+    <?php endif; ?>
+    
+    <?php if (isset($og_description)): ?>
+        <meta property="og:description" content="<?php echo $og_description; ?>">
+    <?php endif; ?>
+    
+    <?php if (isset($og_image)): ?>
+        <meta property="og:image" content="<?php echo $og_image; ?>">
+    <?php endif; ?>
+    
+    <?php if (isset($og_url)): ?>
+        <meta property="og:url" content="<?php echo $og_url; ?>">
+    <?php endif; ?>
+    
+    <?php if (isset($og_type)): ?>
+        <meta property="og:type" content="<?php echo $og_type; ?>">
+    <?php endif; ?>
+
 	
 
     
