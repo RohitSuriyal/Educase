@@ -32,9 +32,7 @@
         <meta property="og:image" content="<?php echo $og_image; ?>">
     <?php endif; ?>
     
-    <?php if (isset($og_url)): ?>
-        <meta property="og:url" content="<?php echo $og_url; ?>">
-    <?php endif; ?>
+    
     
     <?php if (isset($og_type)): ?>
         <meta property="og:type" content="<?php echo $og_type; ?>">

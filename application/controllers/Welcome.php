@@ -188,7 +188,7 @@ class Welcome extends CI_Controller
             $output['og_title'] = $output["output"][0]->heading; // Open Graph title
             $output['og_description'] = 'This is the best school in Delhi.'; // Open Graph description
             $output['og_image'] = $output["output"][0]->image; // Open Graph image
-            $output['og_url'] = 'https://findmyschools.co.in/blog/' . $id; // Open Graph URL
+            // $output['og_url'] = 'https://findmyschools.co.in/blog/' . $id; // Open Graph URL
             $output['og_type'] = 'website'; // Open Graph type
 
 			$this->load->view("Single_blog", $output);
