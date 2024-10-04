@@ -5,7 +5,15 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo isset($title) ? $title : 'Default Title'; ?></title>
+	<meta property="og:title" content="Findmyschool" />
+<meta property="og:description" content="this is the best content website" />
+<meta property="og:image" content="https://img.freepik.com/free-vector/flat-back-school-party-illustration_23-2149477157.jpg?w=2000&t=st=1728021991~exp=1728022591~hmac=f9c98a1890e244502445dd749a05fda9d932c2e11a429a680dd51bbef175a6b5" />
+<meta property="og:url" content="findmyschools.co.in" />
+<meta property="og:type" content="website" />
 
+    
 	<!-- Bootstrap CSS -->
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -1049,7 +1057,7 @@
 
 		}
 	</style>
-
+ 
 </head>
 
 <body>
