@@ -1,4 +1,5 @@
 <?php $this->load->view("common/header")  ?>
+
 <div class="container-fluid " style="padding:0px 0px;margin:0px 0px">
     <img height="100%" width="100
     %" id="dynamic" style="height:25rem!important;object-fit:cover;width:100%" src="<?php echo $output[0]->image; ?>" />
@@ -26,11 +27,25 @@
 
     // Output the modified body
     echo $bodyWithLink;
+    
 } else {
     // Fallback if school name is empty
     echo $output[0]->body;
 }
 ?>
+<div class="d-flex gap-3">
+
+<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(current_url()); ?>" target="_blank">
+    <button>Share on Facebook</button>
+</a>
+<a href="https://www.linkedin.com/sharing/share-offsite/?url=<?php echo urlencode(current_url()); ?>" target="_blank">
+    <button>Share on LinkedIn</button>
+</a>
+<a href="https://twitter.com/intent/tweet?text=Check out this page!&url=https://findmyschools.co.in/blog/111" target="_blank">
+    <button>Share on Twitter</button>
+</a>
+
+</div>
 
 
 
@@ -72,6 +87,10 @@ foreach ($limited_category as $c) : ?>
         ?>
     </div>
 <?php endforeach; ?>
+
+
+
+
 
 
 
