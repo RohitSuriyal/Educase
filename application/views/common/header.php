@@ -6,7 +6,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	
-	<meta property="og:title" content="Findmyschool" />
+	<meta property="og:title" content="Best website to find your school" />
     <meta property="og:description" content="Findmyschool is your ultimate destination for discovering the best schools tailored to your needs. Whether you're a parent seeking quality education for your child or a student looking to compare schools, our platform provides comprehensive and reliable information. We offer detailed profiles on schools, including admission criteria, fee structures, campus facilities, extracurricular activities, and academic performance. Our easy-to-use search filters help you narrow down options based on location, curriculum, and other preferences.
 
 With a dedicated blog section, we keep you informed about the latest trends in education, from early learning tips to higher education guidance. Findmyschool is more than just a directory; it’s a community where you can share experiences, read reviews, and make informed decisions for your child's future.
