@@ -201,7 +201,7 @@ class Welcome extends CI_Controller
             // Open Graph meta tags
             $output['og_title'] = $output["output"][0]->heading; // Open Graph title
             $output['og_description'] = substr(trim(strip_tags($output["output"][0]->body)), 0, 200);; // Open Graph description
-            $output['og_image'] = $output["ouptput"][0]->image;
+            $output['og_image'] = $output["output"][0]->image;
            
             $output['og_type'] = 'website'; // Open Graph type
 
