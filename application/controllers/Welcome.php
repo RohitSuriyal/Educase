@@ -202,7 +202,7 @@ class Welcome extends CI_Controller
             $output['og_title'] = 'Best School'; // Open Graph title
             $output['og_description'] = 'This is the best school in Delhi.'; // Open Graph description
             $output['og_image'] = 'https://img.etimg.com/thumb/width-1200,height-900,imgsize-151488,resizemode-75,msid-102789039/magazines/panache/rapper-raftaar-to-make-acting-debut-with-web-series-bajao-this-month.jpg'; // Open Graph image
-            $output['og_url'] = 'https://findmyschools.co.in/blog/' . $id; // Open Graph URL
+           
             $output['og_type'] = 'website'; // Open Graph type
 
 			$this->load->view("Single_blog", $output);
