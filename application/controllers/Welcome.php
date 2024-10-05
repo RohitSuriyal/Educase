@@ -194,14 +194,14 @@ class Welcome extends CI_Controller
 			$this->load->view("Single_blog", $output);
 		}
 		else{
-			$output['title'] = 'Raftaar'; // Set the title for the page
-            $output['meta_description'] = 'This is a brief description of the blog post.'; // Meta description
+			$output['title'] = $output["output"][0]->heading; // Set the title for the page
+            $output['meta_description'] = substr(trim(strip_tags($output["output"][0]->body)), 0, 10);
             $output['meta_keywords'] = 'blog, post, example'; // Meta keywords
 
             // Open Graph meta tags
-            $output['og_title'] = 'Best School'; // Open Graph title
-            $output['og_description'] = 'This is the best school in Delhi.'; // Open Graph description
-            $output['og_image'] = 'https://img.etimg.com/thumb/width-1200,height-900,imgsize-151488,resizemode-75,msid-102789039/magazines/panache/rapper-raftaar-to-make-acting-debut-with-web-series-bajao-this-month.jpg'; // Open Graph image
+            $output['og_title'] = $output["output"][0]->heading; // Open Graph title
+            $output['og_description'] = substr(trim(strip_tags($output["output"][0]->body)), 0, 200);; // Open Graph description
+            $output['og_image'] = $output["ouptput"][0]->image;
            
             $output['og_type'] = 'website'; // Open Graph type
 
