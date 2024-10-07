@@ -24,9 +24,14 @@
 <i class="fa-brands fa-linkedin" style="color: #0056d6;font-size:1.3rem"></i>
     Share on LinkedIn
 </a>
-<a class="text-decoration-none" href="https://twitter.com/intent/tweet?text=Check out this page!&url=https://findmyschools.co.in/blog/111" target="_blank">
-<i class="fa-brands fa-twitter" style="color: #0061ff;font-size:1.3rem"></i>Share on Twitter
+<a class="text-decoration-none" href="https://api.whatsapp.com/send?text=<?php echo urlencode(current_url()); ?>" target="_blank">
+    <i class="fa-brands fa-whatsapp" style="color: #25d366; font-size: 1.3rem;"></i>
+    Share on WhatsApp
 </a>
+
+<!-- <a class="text-decoration-none" href="https://twitter.com/intent/tweet?text=Check out this page!&url=https://findmyschools.co.in/blog/111" target="_blank">
+<i class="fa-brands fa-twitter" style="color: #0061ff;font-size:1.3rem"></i>Share on Twitter
+</a> -->
 
 </div>
         <h1><?php echo $output[0]->heading ?></h1>
