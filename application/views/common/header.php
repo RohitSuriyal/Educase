@@ -1094,45 +1094,42 @@
 			<form id="formdetail" class="container">
 				<h1 class="poppins bold text-center my-3">Enquiry Details</h1>
 				<div class="row">
-					<div class="col-md-6 mb-3">
-						<label for="name">Name</label>
-						<input type="text" id="name" name="name" class="form-control" placeholder="Enter your name">
+				<div class="col-md-6 mb-3">
+				<label for="student-name">Student's Name <span style="color: red;">*</span></label>
+<input type="text" id="student-name" placeholder="Enter student's name" required>
+
 					</div>
 					<div class="col-md-6 mb-3">
-						<label for="email">Email</label>
+						<label for="email">Email<span style="color:red">*</span></label>
 						<input type="email" id="email" name="email" class="form-control" placeholder="Enter your email">
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-6 mb-3">
-						<label for="school_name">School Name</label>
+						<label for="school_name">School Name<span style="color:red">*</span></label>
 						<input type="text" id="school_name" name="school_name" class="form-control"
 							placeholder="Enter school name">
 					</div>
 					<div class="col-md-6 mb-3">
-						<label for="class">Class</label>
+						<label for="class">Class<span style="color:red">*</span></label>
 						<input type="text" id="class" name="class" class="form-control" placeholder="Enter class">
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-6 mb-3">
-						<label for="parent_name">Parent's Name</label>
+					<div class="col-md-12 mb-3">
+						<label for="parent_name">Parent's Name<span style="color:red">*</span></label>
 						<input type="text" id="parent_name" name="parent" class="form-control"
 							placeholder="Enter parent's name">
 					</div>
-					<div class="col-md-6 mb-3">
-						<label for="student_name">Student's Name</label>
-						<input type="text" id="student_name" name="student" class="form-control"
-							placeholder="Enter student's name">
-					</div>
+					
 				</div>
 				<div class="row">
 					<div class="col-md-12 mb-3">
-						<label for="city">City</label>
+						<label for="city">City<span style="color:red">*</span></label>
 						<input type="text" id="city" name="city" class="form-control" placeholder="Enter your city">
 					</div>
 					<div class="col-md-12 mb-3">
-						<label for="city">Phone</label>
+						<label for="city">Phone<span style="color:red">*</span></label>
 						<input type="text" id="city" name="phone_no" class="form-control" placeholder="Enter your phone_no">
 					</div>
 				</div>
@@ -1210,3 +1207,4 @@
 	</div>
 	<div class="container-fluid " data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300"
 		style="margin: 0px 0px;padding:0px 0;position:relative;overflow:hidden">
+		

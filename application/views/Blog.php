@@ -197,7 +197,7 @@
 
 
                     <div class="col-md  col-md-5" style="height:auto">
-                        <img style="height:100%!important;object-fit:cover;width:100%" src="data:image/*;base64,<?php echo $row->image; ?>" class="img-fluid" alt="Responsive Image">
+                        <img style="height:100%!important;object-fit:cover;width:100%" src="<?php echo $row->image; ?>" class="img-fluid" alt="Responsive Image">
                     </div>
                     <div class="col-md-7 py-4 blog_div  roboto content_text" style="height:auto;background-color: white;">
                         <span class="grey bold">
@@ -269,7 +269,7 @@
                     </div>
 
                     <div class="col-md  col-md-5" style="height:auto">
-                        <img style="height:100%!important;object-fit:cover;width:100%" src="data:image/*;base64,<?php echo $row->image; ?>" alt="Responsive Image">
+                        <img style="height:100%!important;object-fit:cover;width:100%" src="<?php echo $row->image; ?>" alt="Responsive Image">
                     </div>
 
                 </div>
@@ -297,7 +297,7 @@
 
             <div class="row mt-4" style="padding: 1rem;">
                 <div class="col-md-6" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                    <img style="height: 400px; object-fit: cover; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;" src="data:image/*;base64,<?php echo $current->image; ?>" alt="Responsive Image">
+                    <img style="height: 400px; object-fit: cover; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;" src="<?php echo $current->image; ?>" alt="Responsive Image">
                     <p class="roboto bold mt-5 grey">
                         <?php
                         $date = strtotime($current->date);
@@ -324,7 +324,7 @@
                 </div>
 
                 <div class="col-md-6" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                    <img style="height: 400px; object-fit: cover; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;" src="data:image/*;base64,<?php echo $nextRow->image; ?>" alt="Responsive Image">
+                    <img style="height: 400px; object-fit: cover; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;" src="<?php echo $nextRow->image; ?>" alt="Responsive Image">
                     <p class="roboto bold mt-5 grey">
                         <?php
                         $date = strtotime($nextRow->date);
@@ -365,7 +365,7 @@
 
 
                     <div class="col-md  col-md-5" style="height:auto">
-                        <img style="height:100%!important;object-fit:cover;width:100%" src="data:image/*;base64,<?php echo $row->image; ?>" class="img-fluid" alt="Responsive Image">
+                        <img style="height:100%!important;object-fit:cover;width:100%" src="<?php echo $row->image; ?>" class="img-fluid" alt="Responsive Image">
                     </div>
                     <div class="col-md-7 py-4 blog_div  roboto content_text" style="height:auto;background-color: white;">
                         <span class="grey bold">
@@ -437,7 +437,7 @@
                     </div>
 
                     <div class="col-md  col-md-5" style="height:auto">
-                        <img style="height:100%!important;object-fit:cover;width:100%" src="data:image/*;base64,<?php echo $row->image; ?>" alt="Responsive Image">
+                        <img style="height:100%!important;object-fit:cover;width:100%" src="<?php echo $row->image; ?>" alt="Responsive Image">
                     </div>
 
                 </div>
@@ -465,7 +465,7 @@
 
             <div class="row mt-4" style="padding: 1rem;">
                 <div class="col-md-6" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                    <img style="height: 400px; object-fit: cover; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;" src="data:image/*;base64,<?php echo $current->image; ?>" alt="Responsive Image">
+                    <img style="height: 400px; object-fit: cover; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;" src="<?php echo $current->image; ?>" alt="Responsive Image">
                     <p class="roboto bold mt-5 grey">
                         <?php
                         $date = strtotime($current->date);
@@ -492,7 +492,7 @@
                 </div>
 
                 <div class="col-md-6" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                    <img style="height: 400px; object-fit: cover; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;" src="data:image/*;base64,<?php echo $nextRow->image; ?>" alt="Responsive Image">
+                    <img style="height: 400px; object-fit: cover; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;" src="<?php echo $nextRow->image; ?>" alt="Responsive Image">
                     <p class="roboto bold mt-5 grey">
                         <?php
                         $date = strtotime($nextRow->date);
@@ -533,7 +533,7 @@
 
 
                     <div class="col-md  col-md-5" style="height:auto">
-                        <img style="height:100%!important;object-fit:cover;width:100%" src="data:image/*;base64,<?php echo $row->image; ?>" class="img-fluid" alt="Responsive Image">
+                        <img style="height:100%!important;object-fit:cover;width:100%" src="<?php echo $row->image; ?>" class="img-fluid" alt="Responsive Image">
                     </div>
                     <div class="col-md-7 py-4 blog_div  roboto content_text" style="height:auto;background-color: white;">
                         <span class="grey bold">
@@ -605,7 +605,7 @@
                     </div>
 
                     <div class="col-md-5" style="height:auto">
-                        <img style="height:100%!important;object-fit:cover;width:100%" src="data:image/*;base64,<?php echo $row->image; ?>" alt="Responsive Image">
+                        <img style="height:100%!important;object-fit:cover;width:100%" src="<?php echo $row->image; ?>" alt="Responsive Image">
                     </div>
 
                 </div>
@@ -633,7 +633,7 @@
 
             <div class="row mt-4 " style="padding: 1rem;">
                 <div class="col-md-6 blog_image" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                <img style="height: 400px; object-fit: cover; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;" src="data:image/*;base64,<?php echo $nextRow->image; ?>" alt="Responsive Image">
+                <img style="height: 400px; object-fit: cover; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;" src="<?php echo $nextRow->image; ?>" alt="Responsive Image">
 
                     <p class="roboto bold mt-5 grey">
                         <?php
@@ -661,7 +661,7 @@
                 </div>
 
                 <div class="col-md-6 blog_image" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                <img  style="height: 400px; object-fit: cover; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;" src="data:image/*;base64,<?php echo $nextRow->image; ?>" alt="Responsive Image">
+                <img  style="height: 400px; object-fit: cover; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;" src="<?php echo $nextRow->image; ?>" alt="Responsive Image">
 
                     <p class="roboto bold mt-5 grey">
                         <?php

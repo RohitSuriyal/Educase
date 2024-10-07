@@ -76,20 +76,20 @@ class Welcome extends CI_Controller
 		$range = 'Sheet1!A1'; // Replace with your desired range
 
 		// Get form data
-		$name = $this->input->post('name');
+		$name = $this->input->post("student");
 		$email = $this->input->post('email');
 		$phone_no = $this->input->post("phone_no");
 		$school_name = $this->input->post("school_name");
 		$city = $this->input->post("city");
 		$parent=$this->input->post("parent");
-		$student=$this->input->post("student");
+		
 		$date=$this->input->post("current_date");
 		$time=$this->input->post("current_time");
 
 
 		// Prepare data for Google Sheets
 		$formData = [
-			[$name, $email, $phone_no, $school_name, $city,$parent,$student,$date,$time] // Add more fields as necessary
+			[$name, $email, $phone_no, $school_name, $city,$parent,$date,$time] // Add more fields as necessary
 		];
 
 		$body = new \Google_Service_Sheets_ValueRange([

@@ -15,6 +15,20 @@
                                 $formatted_date = date('jS, F Y', $date);
                                 echo $formatted_date; ?>
         </div>
+        <div class="d-flex gap-3 mt-5 mb-5">
+
+<a class="text-decoration-none" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(current_url()); ?>" target="_blank">
+<i class="fa-brands fa-facebook" style="color: #002e7a;font-size:1.3rem"></i>Share on Facebook
+</a>
+<a class="text-decoration-none" href="https://www.linkedin.com/sharing/share-offsite/?url=<?php echo urlencode(current_url()); ?>" target="_blank">
+<i class="fa-brands fa-linkedin" style="color: #0056d6;font-size:1.3rem"></i>
+    Share on LinkedIn
+</a>
+<a class="text-decoration-none" href="https://twitter.com/intent/tweet?text=Check out this page!&url=https://findmyschools.co.in/blog/111" target="_blank">
+<i class="fa-brands fa-twitter" style="color: #0061ff;font-size:1.3rem"></i>Share on Twitter
+</a>
+
+</div>
         <h1><?php echo $output[0]->heading ?></h1>
       <?php  if (!empty($schoolname)) {
     // Create a hyperlink for the school name
@@ -33,19 +47,7 @@
     echo $output[0]->body;
 }
 ?>
-<div class="d-flex gap-3">
 
-<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(current_url()); ?>" target="_blank">
-    <button>Share on Facebook</button>
-</a>
-<a href="https://www.linkedin.com/sharing/share-offsite/?url=<?php echo urlencode(current_url()); ?>" target="_blank">
-    <button>Share on LinkedIn</button>
-</a>
-<a href="https://twitter.com/intent/tweet?text=Check out this page!&url=https://findmyschools.co.in/blog/111" target="_blank">
-    <button>Share on Twitter</button>
-</a>
-
-</div>
 
 
 

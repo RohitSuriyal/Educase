@@ -464,7 +464,7 @@
             $("#tab1").append(`
                     <div class="row mt-2" style="box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.5);">
                          <div class="col-md-5" style="padding:0px 0px">
-                            <img height="100%" width="100%" src="data:image/*;base64,${d.image}">
+                            <img height="100%" width="100%" src="${d.image}">
                             </div>
                      <div class="col-md-7 p-3">
                      <div>
@@ -494,7 +494,7 @@
                  </div>
             <div class="d-flex justify-content-end">
                 <a href="<?php echo base_url('welcome/School_details/'); ?>${d.id}">
-                    <button style="border: 2px solid #001AFF; color: #001AFF" class="btn roboto px-4 m-3">View Detail</button>
+                    <button style="border: 2px solid #001AFF; color: #001AFF;background-color:white" class=" roboto px-4 m-3">View Detail</button>
                 </a>
             </div>
         </div>
