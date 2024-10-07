@@ -1096,7 +1096,7 @@
 				<div class="row">
 				<div class="col-md-6 mb-3">
 				<label for="student-name">Student's Name <span style="color: red;">*</span></label>
-<input type="text" id="student-name" placeholder="Enter student's name" required>
+               <input type="text" id="student-name" class="form-control"  name="student" placeholder="Enter student's name" required>
 
 					</div>
 					<div class="col-md-6 mb-3">
