@@ -24,7 +24,7 @@
 <i class="fa-brands fa-linkedin" style="color: #0056d6;font-size:1.3rem"></i>
     Share on LinkedIn
 </a>
-<a class="text-decoration-none" href="https://api.whatsapp.com/send?text=<?php echo urlencode(current_url()); ?>" target="_blank">
+<a id="whatsapp-share" class="text-decoration-none" href="https://api.whatsapp.com/send?text=<?php echo urlencode(current_url()); ?>" target="_blank">
     <i class="fa-brands fa-whatsapp" style="color: #25d366; font-size: 1.3rem;"></i>
     Share on WhatsApp
 </a>
@@ -124,6 +124,8 @@ foreach ($limited_category as $c) : ?>
 
         // Change the URL without navigating to it
         history.replaceState(null, '', 'blog/' + slug);
+        var whatsappLink = document.getElementById('whatsapp-share');
+        whatsappLink.href = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(window.location.href);
     };
    
 </script>
