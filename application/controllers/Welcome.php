@@ -50,6 +50,7 @@ class Welcome extends CI_Controller
             // $data['og_type'] = 'website'; // Open Graph type
 
 
+		
 
 		$this->load->view('Home', $data);
 	}
@@ -192,6 +193,8 @@ class Welcome extends CI_Controller
             $output['og_type'] = 'website'; // Open Graph type
 
 			$this->load->view("Single_blog", $output);
+
+			// return redirect("/school");
 		}
 		else{
 			$output['title'] = $output["output"][0]->heading; // Set the title for the page
