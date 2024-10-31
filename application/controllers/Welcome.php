@@ -44,7 +44,7 @@ class Welcome extends CI_Controller
             // // Open Graph meta tags
             // $data['og_title'] ="Findmyschool, best website to find the school for your child"; // Open Graph title
             // $data['og_description'] = 'This is the best school in Delhi.'; // Open Graph description
-            // $data['og_image'] = base_url('assets/images/school-8391795_1920.jpg');
+            $data['og_image'] = base_url('assets/images/school.jpg');
 
             // $data['og_url'] = 'findmyschools.co.in'; // Open Graph URL
             // $data['og_type'] = 'website'; // Open Graph type
