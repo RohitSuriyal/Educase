@@ -9,7 +9,7 @@
 </div>
 
 <div class="row upper_single_div  mt-5 mb-5 flex justify-content-center" style="padding:0 4%">
-    <div class="col-md-8 me-5 single_blog_div px-5 blog_div single_div" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" style="box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 2px 0 2px rgba(0, 0, 0, 0.1), 2px 0 2px rgba(0, 0, 0, 0.1);" style="background-color:#F9F9FF">
+    <div class="col-md-8 me-5 single_blog_div px-5 blog_div single_div blog_div_content" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" style="box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 2px 0 2px rgba(0, 0, 0, 0.1), 2px 0 2px rgba(0, 0, 0, 0.1);" style="background-color:#F9F9FF">
 
         <div class=" my-3 grey"><?php $date = strtotime($output[0]->date);
                                 $formatted_date = date('jS, F Y', $date);
@@ -67,7 +67,7 @@
 $limited_category = array_slice($category, 0, 4);
 
 foreach ($limited_category as $c) : ?>
-    <div class="row blog_div single_blog mb-2">
+    <div class="row blog_div single_blog mb-2 fetatured_blog">
         <img class="px-0" style="border-top-left-radius:5%; border-top-right-radius:5%; object-fit:cover;" width="90%" height="200px!important" src="<?php echo $c->image; ?>" alt="Category Image">
         <span class="px-0">23rd July, 2023</span>
         <h6 class="px-0 bold"><?php echo $c->heading ?></h6>

@@ -2,7 +2,18 @@
 	outline: none !important;
 }
 
+@media (min-width: 768px) {
+    .blog_div_content {
+        flex: 0 0 auto!important;
+        width: 48.666667%!important;
+    }
+	.fetatured_blog{
 
+		width:82%!important;
+	}
+	
+	
+}
 .rounded_blog {
 	border-top-left-radius: 1.25rem !important;
 	border-top-right-radius: 1.25rem !important;
@@ -84,7 +95,7 @@
 }
 .gal_tab {
 	flex: 0 0 auto!important;
-	width: 10.666667%!important;
+	width: 18.666667%!important;
 }
 .btn_pic.active{
 	background-color:#001AFF;
@@ -99,6 +110,13 @@
 	font-size:17px;
 
 }
+@media (min-width: 580px) and (max-width: 1011px) {
+    .gal_tab {
+        flex: 0 0 auto !important;
+        width: 50.666667% !important;
+    }
+}
+
 
 
 

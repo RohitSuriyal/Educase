@@ -173,18 +173,18 @@
                             <option value="Nursery_total" selected>Nursery</option>
                             <option value="LKG_total">LKG</option>
                             <option value="UKG_total">UKG</option>
-                            <option value="I_total">Grade 1</option>
-                            <option value="II_total">Grade 2</option>
-                            <option value="III_total">grade 3</option>
-                            <option value="IV_total">grade 4</option>
-                            <option value="V_total">grdae 5</option>
-                            <option value="VI_total">grade 6</option>
-                            <option value="VII_total">grade 7</option>
-                            <option value="VIII_total">grade 8</option>
-                            <option value="IX_total">grade 9</option>
-                            <option value="X_total">grade 10</option>
-                            <option value="XI_total">grade 11</option>
-                            <option value="XII_total">grade 12</option>
+                            <option value="I_total">class 1</option>
+                            <option value="II_total">class 2</option>
+                            <option value="III_total">class 3</option>
+                            <option value="IV_total">class 4</option>
+                            <option value="V_total">class 5</option>
+                            <option value="VI_total">class 6</option>
+                            <option value="VII_total">class 7</option>
+                            <option value="VIII_total">class 8</option>
+                            <option value="IX_total">class 9</option>
+                            <option value="X_total">class 10</option>
+                            <option value="XI_total">class 11</option>
+                            <option value="XII_total">class 12</option>
                         </select>
                     </div>
                     <div class="" style="background-color:#F9F9FF">
@@ -401,18 +401,18 @@
                                 <option value="Nursery" selected>Nursery</option>
                                 <option value="LKG">LKG</option>
                                 <option value="UKG">UKG</option>
-                                <option value="I">Grade 1</option>
-                                <option value="II">Grade 2</option>
-                                <option value="III">grade 3</option>
-                                <option value="IV">grade 4</option>
-                                <option value="V">grdae 5</option>
-                                <option value="VI">grade 6</option>
-                                <option value="VII">grade 7</option>
-                                <option value="VIII">grade 8</option>
-                                <option value="IX">grade 9</option>
-                                <option value="X">grade 10</option>
-                                <option value="XI">grade 11</option>
-                                <option value="XII">grade 12</option>
+                                <option value="I">class 1</option>
+                                <option value="II">class 2</option>
+                                <option value="III">class 3</option>
+                                <option value="IV">class 4</option>
+                                <option value="V">class 5</option>
+                                <option value="VI">class 6</option>
+                                <option value="VII">class 7</option>
+                                <option value="VIII">class 8</option>
+                                <option value="IX">class 9</option>
+                                <option value="X">class 10</option>
+                                <option value="XI">class 11</option>
+                                <option value="XII">class 12</option>
                             </select>
 
                         </div>
@@ -1206,18 +1206,18 @@
                             <option value="Nursery_total_ad" selected>Nursery</option>
                             <option value="LKG_total_ad">LKG</option>
                             <option value="UKG_total_ad">UKG</option>
-                            <option value="I_total_ad">Grade 1</option>
-                            <option value="II_total_ad">Grade 2</option>
-                            <option value="III_total_ad">grade 3</option>
-                            <option value="IV_total_ad">grade 4</option>
-                            <option value="V_total_ad">grdae 5</option>
-                            <option value="VI_total_ad">grade 6</option>
-                            <option value="VII_total_ad">grade 7</option>
-                            <option value="VIII_total_ad">grade 8</option>
-                            <option value="IX_total_ad">grade 9</option>
-                            <option value="X_total_ad">grade 10</option>
-                            <option value="XI_total_ad">grade 11</option>
-                            <option value="XII_total_ad">grade 12</option>
+                            <option value="I_total_ad">class 1</option>
+                            <option value="II_total_ad">class 2</option>
+                            <option value="III_total_ad">class 3</option>
+                            <option value="IV_total_ad">class 4</option>
+                            <option value="V_total_ad">class 5</option>
+                            <option value="VI_total_ad">class 6</option>
+                            <option value="VII_total_ad">class 7</option>
+                            <option value="VIII_total_ad">class 8</option>
+                            <option value="IX_total_ad">class 9</option>
+                            <option value="X_total_ad">class 10</option>
+                            <option value="XI_total_ad">class 11</option>
+                            <option value="XII_total_ad">class 12</option>
                         </select>
                     </div>
                     <div class="" style="background-color:#F9F9FF">
@@ -1336,18 +1336,18 @@
                             <option value="Nursery_total_ad_m" selected>Nursery</option>
                             <option value="LKG_total_ad_m">LKG</option>
                             <option value="UKG_total_ad_m">UKG</option>
-                            <option value="I_total_ad_m">Grade 1</option>
-                            <option value="II_total_ad_m">Grade 2</option>
-                            <option value="III_total_ad_m">grade 3</option>
-                            <option value="IV_total_ad_m">grade 4</option>
-                            <option value="V_total_ad_m">grdae 5</option>
-                            <option value="VI_total_ad_m">grade 6</option>
-                            <option value="VII_total_ad_m">grade 7</option>
-                            <option value="VIII_total_ad_m">grade 8</option>
-                            <option value="IX_total_ad_m">grade 9</option>
-                            <option value="X_total_ad_m">grade 10</option>
-                            <option value="XI_total_ad_m">grade 11</option>
-                            <option value="XII_total_ad_m">grade 12</option>
+                            <option value="I_total_ad_m">class 1</option>
+                            <option value="II_total_ad_m">class 2</option>
+                            <option value="III_total_ad_m">class 3</option>
+                            <option value="IV_total_ad_m">class 4</option>
+                            <option value="V_total_ad_m">class 5</option>
+                            <option value="VI_total_ad_m">class 6</option>
+                            <option value="VII_total_ad_m">class 7</option>
+                            <option value="VIII_total_ad_m">class 8</option>
+                            <option value="IX_total_ad_m">class 9</option>
+                            <option value="X_total_ad_m">class 10</option>
+                            <option value="XI_total_ad_m">class 11</option>
+                            <option value="XII_total_ad_m">class 12</option>
                         </select>
                     </div>
                     <div class="" style="background-color:#F9F9FF">
@@ -1486,18 +1486,18 @@
                             <option value="Nursery" selected>Nursery</option>
                             <option value="LKG">LKG</option>
                             <option value="UKG">UKG</option>
-                            <option value="I">Grade 1</option>
-                            <option value="II">Grade 2</option>
-                            <option value="III">grade 3</option>
-                            <option value="IV">grade 4</option>
-                            <option value="V">grdae 5</option>
-                            <option value="VI">grade 6</option>
-                            <option value="VII">grade 7</option>
-                            <option value="VIII">grade 8</option>
-                            <option value="IX">grade 9</option>
-                            <option value="X">grade 10</option>
-                            <option value="XI">grade 11</option>
-                            <option value="XII">grade 12</option>
+                            <option value="I">class 1</option>
+                            <option value="II">class 2</option>
+                            <option value="III">class 3</option>
+                            <option value="IV">class 4</option>
+                            <option value="V">class 5</option>
+                            <option value="VI">class 6</option>
+                            <option value="VII">class 7</option>
+                            <option value="VIII">class 8</option>
+                            <option value="IX">class 9</option>
+                            <option value="X">class 10</option>
+                            <option value="XI">class 11</option>
+                            <option value="XII">class 12</option>
                         </select>
 
                     </div>
