@@ -171,8 +171,8 @@ class Welcome extends CI_Controller
 	}
 	public function blog_page($school_id)
 	{
-
-		$id = $school_id;
+        
+		$id = $this->input->post("blog_id");
 		$this->load->model("Blog_model");
 		$output = $this->Blog_model->getspecificblog($id);
 		$id=$output["output"][0]->School;

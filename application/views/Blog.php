@@ -45,9 +45,24 @@
                             $text = substr($text, 0, $last_space);
                             // Add ellipsis
                             $url = base_url('blog/') . $row->id;
+                            function create_url_friendly_heading($heading)
+                            {
+                                // Convert to lowercase
+                                $heading = strtolower(trim($heading));
+                                // Replace spaces with hyphens
+                                $heading = str_replace(' ', '-', $heading);
+                                // Remove any characters that are not alphanumeric or hyphens
+                                $heading = preg_replace('/[^a-z0-9\-]/', '', $heading);
+                                return $heading;
+                            }
 
-                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
-                            // Output the truncated body text with "Read more" link
+                            // Create a cleaned heading for the URL
+                            $cleaned_heading = create_url_friendly_heading($row->heading);
+                            $text .= ' 
+                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
+                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                                <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
+                            </form>';
                             echo $text;
                         } else {
                             // If the body text is shorter than or equal to 300 characters, output it as is
@@ -81,11 +96,15 @@
                             // Trim the text to the last space to avoid cutting off in the middle of a word
                             $text = substr($text, 0, $last_space);
                             // Add ellipsis
-                            $url = base_url('blog/') . $row->id;
-                           
-
-                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
-                            // Output the truncated body text with "Read more" link
+                          
+                            $cleaned_heading = create_url_friendly_heading($row->heading);
+                            $text .= ' 
+                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
+                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                                <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
+                            </form>';
+                          
+                       
                             echo $text;
                         } else {
                             // If the body text is shorter than or equal to 300 characters, output it as is
@@ -95,7 +114,7 @@
                     </div>
 
                     <div class="col-md  col-md-5" style="height:auto">
-                    <img style="height:100%!important;object-fit:cover;width:100%" src="<?php echo $row->image; ?>" class="img-fluid" alt="Responsive Image">
+                        <img style="height:100%!important;object-fit:cover;width:100%" src="<?php echo $row->image; ?>" class="img-fluid" alt="Responsive Image">
                     </div>
 
                 </div>
@@ -142,7 +161,12 @@
                             $last_space = strrpos($text, ' ');
                             $text = substr($text, 0, $last_space);
                             $url = base_url('blog/') . $current->id;
-                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                            $cleaned_heading = create_url_friendly_heading($row->heading);
+                            $text .= ' 
+                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
+                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                                <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
+                            </form>';
                         }
                         echo $text;
                         ?>
@@ -169,7 +193,12 @@
                             $last_space = strrpos($text, ' ');
                             $text = substr($text, 0, $last_space);
                             $url = base_url('blog/') . $nextRow->id;
-                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                            $cleaned_heading = create_url_friendly_heading($row->heading);
+                            $text .= ' 
+                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
+                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                                <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
+                            </form>';
                         }
                         echo $text;
                         ?>
@@ -189,8 +218,8 @@
 
     </div>
     <div id="tab2" class="tab-pane">
-        
-    <?php foreach (array_reverse($education) as $index => $row) : ?>
+
+        <?php foreach (array_reverse($education) as $index => $row) : ?>
             <?php if ($index == 0) : ?>
 
                 <div class="row d-flex flex-row" data-aos="fade-right" style="padding:19px 12px;">
@@ -218,10 +247,13 @@
                             $last_space = strrpos($text, ' ');
                             // Trim the text to the last space to avoid cutting off in the middle of a word
                             $text = substr($text, 0, $last_space);
-                            // Add ellipsis
-                            $url = base_url('welcome/blog_page/') . $row->id;
-
-                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                            //
+                            $cleaned_heading = create_url_friendly_heading($row->heading);
+                            $text .= ' 
+                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
+                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                                <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
+                            </form>';
                             // Output the truncated body text with "Read more" link
                             echo $text;
                         } else {
@@ -256,9 +288,12 @@
                             // Trim the text to the last space to avoid cutting off in the middle of a word
                             $text = substr($text, 0, $last_space);
                             // Add ellipsis
-                            $url = base_url('welcome/blog_page/') . $row->id;
-
-                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                            $cleaned_heading = create_url_friendly_heading($row->heading);
+                            $text .= ' 
+                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
+                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                                <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
+                            </form>';
                             // Output the truncated body text with "Read more" link
                             echo $text;
                         } else {
@@ -315,8 +350,12 @@
                             $text = substr($text, 0, 1000);
                             $last_space = strrpos($text, ' ');
                             $text = substr($text, 0, $last_space);
-                            $url = base_url('welcome/blog_page/') . $current->id;
-                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                            $cleaned_heading = create_url_friendly_heading($row->heading);
+                            $text .= ' 
+                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
+                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                                <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
+                            </form>';
                         }
                         echo $text;
                         ?>
@@ -342,8 +381,12 @@
                             $text = substr($text, 0, 1000);
                             $last_space = strrpos($text, ' ');
                             $text = substr($text, 0, $last_space);
-                            $url = base_url('welcome/blog_page/') . $nextRow->id;
-                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                            $cleaned_heading = create_url_friendly_heading($row->heading);
+                            $text .= ' 
+                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
+                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                                <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
+                            </form>';
                         }
                         echo $text;
                         ?>
@@ -358,7 +401,7 @@
         ?>
     </div>
     <div id="tab3" class="tab-pane">
-    <?php foreach (array_reverse($technology) as $index => $row) : ?>
+        <?php foreach (array_reverse($technology) as $index => $row) : ?>
             <?php if ($index == 0) : ?>
 
                 <div class="row d-flex flex-row" data-aos="fade-right" style="padding:19px 12px;">
@@ -387,9 +430,12 @@
                             // Trim the text to the last space to avoid cutting off in the middle of a word
                             $text = substr($text, 0, $last_space);
                             // Add ellipsis
-                            $url = base_url('welcome/blog_page/') . $row->id;
-
-                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                            $cleaned_heading = create_url_friendly_heading($row->heading);
+                            $text .= ' 
+                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
+                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                                <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
+                            </form>';
                             // Output the truncated body text with "Read more" link
                             echo $text;
                         } else {
@@ -424,9 +470,12 @@
                             // Trim the text to the last space to avoid cutting off in the middle of a word
                             $text = substr($text, 0, $last_space);
                             // Add ellipsis
-                            $url = base_url('welcome/blog_page/') . $row->id;
-
-                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                            $cleaned_heading = create_url_friendly_heading($row->heading);
+                            $text .= ' 
+                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
+                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                                <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
+                            </form>';
                             // Output the truncated body text with "Read more" link
                             echo $text;
                         } else {
@@ -483,8 +532,12 @@
                             $text = substr($text, 0, 1000);
                             $last_space = strrpos($text, ' ');
                             $text = substr($text, 0, $last_space);
-                            $url = base_url('welcome/blog_page/') . $current->id;
-                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                            $cleaned_heading = create_url_friendly_heading($row->heading);
+                            $text .= ' 
+                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
+                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                                <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
+                            </form>';
                         }
                         echo $text;
                         ?>
@@ -510,8 +563,12 @@
                             $text = substr($text, 0, 1000);
                             $last_space = strrpos($text, ' ');
                             $text = substr($text, 0, $last_space);
-                            $url = base_url('welcome/blog_page/') . $nextRow->id;
-                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                            $cleaned_heading = create_url_friendly_heading($row->heading);
+                            $text .= ' 
+                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
+                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                                <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
+                            </form>';
                         }
                         echo $text;
                         ?>
@@ -526,7 +583,7 @@
         ?>
     </div>
     <div id="tab4" class="tab-pane">
-    <?php foreach (array_reverse($school) as $index => $row) : ?>
+        <?php foreach (array_reverse($school) as $index => $row) : ?>
             <?php if ($index == 0) : ?>
 
                 <div class="row d-flex flex-row" data-aos="fade-right" style="padding:19px 12px;">
@@ -555,11 +612,12 @@
                             // Trim the text to the last space to avoid cutting off in the middle of a word
                             $text = substr($text, 0, $last_space);
                             // Add ellipsis
-                            $url = base_url('welcome/blog_page/') . $row->id;
-
-                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
-                            // Output the truncated body text with "Read more" link
-                            echo $text;
+                            $cleaned_heading = create_url_friendly_heading($row->heading);
+                            $text .= ' 
+                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
+                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                                <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
+                            </form>';
                         } else {
                             // If the body text is shorter than or equal to 300 characters, output it as is
                             echo $text;
@@ -592,9 +650,12 @@
                             // Trim the text to the last space to avoid cutting off in the middle of a word
                             $text = substr($text, 0, $last_space);
                             // Add ellipsis
-                            $url = base_url('welcome/blog_page/') . $row->id;
-
-                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                            $cleaned_heading = create_url_friendly_heading($row->heading);
+                            $text .= ' 
+                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
+                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                                <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
+                            </form>';
                             // Output the truncated body text with "Read more" link
                             echo $text;
                         } else {
@@ -633,7 +694,7 @@
 
             <div class="row mt-4 " style="padding: 1rem;">
                 <div class="col-md-6 blog_image" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                <img style="height: 400px; object-fit: cover; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;" src="<?php echo $nextRow->image; ?>" alt="Responsive Image">
+                    <img style="height: 400px; object-fit: cover; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;" src="<?php echo $nextRow->image; ?>" alt="Responsive Image">
 
                     <p class="roboto bold mt-5 grey">
                         <?php
@@ -652,8 +713,12 @@
                             $text = substr($text, 0, 1000);
                             $last_space = strrpos($text, ' ');
                             $text = substr($text, 0, $last_space);
-                            $url = base_url('welcome/blog_page/') . $current->id;
-                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                            $cleaned_heading = create_url_friendly_heading($row->heading);
+                            $text .= ' 
+                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
+                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                                <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
+                            </form>';
                         }
                         echo $text;
                         ?>
@@ -661,7 +726,7 @@
                 </div>
 
                 <div class="col-md-6 blog_image" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                <img  style="height: 400px; object-fit: cover; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;" src="<?php echo $nextRow->image; ?>" alt="Responsive Image">
+                    <img style="height: 400px; object-fit: cover; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;" src="<?php echo $nextRow->image; ?>" alt="Responsive Image">
 
                     <p class="roboto bold mt-5 grey">
                         <?php
@@ -680,8 +745,12 @@
                             $text = substr($text, 0, 1000);
                             $last_space = strrpos($text, ' ');
                             $text = substr($text, 0, $last_space);
-                            $url = base_url('welcome/blog_page/') . $nextRow->id;
-                            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+                            $cleaned_heading = create_url_friendly_heading($row->heading);
+                            $text .= ' 
+                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
+                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                                <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
+                            </form>';
                         }
                         echo $text;
                         ?>

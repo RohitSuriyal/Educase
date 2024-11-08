@@ -9,7 +9,7 @@
 </div>
 
 <div class="row upper_single_div  mt-5 mb-5 flex justify-content-center" style="padding:0 4%">
-    <div class="col-md-8 me-5 single_blog_div px-5 blog_div single_div blog_div_content" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" style="box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 2px 0 2px rgba(0, 0, 0, 0.1), 2px 0 2px rgba(0, 0, 0, 0.1);" style="background-color:#F9F9FF">
+    <div class="col-md-8 me-5 single_blog_div px-5 blog_div single_div" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" style="box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 2px 0 2px rgba(0, 0, 0, 0.1), 2px 0 2px rgba(0, 0, 0, 0.1);" style="background-color:#F9F9FF">
 
         <div class=" my-3 grey"><?php $date = strtotime($output[0]->date);
                                 $formatted_date = date('jS, F Y', $date);
@@ -18,16 +18,22 @@
         <div class="d-flex gap-3 mt-5 mb-5">
 
 <a class="text-decoration-none" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(current_url()); ?>" target="_blank">
-<i class="fa-brands fa-facebook" style="color: #002e7a;font-size:1.3rem"></i>Share on Facebook
+<i class="fa-brands fa-facebook" style="color: #002e7a;font-size:1.3rem"></i>
 </a>
 <a class="text-decoration-none" href="https://www.linkedin.com/sharing/share-offsite/?url=<?php echo urlencode(current_url()); ?>" target="_blank">
 <i class="fa-brands fa-linkedin" style="color: #0056d6;font-size:1.3rem"></i>
-    Share on LinkedIn
+    
 </a>
 <a  class="text-decoration-none" href="https://api.whatsapp.com/send?text=<?php echo urlencode(current_url()); ?>" target="_blank">
     <i class="fa-brands fa-whatsapp" style="color: #25d366; font-size: 1.3rem;"></i>
-    Share on WhatsApp
+    
 </a>
+<a class="text-decoration-none" href="https://www.instagram.com/your_username/" target="_blank">
+    <i class="fa-brands fa-instagram" style="color: #e4405f; font-size: 1.3rem"></i>
+</a>
+
+
+<i class="fa-solid fa-copy"  onclick="copyPageLink()" style="color: #B197FC;font-size:1.3rem;cursor:pointer"></i>
 
 <!-- <a class="text-decoration-none" href="https://twitter.com/intent/tweet?text=Check out this page!&url=https://findmyschools.co.in/blog/111" target="_blank">
 <i class="fa-brands fa-twitter" style="color: #0061ff;font-size:1.3rem"></i>Share on Twitter
@@ -67,7 +73,7 @@
 $limited_category = array_slice($category, 0, 4);
 
 foreach ($limited_category as $c) : ?>
-    <div class="row blog_div single_blog mb-2 fetatured_blog">
+    <div class="row blog_div single_blog mb-2">
         <img class="px-0" style="border-top-left-radius:5%; border-top-right-radius:5%; object-fit:cover;" width="90%" height="200px!important" src="<?php echo $c->image; ?>" alt="Category Image">
         <span class="px-0">23rd July, 2023</span>
         <h6 class="px-0 bold"><?php echo $c->heading ?></h6>
@@ -106,7 +112,18 @@ foreach ($limited_category as $c) : ?>
 </div>
 
 <script>
-   
+   function copyPageLink() {
+    // Get the current page URL
+    var pageUrl = window.location.href;
+
+    // Copy the URL to the clipboard
+    navigator.clipboard.writeText(pageUrl).then(() => {
+        // Show success message (optional)
+        alert("link copied to clipboard");
+    }).catch(err => {
+        console.error("Failed to copy page link: ", err);
+    });
+}
 </script>
 
 
