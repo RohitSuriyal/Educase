@@ -2,45 +2,63 @@
 <html lang="en">
 
 <head>
+	<!-- Google Tag Manager -->
+	<script>
+		(function(w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start': new Date().getTime(),
+				event: 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-WK92CBF8');
+	</script>
+	<!-- End Google Tag Manager -->
 	<!-- Required meta tags -->
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	
-	
-    
+
+
+
 	<title><?php echo isset($title) ? $title : 'Findmyschool'; ?></title>
 
-    <!-- Dynamic Meta Tags -->
-    <?php if (isset($meta_description)): ?>
-        <meta name="description" content="<?php echo $meta_description; ?>">
-    <?php endif; ?>
-    
-    <?php if (isset($meta_keywords)): ?>
-        <meta name="keywords" content="<?php echo $meta_keywords; ?>">
-    <?php endif; ?>
+	<!-- Dynamic Meta Tags -->
+	<?php if (isset($meta_description)): ?>
+		<meta name="description" content="<?php echo $meta_description; ?>">
+	<?php endif; ?>
 
-    <!-- Open Graph Tags -->
-    <?php if (isset($og_title)): ?>
-        <meta property="og:title" content="<?php echo $og_title; ?>">
-    <?php endif; ?>
-    
-    <?php if (isset($og_description)): ?>
-        <meta property="og:description" content="<?php echo $og_description; ?>">
-    <?php endif; ?>
-    
-    <?php if (isset($og_image)): ?>
-        <meta property="og:image" content="<?php echo $og_image; ?>">
-    <?php endif; ?>
-    
-    
-    
-    <?php if (isset($og_type)): ?>
-        <meta property="og:type" content="<?php echo $og_type; ?>">
-    <?php endif; ?>
+	<?php if (isset($meta_keywords)): ?>
+		<meta name="keywords" content="<?php echo $meta_keywords; ?>">
+	<?php endif; ?>
 
-	
-	
-    
+	<!-- Open Graph Tags -->
+	<?php if (isset($og_title)): ?>
+		<meta property="og:title" content="<?php echo $og_title; ?>">
+	<?php endif; ?>
+
+	<?php if (isset($og_description)): ?>
+		<meta property="og:description" content="<?php echo $og_description; ?>">
+	<?php endif; ?>
+
+	<?php if (isset($og_image)): ?>
+		<meta property="og:image" content="<?php echo $og_image; ?>">
+	<?php endif; ?>
+
+
+
+	<?php if (isset($og_type)): ?>
+		<meta property="og:type" content="<?php echo $og_type; ?>">
+	<?php endif; ?>
+
+
+
+
 	<!-- Bootstrap CSS -->
 	<link rel="icon" href="<?php echo base_url('assets/images/school2.png'); ?>" type="image/x-icon">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -1084,19 +1102,35 @@
 
 		}
 	</style>
- 
+
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KTLVMEY6C6"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+
+	gtag('config', 'G-KTLVMEY6C6');
+</script>
 
 <body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK92CBF8"
+			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 	<div class="overlay" id="overlay">
 		<div class="form-container">
 			<button class="close-btn_form" id="closeBtn">&times;</button>
 			<form id="formdetail" class="container">
 				<h1 class="poppins bold text-center my-3">Enquiry Details</h1>
 				<div class="row">
-				<div class="col-md-6 mb-3">
-				<label for="student-name">Student's Name <span style="color: red;">*</span></label>
-               <input type="text" id="student-name" class="form-control"  name="student" placeholder="Enter student's name" required>
+					<div class="col-md-6 mb-3">
+						<label for="student-name">Student's Name <span style="color: red;">*</span></label>
+						<input type="text" id="student-name" class="form-control" name="student" placeholder="Enter student's name" required>
 
 					</div>
 					<div class="col-md-6 mb-3">
@@ -1121,7 +1155,7 @@
 						<input type="text" id="parent_name" name="parent" class="form-control"
 							placeholder="Enter parent's name">
 					</div>
-					
+
 				</div>
 				<div class="row">
 					<div class="col-md-12 mb-3">
@@ -1207,4 +1241,3 @@
 	</div>
 	<div class="container-fluid " data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300"
 		style="margin: 0px 0px;padding:0px 0;position:relative;overflow:hidden">
-		
