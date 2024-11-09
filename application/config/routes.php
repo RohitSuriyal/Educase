@@ -57,7 +57,7 @@ $route['school/details'] = 'Welcome/School_details';
 $route["home"]="Welcome";
 $route["blog"]="Welcome/Blog";
 $route["school"]="Welcome/school";
-$route['blog/(:any)'] = 'Welcome/blog_page/$1';
+$route['blog/(:any)/(:any)'] = 'Welcome/blog_page/$1/$2';
 $route["city"]="Welcome/cityinput";
 
 

@@ -59,10 +59,10 @@
                             // Create a cleaned heading for the URL
                             $cleaned_heading = create_url_friendly_heading($row->heading);
                             $text .= ' 
-                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
-                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                            <form method="POST" action="' . base_url('blog/' . $row->id . '/' . $cleaned_heading) . '" style="display:inline;">
                                 <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
                             </form>';
+
                             echo $text;
                         } else {
                             // If the body text is shorter than or equal to 300 characters, output it as is
@@ -96,15 +96,14 @@
                             // Trim the text to the last space to avoid cutting off in the middle of a word
                             $text = substr($text, 0, $last_space);
                             // Add ellipsis
-                          
+
                             $cleaned_heading = create_url_friendly_heading($row->heading);
                             $text .= ' 
-                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
-                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                            <form method="POST" action="' . base_url('blog/' . $row->id . '/' . $cleaned_heading) . '" style="display:inline;">
                                 <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
                             </form>';
-                          
-                       
+
+
                             echo $text;
                         } else {
                             // If the body text is shorter than or equal to 300 characters, output it as is
@@ -161,10 +160,9 @@
                             $last_space = strrpos($text, ' ');
                             $text = substr($text, 0, $last_space);
                             $url = base_url('blog/') . $current->id;
-                            $cleaned_heading = create_url_friendly_heading($row->heading);
+                            $cleaned_heading = create_url_friendly_heading($current->heading);
                             $text .= ' 
-                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
-                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                            <form method="POST" action="' . base_url('blog/' . $current->id . '/' . $cleaned_heading) . '" style="display:inline;">
                                 <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
                             </form>';
                         }
@@ -193,10 +191,9 @@
                             $last_space = strrpos($text, ' ');
                             $text = substr($text, 0, $last_space);
                             $url = base_url('blog/') . $nextRow->id;
-                            $cleaned_heading = create_url_friendly_heading($row->heading);
+                            $cleaned_heading = create_url_friendly_heading($nextRow->heading);
                             $text .= ' 
-                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
-                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                            <form method="POST" action="' . base_url('blog/' . $nextRow->id . '/' . $cleaned_heading) . '" style="display:inline;">
                                 <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
                             </form>';
                         }
@@ -250,8 +247,7 @@
                             //
                             $cleaned_heading = create_url_friendly_heading($row->heading);
                             $text .= ' 
-                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
-                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                            <form method="POST" action="' . base_url('blog/' . $row->id . '/' . $cleaned_heading) . '" style="display:inline;">
                                 <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
                             </form>';
                             // Output the truncated body text with "Read more" link
@@ -290,8 +286,7 @@
                             // Add ellipsis
                             $cleaned_heading = create_url_friendly_heading($row->heading);
                             $text .= ' 
-                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
-                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                            <form method="POST" action="' . base_url('blog/' . $row->id . '/' . $cleaned_heading) . '" style="display:inline;">
                                 <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
                             </form>';
                             // Output the truncated body text with "Read more" link
@@ -350,10 +345,9 @@
                             $text = substr($text, 0, 1000);
                             $last_space = strrpos($text, ' ');
                             $text = substr($text, 0, $last_space);
-                            $cleaned_heading = create_url_friendly_heading($row->heading);
+                            $cleaned_heading = create_url_friendly_heading($current->heading);
                             $text .= ' 
-                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
-                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                            <form method="POST" action="' . base_url('blog/' . $current->id . '/' . $cleaned_heading) . '" style="display:inline;">
                                 <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
                             </form>';
                         }
@@ -381,10 +375,9 @@
                             $text = substr($text, 0, 1000);
                             $last_space = strrpos($text, ' ');
                             $text = substr($text, 0, $last_space);
-                            $cleaned_heading = create_url_friendly_heading($row->heading);
+                            $cleaned_heading = create_url_friendly_heading($nextRow->heading);
                             $text .= ' 
-                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
-                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                            <form method="POST" action="' . base_url('blog/' . $nextRow->id . '/' . $cleaned_heading) . '" style="display:inline;">
                                 <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
                             </form>';
                         }
@@ -432,8 +425,7 @@
                             // Add ellipsis
                             $cleaned_heading = create_url_friendly_heading($row->heading);
                             $text .= ' 
-                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
-                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                            <form method="POST" action="' . base_url('blog/' . $row->id . '/' . $cleaned_heading) . '" style="display:inline;">
                                 <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
                             </form>';
                             // Output the truncated body text with "Read more" link
@@ -472,8 +464,7 @@
                             // Add ellipsis
                             $cleaned_heading = create_url_friendly_heading($row->heading);
                             $text .= ' 
-                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
-                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                            <form method="POST" action="' . base_url('blog/' . $row->id . '/' . $cleaned_heading) . '" style="display:inline;">
                                 <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
                             </form>';
                             // Output the truncated body text with "Read more" link
@@ -532,10 +523,9 @@
                             $text = substr($text, 0, 1000);
                             $last_space = strrpos($text, ' ');
                             $text = substr($text, 0, $last_space);
-                            $cleaned_heading = create_url_friendly_heading($row->heading);
+                            $cleaned_heading = create_url_friendly_heading($current->heading);
                             $text .= ' 
-                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
-                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                            <form method="POST" action="' . base_url('blog/' . $current->id . '/' . $cleaned_heading) . '" style="display:inline;">
                                 <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
                             </form>';
                         }
@@ -563,10 +553,9 @@
                             $text = substr($text, 0, 1000);
                             $last_space = strrpos($text, ' ');
                             $text = substr($text, 0, $last_space);
-                            $cleaned_heading = create_url_friendly_heading($row->heading);
+                            $cleaned_heading = create_url_friendly_heading($nextRow->heading);
                             $text .= ' 
-                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
-                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                            <form method="POST" action="' . base_url('blog/' . $nextRow->id . '/' . $cleaned_heading) . '" style="display:inline;">
                                 <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
                             </form>';
                         }
@@ -614,8 +603,7 @@
                             // Add ellipsis
                             $cleaned_heading = create_url_friendly_heading($row->heading);
                             $text .= ' 
-                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
-                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                            <form method="POST" action="' . base_url('blog/' . $row->id . '/' . $cleaned_heading) . '" style="display:inline;">
                                 <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
                             </form>';
                         } else {
@@ -652,8 +640,7 @@
                             // Add ellipsis
                             $cleaned_heading = create_url_friendly_heading($row->heading);
                             $text .= ' 
-                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
-                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                            <form method="POST" action="' . base_url('blog/' . $row->id . '/' . $cleaned_heading) . '" style="display:inline;">
                                 <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
                             </form>';
                             // Output the truncated body text with "Read more" link
@@ -713,10 +700,9 @@
                             $text = substr($text, 0, 1000);
                             $last_space = strrpos($text, ' ');
                             $text = substr($text, 0, $last_space);
-                            $cleaned_heading = create_url_friendly_heading($row->heading);
+                            $cleaned_heading = create_url_friendly_heading($current->heading);
                             $text .= ' 
-                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
-                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                            <form method="POST" action="' . base_url('blog/' . $current->id . '/' . $cleaned_heading) . '" style="display:inline;">
                                 <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
                             </form>';
                         }
@@ -745,10 +731,9 @@
                             $text = substr($text, 0, 1000);
                             $last_space = strrpos($text, ' ');
                             $text = substr($text, 0, $last_space);
-                            $cleaned_heading = create_url_friendly_heading($row->heading);
+                            $cleaned_heading = create_url_friendly_heading($nextRow->heading);
                             $text .= ' 
-                            <form method="POST" action="' . base_url('blog/' . $cleaned_heading) . '" style="display:inline;">
-                                <input type="hidden" name="blog_id" value="' . $row->id . '">
+                            <form method="POST" action="' . base_url('blog/' . $nextRow->id . '/' . $cleaned_heading) . '" style="display:inline;">
                                 <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
                             </form>';
                         }

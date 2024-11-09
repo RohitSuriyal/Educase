@@ -21,7 +21,7 @@
             <p class=" top_font aparajita_font" style="font-size:77.76px;line-height: 75px">In Your City</p>
 
             <div class="search-container position-relative">
-                <span class="search-icon"><img src="<?php echo base_url("assets/images/search.png")?>"></img></span>
+                <span class="search-icon"><img src="<?php echo base_url("assets/images/search.png") ?>"></img></span>
                 <input id="search" type="text" class="search-input" placeholder="Search...">
 
             </div>
@@ -63,6 +63,16 @@
                     $plainText = strip_tags($row->body, $allowed_tags);
                     $text = $plainText;
                     // Check if the body text is longer than 300 characters
+                    function create_url_friendly_heading($heading)
+                    {
+                        // Convert to lowercase
+                        $heading = strtolower(trim($heading));
+                        // Replace spaces with hyphens
+                        $heading = str_replace(' ', '-', $heading);
+                        // Remove any characters that are not alphanumeric or hyphens
+                        $heading = preg_replace('/[^a-z0-9\-]/', '', $heading);
+                        return $heading;
+                    }
                     if (strlen($text) > 1100) {
                         // Truncate the body text to 300 characters
                         $text = substr($text, 0, 1100);
@@ -73,8 +83,11 @@
                         // Add ellipsis
                         // $url = base_url('welcome/blog_page/') . $row->id;
                         $url = base_url('blog/' . $row->id);
-                        $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
-                        // Output the truncated body text with "Read more" link
+                        $cleaned_heading = create_url_friendly_heading($row->heading);
+                        $text .= ' 
+                        <form method="POST" action="' . base_url('blog/' . $row->id . '/' . $cleaned_heading) . '" style="display:inline;">
+                            <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
+                        </form>';
                         echo $text;
                     } else {
                         // If the body text is shorter than or equal to 300 characters, output it as is
@@ -109,8 +122,11 @@
                         // Add ellipsis
                         // $url = base_url('welcome/blog_page/') . $row->id;
                         $url = base_url('blog/' . $row->id);
-                        $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
-                        // Output the truncated body text with "Read more" link
+                        $cleaned_heading = create_url_friendly_heading($row->heading);
+                        $text .= ' 
+                        <form method="POST" action="' . base_url('blog/' . $row->id . '/' . $cleaned_heading) . '" style="display:inline;">
+                            <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
+                        </form>';
                         echo $text;
                     } else {
                         // If the body text is shorter than or equal to 300 characters, output it as is
@@ -166,10 +182,13 @@
                     $url = base_url('blog/' . $row->id);
 
 
-                    
 
-                    $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
-                    // Output the truncated body text with "Read more" link
+
+                    $cleaned_heading = create_url_friendly_heading($row->heading);
+                        $text .= ' 
+                        <form method="POST" action="' . base_url('blog/' . $row->id . '/' . $cleaned_heading) . '" style="display:inline;">
+                            <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
+                        </form>';
                     echo $text;
                 } else {
                     echo $text;
@@ -267,135 +286,135 @@
         Top Schools in <span style="color:#001AFF"><a href="#">India</a></span>
 
     </h1>
-    
+
     <?php
-        $i = 0; // Initialize $i
-        $j = 1; // Initialize $j
-        $data_reversed =$all; // Reverse the $data array
-        foreach ($data_reversed as $index => $row) :
-          
-            // Ensure that the next elements exist before accessing them
-            if (!isset($data_reversed[$index + $i]) || !isset($data_reversed[$index + $j])) {
-                break; // Exit the loop if next elements do not exist
-            }
+    $i = 0; // Initialize $i
+    $j = 1; // Initialize $j
+    $data_reversed = $all; // Reverse the $data array
+    foreach ($data_reversed as $index => $row) :
 
-            // Define current and next row
-            $current = $data_reversed[$index + $j];
-            $nextRow = $data_reversed[$index + $i];
-        ?>
-    <div class="row flex justify-content-evenly mt-4 school_main_div " style="margin:0 1%">
-        <div class="col-md-6 custom_col_schol second_school_div" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" style="padding:0px 0px!;margin:0px 0px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);border-radius:10px">
-            <div class="row" style="padding:0px 0px!important;">
-                <div class="col-md-6" style="padding:0px 0px!Important;">
-                <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%"
-                src="<?php echo strpos($current->image, 'amazonaws') !== false ? $current->image : 'data:image/*;base64,' . $current->image; ?>" />
+        // Ensure that the next elements exist before accessing them
+        if (!isset($data_reversed[$index + $i]) || !isset($data_reversed[$index + $j])) {
+            break; // Exit the loop if next elements do not exist
+        }
 
+        // Define current and next row
+        $current = $data_reversed[$index + $j];
+        $nextRow = $data_reversed[$index + $i];
+    ?>
+        <div class="row flex justify-content-evenly mt-4 school_main_div " style="margin:0 1%">
+            <div class="col-md-6 custom_col_schol second_school_div" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" style="padding:0px 0px!;margin:0px 0px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);border-radius:10px">
+                <div class="row" style="padding:0px 0px!important;">
+                    <div class="col-md-6" style="padding:0px 0px!Important;">
+                        <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%"
+                            src="<?php echo strpos($current->image, 'amazonaws') !== false ? $current->image : 'data:image/*;base64,' . $current->image; ?>" />
+
+
+                    </div>
+                    <div class="col-md-6 p-4">
+                        <h3 class="roboto pb_0 "><?php echo $current->name ?></h3>
+                        <p class="grey"><span> <img height="15px" width="15px" src="<?php echo base_url("assets/images/Frame 4.png") ?>"></img></span><?php echo trim(preg_replace('/\s+/', ' ', $current->state)); ?></p>
+                        <div class="row mt-5">
+                            <div class="col-md-6">
+                                <p class="grey roboto ">Class Offered</p>
+                                <p class="roboto grey bold"><?php echo $current->class_offered ?></p>
+
+                            </div>
+                            <div class="col-md-6 ">
+                                <p class="text-center p_school grey">Board</p>
+                                <p class="text-center p_school grey bold"><?php echo $current->board ?></p>
+                            </div>
+
+
+
+
+
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <p class="">Student Faculty Ratio</p>
+                                <p class="grey bold">1:25</p>
+
+                            </div>
+
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <a href="<?php echo base_url('Welcome/School_details/') . $current->id ?>"><button class="px-4 bg-body text-primary  border border-2 border-primary py-1">View details</button></a>
+
+                        </div>
+
+
+
+
+                    </div>
 
                 </div>
-                <div class="col-md-6 p-4">
-                    <h3 class="roboto pb_0 "><?php echo $current->name ?></h3>
-                    <p class="grey"><span> <img height="15px" width="15px" src="<?php echo base_url("assets/images/Frame 4.png")?>"></img></span><?php echo trim(preg_replace('/\s+/', ' ', $current->state)); ?></p>
-                    <div class="row mt-5">
-                        <div class="col-md-6">
-                            <p class="grey roboto ">Class Offered</p>
-                            <p class="roboto grey bold"><?php echo $current->class_offered ?></p>
+
+
+            </div>
+            <div class="col-md-6 custom_col_schol second_school_div" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" style="padding:0px 0px!;margin:0px 0px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);border-radius:10px">
+                <div class="row" style="padding:0px 0px!important;">
+                    <div class="col-md-6" style="padding:0px 0px!Important;">
+                        <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%"
+                            src="<?php echo strpos($nextRow->image, 'amazonaws') !== false ? $nextRow->image : 'data:image/*;base64,' . $nextRow->image; ?>" />
+
+
+                    </div>
+                    <div class="col-md-6 p-4">
+                        <h3 class="roboto pb_0 "><?php echo $nextRow->name ?></h3>
+                        <p class="grey"><span> <img height="15px" width="15px" src="<?php echo base_url("assets/images/Frame 4.png") ?>"></img></span><?php echo $nextRow->state ?></p>
+                        <div class="row mt-5">
+                            <div class="col-md-6">
+                                <p class="grey roboto ">Class Offered</p>
+                                <p class="roboto grey bold"><?php echo $nextRow->class_offered ?></p>
+
+                            </div>
+                            <div class="col-md-6 ">
+                                <p class="text-center p_school grey">Board</p>
+                                <p class="text-center p_school grey bold"><?php echo $nextRow->board ?></p>
+                            </div>
+
+
+
+
 
                         </div>
-                        <div class="col-md-6 ">
-                            <p class="text-center p_school grey">Board</p>
-                            <p class="text-center p_school grey bold"><?php echo $current->board ?></p>
-                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <p class="">Student Faculty Ratio</p>
+                                <p class="grey bold">1:25</p>
 
+                            </div>
+
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <a href="<?php echo base_url('Welcome/School_details/') . $nextRow->id ?>"><button class="px-4 bg-body text-primary  border border-2 border-primary py-1">View details</button></a>
+
+                        </div>
 
 
 
 
                     </div>
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <p class="">Student Faculty Ratio</p>
-                            <p class="grey bold">1:25</p>
-
-                        </div>
-
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        <a href="<?php echo base_url('Welcome/School_details/') . $current->id ?>"><button class="px-4 bg-body text-primary  border border-2 border-primary py-1">View details</button></a>
-
-                    </div>
-
-
-
 
                 </div>
+
 
             </div>
 
 
-        </div>
-        <div class="col-md-6 custom_col_schol second_school_div" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" style="padding:0px 0px!;margin:0px 0px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);border-radius:10px">
-            <div class="row" style="padding:0px 0px!important;">
-                <div class="col-md-6" style="padding:0px 0px!Important;">
-                <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%"
-                src="<?php echo strpos($nextRow->image, 'amazonaws') !== false ? $nextRow->image : 'data:image/*;base64,' . $nextRow->image; ?>" />
-
-
-                </div>
-                <div class="col-md-6 p-4">
-                    <h3 class="roboto pb_0 "><?php echo $nextRow->name ?></h3>
-                    <p class="grey"><span> <img height="15px" width="15px" src="<?php echo base_url("assets/images/Frame 4.png") ?>"></img></span><?php echo $nextRow->state ?></p>
-                    <div class="row mt-5">
-                        <div class="col-md-6">
-                            <p class="grey roboto ">Class Offered</p>
-                            <p class="roboto grey bold"><?php echo $nextRow->class_offered ?></p>
-
-                        </div>
-                        <div class="col-md-6 ">
-                            <p class="text-center p_school grey">Board</p>
-                            <p class="text-center p_school grey bold"><?php echo $nextRow->board ?></p>
-                        </div>
 
 
 
-
-
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <p class="">Student Faculty Ratio</p>
-                            <p class="grey bold">1:25</p>
-
-                        </div>
-
-                    </div>
-                    <div class="d-flex justify-content-end">
-                    <a href="<?php echo base_url('Welcome/School_details/') . $nextRow->id ?>"><button class="px-4 bg-body text-primary  border border-2 border-primary py-1">View details</button></a>
-
-                    </div>
-
-
-
-
-                </div>
-
-            </div>
 
 
         </div>
-        
-
-
-
-
-
-
-    </div>
 
     <?php
-            $i++;
-            $j++;
-        endforeach; // End foreach loop
-        ?>
+        $i++;
+        $j++;
+    endforeach; // End foreach loop
+    ?>
 
 
 

@@ -1,5 +1,16 @@
 <?php $this->load->view("common/header")  ?>
-
+<?php 
+ function create_url_friendly_heading($heading)
+ {
+     // Convert to lowercase
+     $heading = strtolower(trim($heading));
+     // Replace spaces with hyphens
+     $heading = str_replace(' ', '-', $heading);
+     // Remove any characters that are not alphanumeric or hyphens
+     $heading = preg_replace('/[^a-z0-9\-]/', '', $heading);
+     return $heading;
+ }
+?>
 <div class="container-fluid " style="padding:0px 0px;margin:0px 0px">
     <img height="100%" width="100
     %" id="dynamic" style="height:25rem!important;object-fit:cover;width:100%" src="<?php echo $output[0]->image; ?>" />
@@ -8,8 +19,8 @@
 
 </div>
 
-<div class="row upper_single_div  mt-5 mb-5 flex justify-content-center" style="padding:0 4%">
-    <div class="col-md-8 me-5 single_blog_div px-5 blog_div single_div" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" style="box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 2px 0 2px rgba(0, 0, 0, 0.1), 2px 0 2px rgba(0, 0, 0, 0.1);" style="background-color:#F9F9FF">
+<div class="row upper_single_div  mt-5 mb-5 flex justify-content-center " style="padding:0 4%">
+    <div class="col-md-8 me-5 single_blog_div px-5 blog_div single_div single_blog " data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" style="box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 2px 0 2px rgba(0, 0, 0, 0.1), 2px 0 2px rgba(0, 0, 0, 0.1);" style="background-color:#F9F9FF">
 
         <div class=" my-3 grey"><?php $date = strtotime($output[0]->date);
                                 $formatted_date = date('jS, F Y', $date);
@@ -64,7 +75,7 @@
 
 
     </div>
-    <div class="col-md-3" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+    <div class="col-md-3 featured_blog" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
         <h2 class="mb-3 px-0 feature_heading">Feature <span style="color:#001AFF">Blog</span></h2>
 
       
@@ -73,7 +84,7 @@
 $limited_category = array_slice($category, 0, 4);
 
 foreach ($limited_category as $c) : ?>
-    <div class="row blog_div single_blog mb-2">
+    <div class="row blog_div  mb-2">
         <img class="px-0" style="border-top-left-radius:5%; border-top-right-radius:5%; object-fit:cover;" width="90%" height="200px!important" src="<?php echo $c->image; ?>" alt="Category Image">
         <span class="px-0">23rd July, 2023</span>
         <h6 class="px-0 bold"><?php echo $c->heading ?></h6>
@@ -81,6 +92,7 @@ foreach ($limited_category as $c) : ?>
         $allowed_tags = '<p><h1><h2>';
         $plainText = strip_tags($c->body, $allowed_tags);
         $text = $plainText;
+       
         // Check if the body text is longer than 50 characters
         if (strlen($text) > 200) {
             $text = substr($text, 0, 200);
@@ -90,8 +102,11 @@ foreach ($limited_category as $c) : ?>
             $text = substr($text, 0, $last_space);
             // Add ellipsis
             $url = base_url('blog/' . $c->id);
-
-            $text .= '... <a class="text-danger bold" href="' . $url . '">Read more</a>';
+            $cleaned_heading = create_url_friendly_heading($c->heading);
+            $text .= ' 
+                            <form method="POST" action="' . base_url('blog/' . $c->id . '/' . $cleaned_heading) . '" style="display:inline;">
+                                <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
+                            </form>';
             // Output the truncated body text with "Read more" link
             echo $text;
         }else {
