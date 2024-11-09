@@ -169,10 +169,10 @@ class Welcome extends CI_Controller
 	{
 		$this->load->view("editor");
 	}
-	public function blog_page($school_id)
+	public function blog_page($id,$heading)
 	{
         
-		$id = $this->input->post("blog_id");
+		$id = $id;
 		$this->load->model("Blog_model");
 		$output = $this->Blog_model->getspecificblog($id);
 		$id=$output["output"][0]->School;
