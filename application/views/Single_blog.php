@@ -39,9 +39,7 @@
     <i class="fa-brands fa-whatsapp" style="color: #25d366; font-size: 1.3rem;"></i>
     
 </a>
-<a class="text-decoration-none" href="https://www.instagram.com/your_username/" target="_blank">
-    <i class="fa-brands fa-instagram" style="color: #e4405f; font-size: 1.3rem"></i>
-</a>
+
 
 
 <i class="fa-solid fa-copy"  onclick="copyPageLink()" style="color: #B197FC;font-size:1.3rem;cursor:pointer"></i>
