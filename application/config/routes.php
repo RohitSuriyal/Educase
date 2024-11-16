@@ -53,11 +53,12 @@ $route['default_controller'] = 'Welcome';
 $route['404_override'] = '';
 $route[""]="Welcome";
 $route['translate_uri_dashes'] = FALSE;
-$route['school/details'] = 'Welcome/School_details';
 $route["home"]="Welcome";
 $route["blog"]="Welcome/Blog";
 $route["school"]="Welcome/school";
 $route['blog/(:any)/(:any)'] = 'Welcome/blog_page/$1/$2';
 $route["city"]="Welcome/cityinput";
+$route['welcome/School_details/(:num)/(:any)'] = 'welcome/School_details/$1/$2';
+
 
 

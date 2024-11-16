@@ -55,12 +55,18 @@
 	<?php if (isset($og_type)): ?>
 		<meta property="og:type" content="<?php echo $og_type; ?>">
 	<?php endif; ?>
+	<?php if (isset($og_url)): ?>
+		<meta property="og:url" content="<?php echo $og_url; ?>">
+	<?php endif; ?>
+
+	
+
 
 
 
 
 	<!-- Bootstrap CSS -->
-	<link rel="icon" href="<?php echo base_url('assets/images/findmyschool.jpeg'); ?>" type="image/x-icon"style="height: 32px; width: 40px!important;">
+	<link rel="icon" href="<?php echo base_url('assets/images/findmyschool.jpeg'); ?>" type="image/x-icon" style="height: 32px; width: 40px!important;">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
@@ -1101,6 +1107,13 @@
 
 
 		}
+		.city-item{
+			list-style:none;
+			cursor: pointer;
+			padding:0 4px!important;
+			
+
+		}
 	</style>
 
 </head>
@@ -1215,12 +1228,13 @@
 			<div class="d-flex align-items-center w-100 position-relative">
 				<img class="img_location" height="22px" width="22px"
 					src="<?php echo base_url("assets/images/Frame 4.png") ?>">
-				<input id="input_search" class="form-control input_font px-3" list="" placeholder="Enter your location"
+				<input autocomplete="off" id="input_search" class="form-control input_font px-3" list="" placeholder="Enter your location"
 					style=" position:relative; padding:0px; margin:0px;width:80%"
 					onmouseover="this.style.boxShadow='none'">
-				<div id="absolute_text" class="absolute_text" style="display: none;">
+				<form id="absolute_text" class="absolute_text" style="display:none" method="post" action="<?php echo base_url('welcome/newformdata') ?>">
 
-				</div>
+
+				</form>
 			</div>
 		</div>
 

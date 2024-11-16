@@ -35,22 +35,25 @@ class Welcome extends CI_Controller
 			"data" => $result,
 			"all" => $all,
 		);
-		
-           
-			// $data['title'] = "Findmyschool, best website to find the school for your child"; // Set the title for the page
-            // $data['meta_description'] = "FindMySchool is a user-friendly platform designed to help parents find the perfect school for their children. Whether you're looking for schools based on location, fee structure, or curriculum, FindMySchool makes the search process easy and efficient. The website allows you to browse through detailed school listings, compare facilities, view reviews, and make informed decisions. You can also read blog articles on school-related topics, explore school fee structures, and get insights into each institution's unique offerings. FindMySchool simplifies the search for the best educational environment for your child.";
-            // $data['meta_keywords'] = 'blog, post'; // Meta keywords
-
-            // // Open Graph meta tags
-            // $data['og_title'] ="Findmyschool, best website to find the school for your child"; // Open Graph title
-            // $data['og_description'] = 'This is the best school in Delhi.'; // Open Graph description
-            $data['og_image'] = base_url('assets/images/school.jpg');
-
-            // $data['og_url'] = 'findmyschools.co.in'; // Open Graph URL
-            // $data['og_type'] = 'website'; // Open Graph type
 
 
-		
+		// $data['title'] = "Findmyschool, best website to find the school for your child"; // Set the title for the page
+		// $data['meta_description'] = "FindMySchool is a user-friendly platform designed to help parents find the perfect school for their children. Whether you're looking for schools based on location, fee structure, or curriculum, FindMySchool makes the search process easy and efficient. The website allows you to browse through detailed school listings, compare facilities, view reviews, and make informed decisions. You can also read blog articles on school-related topics, explore school fee structures, and get insights into each institution's unique offerings. FindMySchool simplifies the search for the best educational environment for your child.";
+		// $data['meta_keywords'] = 'blog, post'; // Meta keywords
+
+		// // Open Graph meta tags
+		// $data['og_title'] ="Findmyschool, best website to find the school for your child"; // Open Graph title
+		// $data['og_description'] = 'This is the best school in Delhi.'; // Open Graph description
+		$data['og_image'] = base_url('assets/images/school.jpg');
+		$data['meta_description'] = "FindMySchool is a user-friendly platform designed to help parents find the perfect school for their children. Whether you're looking for schools based on location, fee structure, or curriculum, FindMySchool makes the search process easy and efficient. The website allows you to browse through detailed school listings, compare facilities, view reviews, and make informed decisions. You can also read blog articles on school-related topics, explore school fee structures, and get insights into each institution's unique offerings. FindMySchool simplifies the search for the best educational environment for your child.";
+		// $data['meta_keywords'] = 'blog, post'; // Meta keywords
+
+
+		$data['og_url'] = 'findmyschools.co.in'; // Open Graph URL
+		// $data['og_type'] = 'website'; // Open Graph type
+
+		$data['title'] = "Findmyschool";
+
 
 		$this->load->view('Home', $data);
 	}
@@ -82,15 +85,15 @@ class Welcome extends CI_Controller
 		$phone_no = $this->input->post("phone_no");
 		$school_name = $this->input->post("school_name");
 		$city = $this->input->post("city");
-		$parent=$this->input->post("parent");
-		
-		$date=$this->input->post("current_date");
-		$time=$this->input->post("current_time");
+		$parent = $this->input->post("parent");
+
+		$date = $this->input->post("current_date");
+		$time = $this->input->post("current_time");
 
 
 		// Prepare data for Google Sheets
 		$formData = [
-			[$name, $email, $phone_no, $school_name, $city,$parent,$date,$time] // Add more fields as necessary
+			[$name, $email, $phone_no, $school_name, $city, $parent, $date, $time] // Add more fields as necessary
 		];
 
 		$body = new \Google_Service_Sheets_ValueRange([
@@ -112,10 +115,16 @@ class Welcome extends CI_Controller
 	public function Blog()
 
 	{
+		$this->session->unset_userdata(array('class_data', 'class', 'board', 'school_type', "inputchanged", "city_id"));
 		$this->load->model("Blog_model");
 
 
 		$result = $this->Blog_model->get_blog_page_data();
+		$result['title'] = "Findmyschool,blogs";
+		$result['meta_description'] = "Discover insightful articles on school education, admission tips, curriculum highlights, and student life. Stay informed with expert advice and resources for choosing the best schools, navigating academics, and supporting student success.";
+
+		$result['og_url'] = "https://findmyschool.net/blog";
+
 
 
 
@@ -123,24 +132,27 @@ class Welcome extends CI_Controller
 	}
 	public function school()
 	{
-		$this->session->unset_userdata(array('class_data', 'class', 'board', 'school', "inputchanged"));
-
+		$this->session->unset_userdata(array('class_data', 'class', 'board', 'school_type', "inputchanged", "city_id"));
 
 
 		$this->load->model("Blog_model");
 
 
 		$result = $this->Blog_model->getschooldata();
+		$data['title'] = "Findmyschool,School";
+		$data['meta_description'] = "Findmyschool provides detailed information on schools, including admission processes, curriculum, facilities, and more. Explore school profiles to make informed decisions about the best education options for your child.";
+		$data['og_url'] = "https://findmyschool.net/school";
+
+
+
+		$data['result'] = $result;
 
 
 
 
-
-
-
-		$this->load->view("school", $result);
+		$this->load->view("school", $data);
 	}
-	public function School_details($id)
+	public function School_details($id, $cleaned_heading)
 
 	{
 		$school_id = $id;
@@ -149,11 +161,12 @@ class Welcome extends CI_Controller
 		$this->load->model("School_model");
 
 		$result = $this->School_model->getschooldata($school_id);
+       
+		$data["title"]=$result["basic_detail"][0]->name;
+	    $data["meta_description"]=$result["overview"][0]->content;
+        $data["data"]=$result;		
 
-
-		$data = array(
-			"data" => $result,
-		);
+		
 
 
 
@@ -169,56 +182,46 @@ class Welcome extends CI_Controller
 	{
 		$this->load->view("editor");
 	}
-	public function blog_page($id,$heading)
+	public function blog_page($id, $heading)
 	{
-        
+
 		$id = $id;
 		$this->load->model("Blog_model");
 		$output = $this->Blog_model->getspecificblog($id);
-		$id=$output["output"][0]->School;
-		if($id){
+		$id = $output["output"][0]->School;
+		if ($id) {
 
-			$schoolname=$this->Blog_model->get_the_school_name($id);
-			$output["schoolname"]=$schoolname;
-			$output["schoolid"]=$id;
+			$schoolname = $this->Blog_model->get_the_school_name($id);
+			$output["schoolname"] = $schoolname;
+			$output["schoolid"] = $id;
 			$output['title'] = $output["output"][0]->heading; // Set the title for the page
-            $output['meta_description'] = substr(trim(strip_tags($output["output"][0]->body)), 0, 10);
-            $output['meta_keywords'] = 'blog, post'; // Meta keywords
+			$output['meta_description'] = substr(trim(strip_tags($output["output"][0]->body)), 0, 10);
+			$output['meta_keywords'] = 'blog, post'; // Meta keywords
 
-            // Open Graph meta tags
-            $output['og_title'] = $output["output"][0]->heading; // Open Graph title
-            $output['og_description'] =  substr(trim(strip_tags($output["output"][0]->body)), 0, 200);; // Open Graph description
-            $output['og_image'] = $output["output"][0]->image; // Open Graph image
-            // $output['og_url'] = 'https://findmyschools.co.in/blog/' . $id; // Open Graph URL
-            $output['og_type'] = 'website'; // Open Graph type
+			// Open Graph meta tags
+			$output['og_title'] = $output["output"][0]->heading; // Open Graph title
+			$output['og_description'] =  substr(trim(strip_tags($output["output"][0]->body)), 0, 200);; // Open Graph description
+			$output['og_image'] = $output["output"][0]->image; // Open Graph image
+			// $output['og_url'] = 'https://findmyschools.co.in/blog/' . $id; // Open Graph URL
+			$output['og_type'] = 'website'; // Open Graph type
 
 			$this->load->view("Single_blog", $output);
 
 			// return redirect("/school");
-		}
-		else{
+		} else {
 			$output['title'] = $output["output"][0]->heading; // Set the title for the page
-            $output['meta_description'] = substr(trim(strip_tags($output["output"][0]->body)), 0, 10);
-            $output['meta_keywords'] = 'blog, post, example'; // Meta keywords
+			$output['meta_description'] = substr(trim(strip_tags($output["output"][0]->body)), 0, 10);
+			$output['meta_keywords'] = 'blog, post, example'; // Meta keywords
 
-            // Open Graph meta tags
-            $output['og_title'] = $output["output"][0]->heading; // Open Graph title
-            $output['og_description'] = substr(trim(strip_tags($output["output"][0]->body)), 0, 200);; // Open Graph description
-            $output['og_image'] = $output["output"][0]->image;
-           
-            $output['og_type'] = 'website'; // Open Graph type
+			// Open Graph meta tags
+			$output['og_title'] = $output["output"][0]->heading; // Open Graph title
+			$output['og_description'] = substr(trim(strip_tags($output["output"][0]->body)), 0, 200);; // Open Graph description
+			$output['og_image'] = $output["output"][0]->image;
+
+			$output['og_type'] = 'website'; // Open Graph type
 
 			$this->load->view("Single_blog", $output);
-
 		}
-
-		
-		
-
-
-
-
-		
 	}
 	public function feedetail()
 	{
@@ -302,5 +305,55 @@ class Welcome extends CI_Controller
 		} else {
 			echo json_encode("error");
 		}
+	}
+
+	public function newformdata()
+	{
+		// Get the city_id from the POST request if it exists; otherwise, get it from the session.
+		$city = $this->input->post("city_id") ? $this->input->post("city_id") : $this->session->userdata("city_id");
+
+
+
+
+		// Store it in session data
+		$this->session->set_userdata('city_id', $city);
+
+		$citynew = $this->session->userdata('city_id');
+		$class = $this->input->post('class');
+		$board = $this->input->post('board');
+		$school = $this->input->post('school_type');
+		if (!empty($class) || !empty($board) || !empty($school)) {
+			// If any of the values are present, remove the city session
+			$this->session->unset_userdata('city_id');
+		}
+
+		$this->load->model("School_model");
+		$output = $this->School_model->getthefilterddata($class, $board, $school, $citynew);
+
+
+
+
+
+
+		$this->session->set_userdata('class', $class);
+		$this->session->set_userdata('board', $board);
+		$this->session->set_userdata('school_type', $school);
+		$this->session->set_userdata('output', $output);  // Store filtered data
+
+		$this->load->model("Blog_model");
+
+
+		$result = $this->Blog_model->getschooldata();
+
+
+		$data = [
+			'output' => $output,
+			'result' => $result
+		];
+
+
+
+
+		$this->load->view("school", $data);
 	}
 }

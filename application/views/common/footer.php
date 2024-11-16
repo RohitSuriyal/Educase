@@ -80,22 +80,42 @@
                 $("#absolute_text").empty();
                 $("#absolute_text").append("no result found");
 
-                // if (data =="error") {
-                //     console.log("this is the error");
-                //     $("#absolute_text").empty();
-                //     $("#absolute_text").append("no result found");
+                if (data == "error") {
+                    console.log("this is the error");
+                    $("#absolute_text").empty();
+                    $("#absolute_text").append("no result found");
 
 
-                // } else {
+                } else {
 
-                //     $("#absolute_text").empty();
-                //     data.forEach(city => {
+                    $("#absolute_text").empty();
+                    $("#absolute_text").append(`<input type="hidden"  name="city_id" id="city_id">`);
 
-                //         $("#absolute_text").append(`<li  id="${city.id}">${city.city}<li>`);
-                //     });
+                    let uniqueCities = new Set();
+
+                    // Loop through the data array and add city names to the Set
+                    data.forEach(item => {
+                        uniqueCities.add(item.city); // Only unique city names will be added
+                    });
+
+                    // Convert the Set back to an array
+                    let uniqueCityArray = [...uniqueCities];
+                    uniqueCityArray.forEach(city => {
+                        // Append each city as a clickable list item directly inside the form
+                        $("#absolute_text").append(`<li class="city-item d-flex align-items-center p-2 my-2 px-2" data-id="${city}" style="border: 1px solid #ddd; border-radius: 5px; margin: 5px 0; background-color: #f9f9f9;">
+        <i class="fas fa-map-marker-alt" style="color: #ff5722; margin-right: 10px;"></i>
+        <span style="font-weight: bold; font-size: 16px; color: #333;">${city}</span>
+    </li>`);
+                    });
 
 
-                // }
+                    // Add click event to dynamically created list items
+
+
+
+
+
+                }
 
             }
 
@@ -104,6 +124,28 @@
 
         })
     })
+
+    $(document).on("click", ".city-item", function(e) {
+        e.preventDefault();
+
+
+        const cityId = $(this).data("id"); // Get the clicked city ID
+
+        // Set the city ID in the hidden input field inside the form
+        $("#city_id").val(cityId);
+        console.log($("#city_id").val());
+
+
+
+
+        // Temporarily make the form visible
+        $("#absolute_text").show();
+
+        // Submit the form (optional)
+        $("#absolute_text").submit(); // Uncomment if you want to submit the form
+    });
+
+
     //this is for the form
     document.getElementById('enquiryBtn').addEventListener('click', function() {
         document.getElementById('overlay').style.display = "flex";
@@ -141,8 +183,8 @@
                     title: 'Success!',
                     text: 'Your data has been submitted successfully.',
                     icon: 'success',
-                    showConfirmButton: false, 
-                   
+                    showConfirmButton: false,
+
                 });
                 setTimeout(function() {
                     location.reload();

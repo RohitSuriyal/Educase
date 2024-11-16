@@ -20,6 +20,13 @@
 
     }
 
+    #dropdown4 {
+        position: relative;
+
+        cursor: pointer;
+
+    }
+
     @keyframes fadeIn {
         from {
             opacity: 0;
@@ -90,63 +97,98 @@
         background-color: #ddd;
     }
 </style>
+<?php
+
+
+function create_url_friendly_heading($heading)
+{
+    // Convert to lowercase
+    $heading = strtolower(trim($heading));
+    // Replace spaces with hyphens
+    $heading = str_replace(' ', '-', $heading);
+    // Remove any characters that are not alphanumeric or hyphens
+    $heading = preg_replace('/[^a-z0-9\-]/', '', $heading);
+    return $heading;
+}
+
+// Create a cleaned heading for the URL
+
+
+?>
 <div class="row mt-4" style="padding:0px 0px;margin:0px 0px">
     <div class="row" style="padding:0 4%;margin:0px 0px">
 
         <div class="col-md-2 d-flex flex-column">
             <h4>Filters</h4>
-            <div class="dropdown" id="dropdown1">
-                <div class="dropbtn helvetica" onclick="toggleDropdown('dropdown1')">Class <span class="drop-icon"><i class="fa-solid fa-angle-down"></i></span></div>
-                <hr class="m-0">
-
-                <div class="dropdown-content" id="dropdownContent">
-
-                    <label><input name="class" id="Prenursery" class="me-2 filter class" type="checkbox" value="Prenursery"> Pre-Nursery</label>
-                    <label><input name="class" id="Nursery" class="me-2 filter class" type="checkbox" value="Nursery"> Nursery</label>
-                    <label><input name="class" id="LKG" class="me-2 filter class" type="checkbox" value="LKG">LKG</label>
-                    <label><input name="class" id="UKG" class="me-2 filter class" type="checkbox" value="UKG">UKG</label>
-                    <label><input name="class" id="I" class="me-2 filter class" type="checkbox" value="I"> Grade 1</label>
-                    <label><input name="class" id="II" class="me-2 filter class" type="checkbox" value="II"> Grade 2</label>
-                    <label><input name="class" id="III" class="me-2 filter class" type="checkbox" value="III"> Grade 3</label>
-                    <label><input name="class" id="IV" class="me-2 filter class" type="checkbox" value="IV"> Grade 4</label>
-                    <label><input name="class" id="V" class="me-2 filter class" type="checkbox" value="V"> Grade 5</label>
-                    <label><input name="class" id="VI" class="me-2 filter class" type="checkbox" value="VI"> Grade 6</label>
-                    <label><input name="class" id="VII" class="me-2 filter class" type="checkbox" value="VII"> Grade 7</label>
-                    <label><input name="class" id="VIII" class="me-2 filter class" type="checkbox" value="VIII"> Grade 8</label>
-                    <label><input name="class" id="IX" class="me-2 filter class" type="checkbox" value="IX"> Grade 9</label>
-                    <label><input name="class" id="X" class="me-2 filter class" type="checkbox" value="X"> Grade 10</label>
-                    <label><input name="class" id="XI" class="me-2 filter class" type="checkbox" value="XI"> Grade 11</label>
-                    <label><input name="class" id="XII" class="me-2 filter class" type="checkbox" value="XII"> Grade 12</label>
+            <form id="myform" method="post" action="<?php echo base_url("welcome/newformdata") ?>">
+                <div class="dropdown" id="dropdown1">
+                    <div class="dropbtn helvetica" onclick="toggleDropdown('dropdown1')">Class <span class="drop-icon"><i class="fa-solid fa-angle-down"></i></span></div>
                     <hr class="m-0">
+
+                    <div class="dropdown-content" id="dropdownContent">
+
+                        <label><input name="class[]" id="Prenursery" class="me-2 filter class" type="checkbox" value="Prenursery"> Pre-Nursery</label>
+                        <label><input name="class[]" id="Nursery" class="me-2 filter class" type="checkbox" value="Nursery"> Nursery</label>
+                        <label><input name="class[]" id="LKG" class="me-2 filter class" type="checkbox" value="LKG">LKG</label>
+                        <label><input name="class[]" id="UKG" class="me-2 filter class" type="checkbox" value="UKG">UKG</label>
+                        <label><input name="class[]" id="I" class="me-2 filter class" type="checkbox" value="I"> Grade 1</label>
+                        <label><input name="class[]" id="II" class="me-2 filter class" type="checkbox" value="II"> Grade 2</label>
+                        <label><input name="class[]" id="III" class="me-2 filter class" type="checkbox" value="III"> Grade 3</label>
+                        <label><input name="class[]" id="IV" class="me-2 filter class" type="checkbox" value="IV"> Grade 4</label>
+                        <label><input name="class[]" id="V" class="me-2 filter class" type="checkbox" value="V"> Grade 5</label>
+                        <label><input name="class[]" id="VI" class="me-2 filter class" type="checkbox" value="VI"> Grade 6</label>
+                        <label><input name="class[]" id="VII" class="me-2 filter class" type="checkbox" value="VII"> Grade 7</label>
+                        <label><input name="class[]" id="VIII" class="me-2 filter class" type="checkbox" value="VIII"> Grade 8</label>
+                        <label><input name="class[]" id="IX" class="me-2 filter class" type="checkbox" value="IX"> Grade 9</label>
+                        <label><input name="class[]" id="X" class="me-2 filter class" type="checkbox" value="X"> Grade 10</label>
+                        <label><input name="class[]" id="XI" class="me-2 filter class" type="checkbox" value="XI"> Grade 11</label>
+                        <label><input name="class[]" id="XII" class="me-2 filter class" type="checkbox" value="XII"> Grade 12</label>
+                        <hr class="m-0">
+                    </div>
                 </div>
-            </div>
-            <div class="dropdown" id="dropdown2">
-                <div class="dropbtn helvetica" onclick="toggleDropdown('dropdown2')">Board <span class="drop-icon"><i class="fa-solid fa-angle-down"></i></span></div>
-                <hr class="m-0">
+                <div class="dropdown" id="dropdown2">
+                    <div class="dropbtn helvetica" onclick="toggleDropdown('dropdown2')">Board <span class="drop-icon"><i class="fa-solid fa-angle-down"></i></span></div>
+                    <hr class="m-0">
 
-                <div class="dropdown-content" id="dropdownContent">
-                    <label><input id="CBSE" class="me-2 filter  board" type="checkbox" value="CBSE"> CBSE</label>
-                    <label><input id="ICSE" class="me-2 filter board" type="checkbox" value="ICSE">ICSE</label>
-                    <label><input class="me-2 filter  board" type="checkbox" value="IB">IB</label>
-                    <label><input class="me-2 filter board" type="checkbox" value="IGSCE">IGSCE</label>
-                    <label><input class="me-2 filter  board" type="checkbox" value="State Board">State Board</label>
+                    <div class="dropdown-content" id="dropdownContent">
+                        <label><input name="board[]" id="CBSE" class="me-2 filter  board" type="checkbox" value="CBSE"> CBSE</label>
+                        <label><input name="board[]" id="ICSE" class="me-2 filter board" type="checkbox" value="ICSE">ICSE</label>
+                        <label><input name="board[]" id="IB" class="me-2 filter  board" type="checkbox" value="IB">IB</label>
+                        <label><input name="board[]" id="IGSCE" class="me-2 filter board" type="checkbox" value="IGSCE">IGSCE</label>
+                        <label><input name="board[]" id="State_Board" class="me-2 filter  board" type="checkbox" value="State_Board">State Board</label>
 
+                    </div>
                 </div>
-            </div>
-            <div class="dropdown" id="dropdown3">
-                <div class="dropbtn helvetica" onclick="toggleDropdown('dropdown3')">Type <span class="drop-icon"><i class="fa-solid fa-angle-down"></i></span></div>
-                <hr class="m-0">
+                <div class="dropdown" id="dropdown3">
+                    <div class="dropbtn helvetica" onclick="toggleDropdown('dropdown3')">Type <span class="drop-icon"><i class="fa-solid fa-angle-down"></i></span></div>
+                    <hr class="m-0">
 
-                <div class="dropdown-content" id="dropdownContent">
-                    <label><input id="Private" class="me-2  filter school_type" type="checkbox" value="Private"> Private</label>
-                    <label><input id="Private_Aided" class="me-2  filter school_type" type="checkbox" value="Private_Aided">Private Aided</label>
-
+                    <div class="dropdown-content" id="dropdownContent">
+                        <label><input name="school_type[]" id="Private" class="me-2  filter school_type" type="checkbox" value="Private"> Private</label>
+                        <label><input name="school_type[]" id="Private_Aided" class="me-2  filter school_type" type="checkbox" value="Private_Aided">Private Aided</label>
 
 
+
+                    </div>
                 </div>
-            </div>
+                <?php if ($this->session->userdata('city_id')): ?>
+                    <div class="dropdown" id="dropdown4">
+                        <div class="dropbtn helvetica" onclick="toggleDropdown('dropdown4')">City <span class="drop-icon"><i class="fa-solid fa-angle-down"></i></span></div>
+                        <hr class="m-0">
+
+                        <div class="dropdown-content" id="dropdownContent">
+                            <label>
+                                <input name="city" id="cityCheckbox" class="me-2 filter city" type="checkbox" <?php echo $this->session->userdata('city_id') ? 'checked' : ''; ?>>
+                                <?php echo htmlspecialchars($this->session->userdata('city_id')); ?>
+                            </label>
+
+                        </div>
+                    </div>
+                <?php endif; ?>
+
+
+            </form>
         </div>
-
         <div class="col-md-10 px-3">
             <h3 class="roboto bold my-3">
                 Top Schools in <span style="color:#001AFF"><a style="color:#001AFF" href="">India</a></span>
@@ -159,25 +201,29 @@
                 <div class="tab   helvetica" onclick="openTab(event, 'tab5')">Play School</div>
 
             </div>
+
             <div class="tab-content" style="width:100%;">
                 <div id="tab1" class="tab-pane active" style="margin:0px 0px!important">
                     <div id="school_div">
-                        <?php if (!empty($all)) : ?>
-                            <?php foreach ($all as $index => $row) : ?>
+                        <?php if (!empty($output)) : ?>
+                            <?php foreach ($output as $index => $row) : ?>
                                 <div class="row mt-4" style="box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.5);">
                                     <div class="col-md-5" style="padding:0px 0px">
-                                    <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%"
-                                    src="<?php echo strpos($row->image, 'amazonaws') !== false ? $row->image : 'data:image/*;base64,' . $row->image; ?>" />
+                                        <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%"
+                                            src="<?php echo strpos($row->image, 'amazonaws') !== false ? $row->image : 'data:image/*;base64,' . $row->image; ?>" />
                                     </div>
                                     <div class="col-md-7 px-3">
                                         <div>
                                             <h3 class="roboto mb-0 mt-2"><?php echo $row->name ?></h3>
-                                            <p class="roboto grey d-flex align-items-center"><span><img height="17px" width="17px" src="<?php echo base_url("assets/images/map-pin.png"); ?>" /></span><span style="margin-top:3px;font-size:15px"><?php echo $row->state ?></span></p>
+                                            <p class="roboto grey d-flex align-items-center">
+                                                <span><img height="17px" width="17px" src="<?php echo base_url("assets/images/map-pin.png"); ?>" /></span>
+                                                <span style="margin-top:3px;font-size:15px"><?php echo $row->state ?></span>
+                                            </p>
                                         </div>
                                         <div class="row mt-5">
                                             <div class="col-md-4 roboto">
                                                 <p class="roboto grey" style="font-size:14px">Class Offered</p>
-                                                <p class="bold grey roboto " style="color:#787878"><?php echo $row->class_offered ?></p>
+                                                <p class="bold grey roboto" style="color:#787878"><?php echo $row->class_offered ?></p>
                                             </div>
                                             <div class="col-md-4">
                                                 <p class="roboto grey" style="font-size:14px">Board</p>
@@ -189,18 +235,69 @@
                                                     <?php echo !empty($row->student_faculty_ratio) ? $row->student_faculty_ratio : 'NA'; ?>
                                                 </p>
                                             </div>
-
                                         </div>
+                                        <?php $cleaned_heading = create_url_friendly_heading($row->name); ?>
                                         <div class="d-flex justify-content-end col-md-12">
-                                            <a href="<?php echo base_url("welcome/School_details/") . $row->id; ?>">
-                                                <button style="border: 1px solid #001AFF;font-size:15px; color: #001AFF;background-color:white" class="roboto px-4 py-1 my-2">View Detail</button>
-                                            </a>
+                                        <form method="post" action="<?php echo base_url("welcome/School_details/") . $row->id . '/' . $cleaned_heading; ?>">
+
+
+                                                <button type="submit" style="border: 1px solid #001AFF; font-size:15px; color: #001AFF; background-color:white;" class="roboto px-4 py-1 my-2">
+                                                    View Detail
+                                                </button>
+                                            </form>
+
+
                                         </div>
                                     </div>
                                 </div>
-                            <?php endforeach ?>
+                            <?php endforeach; ?>
+                        <?php elseif (!empty($result["all"])) : ?>
+                            <?php foreach ($result["all"] as $index => $row) : ?>
+                                <div class="row mt-4" style="box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.5);">
+                                    <div class="col-md-5" style="padding:0px 0px">
+                                        <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%"
+                                            src="<?php echo strpos($row->image, 'amazonaws') !== false ? $row->image : 'data:image/*;base64,' . $row->image; ?>" />
+                                    </div>
+                                    <div class="col-md-7 px-3">
+                                        <div>
+                                            <h3 class="roboto mb-0 mt-2"><?php echo $row->name ?></h3>
+                                            <p class="roboto grey d-flex align-items-center">
+                                                <span><img height="17px" width="17px" src="<?php echo base_url("assets/images/map-pin.png"); ?>" /></span>
+                                                <span style="margin-top:3px;font-size:15px"><?php echo $row->state ?></span>
+                                            </p>
+                                        </div>
+                                        <div class="row mt-5">
+                                            <div class="col-md-4 roboto">
+                                                <p class="roboto grey" style="font-size:14px">Class Offered</p>
+                                                <p class="bold grey roboto" style="color:#787878"><?php echo $row->class_offered ?></p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <p class="roboto grey" style="font-size:14px">Board</p>
+                                                <p class="bold roboto grey"><?php echo $row->board ?></p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <p class="roboto grey" style="font-size:14px">Student Faculty Ratio</p>
+                                                <p class="bold roboto grey" style="color:#787878">
+                                                    <?php echo !empty($row->student_faculty_ratio) ? $row->student_faculty_ratio : 'NA'; ?>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-end col-md-12">
+                                        <?php $cleaned_heading = create_url_friendly_heading($row->name); ?>
+                                        <form method="post" action="<?php echo base_url("welcome/School_details/") . $row->id . '/' . $cleaned_heading; ?>">
+
+                                                <button type="submit" style="border: 1px solid #001AFF; font-size:15px; color: #001AFF; background-color:white;" class="roboto px-4 py-1 my-2">
+                                                    View Detail
+                                                </button>
+                                            </form>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
                         <?php endif; ?>
                     </div>
+
 
 
 
@@ -213,12 +310,12 @@
                 </div>
                 <div id="tab2" class="tab-pane">
                     <div id="school_div">
-                        <?php if (!empty($day_school)) : ?>
-                            <?php foreach ($day_school as $index => $row) : ?>
+                        <?php if (!empty($result["day_school"])) : ?>
+                            <?php foreach ($result["day_school"] as $index => $row) : ?>
                                 <div class="row mt-4" style="box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.5);">
                                     <div class="col-md-5" style="padding:0px 0px">
-                                    <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%"
-                                    src="<?php echo strpos($row->image, 'amazonaws') !== false ? $row->image : 'data:image/*;base64,' . $row->image; ?>" />
+                                        <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%"
+                                            src="<?php echo strpos($row->image, 'amazonaws') !== false ? $row->image : 'data:image/*;base64,' . $row->image; ?>" />
                                     </div>
                                     <div class="col-md-7 px-3">
                                         <div>
@@ -243,9 +340,13 @@
 
                                         </div>
                                         <div class="d-flex justify-content-end col-md-12">
-                                            <a href="<?php echo base_url("welcome/School_details/") . $row->id; ?>">
-                                                <button style="border: 1px solid #001AFF;font-size:15px; color: #001AFF;background-color:white" class="roboto px-4 py-1 my-2">View Detail</button>
-                                            </a>
+                                        <?php $cleaned_heading = create_url_friendly_heading($row->name); ?>
+                                        <form method="post" action="<?php echo base_url("welcome/School_details/") . $row->id . '/' . $cleaned_heading; ?>">
+
+                                                <button type="submit" style="border: 1px solid #001AFF; font-size:15px; color: #001AFF; background-color:white;" class="roboto px-4 py-1 my-2">
+                                                    View Detail
+                                                </button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -255,12 +356,12 @@
                 </div>
                 <div id="tab3" class="tab-pane">
                     <div id="school_div">
-                        <?php if (!empty($boarding_school)) : ?>
-                            <?php foreach ($boarding_school as $index => $row) : ?>
+                        <?php if (!empty($result["boarding_school"])) : ?>
+                            <?php foreach ($result["boarding_school"] as $index => $row) : ?>
                                 <div class="row mt-4" style="box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.5);">
                                     <div class="col-md-5" style="padding:0px 0px">
-                                    <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%"
-                                    src="<?php echo strpos($row->image, 'amazonaws') !== false ? $row->image : 'data:image/*;base64,' . $row->image; ?>" />
+                                        <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%"
+                                            src="<?php echo strpos($row->image, 'amazonaws') !== false ? $row->image : 'data:image/*;base64,' . $row->image; ?>" />
                                     </div>
                                     <div class="col-md-7 px-3">
                                         <div>
@@ -285,9 +386,13 @@
 
                                         </div>
                                         <div class="d-flex justify-content-end col-md-12">
-                                            <a href="<?php echo base_url("welcome/School_details/") . $row->id; ?>">
-                                                <button style="border: 1px solid #001AFF;font-size:15px; color: #001AFF;background-color:white" class="roboto px-4 py-1 my-2">View Detail</button>
-                                            </a>
+                                        <?php $cleaned_heading = create_url_friendly_heading($row->name); ?>
+                                        <form method="post" action="<?php echo base_url("welcome/School_details/") . $row->id . '/' . $cleaned_heading; ?>">
+
+                                                <button type="submit" style="border: 1px solid #001AFF; font-size:15px; color: #001AFF; background-color:white;" class="roboto px-4 py-1 my-2">
+                                                    View Detail
+                                                </button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -297,12 +402,12 @@
                 </div>
                 <div id="tab4" class="tab-pane">
                     <div id="school_div">
-                        <?php if (!empty($day_boarding_school)) : ?>
-                            <?php foreach ($day_boarding_school as $index => $row) : ?>
+                        <?php if (!empty($result["day_boarding_school"])) : ?>
+                            <?php foreach ($result["day_boarding_school"] as $index => $row) : ?>
                                 <div class="row mt-4" style="box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.5);">
                                     <div class="col-md-5" style="padding:0px 0px">
-                                    <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%"
-                                    src="<?php echo strpos($row->image, 'amazonaws') !== false ? $row->image : 'data:image/*;base64,' . $row->image; ?>" />
+                                        <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%"
+                                            src="<?php echo strpos($row->image, 'amazonaws') !== false ? $row->image : 'data:image/*;base64,' . $row->image; ?>" />
                                     </div>
                                     <div class="col-md-7 px-3">
                                         <div>
@@ -327,9 +432,13 @@
 
                                         </div>
                                         <div class="d-flex justify-content-end col-md-12">
-                                            <a href="<?php echo base_url("welcome/School_details/") . $row->id; ?>">
-                                                <button style="border: 1px solid #001AFF;font-size:15px; color: #001AFF;background-color:white" class="roboto px-4 py-1 my-2">View Detail</button>
-                                            </a>
+                                        <?php $cleaned_heading = create_url_friendly_heading($row->name); ?>
+                                        <form method="post" action="<?php echo base_url("welcome/School_details/") . $row->id . '/' . $cleaned_heading; ?>">
+
+                                                <button type="submit" style="border: 1px solid #001AFF; font-size:15px; color: #001AFF; background-color:white;" class="roboto px-4 py-1 my-2">
+                                                    View Detail
+                                                </button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -340,12 +449,12 @@
                 <div id="tab5" class="tab-pane">
                     <div id="school_div">
 
-                        <?php if (!empty($play_school)) : ?>
-                            <?php foreach ($play_school as $index => $row) : ?>
+                        <?php if (!empty($result["play_school"])) : ?>
+                            <?php foreach ($result["play_school"] as $index => $row) : ?>
                                 <div class="row mt-4" style="box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.5);">
                                     <div class="col-md-5" style="padding:0px 0px">
-                                    <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%"
-                                    src="<?php echo strpos($row->image, 'amazonaws') !== false ? $row->image : 'data:image/*;base64,' . $row->image; ?>" />
+                                        <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%"
+                                            src="<?php echo strpos($row->image, 'amazonaws') !== false ? $row->image : 'data:image/*;base64,' . $row->image; ?>" />
                                     </div>
                                     <div class="col-md-7 px-3">
                                         <div>
@@ -370,9 +479,13 @@
 
                                         </div>
                                         <div class="d-flex justify-content-end col-md-12">
-                                            <a href="<?php echo base_url("welcome/School_details/") . $row->id; ?>">
-                                                <button style="border: 1px solid #001AFF;font-size:15px; color: #001AFF;background-color:white" class="roboto px-4 py-1 my-2">View Detail</button>
-                                            </a>
+                                        <?php $cleaned_heading = create_url_friendly_heading($row->name); ?>
+                                        <form method="post" action="<?php echo base_url("welcome/School_details/") . $row->id . '/' . $cleaned_heading; ?>">
+
+                                                <button type="submit" style="border: 1px solid #001AFF; font-size:15px; color: #001AFF; background-color:white;" class="roboto px-4 py-1 my-2">
+                                                    View Detail
+                                                </button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -414,6 +527,56 @@
 
 </div>
 
+<script>
+    $(document).ready(function() {
+        $('.dropdown').each(function() {
+            if ($(this).find('input[type="checkbox"]:checked').length > 0) {
+                $(this).addClass('show');
+            } else {
+                $(this).removeClass('show');
+            }
+        });
+    });
+
+    function toggleDropdown(dropdownid) {
+        var dropdown = document.getElementById(dropdownid);
+        dropdown.classList.toggle('show');
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        // Select all checkboxes inside the form
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+        // Loop through each checkbox and add an event listener
+        checkboxes.forEach(function(checkbox) {
+            checkbox.addEventListener('change', function() {
+                // Submit the form when any checkbox state changes
+                document.getElementById('myform').submit();
+            });
+        });
+    });
+    var schoolClass = <?php echo json_encode($this->session->userdata('class')); ?>;
+    if (schoolClass !== null) {
+        schoolClass.forEach(function(id) {
+            $(`#${id}`).prop('checked', true);
+        });
+    }
+    var board = <?php echo json_encode($this->session->userdata("board")) ?>;
+    if (board !== null) {
+        board.forEach(function(id) {
+            $(`#${id}`).prop('checked', true);
+        });
+    }
+    var school_type = <?php echo json_encode($this->session->userdata("school_type")) ?>;
+    if (school_type !== null) {
+        school_type.forEach(function(id) {
+            $(`#${id}`).prop('checked', true);
+        });
+    }
+    var city = <?php echo json_encode($this->session->userdata("city_id")); ?>;
+    if (city !== null) {
+        $("#cityCheckbox").prop('checked', true);
+    }
+</script>
 
 
 
@@ -426,170 +589,85 @@
     //         $(`#${id}`).prop('checked', true);
     //     });
     // }
-    var schoolClass = <?php echo json_encode($this->session->userdata('class')); ?>;
-    var checked = <?php echo json_encode($this->session->userdata('inputchanged')); ?>;
+    //     var schoolClass = <?php echo json_encode($this->session->userdata('class')); ?>;
+    //     var checked = <?php echo json_encode($this->session->userdata('inputchanged')); ?>;
 
-    var board = <?php echo json_encode($this->session->userdata("board")) ?>;
-    var school = <?php echo json_encode($this->session->userdata("school")) ?>;
-    if (schoolClass !== null) {
-        schoolClass.forEach(function(id) {
-            $(`#${id}`).prop('checked', true);
-        });
-    }
-    if (board != null) {
+    //     var board = <?php echo json_encode($this->session->userdata("board")) ?>;
+    //     var school = <?php echo json_encode($this->session->userdata("school")) ?>;
+    //     if (schoolClass !== null) {
+    //         schoolClass.forEach(function(id) {
+    //             $(`#${id}`).prop('checked', true);
+    //         });
+    //     }
+    //     if (board != null) {
 
-        {
-            board.forEach(function(id) {
-                $(`#${id}`).prop('checked', true);
-            });
-        }
-    }
-    if (school != null) {
+    //         {
+    //             board.forEach(function(id) {
+    //                 $(`#${id}`).prop('checked', true);
+    //             });
+    //         }
+    //     }
+    //     if (school != null) {
 
-        {
-            school.forEach(function(id) {
-                $(`#${id}`).prop('checked', true);
-            });
-        }
-    }
-    var data = <?php echo json_encode($this->session->userdata("class_data"))  ?>;
-
-
-    if (data != null) {
-        if (data.length === 0) {
-            $("#tab1").append(`<p class="bold" style="margin-top:10%;text-align:center">NO data available</p>`)
-        }
-        console.log(data);
-        data.forEach(function(d) {
-            $("#tab1").append(`
-                    <div class="row mt-2" style="box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.5);">
-                         <div class="col-md-5" style="padding:0px 0px">
-                            <img height="100%" width="100%" src="${d.image}">
-                            </div>
-                     <div class="col-md-7 p-3">
-                     <div>
-                            <h1>${d.name}</h1>
-                            <p class="roboto grey">
-                    <span>
-                        <img height="20px" width="20px" src="<?php echo base_url("assets/images/map-pin.png") ?>" />
-                    </span>
-                    ${d.state}
-                </p>
-                    </div>
-                <div class="row mt-5">
-                <div class="col-md-4 roboto">
-                    <p class="roboto grey">Class Offered</p>
-                    <p class="bold grey roboto" style="color:#787878">${d.class_offered}</p>
-                </div>
-                <div class="col-md-4">
-                    <p class="roboto grey">Student Faculty Ratio</p>
-                    <p class="bold roboto grey" style="color:#787878">
-                        ${d.student_faculty_ratio ? d.student_faculty_ratio : 'NA'}
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <p class="roboto grey">Board</p>
-                    <p class="bold roboto grey">${d.board}</p>
-                </div>
-                 </div>
-            <div class="d-flex justify-content-end">
-                <a href="<?php echo base_url('welcome/School_details/'); ?>${d.id}">
-                    <button style="border: 2px solid #001AFF; color: #001AFF;background-color:white" class=" roboto px-4 m-3">View Detail</button>
-                </a>
-            </div>
-        </div>
-    </div>
-`);
+    //         {
+    //             school.forEach(function(id) {
+    //                 $(`#${id}`).prop('checked', true);
+    //             });
+    //         }
+    //     }
+    //     var data = <?php echo json_encode($this->session->userdata("class_data"))  ?>;
 
 
-        });
-
-    }
-
-
-
-
-
-
-
-
-
-
-
-    //this is for the automattic show if input are checked
-    $('.dropdown').each(function() {
-        if ($(this).find('input[type="checkbox"]:checked').length > 0) {
-
-            $(this).addClass('show');
-        } else {
-            $(this).removeClass('show');
-        }
-    });
-    //this is for the dropdown
-    function toggleDropdown(dropdownid) {
-        var dropdown = document.getElementById(dropdownid);
-        dropdown.classList.toggle('show');
-    }
-
-    //when filter got changed
-    $(".filter").on("change", function() {
-
-
-
-
-
-        var school_type = [];
-        let class_new = [];
-        console.log(class_new)
-        var board = [];
-        var ownership = []
-        $(".class:checked").each(function() {
-            class_new.push($(this).attr('id'));
-        });
-        $(".board:checked").each(function() {
-
-            board.push($(this).val());
+    //     if (data != null) {
+    //         if (data.length === 0) {
+    //             $("#tab1").append(`<p class="bold" style="margin-top:10%;text-align:center">NO data available</p>`)
+    //         }
+    //         console.log(data);
+    //         data.forEach(function(d) {
+    //             $("#tab1").append(`
+    //                     <div class="row mt-2" style="box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.5);">
+    //                          <div class="col-md-5" style="padding:0px 0px">
+    //                             <img height="100%" width="100%" src="${d.image}">
+    //                             </div>
+    //                      <div class="col-md-7 p-3">
+    //                      <div>
+    //                             <h1>${d.name}</h1>
+    //                             <p class="roboto grey">
+    //                     <span>
+    //                         <img height="20px" width="20px" src="<?php echo base_url("assets/images/map-pin.png") ?>" />
+    //                     </span>
+    //                     ${d.state}
+    //                 </p>
+    //                     </div>
+    //                 <div class="row mt-5">
+    //                 <div class="col-md-4 roboto">
+    //                     <p class="roboto grey">Class Offered</p>
+    //                     <p class="bold grey roboto" style="color:#787878">${d.class_offered}</p>
+    //                 </div>
+    //                 <div class="col-md-4">
+    //                     <p class="roboto grey">Student Faculty Ratio</p>
+    //                     <p class="bold roboto grey" style="color:#787878">
+    //                         ${d.student_faculty_ratio ? d.student_faculty_ratio : 'NA'}
+    //                     </p>
+    //                 </div>
+    //                 <div class="col-md-4">
+    //                     <p class="roboto grey">Board</p>
+    //                     <p class="bold roboto grey">${d.board}</p>
+    //                 </div>
+    //                  </div>
+    //             <div class="d-flex justify-content-end">
+    //                 <a href="<?php echo base_url('welcome/School_details/'); ?>${d.id}">
+    //                     <button style="border: 2px solid #001AFF; color: #001AFF;background-color:white" class=" roboto px-4 m-3">View Detail</button>
+    //                 </a>
+    //             </div>
+    //         </div>
+    //     </div>
+    // `);
 
 
+    //         });
 
-        })
-
-        $(".school_type:checked").each(function() {
-            school_type.push($(this).val());
-
-        })
-
-
-        if (school_type.length === 0 && class_new.length === 0 && board.length === 0) {
-            window.location.href = "<?php echo base_url('welcome/school'); ?>";
-
-
-        } else {
-            $.ajax({
-                url: "<?php echo base_url("Welcome/new_render_school_info") ?>",
-                method: "post",
-                dataType: "json",
-                data: {
-                    board: board,
-                    class_new: class_new,
-                    school: school_type,
-
-
-                },
-                dataType: "json",
-                success: function(data) {
-                    $("#tab1").empty();
-
-                    $("#school_div").hide();
-                    console.log(data);
-                    window.location.href = "<?php echo base_url('welcome/viewschoolagain'); ?>";
-
-
-
-
-
-
-                }
+    //     }
 
 
 
@@ -600,13 +678,98 @@
 
 
 
-            })
-        }
+
+    //     //this is for the automattic show if input are checked
+    //     $('.dropdown').each(function() {
+    //         if ($(this).find('input[type="checkbox"]:checked').length > 0) {
+
+    //             $(this).addClass('show');
+    //         } else {
+    //             $(this).removeClass('show');
+    //         }
+    //     });
+    //     //this is for the dropdown
+    //     function toggleDropdown(dropdownid) {
+    //         var dropdown = document.getElementById(dropdownid);
+    //         dropdown.classList.toggle('show');
+    //     }
+
+    //     //when filter got changed
+    //     $(".filter").on("change", function() {
 
 
 
 
 
-    })
+    //         var school_type = [];
+    //         let class_new = [];
+    //         console.log(class_new)
+    //         var board = [];
+    //         var ownership = []
+    //         $(".class:checked").each(function() {
+    //             class_new.push($(this).attr('id'));
+    //         });
+    //         $(".board:checked").each(function() {
+
+    //             board.push($(this).val());
+
+
+
+    //         })
+
+    //         $(".school_type:checked").each(function() {
+    //             school_type.push($(this).val());
+
+    //         })
+
+
+    //         if (school_type.length === 0 && class_new.length === 0 && board.length === 0) {
+    //             window.location.href = "<?php echo base_url('welcome/school'); ?>";
+
+
+    //         } else {
+    //             $.ajax({
+    //                 url: "<?php echo base_url("Welcome/new_render_school_info") ?>",
+    //                 method: "post",
+    //                 dataType: "json",
+    //                 data: {
+    //                     board: board,
+    //                     class_new: class_new,
+    //                     school: school_type,
+
+
+    //                 },
+    //                 dataType: "json",
+    //                 success: function(data) {
+    //                     $("#tab1").empty();
+
+    //                     $("#school_div").hide();
+    //                     console.log(data);
+    //                     window.location.href = "<?php echo base_url('welcome/viewschoolagain'); ?>";
+
+
+
+
+
+
+    //                 }
+
+
+
+
+
+
+
+
+
+
+    //             })
+    //         }
+
+
+
+
+
+    //     })
 </script>
 <?php $this->load->view('common/footer'); ?>
