@@ -1207,9 +1207,9 @@
 				<li><a style="text-decoration:none;color:black" href="<?php echo base_url("home") ?>"
 						class="header_hub pointer">Home</a></li>
 				<li><a style="text-decoration:none;color:black" href="<?php echo base_url("blog") ?>"
-						class="header_hub pointer">Blog</a></li>
+						class="header_hub pointer">Blogs</a></li>
 				<li><a style="text-decoration:none;color:black" href="<?php echo base_url("school") ?>"
-						class="header_hub pointer">School</a></li>
+						class="header_hub pointer">Schools</a></li>
 			</ul>
 		</div>
 		<style>

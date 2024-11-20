@@ -14,7 +14,18 @@
 
 <div class="tab-content tab_content px-5">
     <div id="tab1" class="tab-pane active">
-
+<?php
+ function create_url_friendly_heading($heading)
+ {
+     // Convert to lowercase
+     $heading = strtolower(trim($heading));
+     // Replace spaces with hyphens
+     $heading = str_replace(' ', '-', $heading);
+     // Remove any characters that are not alphanumeric or hyphens
+     $heading = preg_replace('/[^a-z0-9\-]/', '', $heading);
+     return $heading;
+ }
+?>
         <?php foreach (array_reverse($all) as $index => $row) : ?>
             <?php if ($index == 0) : ?>
 
@@ -45,16 +56,7 @@
                             $text = substr($text, 0, $last_space);
                             // Add ellipsis
                             $url = base_url('blog/') . $row->id;
-                            function create_url_friendly_heading($heading)
-                            {
-                                // Convert to lowercase
-                                $heading = strtolower(trim($heading));
-                                // Replace spaces with hyphens
-                                $heading = str_replace(' ', '-', $heading);
-                                // Remove any characters that are not alphanumeric or hyphens
-                                $heading = preg_replace('/[^a-z0-9\-]/', '', $heading);
-                                return $heading;
-                            }
+                           
 
                             // Create a cleaned heading for the URL
                             $cleaned_heading = create_url_friendly_heading($row->heading);
@@ -160,6 +162,7 @@
                             $last_space = strrpos($text, ' ');
                             $text = substr($text, 0, $last_space);
                             $url = base_url('blog/') . $current->id;
+                           
                             $cleaned_heading = create_url_friendly_heading($current->heading);
                             $text .= ' 
                             <form method="POST" action="' . base_url('blog/' . $current->id . '/' . $cleaned_heading) . '" style="display:inline;">

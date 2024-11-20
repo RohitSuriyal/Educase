@@ -12,7 +12,19 @@
     #searchlist::-webkit-scrollbar-thumb {
         background: #888;
     }
+
+    .white {
+        color: white;
+    }
+
+    .heighofschooldiv {
+        height: 274px;
+    }
 </style>
+<?php
+
+
+?>
 <div class="outer_img" style="padding:0px 0px!important">
     <div class="image_background height_img_bg " data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300" style="height:auto;width:100%">
         <div class="d-flex  flex-column justify-content-center align-items-center top_heading_padding" style="padding:4rem 25%">
@@ -165,7 +177,9 @@
                 <span><?php $date = strtotime($row->date);
                         $formatted_date = date('jS, F Y', $date);
                         echo $formatted_date; ?></span>
-                <h1 class="roboto bold" style=";margin-top: 2%;"><?php echo $row->heading ?></h1>
+                <h4 class="roboto bold " style=" margin-top: 2%;">
+                    <?php echo $row->heading ?>
+                </h4>
                 <?php
                 $allowed_tags = '<p><h1><h2>';
                 $plainText = strip_tags($row->body, $allowed_tags);
@@ -185,7 +199,7 @@
 
 
                     $cleaned_heading = create_url_friendly_heading($row->heading);
-                        $text .= ' 
+                    $text .= ' 
                         <form method="POST" action="' . base_url('blog/' . $row->id . '/' . $cleaned_heading) . '" style="display:inline;">
                             <button type="submit" class="text-danger bold" style="background:none; border:none; padding:0;">Read more</button>
                         </form>';
@@ -302,27 +316,27 @@
         $current = $data_reversed[$index + $j];
         $nextRow = $data_reversed[$index + $i];
     ?>
-        <div class="row flex justify-content-evenly mt-4 school_main_div " style="margin:0 1%">
-            <div class="col-md-6 custom_col_schol second_school_div" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" style="padding:0px 0px!;margin:0px 0px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);border-radius:10px">
-                <div class="row" style="padding:0px 0px!important;">
-                    <div class="col-md-6" style="padding:0px 0px!Important;">
-                        <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%"
+        <div class="row  flex justify-content-evenly mt-5 school_main_div " style="margin:0 1%">
+            <div class="col-md-6 custom_col_schol second_school_div " data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" style="padding:0px 0px!;margin:0px 0px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);border-radius:13px">
+                <div class="row  heighofschooldiv" style="padding:0px 0px!important;">
+                    <div class="col-md-6" style="padding:0px 0px!Important;height:100%">
+                        <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%;border-radius:13px"
                             src="<?php echo strpos($current->image, 'amazonaws') !== false ? $current->image : 'data:image/*;base64,' . $current->image; ?>" />
 
 
                     </div>
-                    <div class="col-md-6 p-4">
-                        <h3 class="roboto pb_0 "><?php echo $current->name ?></h3>
-                        <p class="grey"><span> <img height="15px" width="15px" src="<?php echo base_url("assets/images/Frame 4.png") ?>"></img></span><?php echo trim(preg_replace('/\s+/', ' ', $current->state)); ?></p>
-                        <div class="row mt-5">
+                    <div class="col-md-6 p-4" style="height:100%">
+                        <h4 class="roboto pb_0 "><?php echo $current->name ?></h4>
+                        <p class="grey mb-0"><span> <img height="15px" width="15px" src="<?php echo base_url("assets/images/Frame 4.png") ?>"></img></span><?php echo trim(preg_replace('/\s+/', ' ', $current->city)); ?></p>
+                        <div class="row mt-2">
                             <div class="col-md-6">
-                                <p class="grey roboto ">Class Offered</p>
-                                <p class="roboto grey bold"><?php echo $current->class_offered ?></p>
+                                <p class="grey roboto mb-0">Class Offered</p>
+                                <p class="roboto grey bold mb-0"><?php echo $current->class_offered ?></p>
 
                             </div>
                             <div class="col-md-6 ">
-                                <p class="text-center p_school grey">Board</p>
-                                <p class="text-center p_school grey bold"><?php echo $current->board ?></p>
+                                <p class="text-center p_school grey mb-0">Board</p>
+                                <p class="text-center p_school grey bold mb-0"><?php echo $current->board ?></p>
                             </div>
 
 
@@ -330,18 +344,17 @@
 
 
                         </div>
-                        <div class="row mt-3">
-                            <div class="col-md-6">
-                                <p class="">Student Faculty Ratio</p>
-                                <p class="grey bold">1:25</p>
+                        <div class="row mt-5">
+                            <div class="col-md-12 d-flex justify-content-between">
+                                <p class="mb-0">Student Faculty Ratio
+                                <p>1:25</p>
+                                </p>
 
+                                <a href="<?php echo base_url('Welcome/School_details/') . $current->id ?>"><button class=" bg-body text-primary  border border-2 border-primary ">View Details</button></a>
                             </div>
 
                         </div>
-                        <div class="d-flex justify-content-end">
-                            <a href="<?php echo base_url('Welcome/School_details/') . $current->id ?>"><button class="px-4 bg-body text-primary  border border-2 border-primary py-1">View details</button></a>
 
-                        </div>
 
 
 
@@ -352,26 +365,27 @@
 
 
             </div>
-            <div class="col-md-6 custom_col_schol second_school_div" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" style="padding:0px 0px!;margin:0px 0px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);border-radius:10px">
-                <div class="row" style="padding:0px 0px!important;">
-                    <div class="col-md-6" style="padding:0px 0px!Important;">
-                        <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%"
+            <div class="col-md-6 custom_col_schol second_school_div" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" style="padding:0px 0px!;margin:0px 0px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);border-radius:13px">
+                <div class="row heighofschooldiv" style="padding:0px 0px!important;">
+                    <div class="col-md-6" style="padding:0px 0px!Important;height:100%">
+                        <img id="dynamic" style="height:100%!important;object-fit:cover;width:100%;border-radius:13px"
                             src="<?php echo strpos($nextRow->image, 'amazonaws') !== false ? $nextRow->image : 'data:image/*;base64,' . $nextRow->image; ?>" />
 
 
                     </div>
-                    <div class="col-md-6 p-4">
-                        <h3 class="roboto pb_0 "><?php echo $nextRow->name ?></h3>
-                        <p class="grey"><span> <img height="15px" width="15px" src="<?php echo base_url("assets/images/Frame 4.png") ?>"></img></span><?php echo $nextRow->state ?></p>
+                    <div class="col-md-6 p-4" style="height:100%">
+                        <h4 class="roboto pb_0 mb-0 "><?php echo $nextRow->name ?></h4>
+                        <p class="grey mb-0"><span> <img height="15px" width="15px" src="<?php echo base_url("assets/images/Frame 4.png") ?>"></img></span><?php echo $nextRow->city ?></p>
                         <div class="row mt-5">
                             <div class="col-md-6">
-                                <p class="grey roboto ">Class Offered</p>
-                                <p class="roboto grey bold"><?php echo $nextRow->class_offered ?></p>
-
+                                <p class="grey roboto mb-0">Class Offered</p>
+                                <p class="roboto grey bold mb-0 text-truncate" style="max-width: 200px;">
+                                    <?php echo $nextRow->class_offered ?>
+                                </p>
                             </div>
                             <div class="col-md-6 ">
-                                <p class="text-center p_school grey">Board</p>
-                                <p class="text-center p_school grey bold"><?php echo $nextRow->board ?></p>
+                                <p class="text-center p_school grey mb-0">Board</p>
+                                <p class="text-center p_school grey bold mb-0"><?php echo $nextRow->board ?></p>
                             </div>
 
 
@@ -379,18 +393,17 @@
 
 
                         </div>
-                        <div class="row mt-3">
-                            <div class="col-md-6">
-                                <p class="">Student Faculty Ratio</p>
-                                <p class="grey bold">1:25</p>
+                        <div class="row mt-5">
+                            <div class="col-md-12 d-flex justify-content-between">
+                                <p class="mb-0">Student Faculty Ratio
+                                <p>1:25</p>
+                                </p>
 
+                                <a href="<?php echo base_url('Welcome/School_details/') . $nextRow->id ?>"><button class=" bg-body text-primary  border border-2 border-primary ">View Details</button></a>
                             </div>
 
                         </div>
-                        <div class="d-flex justify-content-end">
-                            <a href="<?php echo base_url('Welcome/School_details/') . $nextRow->id ?>"><button class="px-4 bg-body text-primary  border border-2 border-primary py-1">View details</button></a>
 
-                        </div>
 
 
 
@@ -420,12 +433,65 @@
 
 
 </div>
+<div style="background-color:#00003E" data-aos="fade-up" data-aos-duration="2000">
+    <div class="container py-md-5">
+        <img src="<?php echo base_url("assets/images/FINDMYSCHOOL (2).png")  ?>"></img>
+
+        <div class="row d-flex gap-5 justify-content-between mt-3">
+            <div class="col-md-3 ">
+                <h4 class="white helvetica" style="font-weight:bold">Address</h4>
+                <p class="white helvetica">Oahfeo Workspaces - Frappe, 1094, </p>
+                <P class="white helvetica">Huda Colony, Sector 46, Gurugram,</P>
+                <p class="white helvetica">Haryana 122001</p>
+
+            </div>
+            <div class="col-md-3 ">
+                <h4 class="white helvetica" style="font-weight:bold">Usefull Links</h4>
+                <a href="<?php echo base_url("blog") ?>">
+                    <p class="white helvetica">Blogs</p>
+                </a>
+                <a>
+                    <p class="white helvetica">Schools</p>
+                </a>
+
+            </div>
+            <div class="col-md-3 ">
+                <div class="d-flex  justify-content-around">
+                    <img src="<?php echo base_url("assets/images/Vector.png") ?>"></img>
+                    <img src="<?php echo base_url("assets/images/Vector (1).png") ?>"></img>
+                    <img src="<?php echo base_url("assets/images/Vector (2).png") ?>"></img>
+
+
+
+                </div>
+                <div class="d-flex justify-content-around mt-md-3">
+                    <img src="<?php echo base_url("assets/images/Vector (3).png") ?>"></img>
+                    <img src="<?php echo base_url("assets/images/Vector (4).png") ?>"></img>
+                    <img src="<?php echo base_url("assets/images/Vector (5).png") ?>"></img>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div style="background-color:black">
+    <div class="container">
+        <div class="d-flex justify-content-between py-3">
+            <span class="white">All Right Reserved @ Bodvid Pvt. Ltd.</span>
+            <span class="white" style="cursor:pointer">Powered by CHALKS<span style="color:red!important">N</span>BOARD</span>
+        </div>
+    </div>
+
+
+</div>
+
 <div id="tab2" class="tab-pane">Content for Tab 2</div>
 <div id="tab3" class="tab-pane">Content for Tab 3</div>
 <div id="tab4" class="tab-pane">Content for Tab 4</div>
-</div>
-
-
 
 
 </div>
@@ -447,6 +513,9 @@
                 },
                 success: function(data) {
                     console.log(data);
+
+
+
                     $("#searchlist").empty();
 
                     if (data == "this is error") {
@@ -460,10 +529,25 @@
     `);
                     } else {
                         data.map(function(e) {
+                            function createUrlFriendlyHeading(heading) {
+                                // Convert to lowercase
+                                heading = heading.trim().toLowerCase();
+
+                                // Replace spaces with hyphens
+                                heading = heading.replace(/\s+/g, '-');
+
+                                // Remove any characters that are not alphanumeric or hyphens
+                                heading = heading.replace(/[^a-z0-9\-]/g, '');
+
+                                return heading;
+                            }
+
+
 
                             if (e.type === "blog") {
+                                var blogname = createUrlFriendlyHeading(e.name);
                                 $("#searchlist").append(`
-     <a class="text-decoration-none" href="<?php echo base_url('welcome/blog_page/') ?>${e.id}">
+     <a class="text-decoration-none" href="<?php echo base_url('welcome/blog_page/') ?>${e.id}/${blogname}">
     <li style="cursor:pointer; box-shadow: 0 4px 8px rgba(0, 0, 0, 0);" class="list-unstyled px-2 py-1 roboto bold" id="${e.id}" data-custom="${e.type}">
     ${e.name}, ${e.location ? `(${e.location})` : ''}
     </li>
@@ -471,8 +555,9 @@
     <hr>
     `);
                             } else if (e.type == "school") {
+                                var schoolname = createUrlFriendlyHeading(e.name);
                                 $("#searchlist").append(`
-     <a class="text-decoration-none" href="<?php echo base_url('welcome/School_details/') ?>${e.id}">
+     <a class="text-decoration-none" href="<?php echo base_url('welcome/School_details/') ?>${e.id}/${schoolname}">
     <li style="cursor:pointer; box-shadow: 0 4px 8px rgba(0, 0, 0, 0);" class="list-unstyled px-2 py-1 roboto bold" id="${e.id}" data-custom="${e.type}">
     ${e.name}, ${e.location ? `(${e.location})` : ''}
     </li>
