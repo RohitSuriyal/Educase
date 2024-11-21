@@ -1248,8 +1248,8 @@
 
 		<ul class="mt-2">
 			<li class="roboto py-1"><a class="py-2" href="<?php echo base_url("home") ?>">Home</a></li>
-			<li class="roboto py-1"><a class="py-2" href="<?php echo base_url("blog") ?>">Blog</a></li>
-			<li class="roboto py-1"><a class="py-2" href="<?php echo base_url("school") ?>">School</a></li>
+			<li class="roboto py-1"><a class="py-2" href="<?php echo base_url("blog") ?>">Blogs</a></li>
+			<li class="roboto py-1"><a class="py-2" href="<?php echo base_url("school") ?>">Schools</a></li>
 
 		</ul>
 	</div>

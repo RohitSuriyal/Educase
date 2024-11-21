@@ -44,14 +44,14 @@ class Welcome extends CI_Controller
 		// // Open Graph meta tags
 		// $data['og_title'] ="Findmyschool, best website to find the school for your child"; // Open Graph title
 		// $data['og_description'] = 'This is the best school in Delhi.'; // Open Graph description
-		$data['og_image'] = base_url('assets/images/school.jpg');
+		$data['og_image'] = base_url('assets/images/findmyschool.jpeg');
 		$data['meta_description'] = "FindMySchool is a user-friendly platform designed to help parents find the perfect school for their children. Whether you're looking for schools based on location, fee structure, or curriculum, FindMySchool makes the search process easy and efficient. The website allows you to browse through detailed school listings, compare facilities, view reviews, and make informed decisions. You can also read blog articles on school-related topics, explore school fee structures, and get insights into each institution's unique offerings. FindMySchool simplifies the search for the best educational environment for your child.";
 		// $data['meta_keywords'] = 'blog, post'; // Meta keywords
 
 
 		$data['og_url'] = 'findmyschools.co.in'; // Open Graph URL
 		// $data['og_type'] = 'website'; // Open Graph type
-
+		$data['og_title'] = "Find My School - Discover the Best Schools for Your Child";
 		$data['title'] = "Findmyschool";
 
 
