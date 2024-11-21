@@ -349,8 +349,16 @@
                                 <p class="mb-0">Student Faculty Ratio
                                 <p>1:25</p>
                                 </p>
+                                <?php
 
-                                <a href="<?php echo base_url('Welcome/School_details/') . $current->id ?>"><button class=" bg-body text-primary  border border-2 border-primary ">View Details</button></a>
+
+
+
+
+                                ?>
+                                <?php $cleaned_heading = create_url_friendly_heading($current->name); ?>
+
+                                <a href="<?php echo base_url('Welcome/School_details/') . $current->id . '/' . $cleaned_heading ?>"><button class=" bg-body text-primary  border border-2 border-primary ">View Details</button></a>
                             </div>
 
                         </div>
@@ -398,8 +406,8 @@
                                 <p class="mb-0">Student Faculty Ratio
                                 <p>1:25</p>
                                 </p>
-
-                                <a href="<?php echo base_url('Welcome/School_details/') . $nextRow->id ?>"><button class=" bg-body text-primary  border border-2 border-primary ">View Details</button></a>
+                                <?php $cleaned_heading = create_url_friendly_heading($nextRow->name); ?>
+                                <a href="<?php echo base_url('Welcome/School_details/') . $nextRow->id . "/" . $cleaned_heading ?>"><button class=" bg-body text-primary  border border-2 border-primary ">View Details</button></a>
                             </div>
 
                         </div>
@@ -447,29 +455,33 @@
             </div>
             <div class="col-md-3 ">
                 <h4 class="white helvetica" style="font-weight:bold">Usefull Links</h4>
-                <a href="<?php echo base_url("blog") ?>">
+                <a class="list-unstyled text-decoration-none" href="<?php echo base_url("blog") ?>" target="_blank">
                     <p class="white helvetica">Blogs</p>
                 </a>
-                <a>
+                <a class="list-unstyled text-decoration-none" href="<?php echo base_url('/school') ?>" target="_blank">
                     <p class="white helvetica">Schools</p>
                 </a>
 
             </div>
             <div class="col-md-3 ">
                 <div class="d-flex  justify-content-around">
-                    <img src="<?php echo base_url("assets/images/Vector.png") ?>"></img>
-                    <img src="<?php echo base_url("assets/images/Vector (1).png") ?>"></img>
-                    <img src="<?php echo base_url("assets/images/Vector (2).png") ?>"></img>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(current_url()); ?>" target="_blank"><img src="<?php echo base_url("assets/images/Vector.png") ?>"></img></a>
+
+                    <a href="https://api.whatsapp.com/send?text=<?php echo urlencode(current_url()); ?>" target="_blank"> <img src="<?php echo base_url("assets/images/Vector (3).png") ?>"></img></a>
+
+                    <a href="https://t.me/share/url?url=<?php echo urlencode(current_url()); ?>&text=Check%20this%20out!" target="_blank">
+
+                        <img src="<?php echo base_url("assets/images/Vector (4).png") ?>"></img>
+                    </a>
+          <a  href="https://www.linkedin.com/sharing/share-offsite/?url=<?php echo urlencode(current_url()); ?>" target="_blank">
+          <i class="fa-brands fa-linkedin" style="color:white;font-size:2.8rem"></i>
+          </a>
+                   
 
 
 
                 </div>
-                <div class="d-flex justify-content-around mt-md-3">
-                    <img src="<?php echo base_url("assets/images/Vector (3).png") ?>"></img>
-                    <img src="<?php echo base_url("assets/images/Vector (4).png") ?>"></img>
-                    <img src="<?php echo base_url("assets/images/Vector (5).png") ?>"></img>
 
-                </div>
 
             </div>
 
