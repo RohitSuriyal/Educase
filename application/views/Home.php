@@ -465,18 +465,17 @@
             </div>
             <div class="col-md-3 ">
                 <div class="d-flex  justify-content-around">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(current_url()); ?>" target="_blank"><img src="<?php echo base_url("assets/images/Vector.png") ?>"></img></a>
+                    <a href="https://www.facebook.com/ChalksnBoard" target="_blank"><img src="<?php echo base_url("assets/images/Vector.png") ?>"></img></a>
 
-                    <a href="https://api.whatsapp.com/send?text=<?php echo urlencode(current_url()); ?>" target="_blank"> <img src="<?php echo base_url("assets/images/Vector (3).png") ?>"></img></a>
-
-                    <a href="https://t.me/share/url?url=<?php echo urlencode(current_url()); ?>&text=Check%20this%20out!" target="_blank">
-
-                        <img src="<?php echo base_url("assets/images/Vector (4).png") ?>"></img>
+                    <a href="https://www.linkedin.com/company/chalksnboard/mycompany/" target="_blank">
+                        <i class="fa-brands fa-linkedin" style="color:white;font-size:2.8rem"></i>
                     </a>
-          <a  href="https://www.linkedin.com/sharing/share-offsite/?url=<?php echo urlencode(current_url()); ?>" target="_blank">
-          <i class="fa-brands fa-linkedin" style="color:white;font-size:2.8rem"></i>
-          </a>
-                   
+             <a href="https://www.instagram.com/chalksnboard_official/?hl=en">
+             <i class="fa-brands fa-instagram" style="font-size:2.8rem"></i>
+             </a>
+
+
+
 
 
 

@@ -51,13 +51,20 @@
 </div>
         <h1><?php echo $output[0]->heading ?></h1>
       <?php  if (!empty($schoolname)) {
+        print_r($schoolname);
     // Create a hyperlink for the school name
-    $hyperlink = '<a href="' . base_url('Welcome/School_details/' . $schoolid) . '">' . htmlspecialchars($schoolname) . '</a>';
+    $hyperlink = '<a href="' . base_url('Welcome/School_details/' . $schoolid) . '">' .$schoolname. '</a>';
 
 
 
-    // Replace occurrences of the school name in the body with the hyperlink
-    $bodyWithLink = str_replace(htmlspecialchars($schoolname), $hyperlink, $output[0]->body);
+    $outputBody = str_replace('&nbsp;', ' ', htmlspecialchars_decode($output[0]->body));
+
+    // Create a regex pattern for the school name (ignores spaces and case)
+    $pattern = '/' . preg_replace('/\s+/', '\s*', preg_quote($schoolname, '/')) . '/i';
+    
+    // Replace the matched pattern with the hyperlink
+    $bodyWithLink = preg_replace($pattern, $hyperlink, $outputBody);
+
 
     // Output the modified body
     echo $bodyWithLink;
