@@ -65,7 +65,7 @@ class School_model  extends CI_Model
                 $this->db->select('school_id');
                 $this->db->from('fee');
                 $this->db->where('class', $c);
-                $this->db->where('amount !=', 0);
+                $this->db->where('available', "yes");
                 $query = $this->db->get();
                
                
